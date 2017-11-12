@@ -916,7 +916,7 @@ data:extend(
 	category = "chemical-plant",
 	energy_required = 50,
 	enabled = false,
-	ingredients = {{type = "fluid", name = "chlorobenzene", amount = 20}, {type = "fluid", name = "ammonia", amount = 10}, {type = "fluid", name = "dimethyl-carbonate", amount = 10}},
+	ingredients = {{type = "fluid", name = "chlorobenzene", amount = 20}, {type = "fluid", name = "dimethyl-carbonate", amount = 10}},--{type = "fluid", name = "ammonia", amount = 10}, 
 	result = "synthetic-drugs"
 },
 
@@ -1513,7 +1513,7 @@ data:extend(
 	energy_required = 100,
 	enabled = false,
 	ingredients = {{type = "fluid", name = "hydrogen-chloride", amount = 100}, {type = "fluid", name = "water", amount = 10}},
-	results = {{type = "fluid", name = "hydrogen", amount = 50}, {type = "fluid", name = "chlorine", amount =5010}},
+	results = {{type = "fluid", name = "hydrogen", amount = 50}, {type = "fluid", name = "chlorine", amount =50}},
 	subgroup = "nonmetal",
 	crafting_machine_tint =
 	{

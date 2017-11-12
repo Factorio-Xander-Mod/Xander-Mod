@@ -828,6 +828,10 @@ data:extend(
 	{
 		{
 			type = "unlock-recipe",
+			recipe = "hematite-washing"
+		},
+		{
+			type = "unlock-recipe",
 			recipe = "raw-iron"
 		}
 	},

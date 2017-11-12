@@ -226,7 +226,7 @@ data:extend(
 	order = "05",
 	minable =
 	{
-		hardness = 2.5,
+		hardness = 2.4,
 		mining_time = 2,
 		result = "garnierite"--,
 		--fluid_amount = 10,
@@ -347,7 +347,7 @@ data:extend(
 	order = "07",
 	minable =
 	{
-		hardness = 2.5,
+		hardness = 2.4,
 		mining_time = 2,
 		result = "heavy-sand",
 		fluid_amount = 1,
@@ -606,7 +606,7 @@ data:extend(
 	order = "14",
 	minable =
 	{
-		hardness = 2.5,
+		hardness = 2.4,
 		mining_time = 2,
 		result = "sulfidic-ore"--,
 		--fluid_amount = 20,
