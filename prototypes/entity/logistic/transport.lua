@@ -10,18 +10,18 @@
 --Base "rail-chain-signal"
 
 --Base "cargo-wagon"
-data.raw["cargo-wagon"]["cargo-wagon"].minable = {mining_time = 1000, result = "cargo-wagon"}
+data.raw["cargo-wagon"]["cargo-wagon"].minable = {mining_time = 5, result = "cargo-wagon"}
 data.raw["cargo-wagon"]["cargo-wagon"].max_speed = 1
 data.raw["cargo-wagon"]["cargo-wagon"].air_resistance = 0.005
 
 --Base "fluid-wagon"
-data.raw["fluid-wagon"]["fluid-wagon"].minable = {mining_time = 1000, result = "fluid-wagon"}
+data.raw["fluid-wagon"]["fluid-wagon"].minable = {mining_time = 5, result = "fluid-wagon"}
 data.raw["fluid-wagon"]["fluid-wagon"].weight = 1000
 data.raw["fluid-wagon"]["fluid-wagon"].max_speed = 1
 data.raw["fluid-wagon"]["fluid-wagon"].air_resistance = 0.005
 
 --Base "locomotive"
-data.raw.locomotive["locomotive"].minable = {mining_time = 1, result = "locomotive"}
+data.raw.locomotive["locomotive"].minable = {mining_time = 5, result = "locomotive"}
 data.raw.locomotive["locomotive"].max_speed = 0.8
 data.raw.locomotive["locomotive"].max_power = "1MW"
 data.raw.locomotive["locomotive"].air_resistance = 0.01
@@ -47,7 +47,7 @@ data:extend(
 	icon = "__xander-mod__/graphics/item/logistic/transport/cargo-wagon-2.png",
 	flags = {"placeable-neutral", "player-creation", "placeable-off-grid", "not-on-map"},
 	inventory_size = 80,
-	minable = {mining_time = 1000, result = "cargo-wagon-2"},
+	minable = {mining_time = 5, result = "cargo-wagon-2"},
 	mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 	max_health = 1000,
 	corpse = "medium-remnants",
@@ -436,7 +436,7 @@ data:extend(
 	name = "fluid-wagon-2",
 	icon = "__xander-mod__/graphics/item/logistic/transport/fluid-wagon-2.png",
 	flags = {"placeable-neutral", "player-creation", "placeable-off-grid", "not-on-map"},
-	minable = {mining_time = 1000, result = "fluid-wagon-2"},
+	minable = {mining_time = 5, result = "fluid-wagon-2"},
 	mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 	max_health = 1000,
 	total_capacity = 50000 * 3,
@@ -642,7 +642,7 @@ data:extend(
 	name = "locomotive-2",
 	icon = "__xander-mod__/graphics/item/logistic/transport/locomotive-2.png",
 	flags = {"placeable-neutral", "player-creation", "placeable-off-grid", "not-on-map"},
-	minable = {mining_time = 1000, result = "locomotive-2"},
+	minable = {mining_time = 5, result = "locomotive-2"},
 	mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 	max_health = 2000,
 	corpse = "medium-remnants",
@@ -929,7 +929,7 @@ data:extend(
 	name = "locomotive-3",
 	icon = "__xander-mod__/graphics/item/logistic/transport/locomotive-3.png",
 	flags = {"placeable-neutral", "player-creation", "placeable-off-grid", "not-on-map"},
-	minable = {mining_time = 1000, result = "locomotive-3"},
+	minable = {mining_time = 5, result = "locomotive-3"},
 	mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 	max_health = 2000,
 	corpse = "medium-remnants",

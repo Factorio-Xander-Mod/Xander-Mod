@@ -228,6 +228,20 @@ data.raw.technology["night-vision-equipment"].prerequisites = {"modular-armor", 
 --null
 data.raw.technology["night-vision-equipment"].order = "08-63"
 
+--Base "cannon-shell-damage"
+data.raw.technology["cannon-shell-damage-1"].effects = {{type = "ammo-damage", ammo_category = "cannon-shell", modifier = 0.2}, {type = "ammo-damage", ammo_category = "railgun-shell", modifier = 0.2}}
+data.raw.technology["cannon-shell-damage-2"].effects = {{type = "ammo-damage", ammo_category = "cannon-shell", modifier = 0.2}, {type = "ammo-damage", ammo_category = "railgun-shell", modifier = 0.2}}
+data.raw.technology["cannon-shell-damage-3"].effects = {{type = "ammo-damage", ammo_category = "cannon-shell", modifier = 0.3}, {type = "ammo-damage", ammo_category = "railgun-shell", modifier = 0.3}}
+data.raw.technology["cannon-shell-damage-4"].effects = {{type = "ammo-damage", ammo_category = "cannon-shell", modifier = 0.5}, {type = "ammo-damage", ammo_category = "railgun-shell", modifier = 0.5}}
+data.raw.technology["cannon-shell-damage-5"].effects = {{type = "ammo-damage", ammo_category = "cannon-shell", modifier = 1}, {type = "ammo-damage", ammo_category = "railgun-shell", modifier = 1}}
+data.raw.technology["cannon-shell-damage-6"].effects = {{type = "ammo-damage", ammo_category = "cannon-shell", modifier = 1}, {type = "ammo-damage", ammo_category = "railgun-shell", modifier = 1}}
+
+--Base "cannon-shell-speed"
+data.raw.technology["cannon-shell-speed-1"].effects = {{type = "gun-speed", ammo_category = "cannon-shell", modifier = 0.2}, {type = "gun-speed", ammo_category = "railgun-shell", modifier = 0.2}}
+data.raw.technology["cannon-shell-speed-2"].effects = {{type = "gun-speed", ammo_category = "cannon-shell", modifier = 0.2}, {type = "gun-speed", ammo_category = "railgun-shell", modifier = 0.2}}
+data.raw.technology["cannon-shell-speed-3"].effects = {{type = "gun-speed", ammo_category = "cannon-shell", modifier = 0.3}, {type = "gun-speed", ammo_category = "railgun-shell", modifier = 0.3}}
+data.raw.technology["cannon-shell-speed-4"].effects = {{type = "gun-speed", ammo_category = "cannon-shell", modifier = 0.6}, {type = "gun-speed", ammo_category = "railgun-shell", modifier = 0.6}}
+data.raw.technology["cannon-shell-speed-5"].effects = {{type = "gun-speed", ammo_category = "cannon-shell", modifier = 1}, {type = "gun-speed", ammo_category = "railgun-shell", modifier = 1}}
 
 data:extend(
 {
@@ -1037,13 +1051,13 @@ data:extend(
 {
 	type = "technology",
 	name = "solar-panel-equipment-2",
-	icon = "__xander-mod__/graphics/technology/combat/fission-reactor-equipment.png",
+	icon = "__base__/graphics/technology/solar-panel-equipment.png",
 	icon_size = 128,
 	effects =
 	{
 		{
 			type = "unlock-recipe",
-			recipe = "fission-reactor-equipment"
+			recipe = "solar-panel-equipment-2"
 		}
 	},
 	prerequisites = {"solar-panel-equipment", "battery-mk2-equipment", "nuclear-power", "machines_3"},

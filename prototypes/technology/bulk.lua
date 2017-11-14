@@ -106,6 +106,10 @@ data:extend(
 		},
 		{
 			type = "unlock-recipe",
+			recipe = "steel-plate-c"
+		},
+		{
+			type = "unlock-recipe",
 			recipe = "blank-3-b"
 		}
 	},

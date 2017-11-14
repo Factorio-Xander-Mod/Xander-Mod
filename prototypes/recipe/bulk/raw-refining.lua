@@ -222,7 +222,7 @@ data:extend(
 	energy_required = 400,
 	enabled = false,
 	ingredients = {{"cuprous-oxide", 10}, {type = "fluid", name = "sulfuric-acid", amount = 20}, {type = "fluid", name = "ammonia", amount = 20}, 
-		{"calcium-oxide", 10}, {type = "fluid", name = "oxygen", amount = 50}},
+		{"calcium-oxide", 10}},-- {type = "fluid", name = "oxygen", amount = 50}},
 	results = {{"copper-plate", 20}, {"cobalt-oxide", 2}, {type = "fluid", name = "waste-water", amount = 40}},
 	subgroup = "raw-material"
 },
@@ -364,8 +364,8 @@ data:extend(
 	category = "forge",
 	energy_required = 5,
 	enabled = false,
-	ingredients = {{"scheelite", 1}, {"sodium-hydroxide", 2}, {type = "fluid", name = "hydrogen-chloride", amount = 20}, 
-		{type = "fluid", name = "sulfuric-acid", amount = 10}},
+	ingredients = {{"scheelite", 1}, {"sodium-hydroxide", 2}, {type = "fluid", name = "hydrogen-chloride", amount = 20}}, 
+		--{type = "fluid", name = "sulfuric-acid", amount = 10}},
 	results = {{"tungsten-oxide", 1}, {"calcium-sulfate", 1}, {"salt", 2}, {type = "fluid", name = "waste-water", amount = 10}},
 	subgroup = "raw-material"
 },
@@ -439,7 +439,7 @@ data:extend(
 	category = "refining",
 	energy_required = 2,
 	enabled = false,
-	ingredients = {{type = "fluid", name = "titanium-tetrachloride", amount = 10}, {type = "fluid", name = "water", amount = 40}},
+	ingredients = {{type = "fluid", name = "titanium-tetrachloride", amount = 10}},-- {type = "fluid", name = "water", amount = 40}},
 	results = {{"titanium-oxide", 1}, {type = "fluid", name = "hydrogen-chloride", amount = 40}},
 	subgroup = "raw-material"
 },
@@ -561,7 +561,7 @@ data:extend(
 	category = "refining",
 	energy_required = 40,
 	enabled = false,
-	ingredients = {{type = "fluid", name = "crude-oil", amount = 50}, {"soda", 2}, {"calcium-oxide", 2}, {type = "fluid", name = "oxygen", amount = 300}},
+	ingredients = {{type = "fluid", name = "crude-oil", amount = 50}, {"soda", 2}, {"calcium-oxide", 2}},-- {type = "fluid", name = "oxygen", amount = 300}},
 	results = {{"vanadium-slag", 2}, {type = "fluid", name = "flue-gas", amount = 300}},
 	subgroup = "raw-material"
 },
@@ -903,8 +903,8 @@ data:extend(
 	category = "refining",
 	energy_required = 2,
 	enabled = false,
-	ingredients = {{"fuel-uf6", 1}, {type = "fluid", name = "water", amount = 20}, {type = "fluid", name = "hydrogen", amount = 10}},
-	results = {{"fuel-uo2", 1}, {type = "fluid", name = "hydrogen-fluoride", amount = 40}, {type = "fluid", name = "waste-water", amount = 20}},
+	ingredients = {{"fuel-uf6", 1}, {type = "fluid", name = "water", amount = 20}},-- {type = "fluid", name = "hydrogen", amount = 10}},
+	results = {{"fuel-uo2", 1}, {type = "fluid", name = "hydrogen-fluoride", amount = 40}},-- {type = "fluid", name = "waste-water", amount = 20}},
 	subgroup = "raw-material"
 },
 --238-Uranium Hexafluoride Hydrolysis
@@ -915,8 +915,8 @@ data:extend(
 	category = "refining",
 	energy_required = 2,
 	enabled = false,
-	ingredients = {{"238-uf6", 1}, {type = "fluid", name = "water", amount = 20}, {type = "fluid", name = "hydrogen", amount = 10}},
-	results = {{"238-uo2", 1}, {type = "fluid", name = "hydrogen-fluoride", amount = 40}, {type = "fluid", name = "waste-water", amount = 20}},
+	ingredients = {{"238-uf6", 1}, {type = "fluid", name = "water", amount = 20}},-- {type = "fluid", name = "hydrogen", amount = 10}},
+	results = {{"238-uo2", 1}, {type = "fluid", name = "hydrogen-fluoride", amount = 40}},-- {type = "fluid", name = "waste-water", amount = 20}},
 	subgroup = "raw-material"
 },
 --Weapons-Grade Uranium Hexafluoride Hydrolysis
@@ -927,8 +927,8 @@ data:extend(
 	category = "refining",
 	energy_required = 5,
 	enabled = false,
-	ingredients = {{"weapons-uf6", 1}, {type = "fluid", name = "water", amount = 20}, {type = "fluid", name = "hydrogen", amount = 10}},
-	results = {{"weapons-uo2", 1}, {type = "fluid", name = "hydrogen-fluoride", amount = 40}, {type = "fluid", name = "waste-water", amount = 20}},
+	ingredients = {{"weapons-uf6", 1}, {type = "fluid", name = "water", amount = 20}},-- {type = "fluid", name = "hydrogen", amount = 10}},
+	results = {{"weapons-uo2", 1}, {type = "fluid", name = "hydrogen-fluoride", amount = 40}},-- {type = "fluid", name = "waste-water", amount = 20}},
 	subgroup = "raw-material"
 },
 --238-Uranium Reduction

@@ -16,6 +16,7 @@ data.raw["mining-drill"]["burner-mining-drill"].mining_power = 2
 data.raw["mining-drill"]["electric-mining-drill"].max_health = 200
 data.raw["mining-drill"]["electric-mining-drill"].resource_categories = {"basic-solid", "hard-solid"}
 data.raw["mining-drill"]["electric-mining-drill"].mining_speed = 1
+data.raw["mining-drill"]["electric-mining-drill"].energy_source.emissions = 0.02
 data.raw["mining-drill"]["electric-mining-drill"].energy_usage = "100kW"
 data.raw["mining-drill"]["electric-mining-drill"].mining_power = 2.5
 data.raw["mining-drill"]["electric-mining-drill"].module_specification = {module_slots = 2}
