@@ -9,18 +9,22 @@ For more information, see Factorio Forums post at:
 https://forums.factorio.com/viewtopic.php?f=97&t=51868
 
 ### Ore Generation
-9 new resources: apatite, bauxite, garnierite, granitic ore, heavy mineral sand, lead ore, mineral water, natural gas, and sulfidic ore
-Changes to the 6 base game resources to fit Xander Mod style
+Added are 9 new resources: apatite, bauxite, garnierite, granitic ore, heavy mineral sand, lead ore, mineral water,
+natural gas, and sulfidic ore. The 6 base game resources have been modified as well to fit Xander Mod style.
+
 I've also now written a custom RSO config, which should be included with RSO in one of its upcoming updates.
+
 Crude resources can be mined by hand, but only used for very little on their own:
 * Bauxite
 * Copper Ore
 * Granitic Ore
 * Stone
+
 Starter resources require a mining axe, but enable crude machines and automation:
 * Coal
 * Iron Ore
 * Lead Ore
+
 Later resources can only be mined with machines, but are necessary to complete the game:
 * Apatite
 * Crude Oil
