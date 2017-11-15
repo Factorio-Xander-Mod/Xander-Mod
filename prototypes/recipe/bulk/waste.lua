@@ -72,7 +72,7 @@ data:extend(
 	type = "recipe",
     name = "water-clarifying-a",
 	icon = "__xander-mod__/graphics/recipe/waste/water-clarifying-a.png",
-	category = "chemistry",
+	category = "basic-chemistry",
 	crafting_machine_tint =
 	{
 		primary = {r = 0.000, g = 0.110, b = 0.588},
@@ -82,6 +82,8 @@ data:extend(
 	energy_required = 40,
 	enabled = false,
 	ingredients = {{type = "fluid", name = "waste-water", amount = 80}, {"iron-ore", 1}, {"limestone", 2}},
+	-- avoid using item-name.sludge as the recipe name
+	main_product = "",
 	results = {{"sludge", 8}},
 	subgroup = "waste"
 },
