@@ -321,7 +321,7 @@ data:extend(
 	category = "crafting",
 	energy_required = 2,
 	enabled = false,
-	ingredients = {{"metallized-2", 1}, {"components-1", 2}, {"bronze-plate", 2}, {"wire-solder-1", 2}},
+	ingredients = {{"etched-2", 1}, {"components-1", 2}, {"bronze-plate", 2}, {"wire-solder-1", 2}},
 	result = "electronic-circuit",
 	result_count = 2
 },

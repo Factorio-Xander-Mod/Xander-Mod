@@ -694,6 +694,10 @@ data:extend(
 	{
 		{
 			type = "unlock-recipe",
+			recipe = "chromite-flotation"
+		},
+		{
+			type = "unlock-recipe",
 			recipe = "chromite-slagging"
 		},
 		{
@@ -726,6 +730,10 @@ data:extend(
 	icon_size = 128,
 	effects =
 	{
+		{
+			type = "unlock-recipe",
+			recipe = "rutile-flotation"
+		},
 		{
 			type = "unlock-recipe",
 			recipe = "rutile-chlorination"
@@ -761,6 +769,10 @@ data:extend(
 	icon_size = 128,
 	effects =
 	{
+		{
+			type = "unlock-recipe",
+			recipe = "zirconia-flotation"
+		},
 		{
 			type = "unlock-recipe",
 			recipe = "zirconia-chlorination"

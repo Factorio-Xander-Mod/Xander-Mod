@@ -14,7 +14,7 @@ data.raw.technology["electric-energy-distribution-2"].order = "06-01"
 --Base "logistics"
 data.raw.technology["logistics"].effects = {{type = "unlock-recipe", recipe = "transport-belt"}, 
 	{type = "unlock-recipe", recipe = "underground-belt"}, {type = "unlock-recipe", recipe = "splitter"}, {type = "unlock-recipe", recipe = "science-pack-2"}}
-data.raw.technology["logistics"].prerequisites = {"steel-processing", "logistics_0", "inserter-a"}
+data.raw.technology["logistics"].prerequisites = {"parts_1", "logistics_0", "inserter-a"}
 data.raw.technology["logistics"].order = "06-04"
 
 --Base "logistics-2"
@@ -222,6 +222,8 @@ data:extend(
 	},
 	order = "06-07"
 },
+--[[
+--Unlocks removed from XM, optional dependency on Optera's LoaderRedux for recipe unlocks.  XM recipe changes still included
 --Loader 1
 {
 	type = "technology",
@@ -331,7 +333,8 @@ data:extend(
 	},
 	order = "06-11"
 },
---Crude Inserter (Iron Version)
+]]--
+--Slow Electric Inserter (Crude Iron Version)
 {
 	type = "technology",
 	name = "inserter-a",
@@ -341,7 +344,7 @@ data:extend(
 	{
 		{
 			type = "unlock-recipe",
-			recipe = "inserter"
+			recipe = "inserter-slow"
 		}
 	},
 	prerequisites = {"induction_1"},
@@ -366,7 +369,7 @@ data:extend(
 	{
 		{
 			type = "unlock-recipe",
-			recipe = "inserter-b"
+			recipe = "inserter"
 		}
 	},
 	prerequisites = {"inserter-a", "electric-engine"},
@@ -419,7 +422,7 @@ data:extend(
 			recipe = "fast-inserter"
 		}
 	},
-	prerequisites = {"inserter-b", "motor_2"},
+	prerequisites = {"inserter-b", "advanced-electronics"},
 	unit =
 	{
 		count = 75,
@@ -471,7 +474,7 @@ data:extend(
 			recipe = "filter-inserter"
 		}
 	},
-	prerequisites = {"inserter-fast", "advanced-electronics"},
+	prerequisites = {"inserter-fast"},
 	unit =
 	{
 		count = 200,
@@ -801,6 +804,10 @@ data:extend(
 		{
 			type = "unlock-recipe",
 			recipe = "pipe-to-ground-steel"
+		},
+		{
+			type = "unlock-recipe",
+			recipe = "piston-cylinder"
 		}
 	},
 	prerequisites = {"machine-tool_0"},
@@ -952,7 +959,7 @@ data:extend(
 			recipe = "pump"
 		}
 	},
-	prerequisites = {"electric-engine"},
+	prerequisites = {"electric-engine", "plumbing-steel"},
 	unit =
 	{
 		count = 50,

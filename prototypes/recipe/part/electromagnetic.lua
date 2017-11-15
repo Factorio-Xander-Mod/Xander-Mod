@@ -47,14 +47,14 @@ data:extend(
 	result = "sheet-steel",
 	result_count = 2
 },
---Gilded Silver Sheet
+--Gilded Copper Sheet
 {
 	type = "recipe",
     name = "sheet-gilded",
 	category = "machine",
 	energy_required = 1,
 	enabled = false,
-	ingredients = {{"silver-plate", 4}, {"gold-plate", 2}},
+	ingredients = {{"copper-plate", 4}, {"gold-plate", 2}},
 	result = "sheet-gilded",
 	result_count = 8
 },

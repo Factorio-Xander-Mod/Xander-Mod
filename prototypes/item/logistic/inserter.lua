@@ -1,4 +1,4 @@
-
+ 
 --Base Overrides
 
 --Base "burner-inserter"
@@ -31,6 +31,17 @@ data:extend(
 	subgroup = "inserter",
 	order = "00",
 	place_result = "inserter-chemical-burner",
+	stack_size = 50
+},
+--Slow Electric Inserter
+{
+	type = "item",
+	name = "inserter-slow",
+	icon = "__xander-mod__/graphics/item/logistic/inserter/inserter-slow.png",
+	flags = {"goes-to-quickbar"},
+	subgroup = "inserter",
+	order = "00",
+	place_result = "inserter-slow",
 	stack_size = 50
 },
 --Base "inserter" placeholder

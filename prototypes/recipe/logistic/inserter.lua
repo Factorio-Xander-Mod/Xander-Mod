@@ -8,11 +8,10 @@ data.raw.recipe["burner-inserter"].ingredients = {{"iron-plate", 4}, {"forging-i
 data.raw.recipe["burner-inserter"].result_count = 2
 
 --Base "inserter"
-data.raw.recipe["inserter"].category = "basic-crafting"
-data.raw.recipe["inserter"].energy_required = 6
+data.raw.recipe["inserter"].energy_required = 2
 data.raw.recipe["inserter"].enabled = false
-data.raw.recipe["inserter"].ingredients = {{"iron-plate", 4}, {"mechanism-0", 1}, {"electric-engine-unit", 1}}
-data.raw.recipe["inserter"].result_count = 2
+data.raw.recipe["inserter"].ingredients = {{"steel-plate", 4}, {"mechanism-1", 1}, {"electric-engine-unit", 2}, {"electronic-circuit", 4}}
+data.raw.recipe["inserter"].result_count = 4
 
 --Base "long-handed-inserter"
 data.raw.recipe["long-handed-inserter"].category = "crafting"
@@ -54,17 +53,19 @@ data:extend(
 	result = "inserter-chemical-burner",
 	result_count = 2
 },
---Steel-Based Standard Inserter
+--Slow Electric Inserter (Iron-Based)
 {
 	type = "recipe",
-    name = "inserter-b",
-	category = "crafting",
-	energy_required = 2,
+    name = "inserter-slow",
+	category = "basic-crafting",
+	energy_required = 4,
 	enabled = false,
-	ingredients = {{"steel-plate", 4}, {"mechanism-1", 1}, {"electric-engine-unit", 2}, {"electronic-circuit", 4}},
-	result = "inserter",
-	result_count = 4
+	ingredients = {{"iron-plate", 4}, {"mechanism-0", 1}, {"electric-engine-unit", 1}},
+	result = "inserter-slow",
+	result_count = 2
 },
+--Steel-Based Standard Inserter
+	--Just uses the base inserter recipe entry and totally changes it
 --Long Fast Inserter
 {
 	type = "recipe",

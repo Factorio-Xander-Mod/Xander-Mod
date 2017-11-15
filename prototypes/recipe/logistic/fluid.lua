@@ -31,7 +31,7 @@ data.raw.recipe["storage-tank"].ingredients = {{"mechanism-1", 2}, {"forging-ste
 --Base "pump"
 data.raw.recipe["pump"].category = "crafting"
 data.raw.recipe["pump"].energy_required = 2
-data.raw.recipe["pump"].ingredients = {{"electric-engine-unit", 1}, {"pipe-copper", 2}, {"bronze-plate", 4}, {"electronic-circuit", 1}}
+data.raw.recipe["pump"].ingredients = {{"electric-engine-unit", 1}, {"piston-cylinder", 1}, {"bronze-plate", 4}, {"electronic-circuit", 1}}
 
 
 data:extend(

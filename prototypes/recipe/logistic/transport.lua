@@ -36,7 +36,7 @@ data.raw.recipe["fluid-wagon"].ingredients = {{"forging-steel", 10}, {"storage-t
 --Base "locomotive"
 data.raw.recipe["locomotive"].category = "crafting"
 data.raw.recipe["locomotive"].energy_required = 10
-data.raw.recipe["locomotive"].ingredients = {{"boiler", 2}, {"forging-steel", 20}, {"control-1", 2}, {"pipe-steel", 20}, {"wheel-1", 8}, {"engine-unit", 8}}
+data.raw.recipe["locomotive"].ingredients = {{"boiler", 2}, {"forging-steel", 20}, {"mechanism-1", 4}, {"pipe-steel", 20}, {"wheel-1", 8}, {"piston-cylinder", 8}}
 
 
 data:extend(

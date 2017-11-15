@@ -3,7 +3,7 @@
 
 --Base "engine-unit"
 data.raw.recipe["engine-unit"].energy_required = 5
-data.raw.recipe["engine-unit"].ingredients = {{"forging-iron", 1}, {"pipe-steel", 2}, {"mechanism-1", 1}, {"rubber", 2}}
+data.raw.recipe["engine-unit"].ingredients = {{"piston-cylinder", 1}, {"mechanism-1", 1}, {"rubber", 2}}
 
 --Base "flying-robot-frame"
 data.raw.recipe["flying-robot-frame"].energy_required = 10
@@ -23,6 +23,16 @@ data:extend(
 	energy_required = 2,
 	ingredients = {{"mechanism-0", 1}, {"pipe", 4}, {"forging-iron", 1}},
 	result = "mechanical-steam-engine"
+},
+--Piston-Cylinder Assembly
+{
+	type = "recipe",
+    name = "piston-cylinder",
+	category = "basic-crafting",
+	energy_required = 2,
+	enabled = false,
+	ingredients = {{"forging-iron", 1}, {"pipe-steel", 2}},
+	result = "piston-cylinder"
 },
 --Iron Mechanism
 {

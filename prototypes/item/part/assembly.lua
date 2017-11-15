@@ -24,6 +24,16 @@ data:extend(
 	order = "00",
 	stack_size = 100
 },
+--Piston-Cylinder Assembly
+{
+	type = "item",
+	name = "piston-cylinder",
+	icon = "__xander-mod__/graphics/item/part/assembly/piston-cylinder.png",
+	flags = {"goes-to-main-inventory"},
+	subgroup = "assembly",
+	order = "00",
+	stack_size = 100
+},
 --Iron Gear-Mechanism
 {
 	type = "item",

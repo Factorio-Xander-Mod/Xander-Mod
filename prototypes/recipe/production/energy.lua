@@ -141,7 +141,7 @@ data:extend(
 	category = "crafting",
 	energy_required = 2,
 	enabled = false,
-	ingredients = {{"tungsten-block", 2}, {"fused-quartz", 4}, {"mechanism-2", 1}, {"transformer-2", 1}, {"advanced-circuit", 2}},
+	ingredients = {{"tungsten-block", 2}, {"fused-quartz", 4}, {"electronic-circuit", 2}, {"transformer-2", 1}, {"advanced-circuit", 1}},
 	result = "lamp-2"
 },
 --Filament-Based Small Lamp

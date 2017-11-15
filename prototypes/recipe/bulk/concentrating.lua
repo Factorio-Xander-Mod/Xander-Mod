@@ -487,7 +487,7 @@ data:extend(
 	energy_required = 20,
 	enabled = false,
 	ingredients = {{"stone", 10}, {type = "fluid", name = "water", amount = 20}},
-	results = {{"limestone", 10}, {"gravel", 2}, {type = "fluid", name = "waste-water", amount = 20}},
+	results = {{"limestone", 20}, {"gravel", 2}, {type = "fluid", name = "waste-water", amount = 20}},
 	subgroup = "raw-resource"
 },
 --Magnesite Washing

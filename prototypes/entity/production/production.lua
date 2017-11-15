@@ -274,6 +274,7 @@ data.raw["assembling-machine"]["assembling-machine-2"].crafting_categories = {"c
 data.raw["assembling-machine"]["assembling-machine-2"].crafting_speed = 1
 data.raw["assembling-machine"]["assembling-machine-2"].energy_source.emissions = 0.008
 data.raw["assembling-machine"]["assembling-machine-2"].energy_usage = "100kW"
+data.raw["assembling-machine"]["assembling-machine-2"].ingredient_count = 6
 
 --Base "assembling-machine-3"
 data.raw["assembling-machine"]["assembling-machine-3"].icon = "__xander-mod__/graphics/item/production/production/assembling-machine-3.png"
