@@ -18,5 +18,5 @@ for index, force in pairs(game.forces) do
 	if recipes["science-pack-1"] and technologies["inserter-a"] then
 		recipes["science-pack-1"].enabled = technologies["inserter-a"].researched
 	end
-  
+
 end
