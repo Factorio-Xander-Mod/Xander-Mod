@@ -511,7 +511,7 @@ xmutil.clone("splitter", "fast-splitter",
 		starting_top = expedited_belt_starting_top,
 		starting_bottom = expedited_belt_starting_bottom,
 		starting_side = expedited_belt_starting_side,
-		speed = 0.9375,
+		speed = 0.09375,
 	}
 ),
 --Base "express-splitter" placeholder
