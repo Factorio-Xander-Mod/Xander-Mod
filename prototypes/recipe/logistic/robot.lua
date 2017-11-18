@@ -45,7 +45,7 @@ data.raw.recipe["wooden-chest"].ingredients = {{"wood", 4}}
 --Base "iron-chest"
 data.raw.recipe["iron-chest"].category = "crafting"
 data.raw.recipe["iron-chest"].energy_required = 1
-data.raw.recipe["iron-chest"].ingredients = {{"forging-iron", 1}, {"shaft-1", 1}, {"iron-plate", 2}}
+data.raw.recipe["iron-chest"].ingredients = {{"forging-iron", 1}, {"shaft-0", 1}, {"iron-plate", 2}}
 
 --Base "steel-chest"
 data.raw.recipe["steel-chest"].category = "crafting"
