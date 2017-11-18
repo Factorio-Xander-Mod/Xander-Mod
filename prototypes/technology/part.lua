@@ -68,6 +68,10 @@ data:extend(
 		{
 			type = "unlock-recipe",
 			recipe = "steel-axe"
+		},
+		{
+			type = "unlock-recipe",
+			recipe = "steel-chest"
 		}
 	},
 	prerequisites = {"machine-tool_0", "smelting-graphite"},
