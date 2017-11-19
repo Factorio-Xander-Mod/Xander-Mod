@@ -1450,6 +1450,17 @@ data:extend(
 	ingredients = {{"coke", 4}},
 	result = "graphite-block"
 },
+--Graphite Grinding
+{
+	type = "recipe",
+	name = "graphite-grinding",
+	category = "basic-machine",
+	energy_required = 10,
+	enabled = false,
+	ingredients = {{"graphite-block", 1}},
+	result = "graphite-powder",
+	result_count = 4
+},
 --Acidified Water Electrolysis
 {
 	type = "recipe",

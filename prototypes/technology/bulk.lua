@@ -902,6 +902,10 @@ data:extend(
 		{
 			type = "unlock-recipe",
 			recipe = "graphite-block-b"
+		},
+		{
+			type = "unlock-recipe",
+			recipe = "graphite-grinding"
 		}
 	},
 	prerequisites = {"furnace_4", "coke-a", "smelting-graphite"},

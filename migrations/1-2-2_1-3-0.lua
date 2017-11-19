@@ -9,7 +9,7 @@ for index, force in pairs(game.forces) do
 
 	if recipes["gravel-crushing"] and technologies["ore-processor_1"] then
 		recipes["gravel-crushing"].enabled = technologies["ore-processor_1"].researched
-  end
+	end
 
 	if recipes["water-clarifying-a"] and technologies["phenol-a"] then
 		recipes["water-clarifying-a"].enabled = technologies["phenol-a"].researched
@@ -18,5 +18,5 @@ for index, force in pairs(game.forces) do
 	if recipes["brick-clay-graphite"] and technologies["advanced-material-processing"] then
 		recipes["brick-clay-graphite"].enabled = technologies["advanced-material-processing"].researched
 	end
-	
+
 end
