@@ -21,7 +21,7 @@ data.raw.recipe["long-handed-inserter"].ingredients = {{"inserter", 1}, {"electr
 --Base "fast-inserter"
 data.raw.recipe["fast-inserter"].category = "crafting"
 data.raw.recipe["fast-inserter"].energy_required = 2
-data.raw.recipe["fast-inserter"].ingredients = {{"inserter", 4}, {"mechanism-1", 1}, {"electric-engine-unit", 2}, {"advanced-circuit", 4}}
+data.raw.recipe["fast-inserter"].ingredients = {{"inserter", 4}, {"mechanism-1", 1}, {"electric-engine-unit", 2}, {"electronic-circuit", 4}}
 data.raw.recipe["fast-inserter"].result_count = 4
 
 --Base "filter-inserter"

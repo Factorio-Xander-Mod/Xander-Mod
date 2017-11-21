@@ -422,7 +422,7 @@ data:extend(
 			recipe = "fast-inserter"
 		}
 	},
-	prerequisites = {"inserter-b", "advanced-electronics"},
+	prerequisites = {"inserter-b"},
 	unit =
 	{
 		count = 75,
@@ -474,7 +474,7 @@ data:extend(
 			recipe = "filter-inserter"
 		}
 	},
-	prerequisites = {"inserter-fast"},
+	prerequisites = {"inserter-fast", "advanced-electronics"},
 	unit =
 	{
 		count = 200,
