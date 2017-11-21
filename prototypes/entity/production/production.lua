@@ -942,7 +942,7 @@ data:extend(
 	vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
 	working_sound =
 	{
-		sound = 
+		sound =
 		{
 			{filename = "__base__/sound/assembling-machine-t2-1.ogg", volume = 0.8},
 			{filename = "__base__/sound/assembling-machine-t2-2.ogg", volume = 0.8}

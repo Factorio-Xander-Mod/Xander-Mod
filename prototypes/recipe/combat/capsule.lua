@@ -19,7 +19,7 @@ data.raw.recipe["poison-capsule"].ingredients = {{"forging-steel", 4}, {"electro
 --Base "slowdown-capsule"
 data.raw.recipe["slowdown-capsule"].category = "crafting-with-fluid"
 data.raw.recipe["slowdown-capsule"].energy_required = 2
-data.raw.recipe["slowdown-capsule"].ingredients = {{"forging-steel", 2}, {"electronic-circuit", 4}, {type = "fluid", name = "crude-oil", amount = 50}, 
+data.raw.recipe["slowdown-capsule"].ingredients = {{"forging-steel", 2}, {"electronic-circuit", 4}, {type = "fluid", name = "crude-oil", amount = 50},
 	{"glass", 10}}
 
 --Base "defender-capsule"

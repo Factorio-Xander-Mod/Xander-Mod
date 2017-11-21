@@ -1,8 +1,8 @@
 # Xander-Mod
 
-This mod completely overhauls several large chunks of the base game, in particular the production of raw materials, 
-bulk resources, intermediate parts, and machines themselves. It also adds a variety of new & upgraded machines for 
-production & logistics to help with this. A few additional combat supplies have been added for good measure, and to 
+This mod completely overhauls several large chunks of the base game, in particular the production of raw materials,
+bulk resources, intermediate parts, and machines themselves. It also adds a variety of new & upgraded machines for
+production & logistics to help with this. A few additional combat supplies have been added for good measure, and to
 provide more use for advanced materials & parts.
 
 For more information, see Factorio Forums post at:

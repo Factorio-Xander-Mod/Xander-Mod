@@ -86,7 +86,7 @@ data:extend(
 	ingredients = {{"forging-steel", 1}, {"forging-iron", 1}, {"steel-plate", 2}, {"bearing-1", 4}},
 	result = "wheel-1",
 	result_count = 2
-},			
+},
 --Alloy Steel Wheel
 {
 	type = "recipe",
@@ -107,7 +107,7 @@ data:extend(
 	category = "crafting-with-fluid",
 	energy_required = 20,
 	enabled = false,
-	ingredients = {{"battery-3", 1}, {"control-3", 1}, {"forging-titanium", 2}, {"motor-3", 2}, {"fiber-carbon", 1}, 
+	ingredients = {{"battery-3", 1}, {"control-3", 1}, {"forging-titanium", 2}, {"motor-3", 2}, {"fiber-carbon", 1},
 		{type = "fluid", name = "uncured-epoxy", amount = 10}},
 	result = "flying-robot-frame-2"
 },
@@ -214,7 +214,7 @@ data:extend(
 	category = "advanced-crafting",
 	energy_required = 8,
 	enabled = false,
-	ingredients = {{type = "fluid", name = "carbon-dioxide", amount = 50}, {"crystal-corundum", 5}, {"lamp-2", 2}, {"control-3", 2}, 
+	ingredients = {{type = "fluid", name = "carbon-dioxide", amount = 50}, {"crystal-corundum", 5}, {"lamp-2", 2}, {"control-3", 2},
 		{"forging-alloy", 2}, {"copper-plate", 5}},
 	result = "lasing-2"
 },
@@ -225,7 +225,7 @@ data:extend(
 	category = "advanced-crafting",
 	energy_required = 10,
 	enabled = false,
-	ingredients = {{"crystal-yag", 1}, {"crystal-diamond", 5}, {"lamp-2", 4}, {"control-3", 4}, {"forging-titanium", 4}, 
+	ingredients = {{"crystal-yag", 1}, {"crystal-diamond", 5}, {"lamp-2", 4}, {"control-3", 4}, {"forging-titanium", 4},
 		{"silver-plate", 10}},
 	result = "lasing-3"
 }

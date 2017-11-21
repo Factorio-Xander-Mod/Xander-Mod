@@ -27,7 +27,7 @@ data.raw["assembling-machine"]["chemical-plant"].energy_source =
 data.raw["assembling-machine"]["chemical-plant"].energy_usage = "200kW"
 data.raw["assembling-machine"]["chemical-plant"].crafting_categories = {"basic-chemistry"}
 
---Base "centrifuge" 
+--Base "centrifuge"
 data.raw["assembling-machine"]["centrifuge"].max_health = 500
 data.raw["assembling-machine"]["centrifuge"].crafting_speed = 0.5
 data.raw["assembling-machine"]["centrifuge"].energy_source.emissions = 0.004

@@ -9,17 +9,17 @@ data.raw.recipe["offshore-pump"].ingredients = {{"boiler", 1}, {"mechanical-stea
 
 --Base "burner-mining-drill"
 data.raw.recipe["burner-mining-drill"].category = "basic-crafting"
-data.raw.recipe["burner-mining-drill"].normal = {energy_required = 2, enabled = false, ingredients = {{"boiler", 1}, {"mechanical-steam-engine", 1}, 
+data.raw.recipe["burner-mining-drill"].normal = {energy_required = 2, enabled = false, ingredients = {{"boiler", 1}, {"mechanical-steam-engine", 1},
 	{"mechanism-0", 1}, {"slow-transport-belt", 4}}, result = "burner-mining-drill"}
-data.raw.recipe["burner-mining-drill"].expensive = {energy_required = 4, enabled = false, ingredients = {{"boiler", 2}, {"mechanical-steam-engine", 2}, 
+data.raw.recipe["burner-mining-drill"].expensive = {energy_required = 4, enabled = false, ingredients = {{"boiler", 2}, {"mechanical-steam-engine", 2},
 	{"mechanism-0", 2}, {"slow-transport-belt", 10}}, result = "burner-mining-drill"}
 
 --Base "electric-mining-drill"
 data.raw.recipe["electric-mining-drill"].category = "crafting"
 data.raw.recipe["electric-mining-drill"].enabled = false
-data.raw.recipe["electric-mining-drill"].normal = {energy_required = 5, enabled = false, ingredients = {{"mechanism-1", 2}, {"forging-steel", 5}, 
+data.raw.recipe["electric-mining-drill"].normal = {energy_required = 5, enabled = false, ingredients = {{"mechanism-1", 2}, {"forging-steel", 5},
 	{"electric-engine-unit", 1}, {"control-1", 1}}, result = "electric-mining-drill"}
-data.raw.recipe["electric-mining-drill"].expensive = {energy_required = 5, enabled = false, ingredients = {{"mechanism-1", 4}, {"forging-steel", 10}, 
+data.raw.recipe["electric-mining-drill"].expensive = {energy_required = 5, enabled = false, ingredients = {{"mechanism-1", 4}, {"forging-steel", 10},
 	{"electric-engine-unit", 2}, {"control-1", 1}}, result = "electric-mining-drill"}
 
 --Base "pumpjack"
@@ -63,7 +63,7 @@ data:extend(
 	category = "crafting",
 	energy_required = 10,
 	enabled = false,
-	ingredients = {{"electric-mining-drill", 5}, {"forging-alloy", 25}, {"motor-2", 5}, {"mechanism-2", 10}, {"control-2", 5}, {"fast-transport-belt", 20}, 
+	ingredients = {{"electric-mining-drill", 5}, {"forging-alloy", 25}, {"motor-2", 5}, {"mechanism-2", 10}, {"control-2", 5}, {"fast-transport-belt", 20},
 		{"tungsten-cermet", 100}},
 	result = "mining-drill-3"
 },
@@ -74,7 +74,7 @@ data:extend(
 	category = "crafting",
 	energy_required = 20,
 	enabled = false,
-	ingredients = {{"mining-drill-3", 4}, {"forging-stainless", 100}, {"motor-3", 20}, {"mechanism-3", 40}, {"control-3", 20}, 
+	ingredients = {{"mining-drill-3", 4}, {"forging-stainless", 100}, {"motor-3", 20}, {"mechanism-3", 40}, {"control-3", 20},
 		{"expedited-transport-belt", 80}, {"nitride-block", 400}, {"transformer-3", 20}},
 	result = "mining-drill-4"
 },
@@ -88,7 +88,7 @@ data:extend(
 	category = "crafting",
 	energy_required = 10,
 	enabled = false,
-	ingredients = {{"pumpjack", 1}, {"forging-titanium", 10}, {"mechanism-3", 4}, {"control-2", 2}, {"pipe-stainless", 50}, {"motor-3", 2}, 
+	ingredients = {{"pumpjack", 1}, {"forging-titanium", 10}, {"mechanism-3", 4}, {"control-2", 2}, {"pipe-stainless", 50}, {"motor-3", 2},
 		{"tungsten-cermet", 10}},
 	result = "pumpjack-2"
 },

@@ -1720,7 +1720,7 @@ data:extend(
 			width = 32,
 			height = 96,
 			shift = util.by_pixel(0.000, 15.000),
-			hr_version = 
+			hr_version =
 			{
 				filename = "__base__/graphics/entity/pump/hr-pump-west-glass.png",
 				width = 192,
@@ -2051,7 +2051,7 @@ data:extend(
 			width = 32,
 			height = 96,
 			shift = util.by_pixel(0.000, 15.000),
-			hr_version = 
+			hr_version =
 			{
 				filename = "__base__/graphics/entity/pump/hr-pump-west-glass.png",
 				width = 192,

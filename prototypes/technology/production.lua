@@ -2,8 +2,8 @@
 --Base Overrides
 
 --Base "advanced-material-processing"
-data.raw.technology["advanced-material-processing"].effects = {{type = "unlock-recipe", recipe = "brick-clay-graphite-a"}, 
-	{type = "unlock-recipe", recipe = "steel-furnace"}, {type = "unlock-recipe", recipe = "iron-plate-b"}, 
+data.raw.technology["advanced-material-processing"].effects = {{type = "unlock-recipe", recipe = "brick-clay-graphite-a"},
+	{type = "unlock-recipe", recipe = "steel-furnace"}, {type = "unlock-recipe", recipe = "iron-plate-b"},
 	{type = "unlock-recipe", recipe = "copper-plate-b"}}
 data.raw.technology["advanced-material-processing"].prerequisites = {"plumbing-steel"}
 data.raw.technology["advanced-material-processing"].unit = {count = 20, ingredients = {{"science-pack-1", 1}, {"science-pack-2", 1}}, time = 30}
@@ -12,7 +12,7 @@ data.raw.technology["advanced-material-processing"].order = "07-08"
 --Base "advanced-material-processing-2"
 data.raw.technology["advanced-material-processing-2"].icon = "__xander-mod__/graphics/technology/production/furnace_5.png"
 data.raw.technology["advanced-material-processing-2"].icon_size = 128
-data.raw.technology["advanced-material-processing-2"].effects = {{type = "unlock-recipe", recipe = "electric-furnace"}, 
+data.raw.technology["advanced-material-processing-2"].effects = {{type = "unlock-recipe", recipe = "electric-furnace"},
 	{type = "unlock-recipe", recipe = "brick-clay-graphite-b"}, {type = "unlock-recipe", recipe = "fiber-glass"}}
 data.raw.technology["advanced-material-processing-2"].prerequisites = {"advanced-material-processing", "electronics", "logistics"}
 data.raw.technology["advanced-material-processing-2"].unit = {count = 400, ingredients = {{"science-pack-1", 1}, {"science-pack-2", 1}}, time = 45}
@@ -29,7 +29,7 @@ data.raw.technology["automation"].order = "07-22"
 --Base "automation-2"
 data.raw.technology["automation-2"].icon = "__xander-mod__/graphics/technology/production/automation-2.png"
 data.raw.technology["automation-2"].icon_size = 128
-data.raw.technology["automation-2"].effects = {{type = "unlock-recipe", recipe = "assembling-machine-2"}, 
+data.raw.technology["automation-2"].effects = {{type = "unlock-recipe", recipe = "assembling-machine-2"},
 	{type = "unlock-recipe", recipe = "production-science-pack"}}
 data.raw.technology["automation-2"].prerequisites = {"automation", "machines_1", "inserter-fast"}
 data.raw.technology["automation-2"].unit = {count = 100, ingredients = {{"science-pack-1", 1}, {"science-pack-2", 1}}, time = 30}
@@ -39,18 +39,18 @@ data.raw.technology["automation-2"].order = "07-23"
 data.raw.technology["automation-3"].icon = "__xander-mod__/graphics/technology/production/automation-3.png"
 data.raw.technology["automation-3"].icon_size = 128
 data.raw.technology["automation-3"].prerequisites = {"automation-2", "machines_2", "inserter-filter"}
-data.raw.technology["automation-3"].unit = {count = 200, ingredients = {{"science-pack-1", 1}, {"science-pack-2", 1}, {"science-pack-3", 1}, 
+data.raw.technology["automation-3"].unit = {count = 200, ingredients = {{"science-pack-1", 1}, {"science-pack-2", 1}, {"science-pack-3", 1},
 	{"production-science-pack", 1}}, time = 30}
 data.raw.technology["automation-3"].order = "07-24"
 
 --Base "effect-transmission"
 data.raw.technology["effect-transmission"].prerequisites = {"modules", "machines_3", "radar_1"}
-data.raw.technology["effect-transmission"].unit = {count = 300, ingredients = {{"science-pack-1", 1}, {"science-pack-2", 1}, {"science-pack-3", 1}, 
+data.raw.technology["effect-transmission"].unit = {count = 300, ingredients = {{"science-pack-1", 1}, {"science-pack-2", 1}, {"science-pack-3", 1},
 	{"production-science-pack", 1}, {"high-tech-science-pack", 1}}, time = 45}
 data.raw.technology["effect-transmission"].order = "07-27"
 
 --Base "nuclear-power"
-data.raw.technology["nuclear-power"].effects = {{type = "unlock-recipe", recipe = "nuclear-reactor"}, {type = "unlock-recipe", recipe = "fuel-pellet"}, 
+data.raw.technology["nuclear-power"].effects = {{type = "unlock-recipe", recipe = "nuclear-reactor"}, {type = "unlock-recipe", recipe = "fuel-pellet"},
 	{type = "unlock-recipe", recipe = "uranium-fuel-cell"}}
 data.raw.technology["nuclear-power"].prerequisites = {"machines_2", "boiler_3", "forging-zirconium", "fuel-enrichment"}
 data.raw.technology["nuclear-power"].order = "07-32"
@@ -105,7 +105,7 @@ data.raw.technology["effectivity-module-3"].prerequisites = {"effectivity-module
 data.raw.technology["effectivity-module-3"].order = "07-52"
 
 --Base "rocket-silo"
-data.raw.technology["rocket-silo"].effects = {{type = "unlock-recipe", recipe = "rocket-silo"}, {type = "unlock-recipe", recipe = "rocket-part"}, 
+data.raw.technology["rocket-silo"].effects = {{type = "unlock-recipe", recipe = "rocket-silo"}, {type = "unlock-recipe", recipe = "rocket-part"},
 	{type = "unlock-recipe", recipe = "satellite"}}
 data.raw.technology["rocket-silo"].prerequisites = {"rocket-fuel", "rocket-structure", "rocket-control", "rocket-engine", "rocket-mechanism", "rocket-speed-6"}
 --null
