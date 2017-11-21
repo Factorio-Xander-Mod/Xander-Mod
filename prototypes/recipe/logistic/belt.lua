@@ -81,7 +81,7 @@ data.raw.recipe["fast-loader"].ingredients = {{"loader", 1}, {"fast-transport-be
 --Base "express-loader"
 data.raw.recipe["express-loader"].category = "crafting"
 data.raw.recipe["express-loader"].energy_required = 20
-data.raw.recipe["express-loader"].ingredients = {{"expedited-loader", 1}, {"express-transport-belt", 10}, {"motor-3", 1}, {"mechanism-3", 2},
+data.raw.recipe["express-loader"].ingredients = {{"fast-loader", 1}, {"express-transport-belt", 10}, {"motor-3", 1}, {"mechanism-3", 2},
 	{"forging-titanium", 2}, {"control-3", 2}}
 
 

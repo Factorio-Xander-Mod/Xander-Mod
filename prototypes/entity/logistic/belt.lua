@@ -817,7 +817,7 @@ data:extend(
 	starting_bottom = expedited_belt_starting_bottom,
 	starting_side = expedited_belt_starting_side,
 	fast_replaceable_group = "splitter",
-	speed = 0.9375,
+	speed = 0.09375,
 	structure =
 	{
 		north =
