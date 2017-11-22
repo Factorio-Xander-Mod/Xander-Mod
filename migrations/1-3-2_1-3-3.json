@@ -1,0 +1,8 @@
+{
+	"entity": [
+		["stone-furnace", "furnace-1"]
+	],
+	"item": [
+		["furnace-1", "stone-furnace"]
+	]
+}
