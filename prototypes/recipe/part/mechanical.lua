@@ -202,9 +202,9 @@ data:extend(
     name = "blank-1-a",
 	category = "smelting",
 	energy_required = 4,
-	ingredients = {{"forging-iron", 1}},
+	ingredients = {{"iron-plate", 2}},
 	result = "blank-1",
-	result_count = 2
+	result_count = 1
 },
 --Iron Gear Blank B
 {
