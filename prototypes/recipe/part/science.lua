@@ -23,7 +23,7 @@ data.raw.recipe["production-science-pack"].ingredients = {{"reactor-1", 1}, {"pu
 
 --Base "high-tech-science-pack"
 data.raw.recipe["high-tech-science-pack"].energy_required = 20
-data.raw.recipe["high-tech-science-pack"].ingredients = {{"cell-2", 2}, {"control-3", 1}, {"speed-module", 2}, {"crystal-quartz", 2}, 
+data.raw.recipe["high-tech-science-pack"].ingredients = {{"cell-2", 2}, {"control-3", 1}, {"speed-module", 2}, {"crystal-quartz", 2},
 	{"mechanism-2", 1}}
 
 data:extend(

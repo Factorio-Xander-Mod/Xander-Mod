@@ -18,5 +18,5 @@ for index, force in pairs(game.forces) do
 	if recipes["brick-clay-graphite"] and technologies["advanced-material-processing"] then
 		recipes["brick-clay-graphite"].enabled = technologies["advanced-material-processing"].researched
 	end
-	
+
 end

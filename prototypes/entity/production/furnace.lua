@@ -718,7 +718,7 @@ data:extend(
 	vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
 	working_sound =
 	{
-		sound = 
+		sound =
 		{
 			{filename = "__base__/sound/electric-furnace.ogg", volume = 0.7}
 		}
@@ -1368,7 +1368,7 @@ data:extend(
 	vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
 	working_sound =
 	{
-		sound = 
+		sound =
 		{
 			{filename = "__base__/sound/electric-furnace.ogg", volume = 0.7}
 		}

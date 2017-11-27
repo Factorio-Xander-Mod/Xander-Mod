@@ -46,6 +46,6 @@ data:extend(
 	type = "noise-layer",
 	name = "sulfidic-ore"
 }
- 
+
 }
 )

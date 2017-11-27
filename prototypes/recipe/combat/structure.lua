@@ -24,7 +24,7 @@ data.raw.recipe["flamethrower-turret"].ingredients = {{"forging-steel", 40}, {"m
 --Base "laser-turret"
 data.raw.recipe["laser-turret"].category = "crafting"
 data.raw.recipe["laser-turret"].energy_required = 10
-data.raw.recipe["laser-turret"].ingredients = {{"forging-steel", 10}, {"mechanism-1", 1}, {"electric-engine-unit", 1}, {"lasing-1", 1}, {"battery-1", 1}, 
+data.raw.recipe["laser-turret"].ingredients = {{"forging-steel", 10}, {"mechanism-1", 1}, {"electric-engine-unit", 1}, {"lasing-1", 1}, {"battery-1", 1},
 	{"control-1", 1}}
 
 --Base "radar"
@@ -36,13 +36,13 @@ data.raw.recipe["radar"].ingredients = {{"forging-steel", 5}, {"control-1", 1}, 
 --Base "car"
 data.raw.recipe["car"].category = "crafting"
 data.raw.recipe["car"].energy_required = 2
-data.raw.recipe["car"].ingredients = {{"engine-unit", 8}, {"wheel-1", 4}, {"forging-steel", 10}, {"mechanism-1", 5}, {"rubber", 20}, {"glass", 10}, 
+data.raw.recipe["car"].ingredients = {{"engine-unit", 8}, {"wheel-1", 4}, {"forging-steel", 10}, {"mechanism-1", 5}, {"rubber", 20}, {"glass", 10},
 	{"control-1", 2}}
 
 --Base "tank"
 data.raw.recipe["tank"].category = "crafting"
 data.raw.recipe["tank"].energy_required = 10
-data.raw.recipe["tank"].ingredients = {{"engine-unit", 32}, {"wheel-1", 16}, {"forging-alloy", 100}, {"mechanism-2", 20}, {"motor-2", 10}, 
+data.raw.recipe["tank"].ingredients = {{"engine-unit", 32}, {"wheel-1", 16}, {"forging-alloy", 100}, {"mechanism-2", 20}, {"motor-2", 10},
 	{"crystal-corundum", 5}, {"control-2", 5}, {"tungsten-block", 200}}
 
 
@@ -156,7 +156,7 @@ data:extend(
 	category = "crafting",
 	energy_required = 20,
 	enabled = false,
-	ingredients = {{"tank", 1}, {"forging-stainless", 50}, {"forging-alloy", 20}, {"mechanism-2", 20}, {"motor-2", 10}, {"laser-turret", 5}, 
+	ingredients = {{"tank", 1}, {"forging-stainless", 50}, {"forging-alloy", 20}, {"mechanism-2", 20}, {"motor-2", 10}, {"laser-turret", 5},
 		{"control-3", 20}},
 	result = "artillery-crawler"
 },
@@ -167,7 +167,7 @@ data:extend(
 	category = "crafting",
 	energy_required = 50,
 	enabled = false,
-	ingredients = {{"steam-turbine", 1}, {"wheel-2", 32}, {"forging-titanium", 200}, {"mechanism-3", 20}, {"motor-3", 10}, {"laser-turret-3", 5}, 
+	ingredients = {{"steam-turbine", 1}, {"wheel-2", 32}, {"forging-titanium", 200}, {"mechanism-3", 20}, {"motor-3", 10}, {"laser-turret-3", 5},
 		{"nitride-block", 200}, {"tungsten-block", 500}},
 	result = "tank-2"
 }

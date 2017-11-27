@@ -9,7 +9,7 @@ data.raw.recipe["chemical-plant"].ingredients = {{"boiler", 1}, {"lead-plate", 1
 --Base "centrifuge"
 data.raw.recipe["centrifuge"].category = "crafting"
 data.raw.recipe["centrifuge"].energy_required = 10
-data.raw.recipe["centrifuge"].ingredients = {{"pipe-plastic", 100}, {"fused-basalt", 200}, {"forging-titanium", 50}, {"mechanism-3", 50}, {"motor-3", 50}, 
+data.raw.recipe["centrifuge"].ingredients = {{"pipe-plastic", 100}, {"fused-basalt", 200}, {"forging-titanium", 50}, {"mechanism-3", 50}, {"motor-3", 50},
 	{"control-2", 20}, {"forging-alloy", 50}, {"pipe-superalloy", 50}}
 
 --Base "oil-refinery"
@@ -73,7 +73,7 @@ data:extend(
 	category = "crafting",
 	energy_required = 20,
 	enabled = false,
-	ingredients = {{"reactor-1", 2}, {"oil-refinery", 2}, {"silicon-nitride", 50}, {"pipe-superalloy", 100}, {"forging-stainless", 50}, {"pump-3", 20}, 
+	ingredients = {{"reactor-1", 2}, {"oil-refinery", 2}, {"silicon-nitride", 50}, {"pipe-superalloy", 100}, {"forging-stainless", 50}, {"pump-3", 20},
 		{"re-oxide", 50}, {"control-3", 20}},
 	result = "reactor-3"
 }
