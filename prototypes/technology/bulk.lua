@@ -2,7 +2,7 @@
 --Base Overrides
 
 --Base "steel-processing"
-data.raw.technology["steel-processing"].effects = {{type = "unlock-recipe", recipe = "steel-plate"}, {type = "unlock-recipe", recipe = "forging-steel-a"}, 
+data.raw.technology["steel-processing"].effects = {{type = "unlock-recipe", recipe = "steel-plate"}, {type = "unlock-recipe", recipe = "forging-steel-a"},
 	{type = "unlock-recipe", recipe = "blank-3-a"}}
 data.raw.technology["steel-processing"].prerequisites = {"coke-a"}
 data.raw.technology["steel-processing"].unit.count = 20
@@ -12,7 +12,7 @@ data.raw.technology["steel-processing"].order = "00-06"
 
 --Base "concrete"
 data.raw.technology["concrete"].prerequisites = {"cement-a", "landfill"}
-data.raw.technology["concrete"].effects = {{type = "unlock-recipe", recipe = "concrete"}, {type = "unlock-recipe", recipe = "hazard-concrete"}, 
+data.raw.technology["concrete"].effects = {{type = "unlock-recipe", recipe = "concrete"}, {type = "unlock-recipe", recipe = "hazard-concrete"},
 	{type = "unlock-recipe", recipe = "reverse-hazard"}}
 data.raw.technology["concrete"].order = "02-20"
 
@@ -22,10 +22,10 @@ data.raw.technology["landfill"].icon_size = 128
 data.raw.technology["landfill"].prerequisites = {"bauxite-sediment"}
 data.raw.technology["landfill"].effects = {{type = "unlock-recipe", recipe = "landfill"}, {type = "unlock-recipe", recipe = "modified-a"}}
 data.raw.technology["landfill"].order = "02-21"
-	
+
 --Base "sulfur-processing"
 data.raw.technology["sulfur-processing"].prerequisites = {"light-cracking"}
-data.raw.technology["sulfur-processing"].effects = {{type = "unlock-recipe", recipe = "hydrogen-sulfide"}, 
+data.raw.technology["sulfur-processing"].effects = {{type = "unlock-recipe", recipe = "hydrogen-sulfide"},
 	{type = "unlock-recipe", recipe = "sulfur-dioxide"}, {type = "unlock-recipe", recipe = "sulfur"}}
 data.raw.technology["sulfur-processing"].unit.count = 200
 data.raw.technology["sulfur-processing"].order = "02-33"
