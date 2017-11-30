@@ -3,22 +3,22 @@
 
 --Base "electronic-circuit"
 data.raw.recipe["electronic-circuit"].category = "basic-crafting"
-data.raw.recipe["electronic-circuit"].normal = {energy_required = 2, enabled = false, ingredients = {{"metallized-1", 2}, {"components-1", 2}, 
+data.raw.recipe["electronic-circuit"].normal = {energy_required = 2, enabled = false, ingredients = {{"metallized-1", 2}, {"components-1", 2},
 	{"bronze-plate", 2}, {"solder-1-plate", 1}}, result = "electronic-circuit", result_count = 2}
-data.raw.recipe["electronic-circuit"].expensive = {energy_required = 2, enabled = false, ingredients = {{"metallized-1", 2}, {"components-1", 4}, 
+data.raw.recipe["electronic-circuit"].expensive = {energy_required = 2, enabled = false, ingredients = {{"metallized-1", 2}, {"components-1", 4},
 	{"bronze-plate", 2}, {"solder-1-plate", 2}}, result = "electronic-circuit", result_count = 2}
 
 --Base "advanced-circuit"
-data.raw.recipe["advanced-circuit"].normal = {energy_required = 5, enabled = false, ingredients = {{"etched-2", 1}, {"components-2", 1}, {"wire-solder-1", 2}, 
+data.raw.recipe["advanced-circuit"].normal = {energy_required = 5, enabled = false, ingredients = {{"etched-2", 1}, {"components-2", 1}, {"wire-solder-1", 2},
 	{"steel-plate", 1}}, result = "advanced-circuit"}
-data.raw.recipe["advanced-circuit"].expensive = {energy_required = 5, enabled = false, ingredients = {{"etched-2", 1}, {"components-2", 2}, 
+data.raw.recipe["advanced-circuit"].expensive = {energy_required = 5, enabled = false, ingredients = {{"etched-2", 1}, {"components-2", 2},
 	{"wire-solder-1", 4}, {"steel-plate", 1}}, result = "advanced-circuit"}
 
 --Base "processing-unit"
 data.raw.recipe["processing-unit"].category = "advanced-crafting"
-data.raw.recipe["processing-unit"].normal = {energy_required = 10, enabled = false, ingredients = {{"etched-3", 1}, {"wire-solder-2", 2}, 
+data.raw.recipe["processing-unit"].normal = {energy_required = 10, enabled = false, ingredients = {{"etched-3", 1}, {"wire-solder-2", 2},
 	{"components-3", 1}, {"aluminum-plate", 2}, {"plastic-bar", 2}}, result = "processing-unit"}
-data.raw.recipe["processing-unit"].expensive = {energy_required = 10, enabled = false, ingredients = {{"etched-3", 1}, {"wire-solder-2", 4}, 
+data.raw.recipe["processing-unit"].expensive = {energy_required = 10, enabled = false, ingredients = {{"etched-3", 1}, {"wire-solder-2", 4},
 	{"components-3", 4}, {"aluminum-plate", 4}, {"plastic-bar", 4}}, result = "processing-unit"}
 
 
@@ -83,6 +83,7 @@ data:extend(
 	energy_required = 8,
 	enabled = false,
 	ingredients = {{"metallized-2", 16}, {type = "fluid", name = "hydrogen-chloride", amount = 30}, {"hematite", 1}},
+	main_product = "etched-2",
 	results = {{"etched-2", 16}, {type = "fluid", name = "waste-water", amount = 20}},
 	subgroup = "board"
 },
@@ -292,7 +293,7 @@ data:extend(
 	category = "crafting-with-fluid",
 	energy_required = 10,
 	enabled = false,
-	ingredients = {{"wire-tinned", 2}, {"wafer-2", 2}, {type = "fluid", name = "uncured-resol", amount = 10}, {"chromium-plate", 1}, 
+	ingredients = {{"wire-tinned", 2}, {"wafer-2", 2}, {type = "fluid", name = "uncured-resol", amount = 10}, {"chromium-plate", 1},
 		{"silver-plate", 1}},
 	result = "data-2",
 	result_count = 2

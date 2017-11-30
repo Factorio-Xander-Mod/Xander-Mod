@@ -21,7 +21,7 @@ data.raw.recipe["long-handed-inserter"].ingredients = {{"inserter", 1}, {"electr
 --Base "fast-inserter"
 data.raw.recipe["fast-inserter"].category = "crafting"
 data.raw.recipe["fast-inserter"].energy_required = 2
-data.raw.recipe["fast-inserter"].ingredients = {{"inserter", 4}, {"mechanism-1", 1}, {"electric-engine-unit", 2}, {"advanced-circuit", 4}}
+data.raw.recipe["fast-inserter"].ingredients = {{"inserter", 4}, {"mechanism-1", 1}, {"electric-engine-unit", 2}, {"electronic-circuit", 4}}
 data.raw.recipe["fast-inserter"].result_count = 4
 
 --Base "filter-inserter"
@@ -135,7 +135,7 @@ data:extend(
 	category = "crafting",
 	energy_required = 40,
 	enabled = false,
-	ingredients = {{"forging-alloy", 20}, {"wheel-2", 16}, {"control-3", 4}, {"storage-tank-2", 1}, {"boiler-2", 1}, {"steam-turbine", 1}, 
+	ingredients = {{"forging-alloy", 20}, {"wheel-2", 16}, {"control-3", 4}, {"storage-tank-2", 1}, {"boiler-2", 1}, {"steam-turbine", 1},
 		{"motor-2", 20}, {"battery-2", 10}},
 	result = "locomotive-3"
 },
@@ -147,7 +147,7 @@ data:extend(
 	category = "advanced-crafting",
 	energy_required = 20,
 	enabled = false,
-	ingredients = {{"roboport", 1}, {"mechanism-3", 20}, {"forging-stainless", 50}, {"control-3", 10}, {"transformer-3", 10}, {"motor-3", 10}, 
+	ingredients = {{"roboport", 1}, {"mechanism-3", 20}, {"forging-stainless", 50}, {"control-3", 10}, {"transformer-3", 10}, {"motor-3", 10},
 		{"battery-3", 10}, {"radar-3", 2}},
 	result = "roboport-2"
 },

@@ -3,6 +3,8 @@
 
 --Base "stone-furnace"
 data.raw.furnace["stone-furnace"].crafting_categories = {"empty"}
+-- remove placeable-* flags to remove need for item to place it
+data.raw.furnace["stone-furnace"].flags = {}
 
 --Base "steel-furnace"
 data.raw.furnace["steel-furnace"].crafting_categories = {"empty"}
@@ -16,12 +18,13 @@ data:extend(
 
 --Base "stone-furnace" placeholder
 --Assembler-Type Stone Furnace (replaces base "stone-furnace")
+--placed by stone-furnace item
 {
 	type = "assembling-machine",
 	name = "furnace-1",
 	icon = "__xander-mod__/graphics/item/production/furnace/furnace-1.png",
 	flags = {"placeable-neutral", "placeable-player", "player-creation"},
-	minable = {mining_time = 1, result = "furnace-1"},
+	minable = {mining_time = 1, result = "stone-furnace"},
 	dying_explosion = "medium-explosion",
 	corpse = "medium-remnants",
 	max_health = 50,
@@ -718,7 +721,7 @@ data:extend(
 	vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
 	working_sound =
 	{
-		sound = 
+		sound =
 		{
 			{filename = "__base__/sound/electric-furnace.ogg", volume = 0.7}
 		}
@@ -1368,7 +1371,7 @@ data:extend(
 	vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
 	working_sound =
 	{
-		sound = 
+		sound =
 		{
 			{filename = "__base__/sound/electric-furnace.ogg", volume = 0.7}
 		}

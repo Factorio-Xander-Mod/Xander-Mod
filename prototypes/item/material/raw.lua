@@ -87,7 +87,7 @@ data:extend(
 	subgroup = "raw-material",
 	order = "08",
 	stack_size = 200,
-	place_as_tile = 
+	place_as_tile =
 	{
 		result = "sand",
 		condition_size = 4,

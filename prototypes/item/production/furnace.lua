@@ -1,6 +1,6 @@
 --Base Overrides
 
---Base "stone-furnace" - (DISABLED) replaced by XM "Stone Brick Furnace"
+--Base "stone-furnace" - places XM assembler furnace-1 into the world
 data.raw.item["stone-furnace"].order = "0"
 data.raw.item["stone-furnace"].icon = "__xander-mod__/graphics/item/production/furnace/furnace-1.png"
 data.raw.item["stone-furnace"].place_result = "furnace-1"
@@ -15,17 +15,6 @@ data:extend(
 
 --Base "stone-furnace" - changed to result in the XM assembler-type "Stone Brick Furnace" when placed in the world
 	--order = "0"
---Stone Brick Furnace - placeholder item to satisfy the "needs placer item" for the base stone furnace entity
-{
-	type = "item",
-	name = "furnace-1",
-	icon = "__base__/graphics/icons/stone-furnace.png",
-	flags = {"goes-to-quickbar"},
-	subgroup = "smelting-machine",
-	order = "0",
-	place_result = "stone-furnace",
-	stack_size = 50
-},
 --Clay Brick Furnace
 {
 	type = "item",

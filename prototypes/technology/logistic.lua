@@ -6,15 +6,15 @@ data.raw.technology["electric-energy-distribution-1"].prerequisites = {"electron
 data.raw.technology["electric-energy-distribution-1"].order = "06-00"
 
 --Base "electric-energy-distribution-2"
-data.raw.technology["electric-energy-distribution-2"].effects = {{type = "unlock-recipe", recipe = "medium-electric-pole-2"}, 
+data.raw.technology["electric-energy-distribution-2"].effects = {{type = "unlock-recipe", recipe = "medium-electric-pole-2"},
 	{type = "unlock-recipe", recipe = "big-electric-pole-2"}}
 data.raw.technology["electric-energy-distribution-2"].prerequisites = {"electric-energy-distribution-1", "forging-stainless", "insulator_2"}
 data.raw.technology["electric-energy-distribution-2"].order = "06-01"
 
 --Base "logistics"
-data.raw.technology["logistics"].effects = {{type = "unlock-recipe", recipe = "transport-belt"}, 
+data.raw.technology["logistics"].effects = {{type = "unlock-recipe", recipe = "transport-belt"},
 	{type = "unlock-recipe", recipe = "underground-belt"}, {type = "unlock-recipe", recipe = "splitter"}, {type = "unlock-recipe", recipe = "science-pack-2"}}
-data.raw.technology["logistics"].prerequisites = {"parts_1", "logistics_0", "inserter-a"}
+data.raw.technology["logistics"].prerequisites = {"parts_1", "logistics_0", "inserter-b"}
 data.raw.technology["logistics"].order = "06-04"
 
 --Base "logistics-2"
@@ -22,10 +22,10 @@ data.raw.technology["logistics-2"].prerequisites = {"logistics", "machines_1"}
 data.raw.technology["logistics-2"].order = "06-05"
 
 --Base "logistics-3"
-data.raw.technology["logistics-3"].effects = {{type = "unlock-recipe", recipe = "expedited-transport-belt"}, 
+data.raw.technology["logistics-3"].effects = {{type = "unlock-recipe", recipe = "expedited-transport-belt"},
 	{type = "unlock-recipe", recipe = "expedited-underground-belt"}, {type = "unlock-recipe", recipe = "expedited-splitter"}}
 data.raw.technology["logistics-3"].prerequisites = {"logistics-2", "parts_2", "forging-aluminum", "advanced-electronics"}
-data.raw.technology["logistics-3"].unit = {count = 350, ingredients = {{"science-pack-1", 1}, {"science-pack-2", 1}, {"science-pack-3", 1}, 
+data.raw.technology["logistics-3"].unit = {count = 350, ingredients = {{"science-pack-1", 1}, {"science-pack-2", 1}, {"science-pack-3", 1},
 	{"production-science-pack", 1}}, time = 30}
 data.raw.technology["logistics-3"].order = "06-06"
 
@@ -54,23 +54,23 @@ data.raw.technology["rail-signals"].prerequisites = {"automated-rail-transportat
 data.raw.technology["rail-signals"].order = "06-24"
 
 --Base "robotics"
-data.raw.technology["robotics"].effects = {{type = "unlock-recipe", recipe = "flying-robot-frame"}, {type = "unlock-recipe", recipe = "roboport"}, 
+data.raw.technology["robotics"].effects = {{type = "unlock-recipe", recipe = "flying-robot-frame"}, {type = "unlock-recipe", recipe = "roboport"},
 	{type = "unlock-recipe", recipe = "logistic-chest-passive-provider"}, {type = "unlock-recipe", recipe = "logistic-chest-storage"}}
 data.raw.technology["robotics"].prerequisites = {"flying", "radar_1"}
 data.raw.technology["robotics"].order = "06-29"
 
 --Base "construction-robotics"
-data.raw.technology["construction-robotics"].effects = {{type = "unlock-recipe", recipe = "construction-robot"}, 
+data.raw.technology["construction-robotics"].effects = {{type = "unlock-recipe", recipe = "construction-robot"},
 	{type = "ghost-time-to-live", modifier = 60 * 60 * 60}}
 data.raw.technology["construction-robotics"].prerequisites = {"robotics", "tooling_2"}
-data.raw.technology["construction-robotics"].unit = {count = 150, ingredients = {{"science-pack-1", 1}, {"science-pack-2", 1}, {"science-pack-3", 1}}, 
+data.raw.technology["construction-robotics"].unit = {count = 150, ingredients = {{"science-pack-1", 1}, {"science-pack-2", 1}, {"science-pack-3", 1}},
 	time = 30}
 data.raw.technology["construction-robotics"].order = "06-31"
 
 --Base "logistic-robotics"
 data.raw.technology["logistic-robotics"].effects = {{type = "unlock-recipe", recipe = "logistic-robot"}}
 data.raw.technology["logistic-robotics"].prerequisites = {"robotics", "rubber-b"}
-data.raw.technology["logistic-robotics"].unit = {count = 150, ingredients = {{"science-pack-1", 1}, {"science-pack-2", 1}, {"science-pack-3", 1}}, 
+data.raw.technology["logistic-robotics"].unit = {count = 150, ingredients = {{"science-pack-1", 1}, {"science-pack-2", 1}, {"science-pack-3", 1}},
 	time = 30}
 data.raw.technology["logistic-robotics"].order = "06-33"
 
@@ -83,7 +83,7 @@ data.raw.technology["fluid-handling"].unit = {count = 100, ingredients = {{"scie
 data.raw.technology["fluid-handling"].order = "06-45"
 
 --Base "circuit-network"
-data.raw.technology["circuit-network"].effects = {{type = "unlock-recipe", recipe = "red-wire"}, {type = "unlock-recipe", recipe = "green-wire"}, 
+data.raw.technology["circuit-network"].effects = {{type = "unlock-recipe", recipe = "red-wire"}, {type = "unlock-recipe", recipe = "green-wire"},
 	{type = "unlock-recipe", recipe = "power-switch"}, {type = "unlock-recipe", recipe = "programmable-speaker"}}
 data.raw.technology["circuit-network"].prerequisites = {"electronics", "rubber-a"}
 data.raw.technology["circuit-network"].unit = {count = 150, ingredients = {{"science-pack-1", 1}, {"science-pack-2", 1}}, time = 30}
@@ -338,7 +338,7 @@ data:extend(
 {
 	type = "technology",
 	name = "inserter-a",
-	icon = "__xander-mod__/graphics/technology/logistic/inserter-b.png",
+	icon = "__xander-mod__/graphics/technology/logistic/inserter-a.png",
 	icon_size = 128,
 	effects =
 	{
@@ -422,7 +422,7 @@ data:extend(
 			recipe = "fast-inserter"
 		}
 	},
-	prerequisites = {"inserter-b", "advanced-electronics"},
+	prerequisites = {"inserter-b"},
 	unit =
 	{
 		count = 75,
@@ -474,7 +474,7 @@ data:extend(
 			recipe = "filter-inserter"
 		}
 	},
-	prerequisites = {"inserter-fast"},
+	prerequisites = {"inserter-fast", "advanced-electronics"},
 	unit =
 	{
 		count = 200,

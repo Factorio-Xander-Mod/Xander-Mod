@@ -28,14 +28,14 @@ data.raw.recipe["assembling-machine-2"].expensive =
 --Base "assembling-machine-3"
 data.raw.recipe["assembling-machine-3"].category = "crafting"
 data.raw.recipe["assembling-machine-3"].energy_required = 10
-data.raw.recipe["assembling-machine-3"].ingredients = {{"assembling-machine-2", 1}, {"filter-inserter", 4}, {"tooling-2", 2}, {"mechanism-2", 2}, 
+data.raw.recipe["assembling-machine-3"].ingredients = {{"assembling-machine-2", 1}, {"filter-inserter", 4}, {"tooling-2", 2}, {"mechanism-2", 2},
 	{"motor-2", 2}, {"control-2", 2}}
 
 --Base "lab"
 data.raw.recipe["lab"].category = "crafting"
 data.raw.recipe["lab"].energy_required = 5
 data.raw.recipe["lab"].enabled = false
-data.raw.recipe["lab"].ingredients = {{"forging-steel", 5}, {"electric-engine-unit", 2}, {"control-1", 4}, {"transport-belt", 10}, {"mechanism-1", 2}, 
+data.raw.recipe["lab"].ingredients = {{"forging-steel", 5}, {"electric-engine-unit", 2}, {"control-1", 4}, {"transport-belt", 10}, {"mechanism-1", 2},
 	{"inserter", 4}}
 
 
@@ -81,7 +81,7 @@ data:extend(
 	category = "crafting",
 	energy_required = 10,
 	enabled = false,
-	ingredients = {{"machine-tool-2", 1}, {"control-3", 5}, {"mechanism-3", 5}, {"forging-stainless", 10}, {"motor-3", 2}, {"tooling-3", 2}, 
+	ingredients = {{"machine-tool-2", 1}, {"control-3", 5}, {"mechanism-3", 5}, {"forging-stainless", 10}, {"motor-3", 2}, {"tooling-3", 2},
 		{"fused-basalt", 40}, {"lasing-2", 1}},
 	result = "machine-tool-3"
 },

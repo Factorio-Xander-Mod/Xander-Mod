@@ -5,14 +5,14 @@
 
 --Base "steel-plate"
 data.raw.recipe["steel-plate"].energy_required = 8
-data.raw.recipe["steel-plate"].normal = 
+data.raw.recipe["steel-plate"].normal =
 {
 	enabled = false,
 	energy_required = 8,
 	ingredients = {{"iron-plate", 4}},
 	result = "steel-plate"
 }
-data.raw.recipe["steel-plate"].expensive = 
+data.raw.recipe["steel-plate"].expensive =
 {
 	enabled = false,
 	energy_required = 16,
@@ -916,7 +916,7 @@ data:extend(
 	category = "chemical-plant",
 	energy_required = 50,
 	enabled = false,
-	ingredients = {{type = "fluid", name = "chlorobenzene", amount = 20}, {type = "fluid", name = "dimethyl-carbonate", amount = 10}},--{type = "fluid", name = "ammonia", amount = 10}, 
+	ingredients = {{type = "fluid", name = "chlorobenzene", amount = 20}, {type = "fluid", name = "dimethyl-carbonate", amount = 10}},--{type = "fluid", name = "ammonia", amount = 10},
 	result = "synthetic-drugs"
 },
 
@@ -1449,6 +1449,17 @@ data:extend(
 	enabled = false,
 	ingredients = {{"coke", 4}},
 	result = "graphite-block"
+},
+--Graphite Grinding
+{
+	type = "recipe",
+	name = "graphite-grinding",
+	category = "basic-machine",
+	energy_required = 10,
+	enabled = false,
+	ingredients = {{"graphite-block", 1}},
+	result = "graphite-powder",
+	result_count = 4
 },
 --Acidified Water Electrolysis
 {

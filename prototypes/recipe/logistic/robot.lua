@@ -4,7 +4,7 @@
 --Base "roboport"
 data.raw.recipe["roboport"].category = "crafting"
 data.raw.recipe["roboport"].energy_required = 10
-data.raw.recipe["roboport"].ingredients = {{"mechanism-2", 20}, {"forging-steel", 50}, {"control-2", 5}, {"transformer-2", 10}, {"motor-2", 10}, 
+data.raw.recipe["roboport"].ingredients = {{"mechanism-2", 20}, {"forging-steel", 50}, {"control-2", 5}, {"transformer-2", 10}, {"motor-2", 10},
 	{"battery-2", 10}, {"radar", 1}}
 
 --Base "construction-robot"
@@ -45,7 +45,7 @@ data.raw.recipe["wooden-chest"].ingredients = {{"wood", 4}}
 --Base "iron-chest"
 data.raw.recipe["iron-chest"].category = "crafting"
 data.raw.recipe["iron-chest"].energy_required = 1
-data.raw.recipe["iron-chest"].ingredients = {{"forging-iron", 1}, {"shaft-1", 1}, {"iron-plate", 2}}
+data.raw.recipe["iron-chest"].ingredients = {{"forging-iron", 1}, {"shaft-0", 1}, {"iron-plate", 2}}
 
 --Base "steel-chest"
 data.raw.recipe["steel-chest"].category = "crafting"
@@ -63,7 +63,7 @@ data:extend(
 	category = "advanced-crafting",
 	energy_required = 20,
 	enabled = false,
-	ingredients = {{"roboport", 1}, {"mechanism-3", 20}, {"forging-stainless", 50}, {"control-3", 10}, {"transformer-3", 10}, {"motor-3", 10}, 
+	ingredients = {{"roboport", 1}, {"mechanism-3", 20}, {"forging-stainless", 50}, {"control-3", 10}, {"transformer-3", 10}, {"motor-3", 10},
 		{"battery-3", 10}, {"radar-3", 2}},
 	result = "roboport-2"
 },
