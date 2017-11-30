@@ -35,7 +35,7 @@ data.raw.recipe["cannon-shell"].ingredients = {{"bullet-2", 1}, {"casing-2", 1},
 --Base "explosive-cannon-shell"
 data.raw.recipe["explosive-cannon-shell"].category = "crafting"
 data.raw.recipe["explosive-cannon-shell"].energy_required = 10
-data.raw.recipe["explosive-cannon-shell"].ingredients = {{"bullet-2", 1}, {"casing-2", 1}, {"powder-2", 5}, {"forging-aluminum", 1}, {"plastic-bar", 2}, 
+data.raw.recipe["explosive-cannon-shell"].ingredients = {{"bullet-2", 1}, {"casing-2", 1}, {"powder-2", 5}, {"forging-aluminum", 1}, {"plastic-bar", 2},
 	{"explosives", 5}}
 
 --Base "uranium-cannon-shell"
@@ -46,7 +46,7 @@ data.raw.recipe["uranium-cannon-shell"].ingredients = {{"bullet-3", 1}, {"casing
 --Base "explosive-uranium-cannon-shell"
 data.raw.recipe["explosive-uranium-cannon-shell"].category = "crafting"
 data.raw.recipe["explosive-uranium-cannon-shell"].energy_required = 10
-data.raw.recipe["explosive-uranium-cannon-shell"].ingredients = {{"bullet-3", 1}, {"casing-2", 1}, {"powder-2", 1}, {"forging-aluminum", 1}, 
+data.raw.recipe["explosive-uranium-cannon-shell"].ingredients = {{"bullet-3", 1}, {"casing-2", 1}, {"powder-2", 1}, {"forging-aluminum", 1},
 	{"plastic-bar", 2}, {"explosives", 5}}
 
 --Base "rocket"
@@ -63,13 +63,13 @@ data.raw.recipe["explosive-rocket"].ingredients = {{"rocket", 1}, {"explosives",
 --Base "atomic-bomb"
 data.raw.recipe["atomic-bomb"].category = "advanced-crafting"
 data.raw.recipe["atomic-bomb"].energy_required = 50
-data.raw.recipe["atomic-bomb"].ingredients = {{"uranium-235", 30}, {"explosives", 50}, {"forging-alloy", 20}, {"tungsten-block", 5}, {"mechanism-3", 5}, 
+data.raw.recipe["atomic-bomb"].ingredients = {{"uranium-235", 30}, {"explosives", 50}, {"forging-alloy", 20}, {"tungsten-block", 5}, {"mechanism-3", 5},
 	{"control-3", 5}, {"battery-3", 5}, {"rocket", 10}}
 
 --Base "flamethrower-ammo"
 data.raw.recipe["flamethrower-ammo"].category = "crafting-with-fluid"
 data.raw.recipe["flamethrower-ammo"].energy_required = 2
-data.raw.recipe["flamethrower-ammo"].ingredients = {{"forging-steel", 5}, {type = "fluid", name = "light-oil", amount = 50}, 
+data.raw.recipe["flamethrower-ammo"].ingredients = {{"forging-steel", 5}, {type = "fluid", name = "light-oil", amount = 50},
 	{type = "fluid", name = "heavy-oil", amount = 50}}
 
 

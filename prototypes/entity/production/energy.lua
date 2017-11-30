@@ -137,8 +137,8 @@ data:extend(
 	{
 		north =
 		{
-			layers = 
-			{ 
+			layers =
+			{
 				{
 					filename = "__xander-mod__/graphics/entity/production/boiler-2/N-idle.png",
 					priority = "extra-high",
@@ -177,8 +177,8 @@ data:extend(
 		},
 		east =
 		{
-			layers = 
-			{ 
+			layers =
+			{
 				{
 					filename = "__xander-mod__/graphics/entity/production/boiler-2/E-idle.png",
 					priority = "extra-high",
@@ -217,8 +217,8 @@ data:extend(
 		},
 		south =
 		{
-			layers = 
-			{ 
+			layers =
+			{
 				{
 					filename = "__xander-mod__/graphics/entity/production/boiler-2/S-idle.png",
 					priority = "extra-high",
@@ -257,8 +257,8 @@ data:extend(
 		},
 		west =
 		{
-			layers = 
-			{ 
+			layers =
+			{
 				{
 					filename = "__xander-mod__/graphics/entity/production/boiler-2/W-idle.png",
 					priority = "extra-high",
@@ -296,7 +296,7 @@ data:extend(
 			}
 		}
 	},
-	patch = 
+	patch =
 	{
 		east =
 		{
@@ -581,8 +581,8 @@ data:extend(
 	{
 		north =
 		{
-			layers = 
-			{ 
+			layers =
+			{
 				{
 					filename = "__xander-mod__/graphics/entity/production/boiler-4/N-idle.png",
 					priority = "extra-high",
@@ -621,8 +621,8 @@ data:extend(
 		},
 		east =
 		{
-			layers = 
-			{ 
+			layers =
+			{
 				{
 					filename = "__xander-mod__/graphics/entity/production/boiler-4/E-idle.png",
 					priority = "extra-high",
@@ -661,8 +661,8 @@ data:extend(
 		},
 		south =
 		{
-			layers = 
-			{ 
+			layers =
+			{
 				{
 					filename = "__xander-mod__/graphics/entity/production/boiler-4/S-idle.png",
 					priority = "extra-high",
@@ -701,8 +701,8 @@ data:extend(
 		},
 		west =
 		{
-			layers = 
-			{ 
+			layers =
+			{
 				{
 					filename = "__xander-mod__/graphics/entity/production/boiler-4/W-idle.png",
 					priority = "extra-high",
@@ -740,7 +740,7 @@ data:extend(
 			}
 		}
 	},
-	patch = 
+	patch =
 	{
 		east =
 		{

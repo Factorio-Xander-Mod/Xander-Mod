@@ -98,7 +98,7 @@ data:extend(
 	ingredients = {{"forging-steel", 4}, {"chromium-plate", 4}, {"nickel-plate", 2}},
 	results = {{"forging-stainless", 4}, {"zinc-oxide", 1}},
 	subgroup = "structure"
-},				
+},
 --Duralumin Casting
 {
 	type = "recipe",
@@ -109,7 +109,7 @@ data:extend(
 	ingredients = {{"aluminum-plate", 8}, {"copper-plate", 1}, {"magnesium-plate", 1}, {"zinc-plate", 1}},
 	result = "forging-aluminum",
 	result_count = 2
-},	
+},
 --Superalloy Forging
 {
 	type = "recipe",
@@ -309,7 +309,7 @@ data:extend(
 	ingredients = {{"bronze-plate", 1}, {"graphite-powder", 1}},
 	result = "bearing-1",
 	result_count = 2
-},	
+},
 --Alloy Steel Bearing
 {
 	type = "recipe",

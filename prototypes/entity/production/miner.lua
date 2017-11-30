@@ -281,7 +281,7 @@ data:extend(
 			{position = {2, 0}},
 			{position = {0, 2}}
 		}
-	} or nil,	
+	} or nil,
 	working_sound =
 	{
 		sound = {filename = "__base__/sound/electric-mining-drill.ogg", volume = 0.75},
@@ -340,7 +340,7 @@ data:extend(
 				animation_speed = 0.5,
 				direction_count = 1,
 				shift = util.by_pixel(3.75, -1.25),
-				run_mode = "forward-then-backward",		
+				run_mode = "forward-then-backward",
 				scale = 0.5
 			}
 		},
@@ -930,7 +930,7 @@ data:extend(
 			}
 		}
 	},
-	
+
 	input_fluid_patch_window_flow_sprites =
 	{
 		{
@@ -1190,7 +1190,7 @@ data:extend(
 			{position = {2, 0}},
 			{position = {0, 2}}
 		}
-	} or nil,	
+	} or nil,
 	working_sound =
 	{
 		sound = {filename = "__base__/sound/electric-mining-drill.ogg", volume = 0.75},
@@ -1249,7 +1249,7 @@ data:extend(
 				animation_speed = 0.5,
 				direction_count = 1,
 				shift = util.by_pixel(3.75, -1.25),
-				run_mode = "forward-then-backward",		
+				run_mode = "forward-then-backward",
 				scale = 0.5
 			}
 		},
@@ -1839,7 +1839,7 @@ data:extend(
 			}
 		}
 	},
-	
+
 	input_fluid_patch_window_flow_sprites =
 	{
 		{

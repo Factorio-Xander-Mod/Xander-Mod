@@ -90,7 +90,7 @@ data:extend(
 	category = "crafting",
 	energy_required = 40,
 	enabled = false,
-	ingredients = {{"forging-alloy", 20}, {"wheel-2", 16}, {"control-3", 4}, {"storage-tank-2", 1}, {"boiler-2", 1}, {"steam-turbine", 1}, 
+	ingredients = {{"forging-alloy", 20}, {"wheel-2", 16}, {"control-3", 4}, {"storage-tank-2", 1}, {"boiler-2", 1}, {"steam-turbine", 1},
 		{"motor-2", 20}, {"battery-2", 10}},
 	result = "locomotive-3"
 }

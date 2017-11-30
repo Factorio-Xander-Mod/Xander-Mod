@@ -16,7 +16,7 @@ data.raw.recipe["steel-furnace"].result = "furnace-3"
 --Base "electric-furnace"
 data.raw.recipe["electric-furnace"].category = "crafting"
 data.raw.recipe["electric-furnace"].energy_required = 10
-data.raw.recipe["electric-furnace"].ingredients = {{"brick-clay-graphite", 40}, {"graphite-block", 10}, {"forging-steel", 10}, {"transformer-1", 2}, 
+data.raw.recipe["electric-furnace"].ingredients = {{"brick-clay-graphite", 40}, {"graphite-block", 10}, {"forging-steel", 10}, {"transformer-1", 2},
 	{"control-1", 2}, {"mechanism-1", 10}}
 data.raw.recipe["electric-furnace"].result = "furnace-5"
 
@@ -73,7 +73,7 @@ data:extend(
 	category = "crafting",
 	energy_required = 20,
 	enabled = false,
-	ingredients = {{"furnace-4", 2}, {"electric-furnace", 2}, {"brick-zirconia", 100}, {"tungsten-block", 50}, {"mechanism-3", 20}, {"forging-alloy", 50}, 
+	ingredients = {{"furnace-4", 2}, {"electric-furnace", 2}, {"brick-zirconia", 100}, {"tungsten-block", 50}, {"mechanism-3", 20}, {"forging-alloy", 50},
 		{"transformer-3", 20}, {"control-3", 20}},
 	result = "furnace-6"
 }

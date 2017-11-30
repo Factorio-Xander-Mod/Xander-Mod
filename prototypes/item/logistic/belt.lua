@@ -64,7 +64,7 @@ data:extend(
 },
 --Base "express-transport-belt" placeholder
 	--order = "03"
-	
+
 --Slow Underground Belt
 {
 	type = "item",
@@ -93,7 +93,7 @@ data:extend(
 },
 --Base "express-underground-belt" placeholder
 	--order = "07"
-	
+
 --Slow Splitter
 {
 	type = "item",

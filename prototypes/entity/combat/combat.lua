@@ -2248,7 +2248,7 @@ data:extend(
 			}
 		}
 	},
-	folding_animation = 
+	folding_animation =
 	{
 		layers =
 		{
@@ -2432,7 +2432,7 @@ data:extend(
 			}
 		}
 	},
-	folding_animation = 
+	folding_animation =
 	{
 		layers =
 		{
