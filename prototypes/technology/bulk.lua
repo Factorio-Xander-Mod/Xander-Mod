@@ -3,7 +3,7 @@
 
 --Base "steel-processing"
 data.raw.technology["steel-processing"].effects = {{type = "unlock-recipe", recipe = "steel-plate"}, {type = "unlock-recipe", recipe = "forging-steel-a"},
-	{type = "unlock-recipe", recipe = "blank-3-a"}, {type = "unlock-recipe", recipe = "steel-chest"}}
+	{type = "unlock-recipe", recipe = "blank-3-a"}}
 data.raw.technology["steel-processing"].prerequisites = {"coke-a"}
 data.raw.technology["steel-processing"].unit.count = 20
 data.raw.technology["steel-processing"].unit.ingredients = {{"science-pack-0", 1}}
