@@ -144,6 +144,10 @@ data:extend(
 		{
 			type = "unlock-recipe",
 			recipe = "etched-2-a"
+		},
+		{
+			type = "unlock-recipe",
+			recipe = "circuit-1-b"
 		}
 	},
 	prerequisites = {"substrate_1", "wire_1", "phenolic-resin", "nitric-acid-a"},
@@ -167,6 +171,10 @@ data:extend(
 	icon_size = 128,
 	effects =
 	{
+		{
+			type = "unlock-recipe",
+			recipe = "etched-2-b"
+		},
 		{
 			type = "unlock-recipe",
 			recipe = "metallized-3"

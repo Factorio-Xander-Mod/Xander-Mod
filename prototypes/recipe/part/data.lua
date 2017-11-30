@@ -83,6 +83,7 @@ data:extend(
 	energy_required = 8,
 	enabled = false,
 	ingredients = {{"metallized-2", 16}, {type = "fluid", name = "hydrogen-chloride", amount = 30}, {"hematite", 1}},
+	main_product = "etched-2",
 	results = {{"etched-2", 16}, {type = "fluid", name = "waste-water", amount = 20}},
 	subgroup = "board"
 },
