@@ -4,7 +4,7 @@
 --Base "electronics"
 data.raw.technology["electronics"].effects = {{type = "unlock-recipe", recipe = "components-1-a"}, {type = "unlock-recipe", recipe = "electronic-circuit"}, 
 	{type = "unlock-recipe", recipe = "control-1"}}
-data.raw.technology["electronics"].prerequisites = {"soldering_1"}
+data.raw.technology["electronics"].prerequisites = {"soldering_1", "wire_1"}
 data.raw.technology["electronics"].unit = {count = 50, ingredients = {{"science-pack-1", 1}}, time = 20}
 data.raw.technology["electronics"].order = "05-05"
 
