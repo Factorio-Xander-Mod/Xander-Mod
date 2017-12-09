@@ -77,12 +77,12 @@ data:extend(
 	prerequisites = {"machine-tool_0", "smelting-graphite"},
 	unit =
 	{
-		count = 20,
+		count = 40,
 		ingredients =
 		{
-			{"science-pack-1", 1}
+			{"science-pack-0", 1}
 		},
-		time = 15
+		time = 20
 	},
 	order = "04-00"
 },
