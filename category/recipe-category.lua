@@ -99,6 +99,10 @@ data:extend(
 {
 	type = "recipe-category",
 	name = "basic-crafting"
+},
+{
+	type = "recipe-category",
+	name = "machine-crafting"
 }
 
 
