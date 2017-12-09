@@ -619,7 +619,7 @@ data:extend(
 {
 	type = "assembling-machine",
 	name = "machine-tool-1",
-	icon = "__base__/graphics/icons/assembling-machine-1.png",
+	icon = "__xander-mod__/graphics/item/production/production/machine-tool-1.png",
 	flags = {"placeable-neutral", "placeable-player", "player-creation"},
 	minable = {hardness = 0.2, mining_time = 0.5, result = "machine-tool-1"},
 	max_health = 100,
