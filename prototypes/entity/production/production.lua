@@ -52,7 +52,7 @@ data.raw["assembling-machine"]["assembling-machine-1"].animation =
 		},
 	},
 }
-data.raw["assembling-machine"]["assembling-machine-1"].crafting_categories = {"basic-crafting", "crafting"}
+data.raw["assembling-machine"]["assembling-machine-1"].crafting_categories = {"basic-crafting", "crafting", "machine-crafting"}
 data.raw["assembling-machine"]["assembling-machine-1"].energy_source.emissions = 0.01
 data.raw["assembling-machine"]["assembling-machine-1"].energy_usage = "50kW"
 data.raw["assembling-machine"]["assembling-machine-1"].ingredient_count = 4
@@ -270,7 +270,7 @@ data.raw["assembling-machine"]["assembling-machine-2"].animation =
 		},
 	},
 }
-data.raw["assembling-machine"]["assembling-machine-2"].crafting_categories = {"crafting", "crafting-with-fluid"}
+data.raw["assembling-machine"]["assembling-machine-2"].crafting_categories = {"crafting", "crafting-with-fluid", "machine-crafting"}
 data.raw["assembling-machine"]["assembling-machine-2"].crafting_speed = 1
 data.raw["assembling-machine"]["assembling-machine-2"].energy_source.emissions = 0.008
 data.raw["assembling-machine"]["assembling-machine-2"].energy_usage = "100kW"
@@ -491,6 +491,7 @@ data.raw["assembling-machine"]["assembling-machine-3"].crafting_speed = 2
 data.raw["assembling-machine"]["assembling-machine-3"].energy_source.emissions = 0.004
 data.raw["assembling-machine"]["assembling-machine-3"].energy_usage = "200kW"
 data.raw["assembling-machine"]["assembling-machine-3"].module_specification.module_slots = 3
+data.raw["assembling-machine"]["assembling-machine-3"].crafting_categories = {"crafting", "advanced-crafting", "crafting-with-fluid", "machine-crafting"}
 
 --Base "lab"
 data.raw.lab["lab"].max_health = 200
@@ -619,7 +620,7 @@ data:extend(
 {
 	type = "assembling-machine",
 	name = "machine-tool-1",
-	icon = "__base__/graphics/icons/assembling-machine-1.png",
+	icon = "__xander-mod__/graphics/item/production/production/machine-tool-1.png",
 	flags = {"placeable-neutral", "placeable-player", "player-creation"},
 	minable = {hardness = 0.2, mining_time = 0.5, result = "machine-tool-1"},
 	max_health = 100,
@@ -1291,7 +1292,7 @@ data:extend(
 			}
 		},
 	},
-	crafting_categories = {"basic-crafting", "crafting"},
+	crafting_categories = {"basic-crafting", "crafting", "machine-crafting"},
 	crafting_speed = 0.5,
 	energy_source =
 	{
@@ -1574,7 +1575,7 @@ data:extend(
 			},
 		},
 	},
-	crafting_categories = {"crafting", "crafting-with-fluid", "advanced-crafting"},
+	crafting_categories = {"crafting", "crafting-with-fluid", "advanced-crafting", "machine-crafting"},
 	crafting_speed = 4,
 	energy_source =
 	{

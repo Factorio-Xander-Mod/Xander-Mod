@@ -14,7 +14,7 @@ data.raw.technology["electric-energy-distribution-2"].order = "06-01"
 --Base "logistics"
 data.raw.technology["logistics"].effects = {{type = "unlock-recipe", recipe = "transport-belt"}, 
 	{type = "unlock-recipe", recipe = "underground-belt"}, {type = "unlock-recipe", recipe = "splitter"}, {type = "unlock-recipe", recipe = "science-pack-2"}}
-data.raw.technology["logistics"].prerequisites = {"parts_1", "logistics_0", "inserter-a"}
+data.raw.technology["logistics"].prerequisites = {"parts_1", "logistics_0", "inserter-b"}
 data.raw.technology["logistics"].order = "06-04"
 
 --Base "logistics-2"
@@ -338,7 +338,7 @@ data:extend(
 {
 	type = "technology",
 	name = "inserter-a",
-	icon = "__xander-mod__/graphics/technology/logistic/inserter-b.png",
+	icon = "__xander-mod__/graphics/technology/logistic/inserter-a.png",
 	icon_size = 128,
 	effects =
 	{

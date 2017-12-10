@@ -202,9 +202,9 @@ data:extend(
     name = "blank-1-a",
 	category = "smelting",
 	energy_required = 4,
-	ingredients = {{"forging-iron", 1}},
+	ingredients = {{"iron-plate", 2}},
 	result = "blank-1",
-	result_count = 2
+	result_count = 1
 },
 --Iron Gear Blank B
 {
@@ -374,7 +374,7 @@ data:extend(
 {
 	type = "recipe",
     name = "shaft-0",
-	category = "basic-machine",
+	category = "basic-crafting",
 	energy_required = 0.5,
 	ingredients = {{"iron-stick", 1}, {"lead-plate", 2}},
 	result = "shaft-0"
@@ -383,7 +383,7 @@ data:extend(
 {
 	type = "recipe",
     name = "shaft-1",
-	category = "machine",
+	category = "machine-crafting",
 	energy_required = 0.5,
 	enabled = false,
 	ingredients = {{"rod-2", 1}, {"bearing-1", 2}},
@@ -393,7 +393,7 @@ data:extend(
 {
 	type = "recipe",
     name = "shaft-2",
-	category = "machine",
+	category = "machine-crafting",
 	energy_required = 1,
 	enabled = false,
 	ingredients = {{"rod-3", 1}, {"bearing-2", 2}},
@@ -403,7 +403,7 @@ data:extend(
 {
 	type = "recipe",
     name = "shaft-3",
-	category = "machine",
+	category = "machine-crafting",
 	energy_required = 2,
 	enabled = false,
 	ingredients = {{"rod-4", 1}, {"bearing-3", 2}},
