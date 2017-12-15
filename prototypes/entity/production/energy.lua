@@ -1,3 +1,5 @@
+local util = require("util")
+local xmutil = require("xmutil")
 
 --Base Overrides
 
@@ -38,8 +40,7 @@ data.raw.accumulator["accumulator"].energy_source =
 --Base "small-lamp"
 
 
-data:extend(
-{
+data:extend{
 
 --Base "boiler" placeholder
 --Superheating Boiler
@@ -1160,150 +1161,64 @@ data:extend(
 },
 --Base "accumulator" placeholder
 --Silver Accumulator
-{
-	type = "accumulator",
-	name = "accumulator-2",
-	icon = "__xander-mod__/graphics/item/production/energy/accumulator-2.png",
-	flags = {"placeable-neutral", "player-creation"},
-	minable = {hardness = 0.2, mining_time = 0.5, result = "accumulator-2"},
-	max_health = 200,
-	corpse = "medium-remnants",
-	collision_box = {{-0.9, -0.9}, {0.9, 0.9}},
-	selection_box = {{-1, -1}, {1, 1}},
-	energy_source =
+xmutil.clone("accumulator", "accumulator",
 	{
-		type = "electric",
-		buffer_capacity = "20MJ",
-		usage_priority = "terciary",
-		input_flow_limit = "500kW",
-		output_flow_limit = "500kW"
-	},
-	picture =
-	{
-		filename = "__xander-mod__/graphics/entity/production/accumulator-2/2.png",
-		priority = "extra-high",
-		width = 124,
-		height = 103,
-		shift = {0.6875, -0.203125}
-	},
-	charge_animation =
-	{
-		filename = "__xander-mod__/graphics/entity/production/accumulator-2/charge.png",
-		width = 138,
-		height = 135,
-		line_length = 8,
-		frame_count = 24,
-		shift = {0.46875, -0.640625},
-		animation_speed = 0.5
-	},
-	charge_cooldown = 30,
-	charge_light = {intensity = 0.3, size = 7, color = {r = 1.0, g = 1.0, b = 1.0}},
-	discharge_animation =
-	{
-		filename = "__xander-mod__/graphics/entity/production/accumulator-2/discharge.png",
-		width = 147,
-		height = 128,
-		line_length = 8,
-		frame_count = 24,
-		shift = {0.390625, -0.53125},
-		animation_speed = 0.5
-	},
-	discharge_cooldown = 60,
-	discharge_light = {intensity = 0.7, size = 7, color = {r = 1.0, g = 1.0, b = 1.0}},
-	vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
-	working_sound =
-	{
-		sound = {filename = "__base__/sound/accumulator-working.ogg", volume = 1},
-		idle_sound = {filename = "__base__/sound/accumulator-idle.ogg", volume = 0.4},
-		max_sounds_per_type = 5
-	},
-	circuit_wire_connection_point =
-	{
-		shadow =
 		{
-			red = {0.984375, 1.10938},
-			green = {0.890625, 1.10938}
+			"__base__/graphics/icon/accumulator.png",
+			"__xander-mod__/graphics/item/production/energy/accumulator-2.png",
 		},
-		wire =
 		{
-			red = {0.6875, 0.59375},
-			green = {0.6875, 0.71875}
-		}
+			"__base__/graphics/entity/accumulator/accumulator.png",
+			"__xander-mod__/graphics/entity/production/accumulator-2/2.png",
+		},
+		{
+			"__base__/graphics/entity/accumulator/accumulator-charge-animation.png",
+			"__xander-mod__/graphics/entity/production/accumulator-2/charge.png",
+		},
+		{
+			"__base__/graphics/entity/accumulator/accumulator-discharge-animation.png",
+			"__xander-mod__/graphics/entity/production/accumulator-2/discharge.png",
+		},
 	},
-	circuit_connector_sprites = get_circuit_connector_sprites({0.46875, 0.5}, {0.46875, 0.8125}, 26),
-	circuit_wire_max_distance = 9,
-	default_output_signal = {type = "virtual", name = "signal-A"}
-},
+	{
+		minable = {hardness = 0.2, mining_time = 0.5, result = "accumulator-2"},
+		max_health = 200,
+		energy_source =
+		{
+			name = "accumulator-2",
+			type = "electric",
+			buffer_capacity = "20MJ",
+			usage_priority = "terciary",
+			input_flow_limit = "500kW",
+			output_flow_limit = "500kW"
+		},
+	}
+),
 --Base "small-lamp" placeholder
 --Gas Discharge Lamp
-{
-	type = "lamp",
-	name = "lamp-2",
-	icon = "__xander-mod__/graphics/item/production/energy/lamp-2.png",
-	flags = {"placeable-neutral", "player-creation"},
-	minable = {hardness = 0.2, mining_time = 0.5, result = "lamp-2"},
-	max_health = 200,
-	corpse = "small-remnants",
-	collision_box = {{-0.15, -0.15}, {0.15, 0.15}},
-	selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
-	vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
-	energy_source =
+xmutil.clone("lamp", "small-lamp",
 	{
-		type = "electric",
-		usage_priority = "secondary-input"
-	},
-	energy_usage_per_tick = "10KW",
-	light = {intensity = 1.5, size = 60, color = {r = 1.0, g = 1.0, b = 1.0}},
-	light_when_colored = {intensity = 1, size = 6, color = {r = 1.0, g = 1.0, b = 1.0}},
-	glow_size = 6,
-	glow_color_intensity = 0.135,
-	picture_off =
-	{
-		filename = "__xander-mod__/graphics/entity/production/lamp-2/off.png",
-		priority = "high",
-		width = 67,
-		height = 58,
-		frame_count = 1,
-		axially_symmetrical = false,
-		direction_count = 1,
-		shift = {-0.015625, 0.15625},
-	},
-	picture_on =
-	{
-		filename = "__base__/graphics/entity/small-lamp/light-on-patch.png",
-		priority = "high",
-		width = 62,
-		height = 62,
-		frame_count = 1,
-		axially_symmetrical = false,
-		direction_count = 1,
-		shift = {-0.03125, -0.03125},
-	},
-	signal_to_color_mapping =
-	{
-		{type = "virtual", name = "signal-red", color = {r = 1,g = 0,b = 0}},
-		{type = "virtual", name = "signal-green", color = {r = 0,g = 1,b = 0}},
-		{type = "virtual", name = "signal-blue", color = {r = 0,g = 0,b = 1}},
-		{type = "virtual", name = "signal-yellow", color = {r = 1,g = 1,b = 0}},
-		{type = "virtual", name = "signal-pink", color = {r = 1,g = 0,b = 1}},
-		{type = "virtual", name = "signal-cyan", color = {r = 0,g = 1,b = 1}},
-	},
-	circuit_wire_connection_point =
-	{
-		shadow =
 		{
-			red = {0.734375, 0.578125},
-			green = {0.609375, 0.640625},
+			"__base__/graphics/icon/small-lamp.png",
+			"__xander-mod__/graphics/item/production/energy/lamp-2.png",
 		},
-		wire =
 		{
-			red = {0.40625, 0.34375},
-			green = {0.40625, 0.5},
-		}
+			"__base__/graphics/entity/small-lamp/lamp.png",
+			"__xander-mod__/graphics/entity/production/lamp-2/off.png",
+		},
 	},
-	circuit_connector_sprites = get_circuit_connector_sprites({0.1875, 0.28125}, {0.1875, 0.28125}, 18),
-	circuit_wire_max_distance = 9
+	{
+		name = "lamp-2",
+		minable = {hardness = 0.2, mining_time = 0.5, result = "lamp-2"},
+		max_health = 200,
+		energy_usage_per_tick = "10KW",
+		light = {intensity = 1.5, size = 60},
+		picture_off = {
+			layers = {
+				[1] = { hr_version = xmutil.NIL },
+				[2] = { hr_version = xmutil.NIL },
+			},
+		}
+	}
+),
 }
-
-}
-)
