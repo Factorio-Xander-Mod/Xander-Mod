@@ -68,12 +68,6 @@ data.raw.technology["flamethrower"].unit = {count = 100, ingredients = {{"scienc
 	time = 30}
 data.raw.technology["flamethrower"].order = "08-10"
 
---Base "cluster-grenade"
---null
-data.raw.technology["cluster-grenade"].prerequisites = {"grenade-b", "military-3", "tungsten-refining"}
---null
-data.raw.technology["cluster-grenade"].order = "08-12"
-
 --Base "combat-robotics"
 --null
 --null
