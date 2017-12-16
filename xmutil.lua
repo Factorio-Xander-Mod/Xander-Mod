@@ -31,10 +31,10 @@ local function merge(tables)
   local ret = {}
   for i, tab in ipairs(tables) do
     for k, v in pairs(tab) do
-      if (type(v) == "table") and (type(ret[k] or false) == "table") then
-        ret[k] = merge{ret[k], v}
-      elseif v == M.NIL then
+      if v == M.NIL then
         ret[k] = nil
+      elseif (type(v) == "table") and (type(ret[k] or false) == "table") then
+        ret[k] = merge{ret[k], v}
       else
         ret[k] = v
       end

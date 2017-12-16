@@ -47,159 +47,57 @@ xmutil.clone("offshore-pump", "offshore-pump",
 	}
 ),
 --XM Logging Camp
-{
-	type = "assembling-machine",
-	name = "logging-camp",
-	icon = "__xander-mod__/graphics/item/production/miner/logging-camp.png",
-	flags = {"placeable-neutral", "placeable-player", "player-creation"},
-	minable = {hardness = 0.2, mining_time = 0.5, result = "logging-camp"},
-	max_health = 50,
-	corpse = "big-remnants",
-	dying_explosion = "medium-explosion",
-	resistances =
+xmutil.clone("assembling-machine", "assembling-machine-2",
+	{},
 	{
-		{
-			type = "fire",
-			percent = 70
-		}
-	},
-	fluid_boxes =
-	{
-		{
-			production_type = "input",
-			pipe_picture =
+		name = "logging-camp",
+		icon = "__xander-mod__/graphics/item/production/miner/logging-camp.png",
+		minable = {hardness = 0.2, mining_time = 0.5, result = "logging-camp"},
+		max_health = 50,
+		fluid_boxes = {
+			[2] = xmutil.NIL,
+			off_when_no_fluid_recipe = false
+		},
+		animation = {
+			layers = {
+				{
+					filename = "__xander-mod__/graphics/entity/production/logging-camp/logging-camp.png",
+					priority = "high",
+					width = 113,
+					height = 91,
+					frame_count = 33,
+					line_length = 11,
+					shift = {0.2, 0.15},
+					hr_version = xmutil.NIL,
+				},
+				[2] = xmutil.NIL,
+			}
+		},
+		crafting_categories = {"temp-logging"},
+		crafting_speed = 1,
+		energy_source = {
+			type = "burner",
+			fuel_category = "crude",
+			effectivity = 1,
+			fuel_inventory_size = 1,
+			emissions = 0.01,
+			smoke =
 			{
-				north =
 				{
-					filename = "__xander-mod__/graphics/entity/production/assembling-machine-3/pipe-N.png",
-					priority = "extra-high",
-					width = 35,
-					height = 18,
-					shift = util.by_pixel(2.5, 20),
-					hr_version =
-					{
-						filename = "__xander-mod__/graphics/entity/production/assembling-machine-3/hr-pipe-N.png",
-						priority = "extra-high",
-						width = 71,
-						height = 38,
-						shift = util.by_pixel(2.25, 19.5),
-						scale = 0.5,
-					}
-				},
-				east =
-				{
-					filename = "__xander-mod__/graphics/entity/production/assembling-machine-3/pipe-E.png",
-					priority = "extra-high",
-					width = 20,
-					height = 38,
-					shift = util.by_pixel(-20, 1),
-					hr_version =
-					{
-						filename = "__xander-mod__/graphics/entity/production/assembling-machine-3/hr-pipe-E.png",
-						priority = "extra-high",
-						width = 42,
-						height = 76,
-						shift = util.by_pixel(-19.5, 1),
-						scale = 0.5,
-					}
-				},
-				south =
-				{
-					filename = "__xander-mod__/graphics/entity/production/assembling-machine-3/pipe-S.png",
-					priority = "extra-high",
-					width = 44,
-					height = 31,
-					shift = util.by_pixel(0, -31.5),
-					hr_version =
-					{
-						filename = "__xander-mod__/graphics/entity/production/assembling-machine-3/hr-pipe-S.png",
-						priority = "extra-high",
-						width = 88,
-						height = 61,
-						shift = util.by_pixel(0, -31.25),
-						scale = 0.5,
-					}
-				},
-				west =
-				{
-					filename = "__xander-mod__/graphics/entity/production/assembling-machine-3/pipe-W.png",
-					priority = "extra-high",
-					width = 19,
-					height = 37,
-					shift = util.by_pixel(20.5, 1.5),
-					hr_version =
-					{
-						filename = "__xander-mod__/graphics/entity/production/assembling-machine-3/hr-pipe-W.png",
-						priority = "extra-high",
-						width = 39,
-						height = 73,
-						shift = util.by_pixel(20.75, 1.25),
-						scale = 0.5,
-					}
+					name = "smoke",
+					deviation = {0.1, 0.1},
+					frequency = 5,
+					position = {0.0, -0.8},
+					starting_vertical_speed = 0.08,
+					starting_frame_deviation = 60
 				}
-			},
-			base_area = 10,
-			base_level = -1,
-			pipe_connections = {{ type="input", position = {0, -2} }},
-			secondary_draw_orders = { north = -1 }
-		},
-		off_when_no_fluid_recipe = false
-	},
-	collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
-	selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
-	fast_replaceable_group = "mining-drill",
-	animation =
-	{
-		layers =
-		{
-			{
-				filename = "__xander-mod__/graphics/entity/production/logging-camp/logging-camp.png",
-				priority = "high",
-				width = 113,
-				height = 91,
-				frame_count = 33,
-				line_length = 11,
-				shift = {0.2, 0.15}
 			}
-		}
-	},
-	crafting_categories = {"temp-logging"},
-	crafting_speed = 1,
-	energy_source =
-	{
-		type = "burner",
-		fuel_category = "crude",
-		effectivity = 1,
-		fuel_inventory_size = 1,
-		emissions = 0.01,
-		smoke =
-		{
-			{
-				name = "smoke",
-				deviation = {0.1, 0.1},
-				frequency = 5,
-				position = {0.0, -0.8},
-				starting_vertical_speed = 0.08,
-				starting_frame_deviation = 60
-			}
-		}
-	},
-	energy_usage = "200kW",
-	ingredient_count = 2,
-	open_sound = {filename = "__base__/sound/machine-open.ogg", volume = 0.85},
-	close_sound = {filename = "__base__/sound/machine-close.ogg", volume = 0.75},
-	vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
-	working_sound =
-	{
-		sound =
-		{
-			{filename = "__base__/sound/assembling-machine-t1-1.ogg", volume = 0.8},
-			{filename = "__base__/sound/assembling-machine-t1-2.ogg", volume = 0.8}
 		},
-		idle_sound = {filename = "__base__/sound/idle1.ogg", volume = 0.6},
-		apparent_volume = 1.5,
+		energy_usage = "200kW",
+		ingredient_count = 2,
+		module_specification = xmutil.NIL,
 	}
-},
+),
 --Base "burner-mining-drill" placeholder
 --Base "electric-mining-drill" placeholder
 --Electric Shovel Excavator
