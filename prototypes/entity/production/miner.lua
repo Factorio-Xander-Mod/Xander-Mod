@@ -31,75 +31,21 @@ data:extend(
 
 --Base "offshore-pump" placeholder
 --XM Proper Steel Parts Offshore Pump
-{
-	type = "offshore-pump",
-	name = "offshore-pump-1",
-	icon = "__xander-mod__/graphics/item/production/miner/offshore-pump-1.png",
-	flags = {"placeable-neutral", "player-creation", "filter-directions"},
-	minable = {mining_time = 1, result = "offshore-pump"},
-	max_health = 200,
-	corpse = "small-remnants",
-	fluid = "water",
-	resistances =
+xmutil.clone("offshore-pump", "offshore-pump",
 	{
 		{
-			type = "fire",
-			percent = 70
-		}
+			"__base__/graphics/entity/offshore-pump/offshore-pump.png",
+			"__xander-mod__/graphics/entity/production/offshore-pump-1/1.png",
+		},
 	},
-	collision_box = {{-0.6, -0.3}, {0.6, 0.3}},
-	selection_box = {{-1, -1.49}, {1, 0.49}},
-	fluid_box =
 	{
-		base_area = 1,
-		pipe_covers = pipecoverspictures(),
-		pipe_connections =
-		{
-			{position = {0, 1}}
-		}
-	},
-	pumping_speed = 20,
-	tile_width = 1,
-	vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
-	picture =
-	{
-		north =
-		{
-			filename = "__xander-mod__/graphics/entity/production/offshore-pump-1/1.png",
-			priority = "high",
-			shift = {0.9, 0.05},
-			width = 160,
-			height = 102
-		},
-		east =
-		{
-			filename = "__xander-mod__/graphics/entity/production/offshore-pump-1/1.png",
-			priority = "high",
-			shift = {0.9, 0.05},
-			x = 160,
-			width = 160,
-			height = 102
-		},
-		south =
-		{
-			filename = "__xander-mod__/graphics/entity/production/offshore-pump-1/1.png",
-			priority = "high",
-			shift = {0.9, 0.65},
-			x = 320,
-			width = 160,
-			height = 102
-		},
-		west =
-		{
-			filename = "__xander-mod__/graphics/entity/production/offshore-pump-1/1.png",
-			priority = "high",
-			shift = {1.0, 0.05},
-			x = 480,
-			width = 160,
-			height = 102
-		}
+		name = "offshore-pump-1",
+		icon = "__xander-mod__/graphics/item/production/miner/offshore-pump-1.png",
+		minable = {mining_time = 1, result = "offshore-pump-1"},
+		max_health = 200,
+		pumping_speed = 20,
 	}
-},
+),
 --XM Logging Camp
 {
 	type = "assembling-machine",
