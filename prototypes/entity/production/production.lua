@@ -244,8 +244,8 @@ data:extend(
 xmutil.clone("assembling-machine", "assembling-machine-1",
 	{
 		{
-			"assembling-machine-1",
-			"machine-tool-0",
+			"assembling-machine-1(/h?r?-?)1",
+			"machine-tool-0/%10",
 		}
 	},
 	{
@@ -389,23 +389,24 @@ xmutil.clone("assembling-machine", "assembling-machine-1",
 
 --Assembling Machine 4
 xmutil.clone("assembling-machine", "assembling-machine-3",
-	{
-		{
-			"assembling-machine-3",
-			"assembling-machine-4",
-		}
-	},
+	{},
 	{
 		name = "assembling-machine-4",
 		icon = "__xander-mod__/graphics/item/production/production/assembling-machine-4.png",
 		minable = {hardness = 0.2, mining_time = 0.5, result = "assembling-machine-4"},
 		max_health = 500,
-		fluid_boxes = xmutil.assembler_fluid_boxes("machine-tool-4"),
+		fluid_boxes = xmutil.assembler_fluid_boxes("assembling-machine-4"),
 		crafting_categories = {"crafting", "crafting-with-fluid", "advanced-crafting"},
 		crafting_speed = 4,
 		energy_source = { emissions = 0.002 },
 		energy_usage = "400kW",
 		ingredient_count = 8,
+		layers = {
+			{
+				filename = "__xander-mod__/graphics/entity/production/assembling-machine-4/4.png",
+				hr_version = { filename = "__xander-mod__/graphics/entity/production/assembling-machine-4/hr-4.png" },
+			},
+		},
 	}
 ),
 

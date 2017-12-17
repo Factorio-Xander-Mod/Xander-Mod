@@ -9,6 +9,7 @@ data:extend(
 	type = "recipe",
     name = "fluorite",
 	icon = "__xander-mod__/graphics/recipe/raw/fluorite-flotation.png",
+	icon_size = 32,
 	category = "sluice",
 	crafting_machine_tint =
 	{
@@ -27,6 +28,7 @@ data:extend(
 	type = "recipe",
     name = "phosphate-rock",
 	icon = "__xander-mod__/graphics/recipe/raw/phosphate-flotation.png",
+	icon_size = 32,
 	category = "sluice",
 	crafting_machine_tint =
 	{
@@ -56,6 +58,7 @@ data:extend(
 	type = "recipe",
     name = "bauxite-clay",
 	icon = "__xander-mod__/graphics/recipe/raw/bauxite-clay.png",
+	icon_size = 32,
 	category = "sluice",
 	crafting_machine_tint =
 	{
@@ -84,6 +87,7 @@ data:extend(
 	type = "recipe",
     name = "bauxite-sand",
 	icon = "__xander-mod__/graphics/recipe/raw/bauxite-sand.png",
+	icon_size = 32,
 	category = "sluice",
 	crafting_machine_tint =
 	{
@@ -112,6 +116,7 @@ data:extend(
 	type = "recipe",
     name = "bayer-process",
 	icon = "__xander-mod__/graphics/recipe/raw/bayer-process.png",
+	icon_size = 32,
 	category = "sluice",
 	crafting_machine_tint =
 	{
@@ -132,6 +137,7 @@ data:extend(
 	type = "recipe",
     name = "chalcocite-washing",
 	icon = "__xander-mod__/graphics/recipe/raw/chalcocite-washing.png",
+	icon_size = 32,
 	category = "sluice",
 	crafting_machine_tint =
 	{
@@ -150,6 +156,7 @@ data:extend(
 	type = "recipe",
     name = "cobalt-oxide",
 	icon = "__xander-mod__/graphics/recipe/raw/cobalt-oxide.png",
+	icon_size = 32,
 	category = "sluice",
 	crafting_machine_tint =
 	{
@@ -170,6 +177,7 @@ data:extend(
 	type = "recipe",
     name = "nickel-oxide",
 	icon = "__xander-mod__/graphics/recipe/raw/nickel-oxide.png",
+	icon_size = 32,
 	category = "sluice",
 	crafting_machine_tint =
 	{
@@ -188,6 +196,7 @@ data:extend(
 	type = "recipe",
     name = "platinum-sponge",
 	icon = "__xander-mod__/graphics/recipe/raw/platinum-sponge.png",
+	icon_size = 32,
 	category = "sluice",
 	crafting_machine_tint =
 	{
@@ -208,6 +217,7 @@ data:extend(
 	type = "recipe",
     name = "cassiterite-washing",
 	icon = "__xander-mod__/graphics/recipe/raw/cassiterite-washing.png",
+	icon_size = 32,
 	category = "sluice",
 	crafting_machine_tint =
 	{
@@ -226,6 +236,7 @@ data:extend(
 	type = "recipe",
     name = "scheelite-flotation",
 	icon = "__xander-mod__/graphics/recipe/raw/scheelite-flotation.png",
+	icon_size = 32,
 	category = "sluice",
 	crafting_machine_tint =
 	{
@@ -244,6 +255,7 @@ data:extend(
 	type = "recipe",
     name = "gold-sponge",
 	icon = "__xander-mod__/graphics/recipe/raw/gold-sponge.png",
+	icon_size = 32,
 	category = "sluice",
 	crafting_machine_tint =
 	{
@@ -262,6 +274,7 @@ data:extend(
 	type = "recipe",
     name = "cassiterite-scheelite",
 	icon = "__xander-mod__/graphics/recipe/raw/cassiterite-scheelite.png",
+	icon_size = 32,
 	category = "ore-plant",
 	energy_required = 60,
 	enabled = false,
@@ -276,6 +289,7 @@ data:extend(
 	type = "recipe",
     name = "chromite-flotation",
 	icon = "__xander-mod__/graphics/recipe/raw/chromite-flotation.png",
+	icon_size = 32,
 	category = "sluice",
 	crafting_machine_tint =
 	{
@@ -294,6 +308,7 @@ data:extend(
 	type = "recipe",
     name = "rutile-flotation",
 	icon = "__xander-mod__/graphics/recipe/raw/rutile-flotation.png",
+	icon_size = 32,
 	category = "sluice",
 	crafting_machine_tint =
 	{
@@ -312,6 +327,7 @@ data:extend(
 	type = "recipe",
     name = "zirconia-flotation",
 	icon = "__xander-mod__/graphics/recipe/raw/zirconia-flotation.png",
+	icon_size = 32,
 	category = "sluice",
 	crafting_machine_tint =
 	{
@@ -332,6 +348,7 @@ data:extend(
 	type = "recipe",
     name = "hematite-washing",
 	icon = "__xander-mod__/graphics/recipe/raw/hematite-washing.png",
+	icon_size = 32,
 	category = "sluice",
 	crafting_machine_tint =
 	{
@@ -350,6 +367,7 @@ data:extend(
 	type = "recipe",
     name = "vanadium-magnetite",
 	icon = "__xander-mod__/graphics/recipe/raw/vanadium-magnetite.png",
+	icon_size = 32,
 	category = "sluice",
 	crafting_machine_tint =
 	{
@@ -370,6 +388,7 @@ data:extend(
 	type = "recipe",
     name = "galena-washing",
 	icon = "__xander-mod__/graphics/recipe/raw/galena-washing.png",
+	icon_size = 32,
 	category = "sluice",
 	crafting_machine_tint =
 	{
@@ -388,6 +407,7 @@ data:extend(
 	type = "recipe",
     name = "silver-sponge",
 	icon = "__xander-mod__/graphics/recipe/raw/silver-sponge.png",
+	icon_size = 32,
 	category = "sluice",
 	crafting_machine_tint =
 	{
@@ -418,6 +438,7 @@ data:extend(
 	type = "recipe",
     name = "water-saltpeter",
 	icon = "__xander-mod__/graphics/recipe/salt/water-saltpeter.png",
+	icon_size = 32,
 	category = "sluice",
 	crafting_machine_tint =
 	{
@@ -448,6 +469,7 @@ data:extend(
 	type = "recipe",
     name = "lithium-precipitation",
 	icon = "__xander-mod__/graphics/recipe/raw/lithium-precipitation.png",
+	icon_size = 32,
 	category = "chemistry",
 	crafting_machine_tint =
 	{
@@ -479,6 +501,7 @@ data:extend(
 	type = "recipe",
     name = "limestone-washing",
 	icon = "__xander-mod__/graphics/recipe/raw/limestone-washing.png",
+	icon_size = 32,
 	category = "sluice",
 	crafting_machine_tint =
 	{
@@ -497,6 +520,7 @@ data:extend(
 	type = "recipe",
     name = "magnesite-washing",
 	icon = "__xander-mod__/graphics/recipe/raw/magnesite-washing.png",
+	icon_size = 32,
 	category = "sluice",
 	crafting_machine_tint =
 	{
@@ -533,6 +557,7 @@ data:extend(
 	type = "recipe",
     name = "chalcopyrite-washing",
 	icon = "__xander-mod__/graphics/recipe/raw/chalcopyrite-washing.png",
+	icon_size = 32,
 	category = "sluice",
 	crafting_machine_tint =
 	{
@@ -551,6 +576,7 @@ data:extend(
 	type = "recipe",
     name = "sphalerite-flotation",
 	icon = "__xander-mod__/graphics/recipe/raw/sphalerite-flotation.png",
+	icon_size = 32,
 	category = "sluice",
 	crafting_machine_tint =
 	{
@@ -569,6 +595,7 @@ data:extend(
 	type = "recipe",
     name = "chalcopyrite-sphalerite",
 	icon = "__xander-mod__/graphics/recipe/raw/chalcopyrite-sphalerite.png",
+	icon_size = 32,
 	category = "ore-plant",
 	energy_required = 40,
 	enabled = false,
@@ -583,6 +610,7 @@ data:extend(
 	type = "recipe",
     name = "monazite-flotation",
 	icon = "__xander-mod__/graphics/recipe/raw/monazite-flotation.png",
+	icon_size = 32,
 	category = "sluice",
 	crafting_machine_tint =
 	{
@@ -601,6 +629,7 @@ data:extend(
 	type = "recipe",
     name = "uranyl-nitrate",
 	icon = "__xander-mod__/graphics/recipe/raw/uranyl-nitrate.png",
+	icon_size = 32,
 	category = "sluice",
 	crafting_machine_tint =
 	{
@@ -643,6 +672,7 @@ data:extend(
 	type = "recipe",
     name = "magnesia-precipitation",
 	icon = "__xander-mod__/graphics/recipe/raw/magnesia-precipitation.png",
+	icon_size = 32,
 	category = "chemistry",
 	crafting_machine_tint =
 	{

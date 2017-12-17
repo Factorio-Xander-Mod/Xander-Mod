@@ -104,20 +104,17 @@ xmutil.clone("assembling-machine", "assembling-machine-2",
 xmutil.clone("mining-drill", "electric-mining-drill",
 	{
 		{
-			"__base__/graphics/icon/electric-mining-drill.png",
-			"__xander-mod__/graphics/item/production/miner/mining-drill-3.png",
+			"__base__/graphics/entity/electric-mining-drill/(h?r?-?)electric-mining-drill-(.)%.png",
+			"__xander-mod__/graphics/entity/production/mining-drill-3/%1%2.png",
 		},
 		{
-			"__base__/graphics/entity/electric-mining-drill/electric-mining-drill-",
-			"__xander-mod__/graphics/entity/production/mining-drill-3/",
-		},
-		{
-			"__base__/graphics/entity/electric-mining-drill/hr-electric-mining-drill-",
-			"__xander-mod__/graphics/entity/production/mining-drill-3/hr-",
+			"__base__/graphics/entity/electric-mining-drill/(h?r?-?)electric-mining-drill-(.)-patch%.png",
+			"__xander-mod__/graphics/entity/production/mining-drill-3/%1%2-patch.png",
 		},
 	},
 	{
 		name = "mining-drill-3",
+		icon = "__xander-mod__/graphics/item/production/miner/mining-drill-3.png",
 		minable = {mining_time = 1, result = "mining-drill-3"},
 		max_health = 400,
 		resource_categories = {"basic-solid", "hard-solid", "tough-solid"},
@@ -131,20 +128,17 @@ xmutil.clone("mining-drill", "electric-mining-drill",
 xmutil.clone("mining-drill", "electric-mining-drill",
 	{
 		{
-			"__base__/graphics/icon/electric-mining-drill.png",
-			"__xander-mod__/graphics/item/production/miner/mining-drill-4.png",
+			"__base__/graphics/entity/electric-mining-drill/(h?r?-?)electric-mining-drill-(.)%.png",
+			"__xander-mod__/graphics/entity/production/mining-drill-4/%1%2.png",
 		},
 		{
-			"__base__/graphics/entity/electric-mining-drill/electric-mining-drill-",
-			"__xander-mod__/graphics/entity/production/mining-drill-4/",
-		},
-		{
-			"__base__/graphics/entity/electric-mining-drill/hr-electric-mining-drill-",
-			"__xander-mod__/graphics/entity/production/mining-drill-4/hr-",
+			"__base__/graphics/entity/electric-mining-drill/(h?r?-?)electric-mining-drill-(.)-patch%.png",
+			"__xander-mod__/graphics/entity/production/mining-drill-4/%1%2-patch.png",
 		},
 	},
 	{
 		name = "mining-drill-4",
+		icon = "__xander-mod__/graphics/item/production/miner/mining-drill-4.png",
 		minable = {mining_time = 1, result = "mining-drill-4"},
 		max_health = 1000,
 		resource_categories = {"basic-solid", "hard-solid", "tough-solid"},

@@ -68,16 +68,7 @@ xmutil.clone("furnace", "stone-furnace",
 --Base "steel-furnace" placeholder
 --Assembler-Type Blast Furnace
 xmutil.clone("furnace", "steel-furnace",
-	{
-		{
-			"__base__/graphics/entity/steel-furnace/steel-furnace.png",
-			"__xander-mod__/graphics/entity/production/furnace-3/3.png",
-		},
-		{
-			"__base__/graphics/entity/steel-furnace/hr-steel-furnace.png",
-			"__xander-mod__/graphics/entity/production/furnace-3/hr-3.png",
-		},
-	},
+	{},
 	{
 		type = "assembling-machine",
 		name = "furnace-3",

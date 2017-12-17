@@ -413,8 +413,8 @@ xmutil.clone("transport-belt", "fast-transport-belt",
 xmutil.clone("underground-belt", "underground-belt",
 	{
 		{
-			"__base__/graphics/entity/underground-belt/underground-belt-",
-			"__xander-mod__/graphics/entity/logistic/slow-underground-belt/",
+			"__base__/graphics/entity/underground-belt/(h?r?-?)underground-belt-",
+			"__xander-mod__/graphics/entity/logistic/slow-underground-belt/%1",
 		}
 	},
 	{

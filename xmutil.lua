@@ -99,27 +99,26 @@ function M.assembler_fluid_boxes(graphics_source)
 	}
 end
 
-local function gsub_recurse(table, pattern, repl, n)
+local function gsub_recurse(table, pattern, repl, filter)
 	for k,v in pairs(table) do
 		if type(v) == "table" then
-			gsub_recurse(v, pattern, repl, n)
-		elseif type(v) == "string" then
-			table[k] = string.gsub(v, pattern, repl, n)
+			gsub_recurse(v, pattern, repl, filter)
+		elseif type(v) == "string" and (not filter or filter(v)) then
+			table[k] = string.gsub(v, pattern, repl)
 		end
 	end
 end
 
 local function sub_graphics(table, from, to)
-	if string.match(from, "[%(%)]") then
-		error("from cannot contain parentheses")
+	local filter = function(str)
+		return not (string.match(str, "%-shadow%-?") or
+			string.match(str, "%-mask.png$") or
+			string.match(str, "wall%-patch") or
+			string.match(str, "gate.*base"))
 	end
-	local replacer = function(orig, head, from_match, tail)
-		if string.match(orig, "-shadow.png$") then
-			return orig
-		end
-		return head..to..tail
-	end
-	gsub_recurse(table, "^((.-)("..from..")(.*))$", replacer)
+	-- hyphen is too common to mess with it as a meta-character
+	from = string.gsub(from, "%-", "%%-")
+	gsub_recurse(table, from, to, filter)
 end
 
 M.NIL = {}

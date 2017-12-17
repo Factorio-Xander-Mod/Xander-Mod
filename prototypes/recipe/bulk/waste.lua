@@ -9,6 +9,7 @@ data:extend(
 	type = "recipe",
 	name = "recycle-slow-transport-belt",
 	icon = "__xander-mod__/graphics/recipe/waste/recycle-slow-transport-belt.png",
+	icon_size = 32,
 	category = "smelting",
 	energy_required = 8,
 	enabled = false,
@@ -21,6 +22,7 @@ data:extend(
 	type = "recipe",
 	name = "recycle-slow-underground-belt",
 	icon = "__xander-mod__/graphics/recipe/waste/recycle-slow-underground-belt.png",
+	icon_size = 32,
 	category = "smelting",
 	energy_required = 8,
 	enabled = false,
@@ -33,6 +35,7 @@ data:extend(
 	type = "recipe",
 	name = "recycle-slow-splitter",
 	icon = "__xander-mod__/graphics/recipe/waste/recycle-slow-splitter.png",
+	icon_size = 32,
 	category = "smelting",
 	energy_required = 40,
 	enabled = false,
@@ -45,6 +48,7 @@ data:extend(
 	type = "recipe",
 	name = "recycle-burner-inserter",
 	icon = "__xander-mod__/graphics/recipe/waste/recycle-burner-inserter.png",
+	icon_size = 32,
 	category = "smelting",
 	energy_required = 24,
 	enabled = false,
@@ -57,6 +61,7 @@ data:extend(
 	type = "recipe",
 	name = "recycle-inserter-chemical-burner",
 	icon = "__xander-mod__/graphics/recipe/waste/recycle-inserter-chemical-burner.png",
+	icon_size = 32,
 	category = "smelting",
 	energy_required = 24,
 	enabled = false,
@@ -90,6 +95,7 @@ data:extend(
 	type = "recipe",
     name = "waste-water-clarifying-a",
 	icon = "__xander-mod__/graphics/recipe/waste/water-clarifying-a.png",
+	icon_size = 32,
 	category = "basic-chemistry",
 	crafting_machine_tint =
 	{
@@ -128,6 +134,7 @@ data:extend(
 	type = "recipe",
     name = "waste-slurry-clarifying",
 	icon = "__xander-mod__/graphics/recipe/waste/water-clarifying-b.png",
+	icon_size = 32,
 	category = "chemistry",
 	crafting_machine_tint =
 	{
@@ -146,6 +153,7 @@ data:extend(
 	type = "recipe",
     name = "gas-scrubbing",
 	icon = "__xander-mod__/graphics/recipe/waste/gas-scrubbing.png",
+	icon_size = 32,
 	category = "chemistry",
 	crafting_machine_tint =
 	{
@@ -164,6 +172,7 @@ data:extend(
 	type = "recipe",
     name = "sulfate-cracking",
 	icon = "__xander-mod__/graphics/recipe/waste/sulfate-cracking.png",
+	icon_size = 32,
 	category = "refining",
 	energy_required = 100,
 	enabled = false,
@@ -176,6 +185,7 @@ data:extend(
 	type = "recipe",
     name = "slag-cracking",
 	icon = "__xander-mod__/graphics/recipe/waste/slag-cracking.png",
+	icon_size = 32,
 	category = "chemical-plant",
 	energy_required = 200,
 	enabled = false,

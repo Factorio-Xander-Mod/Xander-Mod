@@ -401,7 +401,7 @@ local function xm_pipe_to_ground(material, max_health, max_underground_distance)
 	return xmutil.clone("pipe-to-ground", "pipe-to-ground",
 		{},
 		{
-			name = "pipe-to-ground"..material,
+			name = "pipe-to-ground-"..material,
 			icon = "__xander-mod__/graphics/item/logistic/pipe/pipe-to-ground-"..material..".png",
 			minable = {hardness = 0.2, mining_time = 0.5, result = "pipe-to-ground-"..material},
 			max_health = max_health,
@@ -500,16 +500,7 @@ xmutil.clone("storage-tank", "storage-tank",
 --Base "pump"
 --Rotary Impeller Pump
 xmutil.clone("pump", "pump",
-	{
-		{
-			"__base__/graphics/entity/pump/pump-",
-			"__xander-mod__/graphics/entity/logistic/pump-2/",
-		},
-		{
-			"__base__/graphics/entity/pump/hr-pump-",
-			"__xander-mod__/graphics/entity/logistic/pump-2/hr-",
-		},
-	},
+	{},
 	{
 		name = "pump-2",
 		icon = "__xander-mod__/graphics/item/logistic/plumbing/pump-2.png",
@@ -518,20 +509,30 @@ xmutil.clone("pump", "pump",
 		energy_source = { emissions = 0.002 },
 		energy_usage = "50kW",
 		pumping_speed = 500,
+		animations = {
+			north = {
+				filename = "__xander-mod__/graphics/entity/logistic/pump-2/north.png",
+				hr_version = { filename = "__xander-mod__/graphics/entity/logistic/pump-2/hr-north.png" },
+			},
+			east = {
+				filename = "__xander-mod__/graphics/entity/logistic/pump-2/east.png",
+				hr_version = { filename = "__xander-mod__/graphics/entity/logistic/pump-2/hr-east.png" },
+			},
+			south = {
+				filename = "__xander-mod__/graphics/entity/logistic/pump-2/south.png",
+				hr_version = { filename = "__xander-mod__/graphics/entity/logistic/pump-2/hr-south.png" },
+			},
+			west = {
+				filename = "__xander-mod__/graphics/entity/logistic/pump-2/west.png",
+				hr_version = { filename = "__xander-mod__/graphics/entity/logistic/pump-2/hr-west.png" },
+			},
+		}
 	}
 ),
+
 --Turbomolecular Pump
 xmutil.clone("pump", "pump",
-	{
-		{
-			"__base__/graphics/entity/pump/pump-",
-			"__xander-mod__/graphics/entity/logistic/pump-3/",
-		},
-		{
-			"__base__/graphics/entity/pump/hr-pump-",
-			"__xander-mod__/graphics/entity/logistic/pump-3/hr-",
-		},
-	},
+	{},
 	{
 		name = "pump-3",
 		icon = "__xander-mod__/graphics/item/logistic/plumbing/pump-3.png",
@@ -540,6 +541,24 @@ xmutil.clone("pump", "pump",
 		energy_source = { emissions = 0.002 },
 		energy_usage = "50kW",
 		pumping_speed = 500,
+		animations = {
+			north = {
+				filename = "__xander-mod__/graphics/entity/logistic/pump-3/north.png",
+				hr_version = { filename = "__xander-mod__/graphics/entity/logistic/pump-3/hr-north.png" },
+			},
+			east = {
+				filename = "__xander-mod__/graphics/entity/logistic/pump-3/east.png",
+				hr_version = { filename = "__xander-mod__/graphics/entity/logistic/pump-3/hr-east.png" },
+			},
+			south = {
+				filename = "__xander-mod__/graphics/entity/logistic/pump-3/south.png",
+				hr_version = { filename = "__xander-mod__/graphics/entity/logistic/pump-3/hr-south.png" },
+			},
+			west = {
+				filename = "__xander-mod__/graphics/entity/logistic/pump-3/west.png",
+				hr_version = { filename = "__xander-mod__/graphics/entity/logistic/pump-3/hr-west.png" },
+			},
+		}
 	}
 ),
 --Base "arithmetic-combinator" placeholder
