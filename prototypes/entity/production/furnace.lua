@@ -12,170 +12,6 @@ data.raw.furnace["steel-furnace"].crafting_categories = {"empty"}
 data.raw.furnace["electric-furnace"].crafting_categories = {"empty"}
 ]]--
 
-local function furnace_fluid_boxes(graphics_source)
-	return {
-		{
-			production_type = "input",
-			pipe_picture =
-			{
-				north =
-				{
-					filename = "__xander-mod__/graphics/entity/production/" .. graphics_source .. "/pipe-N.png",
-					priority = "extra-high",
-					width = 35,
-					height = 18,
-					shift = util.by_pixel(2.5, 14),
-					hr_version =
-					{
-						filename = "__xander-mod__/graphics/entity/production/" .. graphics_source .. "/hr-pipe-N.png",
-						priority = "extra-high",
-						width = 71,
-						height = 38,
-						shift = util.by_pixel(2.25, 13.5),
-						scale = 0.5,
-					}
-				},
-				east =
-				{
-					filename = "__xander-mod__/graphics/entity/production/" .. graphics_source .. "/pipe-E.png",
-					priority = "extra-high",
-					width = 20,
-					height = 38,
-					shift = util.by_pixel(-25, 1),
-					hr_version =
-					{
-						filename = "__xander-mod__/graphics/entity/production/" .. graphics_source .. "/hr-pipe-E.png",
-						priority = "extra-high",
-						width = 42,
-						height = 76,
-						shift = util.by_pixel(-24.5, 1),
-						scale = 0.5,
-					}
-				},
-				south =
-				{
-					filename = "__xander-mod__/graphics/entity/production/" .. graphics_source .. "/pipe-S.png",
-					priority = "extra-high",
-					width = 44,
-					height = 31,
-					shift = util.by_pixel(0, -31.5),
-					hr_version =
-					{
-						filename = "__xander-mod__/graphics/entity/production/" .. graphics_source .. "/hr-pipe-S.png",
-						priority = "extra-high",
-						width = 88,
-						height = 61,
-						shift = util.by_pixel(0, -31.25),
-						scale = 0.5,
-					}
-				},
-				west =
-				{
-					filename = "__xander-mod__/graphics/entity/production/" .. graphics_source .. "/pipe-W.png",
-					priority = "extra-high",
-					width = 19,
-					height = 37,
-					shift = util.by_pixel(25.5, 1.5),
-					hr_version =
-					{
-						filename = "__xander-mod__/graphics/entity/production/" .. graphics_source .. "/hr-pipe-W.png",
-						priority = "extra-high",
-						width = 39,
-						height = 73,
-						shift = util.by_pixel(25.75, 1.25),
-						scale = 0.5,
-					}
-				}
-			},
-			pipe_covers = pipecoverspictures(),
-			base_area = 10,
-			base_level = -1,
-			pipe_connections = {{type="input", position = {0, -2}}},
-			secondary_draw_orders = {north = -1}
-		},
-		{
-			production_type = "output",
-			pipe_picture =
-			{
-				north =
-				{
-					filename = "__xander-mod__/graphics/entity/production/" .. graphics_source .. "/pipe-N.png",
-					priority = "extra-high",
-					width = 35,
-					height = 18,
-					shift = util.by_pixel(2.5, 14),
-					hr_version =
-					{
-						filename = "__xander-mod__/graphics/entity/production/" .. graphics_source .. "/hr-pipe-N.png",
-						priority = "extra-high",
-						width = 71,
-						height = 38,
-						shift = util.by_pixel(2.25, 13.5),
-						scale = 0.5,
-					}
-				},
-				east =
-				{
-					filename = "__xander-mod__/graphics/entity/production/" .. graphics_source .. "/pipe-E.png",
-					priority = "extra-high",
-					width = 20,
-					height = 38,
-					shift = util.by_pixel(-25, 1),
-					hr_version =
-					{
-						filename = "__xander-mod__/graphics/entity/production/" .. graphics_source .. "/hr-pipe-E.png",
-						priority = "extra-high",
-						width = 42,
-						height = 76,
-						shift = util.by_pixel(-24.5, 1),
-						scale = 0.5,
-					}
-				},
-				south =
-				{
-					filename = "__xander-mod__/graphics/entity/production/" .. graphics_source .. "/pipe-S.png",
-					priority = "extra-high",
-					width = 44,
-					height = 31,
-					shift = util.by_pixel(0, -31.5),
-					hr_version =
-					{
-						filename = "__xander-mod__/graphics/entity/production/" .. graphics_source .. "/hr-pipe-S.png",
-						priority = "extra-high",
-						width = 88,
-						height = 61,
-						shift = util.by_pixel(0, -31.25),
-						scale = 0.5,
-					}
-				},
-				west =
-				{
-					filename = "__xander-mod__/graphics/entity/production/" .. graphics_source .. "/pipe-W.png",
-					priority = "extra-high",
-					width = 19,
-					height = 37,
-					shift = util.by_pixel(25.5, 1.5),
-					hr_version =
-					{
-						filename = "__xander-mod__/graphics/entity/production/" .. graphics_source .. "/hr-pipe-W.png",
-						priority = "extra-high",
-						width = 39,
-						height = 73,
-						shift = util.by_pixel(25.75, 1.25),
-						scale = 0.5,
-					}
-				}
-			},
-			pipe_covers = pipecoverspictures(),
-			base_area = 10,
-			base_level = 1,
-			pipe_connections = {{type = "output", position = {0, 2}}},
-			secondary_draw_orders = { north = -1 }
-		},
-		off_when_no_fluid_recipe = true
-	}
-end
-
 data:extend(
 {
 
@@ -273,7 +109,7 @@ xmutil.clone("furnace", "electric-furnace",
 		icon = "__xander-mod__/graphics/item/production/furnace/furnace-4.png",
 		minable = {mining_time = 1, result = "furnace-4"},
 		max_health = 500,
-		fluid_boxes = furnace_fluid_boxes("assembling-machine-3"),
+		fluid_boxes = xmutil.assembler_fluid_boxes("assembling-machine-3"),
 		crafting_categories = {"refining"},
 		crafting_speed = 2,
 		energy_source = { emissions = 0.002 },
@@ -292,7 +128,7 @@ xmutil.clone("furnace", "electric-furnace",
 		icon = "__base__/graphics/icons/electric-furnace.png",
 		minable = {mining_time = 1, result = "furnace-5"},
 		max_health = 500,
-		fluid_boxes = furnace_fluid_boxes("assembling-machine-4"),
+		fluid_boxes = xmutil.assembler_fluid_boxes("assembling-machine-4"),
 		crafting_categories = {"forge"},
 		crafting_speed = 2,
 			energy_source = { emissions = 0.002 },
@@ -322,7 +158,7 @@ xmutil.clone("furnace", "electric-furnace",
 		icon = "__xander-mod__/graphics/item/production/furnace/furnace-6.png",
 		minable = {mining_time = 1, result = "furnace-6"},
 		max_health = 1000,
-			fluid_boxes = furnace_fluid_boxes("assembling-machine-4"),
+		fluid_boxes = xmutil.assembler_fluid_boxes("assembling-machine-4"),
 		crafting_categories = {"refining", "forge"},
 		crafting_speed = 4,
 		energy_source = { emissions = 0.0008 },
