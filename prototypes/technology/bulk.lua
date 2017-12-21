@@ -902,6 +902,10 @@ data:extend(
 		{
 			type = "unlock-recipe",
 			recipe = "graphite-block-b"
+		},
+		{
+			type = "unlock-recipe",
+			recipe = "graphite-powder"
 		}
 	},
 	prerequisites = {"furnace_4", "coke-a", "smelting-graphite"},
@@ -1231,7 +1235,15 @@ data:extend(
 	{
 		{
 			type = "unlock-recipe",
-			recipe = "water-clarifying-b"
+			recipe = "gray-water-clarifying"
+		},
+		{
+			type = "unlock-recipe",
+			recipe = "waste-water-clarifying-b"
+		},
+		{
+			type = "unlock-recipe",
+			recipe = "waste-slurry-clarifying"
 		}
 	},
 	prerequisites = {"leblanc-process", "magnesium-processing"},
@@ -1412,6 +1424,10 @@ data:extend(
 		{
 			type = "unlock-recipe",
 			recipe = "sludge-burial-b"
+		},
+		{
+			type = "unlock-recipe",
+			recipe = "inert-waste-burial"
 		},
 		{
 			type = "unlock-recipe",

@@ -125,8 +125,7 @@ data:extend(
 		{
 			{"science-pack-1", 1},
 			{"science-pack-2", 1},
-			{"science-pack-3", 1},
-			{"production-science-pack", 1}
+			{"science-pack-3", 1}
 		},
 		time = 30
 	},
@@ -304,7 +303,7 @@ data:extend(
 			recipe = "graphite-block-a"
 		}
 	},
-	prerequisites = {"coke-a"},
+	prerequisites = {"ore-processor_0"},
 	unit =
 	{
 		count = 10,
@@ -871,6 +870,10 @@ data:extend(
 		{
 			type = "unlock-recipe",
 			recipe = "vanadium-magnetite"
+		},
+		{
+			type = "unlock-recipe",
+			recipe = "magnetite-vanadium-slagging"
 		},
 		{
 			type = "unlock-recipe",

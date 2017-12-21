@@ -457,7 +457,7 @@ data:extend(
 			recipe = "science-pack-1"
 		}
 	},
-	prerequisites = {"reactor_0"},
+	prerequisites = {"reactor_0", "smelting-graphite"},
 	unit =
 	{
 		count = 10,

@@ -1,0 +1,7 @@
+{
+  "recipe":
+  [
+    ["water-clarifying-a", "waste-water-clarifying-a"],
+    ["waste-water-clarifying", "waste-water-clarifying-b"]
+  ]
+}

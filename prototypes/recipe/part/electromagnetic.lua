@@ -77,10 +77,11 @@ data:extend(
 	type = "recipe",
     name = "cable-insulated",
 	category = "machine",
-	energy_required = 1,
+	energy_required = 2,
 	enabled = false,
-	ingredients = {{"copper-cable", 1}, {"rubber", 1}},
-	result = "cable-insulated"
+	ingredients = {{"copper-cable", 2}, {"rubber", 1}},
+	result = "cable-insulated",
+	result_count = 2
 },
 --
 --COIL

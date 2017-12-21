@@ -72,15 +72,15 @@ data.raw.recipe["explosives"].normal =
 {
 	energy_required = 10,
 	enabled = false,
-	ingredients = {{"unstable-explosives", 6}, {type = "fluid", name = "water", amount = 80}},
-	results = {{"explosives", 1}, {type = "fluid", name = "waste-water", amount = 40}}
+	ingredients = {{"unstable-explosives", 1}, {type = "fluid", name = "distilled-water", amount = 50}},
+	results = {{"explosives", 1}, {type = "fluid", name = "waste-water", amount = 50}}
 }
 data.raw.recipe["explosives"].expensive =
 {
 	energy_required = 10,
 	enabled = false,
-	ingredients = {{"unstable-explosives", 6}, {type = "fluid", name = "water", amount = 80}},
-	results = {{"explosives", 1}, {type = "fluid", name = "waste-water", amount = 80}}
+	ingredients = {{"unstable-explosives", 1}, {type = "fluid", name = "water", amount = 80}},
+	results = {{"explosives", 1}, {type = "fluid", name = "waste-slurry", amount = 40}}
 }
 
 --Base "plastic-bar"
@@ -116,7 +116,7 @@ data.raw.recipe["sulfuric-acid"].icon = "__xander-mod__/graphics/recipe/compound
 data.raw.recipe["sulfuric-acid"].category = "basic-chemistry"
 data.raw.recipe["sulfuric-acid"].energy_required = 20
 data.raw.recipe["sulfuric-acid"].ingredients = {{"saltpeter", 20}, {"sulfur", 20}, {type = "fluid", name = "water", amount = 500}}
-data.raw.recipe["sulfuric-acid"].results = {{type = "fluid", name = "sulfuric-acid", amount = 100}, {"sludge", 1}}
+data.raw.recipe["sulfuric-acid"].results = {{type = "fluid", name = "sulfuric-acid", amount = 100}, {type = "fluid", name = "waste-water", amount = 10}}
 
 
 data:extend(
@@ -531,10 +531,10 @@ data:extend(
     name = "solvay-process",
 	icon = "__xander-mod__/graphics/recipe/salt/solvay-process.png",
 	category = "chemistry",
-	energy_required = 20,
+	energy_required = 40,
 	enabled = false,
-	ingredients = {{"calcium-oxide", 10}, {"salt", 20}, {type = "fluid", name = "water", amount = 50}, {type = "fluid", name = "ammonia", amount = 10}},
-	results = {{"soda", 10}, {"calcium-chloride", 10}, {type = "fluid", name = "waste-water", amount = 40}},
+	ingredients = {{"limestone", 20}, {"salt", 40}, {type = "fluid", name = "distilled-water", amount = 10}, {type = "fluid", name = "ammonia", amount = 10}},
+	results = {{"soda", 20}, {"calcium-chloride", 20}, {type = "fluid", name = "waste-water", amount = 50}},
 	subgroup = "salt",
 	crafting_machine_tint =
 	{
@@ -551,8 +551,8 @@ data:extend(
 	category = "chemistry",
 	energy_required = 10,
 	enabled = false,
-	ingredients = {{"soda", 1}, {"calcium-oxide", 1}, {type = "fluid", name = "water", amount = 10}},
-	results = {{"sodium-hydroxide", 2}, {"limestone", 1}},
+	ingredients = {{"soda", 1}, {"calcium-oxide", 1}, {type = "fluid", name = "distilled-water", amount = 10}},
+	results = {{"sodium-hydroxide", 2}, {"limestone", 1}, {type = "fluid", name = "gray-water", amount = 10}},
 	subgroup = "salt",
 	crafting_machine_tint =
 	{
@@ -610,7 +610,7 @@ data:extend(
 	energy_required = 40,
 	enabled = false,
 	ingredients = {{"boron-oxide", 5}, {type = "fluid", name = "hydrogen-fluoride", amount = 400}, {"lithium-hydroxide", 10}, {type = "fluid", name = "sulfur-dioxide", amount = 20}},
-	results = {{"lithium-tetrafluoroborate", 10}, {type = "fluid", name = "waste-water", amount = 400}},
+	results = {{"lithium-tetrafluoroborate", 10}, {type = "fluid", name = "waste-water", amount = 200}},
 	subgroup = "salt",
 	crafting_machine_tint =
 	{
@@ -628,7 +628,7 @@ data:extend(
 	energy_required = 10,
 	enabled = false,
 	ingredients = {{type = "fluid", name = "chlorine", amount = 30}, {type = "fluid", name = "water", amount = 10}, {"lithium-hydroxide", 6}, {"sodium-hydroxide", 5}},
-	results = {{"lithium-perchlorate", 1}, {"salt", 5}, {"lithium-hydroxide", 5}, {type = "fluid", name = "waste-water", amount = 30}, {type = "fluid", name = "hydrogen", amount = 10}},
+	results = {{"lithium-perchlorate", 1}, {"salt", 5}, {"lithium-hydroxide", 5}, {type = "fluid", name = "waste-water", amount = 50}, {type = "fluid", name = "hydrogen", amount = 10}},
 	subgroup = "salt",
 	crafting_machine_tint =
 	{
@@ -676,7 +676,7 @@ data:extend(
 	energy_required = 10,
 	enabled = false,
 	ingredients = {{"cotton", 1}, {type = "fluid", name = "nitric-sulfuric", amount = 30}, {type = "fluid", name = "water", amount = 40}},
-	results = {{"nitrocellulose", 1}, {type = "fluid", name = "waste-water", amount = 20}},
+	results = {{"nitrocellulose", 1}, {type = "fluid", name = "waste-water", amount = 50}},
 	subgroup = "organic",
 	crafting_machine_tint =
 	{
@@ -900,7 +900,7 @@ data:extend(
 	energy_required = 20,
 	enabled = false,
 	ingredients = {{type = "fluid", name = "carbon-dioxide", amount = 10}, {type = "fluid", name = "methanol", amount = 20}},
-	results = {{type = "fluid", name = "dimethyl-carbonate", amount = 10}},
+	results = {{type = "fluid", name = "dimethyl-carbonate", amount = 10}, {type = "fluid", name = "waste-water", amount = 10}},
 	subgroup = "organic",
 	crafting_machine_tint =
 	{
@@ -916,7 +916,7 @@ data:extend(
 	category = "chemical-plant",
 	energy_required = 50,
 	enabled = false,
-	ingredients = {{type = "fluid", name = "chlorobenzene", amount = 20}, {type = "fluid", name = "dimethyl-carbonate", amount = 10}},--{type = "fluid", name = "ammonia", amount = 10}, 
+	ingredients = {{type = "fluid", name = "chlorobenzene", amount = 20}, {type = "fluid", name = "ammonia", amount = 10}, {type = "fluid", name = "dimethyl-carbonate", amount = 10}},
 	result = "synthetic-drugs"
 },
 
@@ -927,7 +927,7 @@ data:extend(
 	type = "recipe",
     name = "wood-multiplication",
 	category = "temp-logging",
-	energy_required = 10,
+	energy_required = 5,
 	enabled = false,
 	ingredients = {{"raw-wood", 10}, {type = "fluid", name = "water", amount = 50}},
 	result = "raw-wood",
@@ -1056,8 +1056,8 @@ data:extend(
 	category = "basic-chemistry",
 	energy_required = 5,
 	enabled = false,
-	ingredients = {{"coke", 8}, {type = "fluid", name = "water", amount = 20}},
-	results = {{"phenol", 1}, {type = "fluid", name = "waste-water", amount = 10}},
+	ingredients = {{"coke", 8}, {type = "fluid", name = "water", amount = 50}},
+	results = {{"phenol", 1}, {type = "fluid", name = "waste-water", amount = 50}},
 	subgroup = "carbohydrate",
 	crafting_machine_tint =
 	{
@@ -1445,10 +1445,22 @@ data:extend(
 	type = "recipe",
     name = "graphite-block-b",
 	category = "forge",
-	energy_required = 20,
+	energy_required = 96,
 	enabled = false,
-	ingredients = {{"coke", 4}},
-	result = "graphite-block"
+	ingredients = {{"coke", 36}, {type = "fluid", name = "heavy-naptha", amount = 10}}, --3 blocks from naptha, 9 from coke
+	result = "graphite-block",
+	result_count = 12
+},
+--Grinding Graphite Block to Graphite Powder
+{
+	type = "recipe",
+    name = "graphite-powder",
+	category = "machine",
+	energy_required = 4,
+	enabled = false,
+	ingredients = {{"graphite-block", 1}},
+	result = "graphite-powder",
+	result_count = 4
 },
 --Acidified Water Electrolysis
 {
@@ -1583,6 +1595,24 @@ data:extend(
 
 --
 --COMPOUNDS - MISC
+--Distilled Water
+{
+	type = "recipe",
+    name = "distilled-water",
+	icon = "__xander-mod__/graphics/recipe/compound/distilled-water.png",
+	category = "chemistry",
+	energy_required = 2,
+	enabled = false,
+	ingredients = {{type = "fluid", name = "water", amount = 10}},
+	results = {{type = "fluid", name = "distilled-water", amount = 10}},
+	subgroup = "compound",
+	crafting_machine_tint =
+	{
+		primary = {r = 0.000, g = 0.110, b = 0.588},
+		secondary = {r = 0.564, g = 0.795, b = 0.000},
+		tertiary = {r = 0.678, g = 0.565, b = 0.478}
+	}
+},
 --Oleum
 {
 	type = "recipe",
@@ -1805,7 +1835,7 @@ data:extend(
 	energy_required = 2,
 	enabled = false,
 	ingredients = {{type = "fluid", name = "silicon-tetrachloride", amount = 10}, {type = "fluid", name = "water", amount = 40}},
-	results = {{"sand", 1}, {type = "fluid", name = "hydrogen-chloride", amount = 40}, {type = "fluid", name = "waste-water", amount = 10}},
+	results = {{"sand", 1}, {type = "fluid", name = "hydrogen-chloride", amount = 40}, {type = "fluid", name = "waste-water", amount = 20}},
 	subgroup = "compound",
 	crafting_machine_tint =
 	{

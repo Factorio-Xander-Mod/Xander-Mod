@@ -66,11 +66,29 @@ data:extend(
 },
 
 --
---WASTE TREATMENT
+--WASTE SUBSTANCE TREATMENT
+--Gray Water Clarifying
+{
+	type = "recipe",
+    name = "gray-water-clarifying",
+	icon = "__xander-mod__/graphics/recipe/waste/water-clarifying-b.png",
+	category = "chemistry",
+	crafting_machine_tint =
+	{
+		primary = {r = 0.000, g = 0.110, b = 0.588},
+		secondary = {r = 0.564, g = 0.795, b = 0.000},
+		tertiary = {r = 0.678, g = 0.565, b = 0.478}
+	},
+	energy_required = 20,
+	enabled = false,
+	ingredients = {{type = "fluid", name = "gray-water", amount = 100}},
+	results = {{type = "fluid", name = "water", amount = 100}, {"inert-waste", 1}},
+	subgroup = "waste"
+},
 --Crude Waste Water Treatment
 {
 	type = "recipe",
-    name = "water-clarifying-a",
+    name = "waste-water-clarifying-a",
 	icon = "__xander-mod__/graphics/recipe/waste/water-clarifying-a.png",
 	category = "basic-chemistry",
 	crafting_machine_tint =
@@ -87,10 +105,10 @@ data:extend(
 	results = {{"sludge", 8}},
 	subgroup = "waste"
 },
---Water Clarifying
+--Waste Water Precipitation & Clarifying
 {
 	type = "recipe",
-    name = "water-clarifying-b",
+    name = "waste-water-clarifying-b",
 	icon = "__xander-mod__/graphics/recipe/waste/water-clarifying-b.png",
 	category = "chemistry",
 	crafting_machine_tint =
@@ -101,7 +119,25 @@ data:extend(
 	},
 	energy_required = 40,
 	enabled = false,
-	ingredients = {{type = "fluid", name = "waste-water", amount = 200}, {"soda", 1}, {"magnesium-chloride", 1}},
+	ingredients = {{type = "fluid", name = "waste-water", amount = 200}, {"soda", 1}},
+	results = {{type = "fluid", name = "water", amount = 200}, {"sludge", 4}},
+	subgroup = "waste"
+},
+--Waste Slurry Complete Precipitation and Press-Filtration
+{
+	type = "recipe",
+    name = "waste-slurry-clarifying",
+	icon = "__xander-mod__/graphics/recipe/waste/water-clarifying-b.png",
+	category = "chemistry",
+	crafting_machine_tint =
+	{
+		primary = {r = 0.000, g = 0.110, b = 0.588},
+		secondary = {r = 0.564, g = 0.795, b = 0.000},
+		tertiary = {r = 0.678, g = 0.565, b = 0.478}
+	},
+	energy_required = 40,
+	enabled = false,
+	ingredients = {{type = "fluid", name = "waste-slurry", amount = 200}, {"soda", 2}, {"magnesium-chloride", 1}},
 	results = {{type = "fluid", name = "water", amount = 200}, {"sludge", 10}},
 	subgroup = "waste"
 },
@@ -120,7 +156,7 @@ data:extend(
 	energy_required = 20,
 	enabled = false,
 	ingredients = {{type = "fluid", name = "flue-gas", amount = 200}, {"calcium-oxide", 1}, {type = "fluid", name = "water", amount = 20}},
-	results = {{type = "fluid", name = "carbon-dioxide", amount = 200}, {"sludge", 1}, {"calcium-sulfate", 1}},
+	results = {{type = "fluid", name = "carbon-dioxide", amount = 200}, {type = "fluid", name = "waste-slurry", amount = 20}, {"calcium-sulfate", 1}},
 	subgroup = "waste"
 },
 --Calcium Sulfate Cracking
@@ -144,7 +180,7 @@ data:extend(
 	energy_required = 200,
 	enabled = false,
 	ingredients = {{"slag", 40}, {type = "fluid", name = "carbon-dioxide", amount = 100}, {type = "fluid", name = "water", amount = 200}},
-	results = {{"limestone", 10}, {"sand", 10}, {type = "fluid", name = "waste-water", amount = 200}},
+	results = {{"limestone", 10}, {"sand", 10}, {"inert-waste", 20}, {type = "fluid", name = "gray-water", amount = 200}},
 	subgroup = "waste"
 },
 --
@@ -181,6 +217,22 @@ data:extend(
 	ingredients = {{"sludge", 1}, {"sand", 2}},
 	result = "sand"
 },
+--Inert Waste Burial
+{
+	type = "recipe",
+    name = "inert-waste-burial",
+	category = "sluice",
+	crafting_machine_tint =
+	{
+		primary = {r = 0.000, g = 0.110, b = 0.588},
+		secondary = {r = 0.564, g = 0.795, b = 0.000},
+		tertiary = {r = 0.678, g = 0.565, b = 0.478}
+	},
+	energy_required = 1,
+	enabled = false,
+	ingredients = {{"inert-waste", 2}},
+	result = "inert-waste"
+},
 --Calcium Sulfate Burial with Stone
 {
 	type = "recipe",
@@ -197,7 +249,7 @@ data:extend(
 	ingredients = {{"calcium-sulfate", 1}, {"stone", 2}},
 	result = "stone"
 },
---Sulfur Sulfate Burial with Gravel
+--Sulfur Burial with Gravel
 {
 	type = "recipe",
     name = "sulfur-burial",

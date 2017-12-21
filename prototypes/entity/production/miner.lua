@@ -2183,6 +2183,7 @@ data:extend(
 	dying_explosion = "medium-explosion",
 	collision_box = {{-1.4, -1.4}, {1.4, 1.4}},
 	selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
+	fast_replaceable_group = "mining-drill",
 	animation = make_4way_animation_from_spritesheet({layers =
 	{
 		{
@@ -2406,6 +2407,7 @@ data:extend(
 	dying_explosion = "medium-explosion",
 	collision_box = {{-1.4, -1.4}, {1.4, 1.4}},
 	selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
+	fast_replaceable_group = "mining-drill",
 	module_specification =
 	{
 		module_slots = 2
@@ -2578,7 +2580,7 @@ data:extend(
 	},
 	energy_usage = "100kW",
 	ingredient_count = 6,
-	crafting_categories = {"sluice"},
+	crafting_categories = {"basic-sluice", "sluice"},
 	fluid_boxes =
 	{
 		{
@@ -2621,6 +2623,7 @@ data:extend(
 	dying_explosion = "medium-explosion",
 	collision_box = {{-2.4, -2.4}, {2.4, 2.4}},
 	selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
+	fast_replaceable_group = "mining-drill",
 	module_specification =
 	{
 		module_slots = 3
@@ -2720,14 +2723,21 @@ data:extend(
 			pipe_covers = pipecoverspictures(),
 			base_area = 10,
 			base_level = -1,
-			pipe_connections = {{type = "input", position = {-1, 3}}}
+			pipe_connections = {{type = "input", position = {-2, 3}}}
 		},
 		{
 			production_type = "input",
 			pipe_covers = pipecoverspictures(),
 			base_area = 10,
 			base_level = -1,
-			pipe_connections = {{type = "input", position = {1, 3}}}
+			pipe_connections = {{type = "input", position = {0, 3}}}
+		},
+		{
+			production_type = "input",
+			pipe_covers = pipecoverspictures(),
+			base_area = 10,
+			base_level = -1,
+			pipe_connections = {{type = "input", position = {2, 3}}}
 		},
 		{
 			production_type = "output",

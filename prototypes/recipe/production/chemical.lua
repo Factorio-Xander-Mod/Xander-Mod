@@ -51,7 +51,7 @@ data:extend(
 	category = "crafting",
 	energy_required = 5,
 	enabled = false,
-	ingredients = {{"chemical-plant", 1}, {"transformer-1", 1}, {"control-1", 1}, {"forging-steel", 5}, {"rubber", 20}},
+	ingredients = {{"reactor-1", 1}, {"transformer-1", 1}, {"control-1", 1}, {"forging-steel", 5}, {"rubber", 20}},
 	result = "electrolyzer-1"
 },
 --Platinum Electrolyzer

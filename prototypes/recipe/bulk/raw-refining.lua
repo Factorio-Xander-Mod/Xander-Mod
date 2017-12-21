@@ -98,11 +98,13 @@ data:extend(
 {
 	type = "recipe",
     name = "gibbsite-calcining",
+	icon = "__xander-mod__/graphics/recipe/refining/gibbsite-calcining.png",
 	category = "refining",
 	energy_required = 4,
 	enabled = false,
 	ingredients = {{"aluminum-hydroxide", 2}},
-	result = "aluminum-oxide"
+	results = {{"aluminum-oxide", 1}, {type = "fluid", name = "gray-water", amount = 30}},
+	subgroup = "raw-material"
 },
 --Hall-Heroult Process
 {
@@ -169,10 +171,10 @@ data:extend(
 {
 	type = "recipe",
     name = "smelting-graphite",
-	category = "smelting",
-	energy_required = 8,
+	category = "basic-sluice",
+	energy_required = 2,
 	enabled = false,
-	ingredients = {{"coke", 2}},
+	ingredients = {{"granitic-ore", 1}, {type = "fluid", name = "water", amount = 10}},
 	result = "graphite-powder"
 },
 --Base "coal-liquefaction" placeholder
@@ -222,8 +224,8 @@ data:extend(
 	energy_required = 400,
 	enabled = false,
 	ingredients = {{"cuprous-oxide", 10}, {type = "fluid", name = "sulfuric-acid", amount = 20}, {type = "fluid", name = "ammonia", amount = 20}, 
-		{"calcium-oxide", 10}},-- {type = "fluid", name = "oxygen", amount = 50}},
-	results = {{"copper-plate", 20}, {"cobalt-oxide", 2}, {type = "fluid", name = "waste-water", amount = 40}},
+		{"calcium-oxide", 10}, {type = "fluid", name = "oxygen", amount = 50}},
+	results = {{"copper-plate", 20}, {"cobalt-oxide", 2}, {type = "fluid", name = "waste-slurry", amount = 20}},
 	subgroup = "raw-material"
 },
 --Cobalt Electrowinning
@@ -240,8 +242,8 @@ data:extend(
 	},
 	energy_required = 100,
 	enabled = false,
-	ingredients = {{"cobalt-oxide", 10}, {type = "fluid", name = "sulfuric-acid", amount = 10}},
-	results = {{"cobalt-plate", 10}, {type = "fluid", name = "waste-water", amount = 20}},
+	ingredients = {{"cobalt-oxide", 10}, {type = "fluid", name = "sulfuric-acid", amount = 10}, {type = "fluid", name = "water", amount = 50}},
+	results = {{"cobalt-plate", 10}, {type = "fluid", name = "waste-water", amount = 50}},
 	subgroup = "raw-material"
 },
 --
@@ -285,8 +287,8 @@ data:extend(
 	},
 	energy_required = 400,
 	enabled = false,
-	ingredients = {{"garnierite", 20}, {type = "fluid", name = "sulfuric-acid", amount = 40}},
-	results = {{"nickel-plate", 20}, {"platinum-sponge", 1}, {type = "fluid", name = "waste-water", amount = 80}},
+	ingredients = {{"garnierite", 20}, {type = "fluid", name = "sulfuric-acid", amount = 40}, {type = "fluid", name = "water", amount = 100}},
+	results = {{"nickel-plate", 20}, {"platinum-sponge", 1}, {type = "fluid", name = "waste-water", amount = 100}},
 	subgroup = "raw-material"
 },
 --Platinum Smelting
@@ -328,11 +330,13 @@ data:extend(
 {
 	type = "recipe",
     name = "tungsten-reduction",
+	icon = "__xander-mod__/graphics/recipe/refining/tungsten-reduction.png",
 	category = "refining",
 	energy_required = 5,
 	enabled = false,
-	ingredients = {{"tungsten-oxide", 10}, {type = "fluid", name = "hydrogen", amount = 30}},
-	result = "tungsten-powder"
+	ingredients = {{"tungsten-oxide", 1}, {type = "fluid", name = "hydrogen", amount = 30}},
+	results = {{"tungsten-powder", 1}, {type = "fluid", name = "gray-water", amount = 30}},
+	subgroup = "raw-material"
 },
 --Tungsten Sintering
 {
@@ -361,12 +365,12 @@ data:extend(
 	type = "recipe",
     name = "scheelite-dissolution",
 	icon = "__xander-mod__/graphics/recipe/refining/scheelite-dissolution.png",
-	category = "forge",
+	category = "sluice",
 	energy_required = 5,
 	enabled = false,
-	ingredients = {{"scheelite", 1}, {"sodium-hydroxide", 2}, {type = "fluid", name = "hydrogen-chloride", amount = 20}}, 
-		--{type = "fluid", name = "sulfuric-acid", amount = 10}},
-	results = {{"tungsten-oxide", 1}, {"calcium-sulfate", 1}, {"salt", 2}, {type = "fluid", name = "waste-water", amount = 10}},
+	ingredients = {{"scheelite", 1}, {"sodium-hydroxide", 2}, {type = "fluid", name = "hydrogen-chloride", amount = 20}, 
+		{type = "fluid", name = "sulfuric-acid", amount = 10}},
+	results = {{"tungsten-oxide", 1}, {"calcium-sulfate", 1}, {"salt", 2}, {type = "fluid", name = "waste-slurry", amount = 10}},
 	subgroup = "raw-material"
 },
 --Cassiterite Slagging with Gold
@@ -395,7 +399,7 @@ data:extend(
 	results = {{"sodium-chromate", 8}, {"hematite", 2}, {type = "fluid", name = "flue-gas", amount = 80}},
 	subgroup = "raw-material"
 },
---Chromate Leaching
+--Chromate Leaching and Reduction to Chromium(III) Oxide
 {
 	type = "recipe",
     name = "chromate-leaching",
@@ -439,7 +443,7 @@ data:extend(
 	category = "refining",
 	energy_required = 2,
 	enabled = false,
-	ingredients = {{type = "fluid", name = "titanium-tetrachloride", amount = 10}},-- {type = "fluid", name = "water", amount = 40}},
+	ingredients = {{type = "fluid", name = "titanium-tetrachloride", amount = 10}, {type = "fluid", name = "water", amount = 40}},
 	results = {{"titanium-oxide", 1}, {type = "fluid", name = "hydrogen-chloride", amount = 40}},
 	subgroup = "raw-material"
 },
@@ -561,7 +565,7 @@ data:extend(
 	category = "refining",
 	energy_required = 40,
 	enabled = false,
-	ingredients = {{type = "fluid", name = "crude-oil", amount = 50}, {"soda", 2}, {"calcium-oxide", 2}},-- {type = "fluid", name = "oxygen", amount = 300}},
+	ingredients = {{type = "fluid", name = "crude-oil", amount = 50}, {"soda", 2}, {"calcium-oxide", 2}, {type = "fluid", name = "oxygen", amount = 300}},
 	results = {{"vanadium-slag", 2}, {type = "fluid", name = "flue-gas", amount = 300}},
 	subgroup = "raw-material"
 },
@@ -592,7 +596,7 @@ data:extend(
 	energy_required = 20,
 	enabled = false,
 	ingredients = {{"vanadium-slag", 2}, {type = "fluid", name = "ammonia", amount = 20}, {type = "fluid", name = "sulfuric-acid", amount = 10}},
-	results = {{"ammonium-vanadate", 2}, {"sludge", 1}, {type = "fluid", name = "waste-water", amount = 20}},
+	results = {{"ammonium-vanadate", 2}, {type = "fluid", name = "waste-slurry", amount = 20}},
 	subgroup = "raw-material"
 },
 --Ammonium Vanadate Decomposition
@@ -680,8 +684,8 @@ data:extend(
 	},
 	energy_required = 100,
 	enabled = false,
-	ingredients = {{"silver-sponge", 10}, {type = "fluid", name = "nitric-acid", amount = 10}},
-	results = {{"silver-plate", 10}, {"sludge", 1}, {type = "fluid", name = "waste-water", amount = 20}},
+	ingredients = {{"silver-sponge", 10}, {type = "fluid", name = "nitric-acid", amount = 10}, {type = "fluid", name = "water", amount = 20}},
+	results = {{"silver-plate", 10}, {"sludge", 1}, {type = "fluid", name = "gray-water", amount = 20}},
 	subgroup = "raw-material"
 },
 --
@@ -700,13 +704,13 @@ data:extend(
 	},
 	energy_required = 40,
 	enabled = false,
-	ingredients = {{"borax", 1}, {type = "fluid", name = "hydrogen-chloride", amount = 20}, {type = "fluid", name = "water", amount = 30}},
-	results = {{"boron-oxide", 10}, {"salt", 1}, {type = "fluid", name = "waste-water", amount = 10}},
+	ingredients = {{"borax", 1}, {type = "fluid", name = "hydrogen-chloride", amount = 20}, {type = "fluid", name = "water", amount = 50}},
+	results = {{"boron-oxide", 10}, {"salt", 1}, {type = "fluid", name = "gray-water", amount = 50}},
 	subgroup = "raw-material"
 },
 --
 --NATURAL GAS
---Natural Gas Cold Distillation
+--Natural Gas Cryogenic Distillation
 {
 	type = "recipe",
     name = "gas-distillation",
@@ -719,7 +723,7 @@ data:extend(
 		{type = "fluid", name = "methane", amount = 30}},
 	subgroup = "raw-material"
 },
---Advanced Natural Gas Cold Distillation
+--Advanced Natural Gas Cryogenic Distillation
 {
 	type = "recipe",
     name = "advanced-gas-distillation",
@@ -803,8 +807,8 @@ data:extend(
 	},
 	energy_required = 100,
 	enabled = false,
-	ingredients = {{"zinc-oxide", 10}, {type = "fluid", name = "sulfuric-acid", amount = 10}},
-	results = {{"zinc-plate", 10}, {type = "fluid", name = "waste-water", amount = 20}},
+	ingredients = {{"zinc-oxide", 10}, {type = "fluid", name = "sulfuric-acid", amount = 10}, {type = "fluid", name = "water", amount = 20}},
+	results = {{"zinc-plate", 10}, {type = "fluid", name = "gray-water", amount = 20}},
 	subgroup = "raw-material"
 },
 --Chalcopyrite Roasting
@@ -848,7 +852,7 @@ data:extend(
 	energy_required = 20,
 	enabled = false,
 	ingredients = {{"monazite", 2}, {type = "fluid", name = "sulfuric-acid", amount = 20}, {type = "fluid", name = "ammonia", amount = 40}},
-	results = {{"re-oxide", 2}, {type = "fluid", name = "phosphoric-acid", amount = 10}, {type = "fluid", name = "waste-water", amount = 40}},
+	results = {{"re-oxide", 2}, {type = "fluid", name = "phosphoric-acid", amount = 10}, {type = "fluid", name = "waste-water", amount = 50}},
 	subgroup = "raw-material"
 },
 --Rare Earth Metals Reduction
@@ -878,7 +882,7 @@ data:extend(
 	energy_required = 10,
 	enabled = false,
 	ingredients = {{"uranyl-nitrate", 1}, {type = "fluid", name = "hydrogen-fluoride", amount = 60}},
-	results = {{"natural-uf6", 1}, {type = "fluid", name = "nitrogen-dioxide", amount = 10}, {type = "fluid", name = "waste-water", amount = 20}},
+	results = {{"natural-uf6", 1}, {type = "fluid", name = "nitrogen-dioxide", amount = 10}, {type = "fluid", name = "waste-water", amount = 50}},
 	subgroup = "raw-material"
 },
 --Base "uranium-processing" placeholder
@@ -903,8 +907,8 @@ data:extend(
 	category = "refining",
 	energy_required = 2,
 	enabled = false,
-	ingredients = {{"fuel-uf6", 1}, {type = "fluid", name = "water", amount = 20}},-- {type = "fluid", name = "hydrogen", amount = 10}},
-	results = {{"fuel-uo2", 1}, {type = "fluid", name = "hydrogen-fluoride", amount = 40}},-- {type = "fluid", name = "waste-water", amount = 20}},
+	ingredients = {{"fuel-uf6", 1}, {type = "fluid", name = "water", amount = 100}, {type = "fluid", name = "hydrogen", amount = 10}},
+	results = {{"fuel-uo2", 1}, {type = "fluid", name = "hydrogen-fluoride", amount = 40}, {type = "fluid", name = "gray-water", amount = 100}},
 	subgroup = "raw-material"
 },
 --238-Uranium Hexafluoride Hydrolysis
@@ -915,8 +919,8 @@ data:extend(
 	category = "refining",
 	energy_required = 2,
 	enabled = false,
-	ingredients = {{"238-uf6", 1}, {type = "fluid", name = "water", amount = 20}},-- {type = "fluid", name = "hydrogen", amount = 10}},
-	results = {{"238-uo2", 1}, {type = "fluid", name = "hydrogen-fluoride", amount = 40}},-- {type = "fluid", name = "waste-water", amount = 20}},
+	ingredients = {{"238-uf6", 1}, {type = "fluid", name = "water", amount = 100}, {type = "fluid", name = "hydrogen", amount = 10}},
+	results = {{"238-uo2", 1}, {type = "fluid", name = "hydrogen-fluoride", amount = 40}, {type = "fluid", name = "gray-water", amount = 100}},
 	subgroup = "raw-material"
 },
 --Weapons-Grade Uranium Hexafluoride Hydrolysis
@@ -927,8 +931,8 @@ data:extend(
 	category = "refining",
 	energy_required = 5,
 	enabled = false,
-	ingredients = {{"weapons-uf6", 1}, {type = "fluid", name = "water", amount = 20}},-- {type = "fluid", name = "hydrogen", amount = 10}},
-	results = {{"weapons-uo2", 1}, {type = "fluid", name = "hydrogen-fluoride", amount = 40}},-- {type = "fluid", name = "waste-water", amount = 20}},
+	ingredients = {{"weapons-uf6", 1}, {type = "fluid", name = "water", amount = 100}, {type = "fluid", name = "hydrogen", amount = 10}},
+	results = {{"weapons-uo2", 1}, {type = "fluid", name = "hydrogen-fluoride", amount = 40}, {type = "fluid", name = "gray-water", amount = 100}},
 	subgroup = "raw-material"
 },
 --238-Uranium Reduction
@@ -1004,7 +1008,7 @@ data:extend(
 	energy_required = 20,
 	enabled = false,
 	ingredients = {{type = "fluid", name = "air", amount = 100}},
-	results = {{type = "fluid", name = "water", amount = 20}}
+	results = {{type = "fluid", name = "distilled-water", amount = 20}}
 },
 --
 --WOOD

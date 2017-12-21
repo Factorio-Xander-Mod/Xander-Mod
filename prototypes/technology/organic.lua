@@ -34,10 +34,6 @@ data:extend(
 		{
 			type = "unlock-recipe",
 			recipe = "phenol-a"
-		},
-		{
-			type = "unlock-recipe",
-			recipe = "water-clarifying-a"
 		}
 	},
 	prerequisites = {"coke-a", "reactor_0"},

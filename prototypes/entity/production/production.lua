@@ -52,10 +52,171 @@ data.raw["assembling-machine"]["assembling-machine-1"].animation =
 		},
 	},
 }
-data.raw["assembling-machine"]["assembling-machine-1"].crafting_categories = {"basic-crafting", "crafting"}
+--data.raw["assembling-machine"]["assembling-machine-1"].crafting_categories = {"basic-crafting", "crafting"}
 data.raw["assembling-machine"]["assembling-machine-1"].energy_source.emissions = 0.01
 data.raw["assembling-machine"]["assembling-machine-1"].energy_usage = "50kW"
 data.raw["assembling-machine"]["assembling-machine-1"].ingredient_count = 4
+data.raw["assembling-machine"]["assembling-machine-1"].fluid_boxes =
+{
+	{
+		production_type = "input",
+		pipe_picture =
+		{
+			north =
+			{
+				filename = "__xander-mod__/graphics/entity/production/assembling-machine-1/pipe-N.png",
+				priority = "extra-high",
+				width = 35,
+				height = 18,
+				shift = util.by_pixel(2.5, 14),
+				hr_version =
+				{
+					filename = "__xander-mod__/graphics/entity/production/assembling-machine-1/hr-pipe-N.png",
+					priority = "extra-high",
+					width = 71,
+					height = 38,
+					shift = util.by_pixel(2.25, 13.5),
+					scale = 0.5,
+				}
+			},
+			east =
+			{
+				filename = "__xander-mod__/graphics/entity/production/assembling-machine-1/pipe-E.png",
+				priority = "extra-high",
+				width = 20,
+				height = 38,
+				shift = util.by_pixel(-25, 1),
+				hr_version =
+				{
+					filename = "__xander-mod__/graphics/entity/production/assembling-machine-1/hr-pipe-E.png",
+					priority = "extra-high",
+					width = 42,
+					height = 76,
+					shift = util.by_pixel(-24.5, 1),
+					scale = 0.5,
+				}
+			},
+			south =
+			{
+				filename = "__xander-mod__/graphics/entity/production/assembling-machine-1/pipe-S.png",
+				priority = "extra-high",
+				width = 44,
+				height = 31,
+				shift = util.by_pixel(0, -31.5),
+				hr_version =
+				{
+					filename = "__xander-mod__/graphics/entity/production/assembling-machine-1/hr-pipe-S.png",
+					priority = "extra-high",
+					width = 88,
+					height = 61,
+					shift = util.by_pixel(0, -31.25),
+					scale = 0.5,
+				}
+			},
+			west =
+			{
+				filename = "__xander-mod__/graphics/entity/production/assembling-machine-1/pipe-W.png",
+				priority = "extra-high",
+				width = 19,
+				height = 37,
+				shift = util.by_pixel(25.5, 1.5),
+				hr_version =
+				{
+					filename = "__xander-mod__/graphics/entity/production/assembling-machine-1/hr-pipe-W.png",
+					priority = "extra-high",
+					width = 39,
+					height = 73,
+					shift = util.by_pixel(25.75, 1.25),
+					scale = 0.5,
+				}
+			}
+		},
+		base_area = 10,
+		base_level = -1,
+		pipe_connections = {{ type="input", position = {0, -2} }},
+		secondary_draw_orders = { north = -1 }
+	},
+	{
+		production_type = "output",
+		pipe_picture =
+		{
+			north =
+			{
+				filename = "__xander-mod__/graphics/entity/production/assembling-machine-1/pipe-N.png",
+				priority = "extra-high",
+				width = 35,
+				height = 18,
+				shift = util.by_pixel(2.5, 14),
+				hr_version =
+				{
+					filename = "__xander-mod__/graphics/entity/production/assembling-machine-1/hr-pipe-N.png",
+					priority = "extra-high",
+					width = 71,
+					height = 38,
+					shift = util.by_pixel(2.25, 13.5),
+					scale = 0.5,
+				}
+			},
+			east =
+			{
+				filename = "__xander-mod__/graphics/entity/production/assembling-machine-1/pipe-E.png",
+				priority = "extra-high",
+				width = 20,
+				height = 38,
+				shift = util.by_pixel(-25, 1),
+				hr_version =
+				{
+					filename = "__xander-mod__/graphics/entity/production/assembling-machine-1/hr-pipe-E.png",
+					priority = "extra-high",
+					width = 42,
+					height = 76,
+					shift = util.by_pixel(-24.5, 1),
+					scale = 0.5,
+				}
+			},
+			south =
+			{
+				filename = "__xander-mod__/graphics/entity/production/assembling-machine-1/pipe-S.png",
+				priority = "extra-high",
+				width = 44,
+				height = 31,
+				shift = util.by_pixel(0, -31.5),
+				hr_version =
+				{
+					filename = "__xander-mod__/graphics/entity/production/assembling-machine-1/hr-pipe-S.png",
+					priority = "extra-high",
+					width = 88,
+					height = 61,
+					shift = util.by_pixel(0, -31.25),
+					scale = 0.5,
+				}
+			},
+			west =
+			{
+				filename = "__xander-mod__/graphics/entity/production/assembling-machine-1/pipe-W.png",
+				priority = "extra-high",
+				width = 19,
+				height = 37,
+				shift = util.by_pixel(25.5, 1.5),
+				hr_version =
+				{
+					filename = "__xander-mod__/graphics/entity/production/assembling-machine-1/hr-pipe-W.png",
+					priority = "extra-high",
+					width = 39,
+					height = 73,
+					shift = util.by_pixel(25.75, 1.25),
+					scale = 0.5,
+				}
+			}
+		},
+		pipe_covers = pipecoverspictures(),
+		base_area = 10,
+		base_level = 1,
+		pipe_connections = {{type = "output", position = {0, 2}}},
+		secondary_draw_orders = { north = -1 }
+	},
+	off_when_no_fluid_recipe = true
+}
 
 --Base "assembling-machine-2"
 data.raw["assembling-machine"]["assembling-machine-2"].icon = "__xander-mod__/graphics/item/production/production/assembling-machine-2.png"
@@ -270,7 +431,7 @@ data.raw["assembling-machine"]["assembling-machine-2"].animation =
 		},
 	},
 }
-data.raw["assembling-machine"]["assembling-machine-2"].crafting_categories = {"crafting", "crafting-with-fluid"}
+--data.raw["assembling-machine"]["assembling-machine-2"].crafting_categories = {"crafting", "crafting-with-fluid"}
 data.raw["assembling-machine"]["assembling-machine-2"].crafting_speed = 1
 data.raw["assembling-machine"]["assembling-machine-2"].energy_source.emissions = 0.008
 data.raw["assembling-machine"]["assembling-machine-2"].energy_usage = "100kW"

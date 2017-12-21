@@ -114,6 +114,16 @@ data:extend(
 	order = "10",
 	stack_size = 200
 },
+--Inert Waste (for burial)
+{
+	type = "item",
+	name = "inert-waste",
+	icon = "__xander-mod__/graphics/item/material/raw/inert-waste.png",
+	flags = {"goes-to-main-inventory"},
+	subgroup = "raw-material",
+	order = "11",
+	stack_size = 200
+},
 --Vanadium Slag
 {
 	type = "item",
@@ -121,7 +131,7 @@ data:extend(
 	icon = "__xander-mod__/graphics/item/material/raw/vanadium-slag.png",
 	flags = {"goes-to-main-inventory"},
 	subgroup = "raw-material",
-	order = "11",
+	order = "12",
 	stack_size = 200
 }
 

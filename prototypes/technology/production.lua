@@ -473,6 +473,10 @@ data:extend(
 		{
 			type = "unlock-recipe",
 			recipe = "wood-resin"
+		},
+		{
+			type = "unlock-recipe",
+			recipe = "waste-water-clarifying-a"
 		}
 	},
 	prerequisites = {"glass-a", "smelting-sulfur"},
@@ -498,6 +502,10 @@ data:extend(
 		{
 			type = "unlock-recipe",
 			recipe = "reactor-1"
+		},
+		{
+			type = "unlock-recipe",
+			recipe = "distilled-water"
 		}
 	},
 	prerequisites = {"machines_1", "reactor_0", "pump_1"},

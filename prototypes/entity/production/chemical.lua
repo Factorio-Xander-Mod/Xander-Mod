@@ -25,7 +25,6 @@ data.raw["assembling-machine"]["chemical-plant"].energy_source =
 	}
 }
 data.raw["assembling-machine"]["chemical-plant"].energy_usage = "200kW"
-data.raw["assembling-machine"]["chemical-plant"].crafting_categories = {"basic-chemistry"}
 
 --Base "centrifuge" 
 data.raw["assembling-machine"]["centrifuge"].max_health = 500
@@ -55,6 +54,7 @@ data:extend(
 	dying_explosion = "medium-explosion",
 	collision_box = {{-1.4, -1.4}, {1.4, 1.4}},
 	selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
+	fast_replaceable_group = "reactor",
 	animation = make_4way_animation_from_spritesheet({layers =
 	{
 		{
@@ -222,7 +222,7 @@ data:extend(
 	},
 	energy_usage = "200kW",
 	ingredient_count = 4,
-	crafting_categories = {"chemistry"},
+	crafting_categories = {"basic-chemistry", "chemistry"},
 	fluid_boxes =
 	{
 		{
@@ -265,6 +265,7 @@ data:extend(
 	dying_explosion = "medium-explosion",
 	collision_box = {{-1.4, -1.4}, {1.4, 1.4}},
 	selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
+	fast_replaceable_group = "reactor",
 	module_specification =
 	{
 		module_slots = 2
@@ -480,6 +481,7 @@ data:extend(
 	dying_explosion = "medium-explosion",
 	collision_box = {{-1.4, -1.4}, {1.4, 1.4}},
 	selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
+	fast_replaceable_group = "electrolyzer",
 	module_specification =
 	{
 		module_slots = 2
@@ -695,6 +697,7 @@ data:extend(
 	dying_explosion = "medium-explosion",
 	collision_box = {{-1.4, -1.4}, {1.4, 1.4}},
 	selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
+	fast_replaceable_group = "electrolyzer",
 	module_specification =
 	{
 		module_slots = 3
@@ -1011,14 +1014,21 @@ data:extend(
 			pipe_covers = pipecoverspictures(),
 			base_area = 10,
 			base_level = -1,
-			pipe_connections = {{type = "input", position = {-1, 3}}}
+			pipe_connections = {{type = "input", position = {-2, 3}}}
 		},
 		{
 			production_type = "input",
 			pipe_covers = pipecoverspictures(),
 			base_area = 10,
 			base_level = -1,
-			pipe_connections = {{type = "input", position = {1, 3}}}
+			pipe_connections = {{type = "input", position = {0, 3}}}
+		},
+		{
+			production_type = "input",
+			pipe_covers = pipecoverspictures(),
+			base_area = 10,
+			base_level = -1,
+			pipe_connections = {{type = "input", position = {2, 3}}}
 		},
 		{
 			production_type = "output",

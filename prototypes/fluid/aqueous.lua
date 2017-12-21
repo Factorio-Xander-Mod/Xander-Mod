@@ -7,7 +7,7 @@ data.raw.fluid["water"].order = "00-00"
 data.raw.fluid["steam"].base_color = {r = 0.6, g = 0.6, b = 0.6}
 data.raw.fluid["steam"].order = "00-01"
 --Base "sulfuric-acid"
-data.raw.fluid["sulfuric-acid"].order = "00-03"
+data.raw.fluid["sulfuric-acid"].order = "00-04"
 
 
 data:extend(
@@ -17,6 +17,21 @@ data:extend(
 	--order = "00-00"
 --Base "steam" placeholder
 	--order = "00-01"
+--Distilled Water (pure H2O)
+{
+	type = "fluid",
+	name = "distilled-water",
+	default_temperature = 25,
+	heat_capacity = "0.1KJ",
+	base_color = {r = 0.49, g = 0.9, b = 0.9},
+	flow_color = {r = 0.9, g = 0.9, b = 0.9},
+	max_temperature = 100,
+	icon = "__xander-mod__/graphics/fluid/aqueous/distilled-water.png",
+	pressure_to_speed_ratio = 0.4,
+	flow_to_energy_ratio = 0.59,
+	subgroup = "fluid",
+	order = "00-02"
+},
 --Mineral Water
 {
 	type = "fluid",
@@ -30,11 +45,10 @@ data:extend(
 	pressure_to_speed_ratio = 0.4,
 	flow_to_energy_ratio = 0.59,
 	subgroup = "fluid",
-	order = "00-02"--,
-	--auto_barrel = false
+	order = "00-03"
 },
 --Base "sulfuric-acid" placeholder
-	--order = "00-03"
+	--order = "00-04"
 --Nitric Acid
 {
 	type = "fluid",
@@ -48,8 +62,7 @@ data:extend(
 	pressure_to_speed_ratio = 0.4,
 	flow_to_energy_ratio = 0.59,
 	subgroup = "fluid",
-	order = "00-04"--,
-	--auto_barrel = false
+	order = "00-05"
 },
 --Nitric-Sulfuric Acid Mixture
 {
@@ -64,8 +77,7 @@ data:extend(
 	pressure_to_speed_ratio = 0.4,
 	flow_to_energy_ratio = 0.59,
 	subgroup = "fluid",
-	order = "00-05"--,
-	--auto_barrel = false
+	order = "00-06"
 },
 --Oleum
 {
@@ -80,8 +92,7 @@ data:extend(
 	pressure_to_speed_ratio = 0.4,
 	flow_to_energy_ratio = 0.59,
 	subgroup = "fluid",
-	order = "00-06"--,
-	--auto_barrel = false
+	order = "00-07"
 },
 --Phosphoric Acid
 {
@@ -96,10 +107,24 @@ data:extend(
 	pressure_to_speed_ratio = 0.4,
 	flow_to_energy_ratio = 0.59,
 	subgroup = "fluid",
-	order = "00-07"--,
-	--auto_barrel = false
+	order = "00-08"
 },
---Waste Water
+--Gray Water - Light Waste
+{
+	type = "fluid",
+	name = "gray-water",
+	default_temperature = 25,
+	heat_capacity = "0.1KJ",
+	base_color = {r = 0.4, g = 0.31, b = 0.24},
+	flow_color = {r = 0.3, g = 0.3, b = 0.3},
+	max_temperature = 100,
+	icon = "__xander-mod__/graphics/fluid/aqueous/gray-water.png",
+	pressure_to_speed_ratio = 0.4,
+	flow_to_energy_ratio = 0.59,
+	subgroup = "fluid",
+	order = "00-09"
+},
+--Waste Water - Medium Waste
 {
 	type = "fluid",
 	name = "waste-water",
@@ -112,8 +137,22 @@ data:extend(
 	pressure_to_speed_ratio = 0.4,
 	flow_to_energy_ratio = 0.59,
 	subgroup = "fluid",
-	order = "00-08"--,
-	--auto_barrel = false
+	order = "00-10"
+},
+--Waste Slurry - Heavy Waste
+{
+	type = "fluid",
+	name = "waste-slurry",
+	default_temperature = 25,
+	heat_capacity = "0.1KJ",
+	base_color = {r = 0.4, g = 0.31, b = 0.24},
+	flow_color = {r = 0.3, g = 0.3, b = 0.3},
+	max_temperature = 100,
+	icon = "__xander-mod__/graphics/fluid/aqueous/waste-slurry.png",
+	pressure_to_speed_ratio = 0.4,
+	flow_to_energy_ratio = 0.59,
+	subgroup = "fluid",
+	order = "00-11"
 }
 
 })

@@ -1,7 +1,7 @@
 
 --Base Overrides
 
---Base "stone-furnace"
+--[[Base "stone-furnace"
 data.raw.furnace["stone-furnace"].crafting_categories = {"empty"}
 
 --Base "steel-furnace"
@@ -9,7 +9,7 @@ data.raw.furnace["steel-furnace"].crafting_categories = {"empty"}
 
 --Base "electric-furnace"
 data.raw.furnace["electric-furnace"].crafting_categories = {"empty"}
-
+]]--
 
 data:extend(
 {
