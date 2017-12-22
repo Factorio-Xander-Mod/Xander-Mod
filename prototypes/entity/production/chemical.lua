@@ -190,5 +190,4 @@ xmutil.clone("assembling-machine", "oil-refinery",
 		},
 	}
 ),
-
 }
