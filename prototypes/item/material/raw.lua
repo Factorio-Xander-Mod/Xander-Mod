@@ -129,6 +129,7 @@ data:extend(
 	type = "item",
 	name = "inert-waste",
 	icon = "__xander-mod__/graphics/item/material/raw/inert-waste.png",
+	icon_size = 32,
 	flags = {"goes-to-main-inventory"},
 	subgroup = "raw-material",
 	order = "11",

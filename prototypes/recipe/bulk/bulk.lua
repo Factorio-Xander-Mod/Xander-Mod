@@ -1665,6 +1665,7 @@ data:extend(
 	type = "recipe",
     name = "distilled-water",
 	icon = "__xander-mod__/graphics/recipe/compound/distilled-water.png",
+	icon_size = 32,
 	category = "chemistry",
 	energy_required = 2,
 	enabled = false,

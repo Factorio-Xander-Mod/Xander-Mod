@@ -77,6 +77,7 @@ data:extend(
 	type = "recipe",
     name = "gray-water-clarifying",
 	icon = "__xander-mod__/graphics/recipe/waste/water-clarifying-b.png",
+	icon_size = 32,
 	category = "chemistry",
 	crafting_machine_tint =
 	{
@@ -116,6 +117,7 @@ data:extend(
 	type = "recipe",
     name = "waste-water-clarifying-b",
 	icon = "__xander-mod__/graphics/recipe/waste/water-clarifying-b.png",
+	icon_size = 32,
 	category = "chemistry",
 	crafting_machine_tint =
 	{
