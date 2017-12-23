@@ -75,8 +75,8 @@ data:extend(
 --Gray Water Clarifying
 {
 	type = "recipe",
-    name = "gray-water-clarifying",
-	icon = "__xander-mod__/graphics/recipe/waste/water-clarifying-b.png",
+  name = "gray-water-clarifying",
+	icon = "__xander-mod__/graphics/recipe/waste/gray-water-clarifying.png",
 	icon_size = 32,
 	category = "chemistry",
 	crafting_machine_tint =
@@ -94,8 +94,8 @@ data:extend(
 --Crude Waste Water Treatment
 {
 	type = "recipe",
-    name = "waste-water-clarifying-a",
-	icon = "__xander-mod__/graphics/recipe/waste/water-clarifying-a.png",
+  name = "waste-water-clarifying-a",
+	icon = "__xander-mod__/graphics/recipe/waste/waste-water-clarifying-a.png",
 	icon_size = 32,
 	category = "basic-chemistry",
 	crafting_machine_tint =
@@ -115,8 +115,8 @@ data:extend(
 --Waste Water Precipitation & Clarifying
 {
 	type = "recipe",
-    name = "waste-water-clarifying-b",
-	icon = "__xander-mod__/graphics/recipe/waste/water-clarifying-b.png",
+  name = "waste-water-clarifying-b",
+	icon = "__xander-mod__/graphics/recipe/waste/waste-water-clarifying-b.png",
 	icon_size = 32,
 	category = "chemistry",
 	crafting_machine_tint =
@@ -134,8 +134,8 @@ data:extend(
 --Waste Slurry Complete Precipitation and Press-Filtration
 {
 	type = "recipe",
-    name = "waste-slurry-clarifying",
-	icon = "__xander-mod__/graphics/recipe/waste/water-clarifying-b.png",
+  name = "waste-slurry-clarifying",
+	icon = "__xander-mod__/graphics/recipe/waste/waste-slurry-clarifying.png",
 	icon_size = 32,
 	category = "chemistry",
 	crafting_machine_tint =
