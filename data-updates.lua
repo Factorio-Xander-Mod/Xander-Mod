@@ -5,8 +5,7 @@ table.remove(data.raw["assembling-machine"]["chemical-plant"].crafting_categorie
 --Assembler 1
 table.insert(data.raw["assembling-machine"]["assembling-machine-1"].crafting_categories, "basic-crafting")
 table.insert(data.raw["assembling-machine"]["assembling-machine-1"].crafting_categories, "crafting-with-fluid")
---Assembler 2
-table.remove(data.raw["assembling-machine"]["chemical-plant"].crafting_categories, 2)
+--Assembler 2 - no changes needed
 --Assembler 3 - no changes needed
 --Player
 table.insert(data.raw.player["player"].crafting_categories, "basic-sluice")
