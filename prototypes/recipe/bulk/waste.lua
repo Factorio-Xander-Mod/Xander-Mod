@@ -71,7 +71,7 @@ data:extend(
 {
 	type = "recipe",
     name = "gray-water-clarifying",
-	icon = "__xander-mod__/graphics/recipe/waste/gray-water-clarifying.png",
+	icon = "__xander-mod__/graphics/recipe/waste/water-clarifying-b.png",
 	category = "chemistry",
 	crafting_machine_tint =
 	{
@@ -89,7 +89,7 @@ data:extend(
 {
 	type = "recipe",
     name = "waste-water-clarifying-a",
-	icon = "__xander-mod__/graphics/recipe/waste/waste-water-clarifying-a.png",
+	icon = "__xander-mod__/graphics/recipe/waste/water-clarifying-a.png",
 	category = "basic-chemistry",
 	crafting_machine_tint =
 	{
@@ -109,7 +109,7 @@ data:extend(
 {
 	type = "recipe",
     name = "waste-water-clarifying-b",
-	icon = "__xander-mod__/graphics/recipe/waste/waste-water-clarifying-b.png",
+	icon = "__xander-mod__/graphics/recipe/waste/water-clarifying-b.png",
 	category = "chemistry",
 	crafting_machine_tint =
 	{
@@ -127,7 +127,7 @@ data:extend(
 {
 	type = "recipe",
     name = "waste-slurry-clarifying",
-	icon = "__xander-mod__/graphics/recipe/waste/waste-slurry-clarifying.png",
+	icon = "__xander-mod__/graphics/recipe/waste/water-clarifying-b.png",
 	category = "chemistry",
 	crafting_machine_tint =
 	{
