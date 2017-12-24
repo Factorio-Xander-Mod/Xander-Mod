@@ -61,7 +61,12 @@ xmutil.clone("assembling-machine", "chemical-plant",
 		max_health = 200,
 		module_specification = xmutil.NIL,
 		crafting_speed = 1,
-		energy_source = { emissions = 0.002 },
+		energy_source =
+		{
+			type = "electric",
+			usage_priority = "secondary-input",
+			emissions = 0.002
+		},
 		energy_usage = "200kW",
 		fast_replaceable_group = "reactor",
 		crafting_categories = {"basic-chemistry", "chemistry"},
@@ -86,7 +91,12 @@ xmutil.clone("assembling-machine", "chemical-plant",
 		max_health = 400,
 		module_specification = { module_slots = 2 },
 		crafting_speed = 2,
-		energy_source = { emissions = 0.002 },
+		energy_source =
+		{
+			type = "electric",
+			usage_priority = "secondary-input",
+			emissions = 0.002
+		},
 		energy_usage = "400kW",
 		ingredient_count = 6,
 		fast_replaceable_group = "reactor",
@@ -111,7 +121,12 @@ xmutil.clone("assembling-machine", "chemical-plant",
 		max_health = 200,
 		module_specification = { module_slots = 2 },
 		crafting_speed = 1,
-		energy_source = { emissions = 0.002 },
+		energy_source =
+		{
+			type = "electric",
+			usage_priority = "secondary-input",
+			emissions = 0.002
+		},
 		energy_usage = "500kW",
 		ingredient_count = 4,
 		crafting_categories = {"electrolysis"},
@@ -138,7 +153,12 @@ xmutil.clone("assembling-machine", "chemical-plant",
 		max_health = 400,
 		module_specification = { module_slots = 3 },
 		crafting_speed = 2,
-		energy_source = { emissions = 0.0008 },
+		energy_source =
+		{
+			type = "electric",
+			usage_priority = "secondary-input",
+			emissions = 0.0008
+		},
 		energy_usage = "1MW",
 		ingredient_count = 6,
 		crafting_categories = {"electrolysis"},

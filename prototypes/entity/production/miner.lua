@@ -188,7 +188,14 @@ xmutil.clone("mining-drill", "pumpjack",
 			north = {
 				layers = {
 					{
+						priority = "extra-high",
+						width = 116,
+						height = 110,
+						line_length = 10,
+						shift = util.by_pixel(4, -23),
 						filename = "__xander-mod__/graphics/entity/production/pumpjack-2/animation.png",
+						frame_count = 40,
+						animation_speed = 1,
 						hr_version = xmutil.NIL,
 					},
 				},

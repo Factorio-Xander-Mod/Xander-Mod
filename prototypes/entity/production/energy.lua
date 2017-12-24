@@ -46,9 +46,49 @@ data:extend{
 --Superheating Boiler
 xmutil.clone("boiler", "boiler",
 	{
-		{
+		--[[{
 			"__base__/graphics/entity/boiler/boiler-",
 			"__xander-mod__/graphics/entity/production/boiler-2/",
+		},]]--
+		{
+			"__base__/graphics/entity/boiler/boiler-N-idle",
+			"__xander-mod__/graphics/entity/production/boiler-2/N-idle"
+		},
+		{
+			"__base__/graphics/entity/boiler/hr-boiler-N-idle",
+			"__xander-mod__/graphics/entity/production/boiler-2/hr-N-idle"
+		},
+		{
+			"__base__/graphics/entity/boiler/boiler-E-idle",
+			"__xander-mod__/graphics/entity/production/boiler-2/E-idle"
+		},
+		{
+			"__base__/graphics/entity/boiler/hr-boiler-E-idle",
+			"__xander-mod__/graphics/entity/production/boiler-2/hr-E-idle"
+		},
+		{
+			"__base__/graphics/entity/boiler/boiler-S-idle",
+			"__xander-mod__/graphics/entity/production/boiler-2/S-idle"
+		},
+		{
+			"__base__/graphics/entity/boiler/hr-boiler-S-idle",
+			"__xander-mod__/graphics/entity/production/boiler-2/hr-S-idle"
+		},
+		{
+			"__base__/graphics/entity/boiler/boiler-W-idle",
+			"__xander-mod__/graphics/entity/production/boiler-2/W-idle"
+		},
+		{
+			"__base__/graphics/entity/boiler/hr-boiler-W-idle",
+			"__xander-mod__/graphics/entity/production/boiler-2/hr-W-idle"
+		},
+		{
+			"__base__/graphics/entity/boiler/boiler-E-patch",
+			"__xander-mod__/graphics/entity/production/boiler-2/E-patch"
+		},
+		{
+			"__base__/graphics/entity/boiler/hr-boiler-E-patch",
+			"__xander-mod__/graphics/entity/production/boiler-2/hr-E-patch"
 		}
 	},
 	{
@@ -69,8 +109,44 @@ xmutil.clone("boiler", "boiler",
 xmutil.clone("boiler", "boiler",
 	{
 		{
-			"__base__/graphics/entity/boiler/boiler-",
-			"__xander-mod__/graphics/entity/production/boiler-4/",
+			"__base__/graphics/entity/boiler/boiler-N-idle",
+			"__xander-mod__/graphics/entity/production/boiler-4/N-idle"
+		},
+		{
+			"__base__/graphics/entity/boiler/hr-boiler-N-idle",
+			"__xander-mod__/graphics/entity/production/boiler-4/hr-N-idle"
+		},
+		{
+			"__base__/graphics/entity/boiler/boiler-E-idle",
+			"__xander-mod__/graphics/entity/production/boiler-4/E-idle"
+		},
+		{
+			"__base__/graphics/entity/boiler/hr-boiler-E-idle",
+			"__xander-mod__/graphics/entity/production/boiler-4/hr-E-idle"
+		},
+		{
+			"__base__/graphics/entity/boiler/boiler-S-idle",
+			"__xander-mod__/graphics/entity/production/boiler-4/S-idle"
+		},
+		{
+			"__base__/graphics/entity/boiler/hr-boiler-S-idle",
+			"__xander-mod__/graphics/entity/production/boiler-4/hr-S-idle"
+		},
+		{
+			"__base__/graphics/entity/boiler/boiler-W-idle",
+			"__xander-mod__/graphics/entity/production/boiler-4/W-idle"
+		},
+		{
+			"__base__/graphics/entity/boiler/hr-boiler-W-idle",
+			"__xander-mod__/graphics/entity/production/boiler-4/hr-W-idle"
+		},
+		{
+			"__base__/graphics/entity/boiler/boiler-E-patch",
+			"__xander-mod__/graphics/entity/production/boiler-4/E-patch"
+		},
+		{
+			"__base__/graphics/entity/boiler/hr-boiler-E-patch",
+			"__xander-mod__/graphics/entity/production/boiler-4/hr-E-patch"
 		}
 	},
 	{
