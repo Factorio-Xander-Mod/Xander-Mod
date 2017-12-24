@@ -31,6 +31,7 @@ data:extend(
 	type = "armor",
 	name = "power-armor-mk3",
 	icon = "__xander-mod__/graphics/item/combat/equipment/power-armor-mk3.png",
+	icon_size = 32,
 	flags = {"goes-to-main-inventory"},
 	resistances =
 	{

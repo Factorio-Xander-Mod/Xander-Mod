@@ -15,7 +15,7 @@ data:extend(
 	effects =
 	{
 		{
-			type = "num-quick-bars",
+			type = "quick-bar-count",
 			modifier = 1
 		}
 	},
