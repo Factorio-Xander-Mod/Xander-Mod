@@ -70,7 +70,7 @@ data:extend(
 --Gray Water Clarifying
 {
 	type = "recipe",
-	name = "gray-water-clarifying",
+  name = "gray-water-clarifying",
 	icon = "__xander-mod__/graphics/recipe/waste/gray-water-clarifying.png",
 	icon_size = 32,
 	category = "chemistry",
@@ -89,7 +89,7 @@ data:extend(
 --Crude Waste Water Treatment
 {
 	type = "recipe",
-	name = "waste-water-clarifying-a",
+  name = "waste-water-clarifying-a",
 	icon = "__xander-mod__/graphics/recipe/waste/waste-water-clarifying-a.png",
 	icon_size = 32,
 	category = "basic-chemistry",
