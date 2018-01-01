@@ -14,12 +14,10 @@ data.raw.item["stone-brick"].stack_size = 200
 --Concrete
 data.raw.item["concrete"].order = "05"
 data.raw.item["concrete"].stack_size = 200
-data.raw.item["concrete"].place_as_tile = {result = "concrete", condition_size = 1, condition = {"water-tile"}}
 
 --Hazard Concrete
 data.raw.item["hazard-concrete"].order = "06"
 data.raw.item["hazard-concrete"].stack_size = 200
-data.raw.item["hazard-concrete"].place_as_tile = {result = "concrete", condition_size = 1, condition = {"water-tile"}}
 
 
 data:extend(

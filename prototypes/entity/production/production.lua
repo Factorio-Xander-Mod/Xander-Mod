@@ -182,6 +182,8 @@ xmutil.clone("assembling-machine", "assembling-machine-3",
 	icon_size = 32,
 	minable = {mining_time = 1, result = "lab-1"},
 	max_health = 100,
+	collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
+	selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
 	on_animation =
 	{
 		filename = "__xander-mod__/graphics/entity/production/lab-1/1.png",
