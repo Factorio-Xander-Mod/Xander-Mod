@@ -132,8 +132,8 @@ data:extend(
 	category = "refining",
 	energy_required = 100,
 	enabled = false,
-	ingredients = {{"sand", 10}, {"graphite-block", 1}, {"coke", 6}},
-	results = {{"metallurgical-plate", 10}, {type = "fluid", name = "flue-gas", amount = 100}},
+	ingredients = {{"sand", 20}, {"graphite-block", 1}, {"coke", 16}},
+	results = {{"metallurgical-plate", 20}, {type = "fluid", name = "flue-gas", amount = 200}},
 	subgroup = "raw-material"
 },
 --Acheson Process Silicon Carbide
@@ -145,8 +145,8 @@ data:extend(
 	category = "refining",
 	energy_required = 100,
 	enabled = false,
-	ingredients = {{"sand", 10}, {"graphite-block", 1}, {"coke", 16}},
-	results = {{"silicon-carbide", 10}, {type = "fluid", name = "flue-gas", amount = 100}},
+	ingredients = {{"sand", 20}, {"graphite-block", 1}, {"coke", 36}},
+	results = {{"silicon-carbide", 20}, {type = "fluid", name = "flue-gas", amount = 200}},
 	subgroup = "raw-material"
 },
 --Acheson Process Graphite
@@ -158,8 +158,8 @@ data:extend(
 	category = "refining",
 	energy_required = 200,
 	enabled = false,
-	ingredients = {{"silicon-carbide", 10}, {"graphite-block", 1}},
-	results = {{"graphite-powder", 14}, {"metallurgical-plate", 10}},
+	ingredients = {{"silicon-carbide", 20}, {"graphite-block", 1}},
+	results = {{"graphite-powder", 24}, {"metallurgical-plate", 20}},
 	subgroup = "raw-material"
 },
 --

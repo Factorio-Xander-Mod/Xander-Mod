@@ -4,7 +4,7 @@
 --Base "coal"
 data.raw.resource["coal"].category = "basic-solid"
 data.raw.resource["coal"].order = "02"
-data.raw.resource["coal"].minable.hardness = 1
+data.raw.resource["coal"].minable.hardness = 0.5
 data.raw.resource["coal"].autoplace.richness_multiplier = 3000
 data.raw.resource["coal"].autoplace.richness_multiplier_distance_bonus = 60
 data.raw.resource["coal"].stage_counts = {10000, 5000, 2000, 1000, 500, 200, 100, 10}
@@ -45,7 +45,7 @@ data.raw.resource["crude-oil"].order = "04"
 data.raw.resource["iron-ore"].icon = "__xander-mod__/graphics/item/material/resource/iron.png"
 data.raw.resource["iron-ore"].category = "basic-solid"
 data.raw.resource["iron-ore"].order = "08"
-data.raw.resource["iron-ore"].minable.hardness = 1
+data.raw.resource["iron-ore"].minable.hardness = 0.5
 data.raw.resource["iron-ore"].stage_counts = {10000, 5000, 2000, 1000, 500, 200, 100, 10}
 data.raw.resource["iron-ore"].stages =
 {
@@ -96,11 +96,11 @@ data:extend(
 	icon = "__xander-mod__/graphics/item/material/resource/apatite.png",
 	icon_size = 32,
 	flags = {"placeable-neutral"},
-    category = "tough-solid",
+    category = "hard-solid",
 	order = "00",
 	minable =
 	{
-		hardness = 2.5,
+		hardness = 1.5,
 		mining_time = 2,
 		result = "apatite"--,
 		--fluid_amount = 10,
@@ -229,7 +229,7 @@ data:extend(
 	order = "05",
 	minable =
 	{
-		hardness = 2.4,
+		hardness = 1.5,
 		mining_time = 2,
 		result = "garnierite"--,
 		--fluid_amount = 10,
@@ -348,11 +348,11 @@ data:extend(
 	icon = "__xander-mod__/graphics/item/material/resource/heavy.png",
 	icon_size = 32,
 	flags = {"placeable-neutral"},
-    category = "hard-solid",
+    category = "tough-solid",
 	order = "07",
 	minable =
 	{
-		hardness = 2.4,
+		hardness = 2.5,
 		mining_time = 2,
 		result = "heavy-sand",
 		fluid_amount = 1,
@@ -415,7 +415,7 @@ data:extend(
 	order = "09",
 	minable =
 	{
-		hardness = 1,
+		hardness = 0.5,
 		mining_particle = "lead-particle",
 		mining_time = 2,
 		result = "lead-ore"
@@ -615,7 +615,7 @@ data:extend(
 	order = "14",
 	minable =
 	{
-		hardness = 2.4,
+		hardness = 1.5
 		mining_time = 2,
 		result = "sulfidic-ore"--,
 		--fluid_amount = 20,

@@ -85,9 +85,9 @@ data.raw.recipe["explosives"].expensive =
 }
 
 --Base "plastic-bar"
-data.raw.recipe["plastic-bar"].energy_required = 10
-data.raw.recipe["plastic-bar"].ingredients = {{type = "fluid", name = "styrene", amount = 80}, {type = "fluid", name = "propylene", amount = 40}}
-data.raw.recipe["plastic-bar"].results = {{"plastic-pellets", 2}}
+data.raw.recipe["plastic-bar"].energy_required = 5
+data.raw.recipe["plastic-bar"].ingredients = {{type = "fluid", name = "styrene", amount = 10}, {type = "fluid", name = "propylene", amount = 20}}
+data.raw.recipe["plastic-bar"].results = {{"plastic-pellets", 1}}
 
 --Base "lubricant"
 data.raw.recipe["lubricant"].energy_required = 10
@@ -1268,6 +1268,25 @@ data:extend(
 		tertiary = {r = 0.678, g = 0.565, b = 0.478}
 	}
 },
+--Propylene Cracking to Ethylene
+{
+	type = "recipe",
+    name = "propylene-ethylene",
+	icon = "__xander-mod__/graphics/recipe/organic/propylene-ethylene.png",
+	icon_size = 32,
+	category = "chemistry",
+	energy_required = 4,
+	enabled = false,
+	ingredients = {{type = "fluid", name = "propylene", amount = 20}},
+	results = {{type = "fluid", name = "petroleum-gas", amount = 30}},
+	subgroup = "fluid-recipes",
+	crafting_machine_tint =
+	{
+		primary = {r = 0.000, g = 0.110, b = 0.588},
+		secondary = {r = 0.564, g = 0.795, b = 0.000},
+		tertiary = {r = 0.678, g = 0.565, b = 0.478}
+	}
+},
 --Ethylene Cracking to Methane
 {
 	type = "recipe",
@@ -1598,7 +1617,7 @@ data:extend(
 	icon = "__xander-mod__/graphics/recipe/element/coke-b.png",
 	icon_size = 32,
 	category = "refining",
-	energy_required = 400,
+	energy_required = 160,
 	enabled = false,
 	ingredients = {{"coal", 20}},
 	results = {{"coke", 68}, {type = "fluid", name = "heavy-naptha", amount = 10}},

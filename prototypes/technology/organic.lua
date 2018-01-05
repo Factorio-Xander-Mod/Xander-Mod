@@ -517,6 +517,10 @@ data:extend(
 		},
 		{
 			type = "unlock-recipe",
+			recipe = "propylene-ethylene"
+		},
+		{
+			type = "unlock-recipe",
 			recipe = "ethylene-methane"
 		}
 	},
