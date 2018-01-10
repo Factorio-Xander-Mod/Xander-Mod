@@ -558,11 +558,11 @@ data:extend(
 	type = "recipe",
     name = "iron-plate-b",
 	category = "basic-refining",
-	energy_required = 16,
+	energy_required = 32,
 	enabled = false,
-	ingredients = {{"iron-ore", 2}, {"limestone", 1}},
+	ingredients = {{"iron-ore", 4}, {"limestone", 1}},
 	result = "iron-plate",
-	result_count = 4
+	result_count = 8
 },
 --Raw Iron
 {

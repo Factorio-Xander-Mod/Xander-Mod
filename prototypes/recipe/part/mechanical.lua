@@ -20,20 +20,31 @@ data:extend(
 --STRUCTURAL
 --
 --FORGINGS
---Crude Iron Casting (A)
+--Crude Iron Casting, Plain (A)
 {
 	type = "recipe",
     name = "forging-iron-a",
 	category = "smelting",
-	energy_required = 4,
-	ingredients = {{"iron-plate", 4}},
+	energy_required = 16,
+	ingredients = {{"iron-ore", 4}},
 	result = "forging-iron"
 },
---Iron Casting from Raw Iron (B)
+--Crude Iron Casting, Fluxed (B)
 {
 	type = "recipe",
     name = "forging-iron-b",
-	icon = "__xander-mod__/graphics/recipe/alloy/forging-iron-b.png",
+	category = "smelting",
+	energy_required = 32,
+	enabled = false,
+	ingredients = {{"iron-ore", 4}, {"limestone", 1}},
+	result = "forging-iron",
+	result_count = 2
+},
+--Iron Casting from Raw Iron (C)
+{
+	type = "recipe",
+    name = "forging-iron-c",
+	icon = "__xander-mod__/graphics/recipe/alloy/forging-iron-c.png",
 	icon_size = 32,
 	category = "forge",
 	energy_required = 64,

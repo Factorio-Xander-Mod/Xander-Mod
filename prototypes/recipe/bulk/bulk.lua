@@ -132,11 +132,11 @@ data:extend(
 	type = "recipe",
     name = "steel-plate-b",
 	category = "basic-refining",
-	energy_required = 16,
+	energy_required = 32,
 	enabled = false,
-	ingredients = {{"iron-plate", 8}, {"clay", 1}},
+	ingredients = {{"iron-plate", 16}, {"clay", 1}},
 	result = "steel-plate",
-	result_count = 4
+	result_count = 8
 },
 --XM Steel Plate from Forging
 {
