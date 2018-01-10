@@ -180,10 +180,14 @@ xmutil.clone("assembling-machine", "assembling-machine-3",
 	name = "lab-1",
 	icon = "__xander-mod__/graphics/item/production/production/lab-1.png",
 	icon_size = 32,
+	flags = {"placeable-player", "player-creation"},
 	minable = {mining_time = 1, result = "lab-1"},
 	max_health = 100,
+	corpse = "big-remnants",
+	dying_explosion = "medium-explosion",
 	collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
 	selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
+	light = {intensity = 0.75, size = 8, color = {r = 1.0, g = 1.0, b = 1.0}},
 	on_animation =
 	{
 		filename = "__xander-mod__/graphics/entity/production/lab-1/1.png",
@@ -235,7 +239,7 @@ xmutil.clone("assembling-machine", "assembling-machine-3",
 		"science-pack-1",
 		"science-pack-2"
 	}
-},
+}
 --Base "lab" placeholder
 --Base "beacon" placeholder
 --Base "rocket-silo" placeholder

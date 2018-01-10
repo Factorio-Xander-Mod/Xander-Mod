@@ -615,7 +615,7 @@ data:extend(
 	order = "14",
 	minable =
 	{
-		hardness = 1.5
+		hardness = 1.5,
 		mining_time = 2,
 		result = "sulfidic-ore"--,
 		--fluid_amount = 20,
