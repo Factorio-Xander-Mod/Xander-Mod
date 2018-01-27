@@ -5,20 +5,17 @@
 data.raw.recipe["stone-furnace"].category = "basic-crafting"
 data.raw.recipe["stone-furnace"].energy_required = 1
 data.raw.recipe["stone-furnace"].ingredients = {{"stone-brick", 5}}
-data.raw.recipe["stone-furnace"].result = "stone-furnace"
 
---Base "steel-furnace" - redirected to make XM verson of blast furnace
+--Base "steel-furnace"
 data.raw.recipe["steel-furnace"].category = "crafting"
 data.raw.recipe["steel-furnace"].energy_required = 5
 data.raw.recipe["steel-furnace"].ingredients = {{"brick-clay-graphite", 20}, {"forging-iron", 5}, {"pipe-steel", 5}, {"mechanism-1", 2}}
-data.raw.recipe["steel-furnace"].result = "furnace-3"
 
 --Base "electric-furnace"
 data.raw.recipe["electric-furnace"].category = "crafting"
 data.raw.recipe["electric-furnace"].energy_required = 10
 data.raw.recipe["electric-furnace"].ingredients = {{"brick-clay-graphite", 40}, {"graphite-block", 10}, {"forging-steel", 10}, {"transformer-1", 2}, 
 	{"control-1", 2}, {"mechanism-1", 10}}
-data.raw.recipe["electric-furnace"].result = "furnace-5"
 
 
 data:extend(
@@ -64,7 +61,7 @@ data:extend(
 	energy_required = 10,
 	enabled = false,
 	ingredients = {{"brick-spinel", 20}, {"monel-plate", 10}, {"forging-steel", 5}, {"transformer-1", 1}, {"control-1", 1}, {"mechanism-1", 5}},
-	result = "furnace-5"
+	result = "electric-furnace"
 },
 --Arc Furnace
 {

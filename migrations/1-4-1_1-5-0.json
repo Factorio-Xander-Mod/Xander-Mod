@@ -1,0 +1,14 @@
+{
+  "item":
+  [
+    ["furnace-1", "stone-furnace"],
+    ["furnace-3", "steel-furnace"],
+    ["furnace-5", "electric-furnace"]
+  ]
+},
+{
+  "recipe":
+  [
+    ["forging-iron-b", "forging-iron-c"]
+  ]
+}

@@ -2,21 +2,21 @@ local xmutil = require("xmutil")
 
 --Base Overrides
 
---[[Base "stone-furnace"
-data.raw.furnace["stone-furnace"].crafting_categories = {"empty"}
+--Base "stone-furnace"
+data.raw.furnace["stone-furnace"].flags = {"player-creation"}
 
 --Base "steel-furnace"
-data.raw.furnace["steel-furnace"].crafting_categories = {"empty"}
+data.raw.furnace["steel-furnace"].flags = {"player-creation"}
 
 --Base "electric-furnace"
-data.raw.furnace["electric-furnace"].crafting_categories = {"empty"}
-]]--
+data.raw.furnace["electric-furnace"].flags = {"player-creation"}
+
 
 data:extend(
 {
 
---Base "stone-furnace" placeholder
---Assembler-Type Stone Furnace (replaces base "stone-furnace")
+--Base "stone-furnace" placeholder - disabled via no item to place it
+--Assembler-Type Stone Furnace - replaces base "stone-furnace"
 xmutil.clone("furnace", "stone-furnace",
 	{
 		{
@@ -32,7 +32,7 @@ xmutil.clone("furnace", "stone-furnace",
 		type = "assembling-machine",
 		name = "furnace-1",
 		icon = "__xander-mod__/graphics/item/production/furnace/furnace-1.png",
-		minable = {mining_time = 1, result = "furnace-1"},
+		minable = {mining_time = 1, result = "stone-furnace"},
 		max_health = 50,
 		crafting_categories = {"kiln"},
 		crafting_speed = 0.5,
@@ -65,15 +65,15 @@ xmutil.clone("furnace", "stone-furnace",
 		ingredient_count = 4
 	}
 ),
---Base "steel-furnace" placeholder
---Assembler-Type Blast Furnace
+--Base "steel-furnace" placeholder - disabled via no item to place it
+--Assembler-Type Blast Furnace - replaces base "steel-furnace"
 xmutil.clone("furnace", "steel-furnace",
 	{},
 	{
 		type = "assembling-machine",
 		name = "furnace-3",
 		icon = "__base__/graphics/icons/steel-furnace.png",
-		minable = {mining_time = 1, result = "furnace-3"},
+		minable = {mining_time = 1, result = "steel-furnace"},
 		max_health = 200,
 		crafting_categories = {"kiln", "smelting", "basic-refining"},
 		crafting_speed = 2,
@@ -108,8 +108,8 @@ xmutil.clone("furnace", "electric-furnace",
 		ingredient_count = 6,
 	}
 ),
---Base "electric-furnace" (DISABLED via NO RECIPE FOR THE ITEM TO PLACE IT) placeholder
---Electric Foundry-Forge - more capable entity taking the place of the base "electric-furnace"
+--Base "electric-furnace" placeholder - disabled via no item to place it
+--Electric Foundry-Forge - replaces base "electric-furnace"
 xmutil.clone("furnace", "electric-furnace",
 	{
 	},
@@ -117,7 +117,7 @@ xmutil.clone("furnace", "electric-furnace",
 		type = "assembling-machine",
 		name = "furnace-5",
 		icon = "__base__/graphics/icons/electric-furnace.png",
-		minable = {mining_time = 1, result = "furnace-5"},
+		minable = {mining_time = 1, result = "electric-furnace"},
 		max_health = 500,
 		fluid_boxes = xmutil.assembler_fluid_boxes("assembling-machine-4"),
 		crafting_categories = {"forge"},
