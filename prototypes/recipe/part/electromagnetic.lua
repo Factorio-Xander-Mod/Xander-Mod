@@ -368,7 +368,7 @@ data:extend(
 {
 	type = "recipe",
     name = "crystal-diamond",
-	category = "",
+	category = "machine",
 	energy_required = 20,
 	enabled = false,
 	ingredients = {{"boule-diamond", 1}, {type = "fluid", name = "lubricant", amount = 10}, {"silicon-carbide", 2}, {"aluminum-oxide", 1}, 
