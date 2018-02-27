@@ -959,7 +959,7 @@ data:extend(
 	enabled = false,
 	ingredients = {{"raw-wood", 10}, {type = "fluid", name = "water", amount = 50}},
 	result = "raw-wood",
-	result_count = 11
+	result_count = 12
 },
 --Cotton
 {

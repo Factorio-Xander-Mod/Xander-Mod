@@ -456,7 +456,7 @@ data:extend(
 	energy_required = 5,
 	enabled = false,
 	ingredients = {{"rutile", 1}, {"coke", 1}, {type = "fluid", name = "chlorine", amount = 20}},
-	results = {{type = "fluid", name = "titanium-tetrachloride", amount = 10}, {type = "fluid", name = "flue-gas", amount = 10}},
+	results = {{type = "fluid", name = "titanium-tetrachloride", amount = 10}, --{type = "fluid", name = "flue-gas", amount = 10}},
 	subgroup = "raw-material"
 },
 --Pure Titanium Dioxide via Titanium Tetrachloride Hydrolysis

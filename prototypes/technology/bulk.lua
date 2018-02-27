@@ -451,7 +451,7 @@ data:extend(
 	{
 		{
 			type = "unlock-recipe",
-			recipe = "brick-clay-a"
+			recipe = "brick-clay-b"
 		}
 	},
 	prerequisites = {"advanced-material-processing-2", "bauxite-sediment"},

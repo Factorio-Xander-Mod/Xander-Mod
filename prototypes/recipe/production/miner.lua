@@ -49,7 +49,7 @@ data:extend(
 	type = "recipe",
     name = "logging-camp",
 	category = "basic-crafting",
-	energy_required = 5,
+	energy_required = 1,
 	enabled = false,
 	ingredients = {{"boiler", 1}, {"mechanical-steam-engine", 1}, {"mechanism-0", 2}, {"forging-steel", 4}, {"stone-brick", 20}},
 	result = "logging-camp"
