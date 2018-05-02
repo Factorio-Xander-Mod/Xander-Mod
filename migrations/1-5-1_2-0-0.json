@@ -1,0 +1,26 @@
+{
+  "item":
+  [
+    ["sand", "silica-sand"],
+    ["sulfidic-ore", "igneous-sulfide"],
+    ["bauxite", "laterite"],
+    ["garnierite", "magnetic"],
+    ["lead-ore", "massive-sulfide"],
+    ["apatite", "phosphorite"],
+    ["heavy-sand", "sand"],
+    ["granitic-ore", "skarn"]
+  ]
+},
+{
+  "resource":
+  [
+    ["mineral-water", "evaporites"],
+    ["sulfidic-ore", "igneous-sulfide"],
+    ["bauxite", "laterite"],
+    ["garnierite", "magnetic"],
+    ["lead-ore", "massive-sulfide"],
+    ["apatite", "phosphorite"],
+    ["heavy-sand", "sand"],
+    ["granitic-ore", "skarn"]
+  ]
+}

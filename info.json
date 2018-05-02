@@ -1,10 +1,10 @@
 {
   "name": "xander-mod",
-  "version": "1.5.1",
+  "version": "2.0.0",
   "factorio_version": "0.16",
   "title": "Xander Mod",
   "author": "Repofme1",
   "homepage": "https://forums.factorio.com/viewtopic.php?f=97&t=51868",
-  "dependencies": ["base", "? LoaderRedux"],
+  "dependencies": ["base", "? LoaderRedux", "? rso-mod"],
   "description": "An extensive overhaul, emphasizing detailed and realistic chemistry, materials, and production.  Extends the base game to marathon-style scope and difficulty."
 }

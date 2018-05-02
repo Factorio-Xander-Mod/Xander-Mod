@@ -103,7 +103,7 @@ data:extend(
 	base_color = {r = 0.19, g = 0.95, b = 0.95},
 	flow_color = {r = 1, g = 1, b = 0.6},
 	max_temperature = 100,
-	icon = "__xander-mod__/graphics/fluid/hydrocarbon/natural-gas.png",
+	icon = "__xander-mod__/graphics/fluid/resource/natural-gas.png",
 	icon_size = 32,
 	pressure_to_speed_ratio = 0.4,
 	flow_to_energy_ratio = 0.59,

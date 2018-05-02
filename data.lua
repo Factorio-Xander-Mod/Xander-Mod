@@ -1,5 +1,10 @@
 --==========  Utility  ==========
 
+--Data Lists & Computation
+require("xm-lists")
+require("util.xm-copy")
+require("util.xm-item")
+
 --Categories
 require("category.ammo-category")
 require("category.fuel-category")
@@ -29,7 +34,7 @@ require("prototypes.item.material.alloy")
 require("prototypes.item.material.build")
 require("prototypes.item.material.metal")
 require("prototypes.item.material.nonmetal")
-require("prototypes.item.material.ore")
+require("prototypes.item.material.resource")
 require("prototypes.item.material.organic")
 require("prototypes.item.material.oxide")
 require("prototypes.item.material.raw")
