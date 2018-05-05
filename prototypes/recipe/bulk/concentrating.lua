@@ -50,7 +50,7 @@ data:extend(
     name = "hand-clay",
 	category = "basic-sluice",
 	energy_required = 1,
-	ingredients = {{"bauxite", 2}},
+	ingredients = {{"laterite", 2}},
 	result = "clay"
 },
 --Bauxite Clay
@@ -68,7 +68,7 @@ data:extend(
 	},
 	energy_required = 20,
 	enabled = false,
-	ingredients = {{"bauxite", 10}, {type = "fluid", name = "water", amount = 50}},
+	ingredients = {{"laterite", 10}, {type = "fluid", name = "water", amount = 50}},
 	results = {{"clay", 10}, {type = "fluid", name = "gray-water", amount = 50}},
 	subgroup = "raw-resource"
 },
@@ -79,7 +79,7 @@ data:extend(
 	category = "basic-sluice",
 	energy_required = 1,
 	enabled = false,
-	ingredients = {{"bauxite", 2}},
+	ingredients = {{"laterite", 2}},
 	result = "sand"
 },
 --Bauxite Sand
@@ -97,7 +97,7 @@ data:extend(
 	},
 	energy_required = 20,
 	enabled = false,
-	ingredients = {{"bauxite", 10}, {type = "fluid", name = "water", amount = 50}},
+	ingredients = {{"laterite", 10}, {type = "fluid", name = "water", amount = 50}},
 	results = {{"sand", 10}, {"gravel", 1}, {type = "fluid", name = "gray-water", amount = 50}},
 	subgroup = "raw-resource"
 },
@@ -108,7 +108,7 @@ data:extend(
 	category = "basic-sluice",
 	enabled = false,
 	energy_required = 10,
-	ingredients = {{"bauxite", 5}},
+	ingredients = {{"laterite", 5}},
 	result = "garnierite"
 },
 --Bayer Process
@@ -126,7 +126,7 @@ data:extend(
 	},
 	energy_required = 60,
 	enabled = false,
-	ingredients = {{"bauxite", 10}, {type = "fluid", name = "water", amount = 80}, {"sodium-hydroxide", 10}},
+	ingredients = {{"laterite", 10}, {type = "fluid", name = "water", amount = 80}, {"sodium-hydroxide", 10}},
 	results = {{"aluminum-hydroxide", 20}, {type = "fluid", name = "waste-slurry", amount = 80}},
 	subgroup = "raw-resource"
 },

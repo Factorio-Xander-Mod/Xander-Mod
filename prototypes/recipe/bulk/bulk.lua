@@ -334,7 +334,7 @@ data:extend(
 	category = "refining",
 	energy_required = 20,
 	enabled = false,
-	ingredients = {{"calcium-oxide", 5}, {"sand", 1}, {"bauxite", 1}},
+	ingredients = {{"calcium-oxide", 5}, {"sand", 1}, {"laterite", 1}},
 	result = "cement-powder",
 	result_count = 5
 },
@@ -345,7 +345,7 @@ data:extend(
 	category = "refining",
 	energy_required = 20,
 	enabled = false,
-	ingredients = {{"calcium-oxide", 2}, {"slag", 1}, {"bauxite", 1}},
+	ingredients = {{"calcium-oxide", 2}, {"slag", 1}, {"laterite", 1}},
 	result = "cement-powder",
 	result_count = 5
 },

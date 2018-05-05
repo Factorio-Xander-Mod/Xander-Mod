@@ -55,7 +55,7 @@ data:extend(
 --Bauxite
 {
 	type = "item",
-	name = "bauxite",
+	name = "laterite",
 	icon = "__xander-mod__/graphics/item/material/raw-resource/laterite.png",
 	icon_size = 32,
 	flags = {"goes-to-main-inventory"},
