@@ -669,7 +669,7 @@ data:extend(
     name = "smelting-lead",
 	category = "smelting",
 	energy_required = 4,
-	ingredients = {{"lead-ore", 2}},
+	ingredients = {{"massive-sulfide", 2}},
 	result = "lead-plate"
 },
 --Galena Roasting

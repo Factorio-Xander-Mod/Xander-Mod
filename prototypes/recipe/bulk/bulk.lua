@@ -156,7 +156,7 @@ data:extend(
 	category = "smelting",
 	energy_required = 4,
 	enabled = false,
-	ingredients = {{"lead-ore", 2}, {"coal", 1}},
+	ingredients = {{"massive-sulfide", 2}, {"coal", 1}},
 	result = "sulfur"
 },
 --Crude Bronze Plate

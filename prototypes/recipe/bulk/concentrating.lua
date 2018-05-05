@@ -398,7 +398,7 @@ data:extend(
 	},
 	energy_required = 20,
 	enabled = false,
-	ingredients = {{"lead-ore", 10}, {type = "fluid", name = "water", amount = 50}},
+	ingredients = {{"massive-sulfide", 10}, {type = "fluid", name = "water", amount = 50}},
 	results = {{"galena", 10}, {"gravel", 2}, {type = "fluid", name = "gray-water", amount = 50}},
 	subgroup = "raw-resource"
 },
@@ -417,7 +417,7 @@ data:extend(
 	},
 	energy_required = 40,
 	enabled = false,
-	ingredients = {{"lead-ore", 10}, {type = "fluid", name = "water", amount = 50}, {"surfactant", 1}},
+	ingredients = {{"massive-sulfide", 10}, {type = "fluid", name = "water", amount = 50}, {"surfactant", 1}},
 	results = {{"silver-sponge", 1}, {"gravel", 2}, {type = "fluid", name = "waste-water", amount = 50}},
 	subgroup = "raw-resource"
 },

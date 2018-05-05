@@ -182,7 +182,7 @@ data:extend(
 --Lead ore
 {
 	type = "item",
-	name = "lead-ore",
+	name = "massive-sulfide",
 	icon = "__xander-mod__/graphics/item/material/raw-resource/massive-sulfide.png",
 	icon_size = 32,
 	flags = {"goes-to-main-inventory"},
