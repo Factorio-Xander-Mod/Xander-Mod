@@ -1037,7 +1037,7 @@ data:extend(
 	category = "basic-chemistry",
 	energy_required = 10,
 	enabled = false,
-	ingredients = {{"raw-wood", 4}, {type = "fluid", name = "water", amount = 20}, {"granitic-ore", 1}, {"iron-ore", 1}},
+	ingredients = {{"raw-wood", 4}, {type = "fluid", name = "water", amount = 20}, {"skarn", 1}, {"iron-ore", 1}},
 	results = {{type = "fluid", name = "formic-acid", amount = 20}},
 	subgroup = "carbohydrate",
 	crafting_machine_tint =

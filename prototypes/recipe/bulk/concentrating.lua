@@ -211,7 +211,7 @@ data:extend(
 	subgroup = "raw-resource"
 },
 --
---GRANITIC ORE
+--Skarn
 --Cassiterite Washing
 {
 	type = "recipe",
@@ -227,7 +227,7 @@ data:extend(
 	},
 	energy_required = 20,
 	enabled = false,
-	ingredients = {{"granitic-ore", 10}, {type = "fluid", name = "water", amount = 50}},
+	ingredients = {{"skarn", 10}, {type = "fluid", name = "water", amount = 50}},
 	results = {{"cassiterite", 10}, {"sand", 2}, {type = "fluid", name = "gray-water", amount = 50}},
 	subgroup = "raw-resource"
 },
@@ -246,7 +246,7 @@ data:extend(
 	},
 	energy_required = 40,
 	enabled = false,
-	ingredients = {{"granitic-ore", 10}, {type = "fluid", name = "water", amount = 50}, {"surfactant", 1}},
+	ingredients = {{"skarn", 10}, {type = "fluid", name = "water", amount = 50}, {"surfactant", 1}},
 	results = {{"scheelite", 2}, {"sand", 2}, {type = "fluid", name = "waste-water", amount = 50}},
 	subgroup = "raw-resource"
 },
@@ -265,7 +265,7 @@ data:extend(
 	},
 	energy_required = 40,
 	enabled = false,
-	ingredients = {{"granitic-ore", 10}, {type = "fluid", name = "water", amount = 50}, {"surfactant", 1}},
+	ingredients = {{"skarn", 10}, {type = "fluid", name = "water", amount = 50}, {"surfactant", 1}},
 	results = {{"gold-sponge", 1}, {"sand", 2}, {type = "fluid", name = "waste-water", amount = 50}},
 	subgroup = "raw-resource"
 },
@@ -278,7 +278,7 @@ data:extend(
 	category = "ore-plant",
 	energy_required = 60,
 	enabled = false,
-	ingredients = {{"granitic-ore", 10}, {type = "fluid", name = "water", amount = 50}, {"surfactant", 2}},
+	ingredients = {{"skarn", 10}, {type = "fluid", name = "water", amount = 50}, {"surfactant", 2}},
 	results = {{"cassiterite", 10}, {"sand", 2}, {type = "fluid", name = "waste-water", amount = 50}, {"scheelite", 2}},
 	subgroup = "raw-resource"
 },
