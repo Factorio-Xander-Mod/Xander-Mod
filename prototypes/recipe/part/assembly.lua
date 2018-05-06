@@ -2,6 +2,7 @@
 --Base Overrides
 
 --Base "engine-unit"
+data.raw.recipe["engine-unit"].category = "crafting"
 data.raw.recipe["engine-unit"].energy_required = 5
 data.raw.recipe["engine-unit"].ingredients = {{"piston-cylinder", 1}, {"mechanism-1", 1}, {"rubber", 2}}
 
@@ -28,7 +29,7 @@ data:extend(
 {
 	type = "recipe",
     name = "piston-cylinder",
-	category = "basic-crafting",
+	category = "machine",
 	energy_required = 2,
 	enabled = false,
 	ingredients = {{"forging-iron", 1}, {"pipe-steel", 2}},

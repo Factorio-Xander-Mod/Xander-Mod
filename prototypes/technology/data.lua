@@ -173,6 +173,10 @@ data:extend(
 	{
 		{
 			type = "unlock-recipe",
+			recipe = "etched-2-b"
+		},
+		{
+			type = "unlock-recipe",
 			recipe = "metallized-3"
 		},
 		{
