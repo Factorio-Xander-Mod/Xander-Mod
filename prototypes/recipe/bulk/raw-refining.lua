@@ -182,7 +182,7 @@ data:extend(
 	category = "basic-sluice",
 	energy_required = 2,
 	enabled = false,
-	ingredients = {{"granitic-ore", 1}, {type = "fluid", name = "water", amount = 10}},
+	ingredients = {{"skarn", 1}, {type = "fluid", name = "water", amount = 10}},
 	result = "graphite-powder"
 },
 --Base "coal-liquefaction" placeholder
@@ -326,7 +326,7 @@ data:extend(
     name = "kiln-tin",
 	category = "kiln",
 	energy_required = 4,
-	ingredients = {{"granitic-ore", 2}},
+	ingredients = {{"skarn", 2}},
 	result = "tin-plate"
 },
 --Proper Tin Smelting
@@ -401,7 +401,7 @@ data:extend(
 	category = "refining",
 	energy_required = 200,
 	enabled = false,
-	ingredients = {{"granitic-ore", 20}, {"soda", 1}, {"borax", 1}},
+	ingredients = {{"skarn", 20}, {"soda", 1}, {"borax", 1}},
 	results = {{"cassiterite", 20}, {"gold-sponge", 2}, {"slag", 1}},
 	subgroup = "raw-material"
 },
@@ -669,7 +669,7 @@ data:extend(
     name = "smelting-lead",
 	category = "smelting",
 	energy_required = 4,
-	ingredients = {{"lead-ore", 2}},
+	ingredients = {{"massive-sulfide", 2}},
 	result = "lead-plate"
 },
 --Galena Roasting

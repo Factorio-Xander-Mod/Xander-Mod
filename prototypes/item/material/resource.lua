@@ -55,7 +55,7 @@ data:extend(
 --Bauxite
 {
 	type = "item",
-	name = "bauxite",
+	name = "laterite",
 	icon = "__xander-mod__/graphics/item/material/raw-resource/laterite.png",
 	icon_size = 32,
 	flags = {"goes-to-main-inventory"},
@@ -147,7 +147,7 @@ data:extend(
 --Granitic Ore
 {
 	type = "item",
-	name = "granitic-ore",
+	name = "skarn",
 	icon = "__xander-mod__/graphics/item/material/raw-resource/skarn.png",
 	icon_size = 32,
 	flags = {"goes-to-main-inventory"},
@@ -182,7 +182,7 @@ data:extend(
 --Lead ore
 {
 	type = "item",
-	name = "lead-ore",
+	name = "massive-sulfide",
 	icon = "__xander-mod__/graphics/item/material/raw-resource/massive-sulfide.png",
 	icon_size = 32,
 	flags = {"goes-to-main-inventory"},

@@ -50,7 +50,7 @@ data:extend(
     name = "hand-clay",
 	category = "basic-sluice",
 	energy_required = 1,
-	ingredients = {{"bauxite", 2}},
+	ingredients = {{"laterite", 2}},
 	result = "clay"
 },
 --Bauxite Clay
@@ -68,7 +68,7 @@ data:extend(
 	},
 	energy_required = 20,
 	enabled = false,
-	ingredients = {{"bauxite", 10}, {type = "fluid", name = "water", amount = 50}},
+	ingredients = {{"laterite", 10}, {type = "fluid", name = "water", amount = 50}},
 	results = {{"clay", 10}, {type = "fluid", name = "gray-water", amount = 50}},
 	subgroup = "raw-resource"
 },
@@ -79,7 +79,7 @@ data:extend(
 	category = "basic-sluice",
 	energy_required = 1,
 	enabled = false,
-	ingredients = {{"bauxite", 2}},
+	ingredients = {{"laterite", 2}},
 	result = "sand"
 },
 --Bauxite Sand
@@ -97,7 +97,7 @@ data:extend(
 	},
 	energy_required = 20,
 	enabled = false,
-	ingredients = {{"bauxite", 10}, {type = "fluid", name = "water", amount = 50}},
+	ingredients = {{"laterite", 10}, {type = "fluid", name = "water", amount = 50}},
 	results = {{"sand", 10}, {"gravel", 1}, {type = "fluid", name = "gray-water", amount = 50}},
 	subgroup = "raw-resource"
 },
@@ -108,7 +108,7 @@ data:extend(
 	category = "basic-sluice",
 	enabled = false,
 	energy_required = 10,
-	ingredients = {{"bauxite", 5}},
+	ingredients = {{"laterite", 5}},
 	result = "garnierite"
 },
 --Bayer Process
@@ -126,7 +126,7 @@ data:extend(
 	},
 	energy_required = 60,
 	enabled = false,
-	ingredients = {{"bauxite", 10}, {type = "fluid", name = "water", amount = 80}, {"sodium-hydroxide", 10}},
+	ingredients = {{"laterite", 10}, {type = "fluid", name = "water", amount = 80}, {"sodium-hydroxide", 10}},
 	results = {{"aluminum-hydroxide", 20}, {type = "fluid", name = "waste-slurry", amount = 80}},
 	subgroup = "raw-resource"
 },
@@ -211,7 +211,7 @@ data:extend(
 	subgroup = "raw-resource"
 },
 --
---GRANITIC ORE
+--Skarn
 --Cassiterite Washing
 {
 	type = "recipe",
@@ -227,7 +227,7 @@ data:extend(
 	},
 	energy_required = 20,
 	enabled = false,
-	ingredients = {{"granitic-ore", 10}, {type = "fluid", name = "water", amount = 50}},
+	ingredients = {{"skarn", 10}, {type = "fluid", name = "water", amount = 50}},
 	results = {{"cassiterite", 10}, {"sand", 2}, {type = "fluid", name = "gray-water", amount = 50}},
 	subgroup = "raw-resource"
 },
@@ -246,7 +246,7 @@ data:extend(
 	},
 	energy_required = 40,
 	enabled = false,
-	ingredients = {{"granitic-ore", 10}, {type = "fluid", name = "water", amount = 50}, {"surfactant", 1}},
+	ingredients = {{"skarn", 10}, {type = "fluid", name = "water", amount = 50}, {"surfactant", 1}},
 	results = {{"scheelite", 2}, {"sand", 2}, {type = "fluid", name = "waste-water", amount = 50}},
 	subgroup = "raw-resource"
 },
@@ -265,7 +265,7 @@ data:extend(
 	},
 	energy_required = 40,
 	enabled = false,
-	ingredients = {{"granitic-ore", 10}, {type = "fluid", name = "water", amount = 50}, {"surfactant", 1}},
+	ingredients = {{"skarn", 10}, {type = "fluid", name = "water", amount = 50}, {"surfactant", 1}},
 	results = {{"gold-sponge", 1}, {"sand", 2}, {type = "fluid", name = "waste-water", amount = 50}},
 	subgroup = "raw-resource"
 },
@@ -278,7 +278,7 @@ data:extend(
 	category = "ore-plant",
 	energy_required = 60,
 	enabled = false,
-	ingredients = {{"granitic-ore", 10}, {type = "fluid", name = "water", amount = 50}, {"surfactant", 2}},
+	ingredients = {{"skarn", 10}, {type = "fluid", name = "water", amount = 50}, {"surfactant", 2}},
 	results = {{"cassiterite", 10}, {"sand", 2}, {type = "fluid", name = "waste-water", amount = 50}, {"scheelite", 2}},
 	subgroup = "raw-resource"
 },
@@ -398,7 +398,7 @@ data:extend(
 	},
 	energy_required = 20,
 	enabled = false,
-	ingredients = {{"lead-ore", 10}, {type = "fluid", name = "water", amount = 50}},
+	ingredients = {{"massive-sulfide", 10}, {type = "fluid", name = "water", amount = 50}},
 	results = {{"galena", 10}, {"gravel", 2}, {type = "fluid", name = "gray-water", amount = 50}},
 	subgroup = "raw-resource"
 },
@@ -417,7 +417,7 @@ data:extend(
 	},
 	energy_required = 40,
 	enabled = false,
-	ingredients = {{"lead-ore", 10}, {type = "fluid", name = "water", amount = 50}, {"surfactant", 1}},
+	ingredients = {{"massive-sulfide", 10}, {type = "fluid", name = "water", amount = 50}, {"surfactant", 1}},
 	results = {{"silver-sponge", 1}, {"gravel", 2}, {type = "fluid", name = "waste-water", amount = 50}},
 	subgroup = "raw-resource"
 },
