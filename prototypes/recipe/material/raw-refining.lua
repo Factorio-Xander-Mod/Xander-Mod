@@ -1,4 +1,3 @@
-
 --Base Overrides
 
 --Base "coal-liquefaction"
@@ -8,10 +7,6 @@ data.raw.recipe["coal-liquefaction"].ingredients = {{"coal", 18}, {type = "fluid
 	{type = "fluid", name = "hydrogen", amount = 120}}
 data.raw.recipe["coal-liquefaction"].results = {{type = "fluid", name = "heavy-naptha", amount = 30}, {type = "fluid", name = "benzene", amount = 20}}
 data.raw.recipe["coal-liquefaction"].icon = "__xander-mod__/graphics/recipe/refining/bergius-process.png"
-
---Base "copper-plate"
-data.raw.recipe["copper-plate"].category = "kiln"
-data.raw.recipe["copper-plate"].energy_required = 4
 
 --Base "basic-oil-processing"
 data.raw.recipe["basic-oil-processing"].energy_required = 10
@@ -24,9 +19,6 @@ data.raw.recipe["advanced-oil-processing"].energy_required = 20
 data.raw.recipe["advanced-oil-processing"].ingredients = {{type = "fluid", name = "crude-oil", amount = 100}, {type = "fluid", name = "steam", amount = 50}}
 data.raw.recipe["advanced-oil-processing"].results = {{type = "fluid", name = "heavy-oil", amount = 10}, {type = "fluid", name = "light-oil", amount = 50}, 
 	{type = "fluid", name = "propylene", amount = 60}}
-
---Base "iron-plate"
-data.raw.recipe["iron-plate"].energy_required = 4
 
 --Base "uranium-processing"
 data.raw.recipe["uranium-processing"].energy_required = 100
@@ -82,6 +74,7 @@ data:extend(
 	results = {{type = "fluid", name = "phosphoric-acid", amount = 20}, {"calcium-sulfate", 3}},
 	subgroup = "raw-material"
 },
+--Transferred
 --Phosphoruus Smelting
 {
 	type = "recipe",
@@ -110,6 +103,7 @@ data:extend(
 	results = {{"aluminum-oxide", 1}, {type = "fluid", name = "gray-water", amount = 30}},
 	subgroup = "raw-material"
 },
+--Transferred
 --Hall-Heroult Process
 {
 	type = "recipe",
@@ -123,6 +117,7 @@ data:extend(
 	results = {{"aluminum-plate", 80}, {type = "fluid", name = "flue-gas", amount = 600}},
 	subgroup = "raw-material"
 },
+--Transferred
 --Acheson Process Silicon
 {
 	type = "recipe",
@@ -164,6 +159,7 @@ data:extend(
 },
 --
 --COAL
+--Transferred
 --Crude Coal Coke
 {
 	type = "recipe",
@@ -175,6 +171,7 @@ data:extend(
 	result = "coke",
 	result_count = 16
 },
+--Transferred
 --Crude Graphite
 {
 	type = "recipe",
@@ -239,6 +236,7 @@ data:extend(
 	results = {{"copper-plate", 20}, {"cobalt-oxide", 2}, {type = "fluid", name = "waste-slurry", amount = 20}},
 	subgroup = "raw-material"
 },
+--Transferred
 --Cobalt Electrowinning
 {
 	type = "recipe",
@@ -264,6 +262,7 @@ data:extend(
 --Base "advanced-oil-processing" placeholder
 --
 --GARNIERITE
+--Transferred
 --Crude Nickel Smelting
 {
 	type = "recipe",
@@ -305,6 +304,7 @@ data:extend(
 	results = {{"nickel-plate", 20}, {"platinum-sponge", 1}, {type = "fluid", name = "waste-water", amount = 100}},
 	subgroup = "raw-material"
 },
+--Transferred
 --Platinum Smelting
 {
 	type = "recipe",
@@ -320,6 +320,8 @@ data:extend(
 },
 --
 --GRANITIC ORE
+--Transferred
+--[[
 --Crude Tin Plate
 {
 	type = "recipe",
@@ -329,6 +331,7 @@ data:extend(
 	ingredients = {{"granitic-ore", 2}},
 	result = "tin-plate"
 },
+]]--
 --Proper Tin Smelting
 {
 	type = "recipe",
@@ -355,6 +358,7 @@ data:extend(
 	results = {{"tungsten-powder", 1}, {type = "fluid", name = "gray-water", amount = 30}},
 	subgroup = "raw-material"
 },
+--Transferred
 --Tungsten Sintering
 {
 	type = "recipe",
@@ -365,6 +369,7 @@ data:extend(
 	ingredients = {{"tungsten-powder", 1}},
 	result = "tungsten-block"
 },
+--Transferred
 --Miller Process Gold Smelting
 {
 	type = "recipe",
@@ -374,7 +379,7 @@ data:extend(
 	category = "forge",
 	energy_required = 50,
 	enabled = false,
-	ingredients = {{"gold-sponge", 10}, {type = "fluid", name = "chlorine", amount = 20}}, {"calcium-oxide", 1},
+	ingredients = {{"gold-sponge", 10}, {type = "fluid", name = "chlorine", amount = 20}, {"calcium-oxide", 1}},
 	results = {{"gold-plate", 10}, {"slag", 1}},
 	subgroup = "raw-material"
 },
@@ -433,6 +438,7 @@ data:extend(
 	results = {{"chromium-oxide", 1}, {"salt", 4}, {type = "fluid", name = "carbon-monoxide", amount = 30}},
 	subgroup = "raw-material"
 },
+--Transferred
 --Chromium Reduction
 {
 	type = "recipe",
@@ -485,6 +491,7 @@ data:extend(
 	results = {{"titanium-sponge", 1}, {"magnesium-chloride", 2}},
 	subgroup = "raw-material"
 },
+--Transferred
 --Titanium Sponge Remelting
 {
 	type = "recipe",
@@ -648,6 +655,7 @@ data:extend(
 	results = {{"vanadium-oxide", 1}, {type = "fluid", name = "ammonia", amount = 10}},
 	subgroup = "raw-material"
 },
+--Transferred
 --Vanadium Reduction
 {
 	type = "recipe",
@@ -663,6 +671,8 @@ data:extend(
 },
 --
 --LEAD ORE
+--Transferred
+--[[
 --Crude Lead Plate
 {
 	type = "recipe",
@@ -672,6 +682,7 @@ data:extend(
 	ingredients = {{"lead-ore", 2}},
 	result = "lead-plate"
 },
+]]--
 --Galena Roasting
 {
 	type = "recipe",
@@ -711,6 +722,7 @@ data:extend(
 	results = {{"lead-plate", 10}, {"slag", 1}, {type = "fluid", name = "flue-gas", amount = 50}, {"silver-sponge", 2}},
 	subgroup = "raw-material"
 },
+--Transferred
 --Silver Electrowinning
 {
 	type = "recipe",
@@ -842,6 +854,7 @@ data:extend(
 	results = {{"zinc-oxide", 2}, {type = "fluid", name = "sulfur-dioxide", amount = 20}},
 	subgroup = "raw-material"
 },
+--Transferred
 --Zinc Electrowinning
 {
 	type = "recipe",
@@ -908,6 +921,7 @@ data:extend(
 	results = {{"re-oxide", 2}, {type = "fluid", name = "phosphoric-acid", amount = 10}, {type = "fluid", name = "waste-water", amount = 50}},
 	subgroup = "raw-material"
 },
+--Transferred
 --Rare Earth Metals Reduction
 {
 	type = "recipe",
@@ -921,7 +935,7 @@ data:extend(
 	results = {{"re-plate", 1}, {"magnesium-oxide", 2}},
 	subgroup = "raw-material"
 },
---Urany Nitrade Decomposition and Fluorination
+--Uranyl Nitrate Decomposition and Fluorination
 {
 	type = "recipe",
     name = "uranium-hexafluoride",
@@ -994,6 +1008,7 @@ data:extend(
 	results = {{"weapons-uo2", 1}, {type = "fluid", name = "hydrogen-fluoride", amount = 40}, {type = "fluid", name = "gray-water", amount = 100}},
 	subgroup = "raw-material"
 },
+--Transferred
 --238-Uranium Reduction
 {
 	type = "recipe",
@@ -1022,6 +1037,7 @@ data:extend(
 },
 --
 --WATER
+--Transferred
 --Magnesium Chloride Melt Electrolysis
 {
 	type = "recipe",
@@ -1076,6 +1092,7 @@ data:extend(
 },
 --
 --WOOD
+--Transferred
 --Crude Charcoal Pyrolysis
 {
 	type = "recipe",

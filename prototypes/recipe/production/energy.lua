@@ -4,7 +4,7 @@
 --Base "boiler"
 data.raw.recipe["boiler"].category = "crafting"
 data.raw.recipe["boiler"].energy_required = 2
-data.raw.recipe["boiler"].ingredients = {{"furnace-2", 1}, {"pipe", 10}, {"pipe-copper", 10}, {"forging-iron", 2}}
+data.raw.recipe["boiler"].ingredients = {{"furnace-2", 1}, {"pipe", 5}, {"pipe-copper", 5}, {"forging-iron", 2}}
 
 --Base "heat-exchanger"
 data.raw.recipe["heat-exchanger"].category = "crafting"

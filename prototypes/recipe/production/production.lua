@@ -118,7 +118,7 @@ data:extend(
     name = "lab-1",
 	category = "basic-crafting",
 	energy_required = 2,
-	ingredients = {{"boiler", 1}, {"mechanical-steam-engine", 1}, {"mechanism-0", 2}, {"slow-transport-belt", 10}, {"burner-inserter", 4}},
+	ingredients = {{"boiler", 1}, {"mechanical-steam-engine", 1}, {"slow-transport-belt", 10}, {"burner-inserter", 4}},
 	result = "lab-1"
 }
 --Base "lab" placeholder

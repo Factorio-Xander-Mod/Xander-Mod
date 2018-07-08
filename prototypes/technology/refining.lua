@@ -1,4 +1,3 @@
-
 --Base Overrides
 
 --Base "coal-liquefaction"
@@ -185,7 +184,7 @@ data:extend(
 			recipe = "metallurgical-powder"
 		}
 	},
-	prerequisites = {"furnace_4", "smelting-graphite"},
+	prerequisites = {"furnace_4", "graphite-washing"},
 	unit =
 	{
 		count = 250,
@@ -261,59 +260,6 @@ data:extend(
 		time = 45
 	},
 	order = "01-06",
-},
---Crude Coke from Coal
-{
-	type = "technology",
-	name = "coke-a",
-	icon = "__xander-mod__/graphics/technology/refining/coke-a.png",
-	icon_size = 128,
-	effects =
-	{
-		{
-			type = "unlock-recipe",
-			recipe = "coke-a"
-		}
-	},
-	unit =
-	{
-		count = 5,
-		ingredients =
-		{
-			{"science-pack-0", 1}
-		},
-		time = 10
-	},
-	order = "00-02",
-},
---Crude Grapite Making
-{
-	type = "technology",
-	name = "smelting-graphite",
-	icon = "__xander-mod__/graphics/technology/refining/smelting-graphite.png",
-	icon_size = 128,
-	effects =
-	{
-		{
-			type = "unlock-recipe",
-			recipe = "smelting-graphite"
-		},
-		{
-			type = "unlock-recipe",
-			recipe = "graphite-block-a"
-		}
-	},
-	prerequisites = {"ore-processor_0"},
-	unit =
-	{
-		count = 10,
-		ingredients =
-		{
-			{"science-pack-0", 1}
-		},
-		time = 10
-	},
-	order = "00-04",
 },
 --Base "coal-liquefaction" placeholder
 	--order = "01-07"

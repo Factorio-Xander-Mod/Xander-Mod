@@ -3,9 +3,8 @@
 
 --Base "burner-inserter"
 data.raw.recipe["burner-inserter"].category = "basic-crafting"
-data.raw.recipe["burner-inserter"].energy_required = 1
-data.raw.recipe["burner-inserter"].ingredients = {{"iron-plate", 4}, {"forging-iron", 1}, {"blank-1", 2}}
-data.raw.recipe["burner-inserter"].result_count = 2
+data.raw.recipe["burner-inserter"].energy_required = 0.5
+data.raw.recipe["burner-inserter"].ingredients = {{"iron-plate", 2}, {"shaft-0", 1}, {"blank-1", 1}}
 
 --Base "inserter"
 data.raw.recipe["inserter"].energy_required = 2

@@ -1,16 +1,4 @@
-
 --Base Overrides
-
---Base "copper-plate"
-data.raw.item["copper-plate"].icon = "__xander-mod__/graphics/item/material/metal/copper.png"
-data.raw.item["copper-plate"].subgroup = "metal"
-data.raw.item["copper-plate"].order = "03"
-data.raw.item["copper-plate"].stack_size = 200
-
---Base "iron-plate"
-data.raw.item["iron-plate"].subgroup = "metal"
-data.raw.item["iron-plate"].order = "05"
-data.raw.item["iron-plate"].stack_size = 200
 
 --Base "uranium-238" -> XM U-238 Metal Plate
 data.raw.item["uranium-238"].icon = "__xander-mod__/graphics/item/material/metal/uranium-238.png"
@@ -61,8 +49,6 @@ data:extend(
 	order = "02",
 	stack_size = 200
 },
---Base "copper-plate" placeholder
-	--order = "03"
 --Gold plate
 {
 	type = "item",
@@ -74,8 +60,6 @@ data:extend(
 	order = "04",
 	stack_size = 200
 },
---Base "iron-plate" placeholder
-	--order = "05"
 --Lead Plate
 {
 	type = "item",

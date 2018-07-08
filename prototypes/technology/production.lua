@@ -1,4 +1,3 @@
-
 --Base Overrides
 
 --Base "advanced-material-processing"
@@ -1123,7 +1122,7 @@ data:extend(
 			recipe = "small-lamp"
 		}
 	},
-	prerequisites = {"smelting-graphite", "glass-a", "electronics"},
+	prerequisites = {"graphite-washing", "glass-a", "electronics"},
 	unit =
 	{
 		count = 20,

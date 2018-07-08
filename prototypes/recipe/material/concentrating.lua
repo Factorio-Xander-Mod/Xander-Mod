@@ -4,6 +4,7 @@ data:extend(
 
 --
 --APATITE
+--Transferred
 --Fluorite Flotation
 {
 	type = "recipe",
@@ -23,6 +24,7 @@ data:extend(
 	results = {{"fluorite", 10}, {"gravel", 2}, {type = "fluid", name = "waste-water", amount = 50}},
 	subgroup = "raw-resource"
 },
+--Transferred
 --Phosphate Rock
 {
 	type = "recipe",
@@ -44,6 +46,8 @@ data:extend(
 },
 --
 --BAUXITE
+--Transferred
+--[[
 --Crude Clay Finding (sorting through dirt by hand)
 {
 	type = "recipe",
@@ -53,6 +57,8 @@ data:extend(
 	ingredients = {{"bauxite", 2}},
 	result = "clay"
 },
+]]--
+--Transferred
 --Bauxite Clay
 {
 	type = "recipe",
@@ -72,6 +78,7 @@ data:extend(
 	results = {{"clay", 10}, {type = "fluid", name = "gray-water", amount = 50}},
 	subgroup = "raw-resource"
 },
+--To be removed
 --Hand Sand Sorting
 {
 	type = "recipe",
@@ -82,6 +89,7 @@ data:extend(
 	ingredients = {{"bauxite", 2}},
 	result = "sand"
 },
+--Transferred (to quartz-sand, in milled-resources)
 --Bauxite Sand
 {
 	type = "recipe",
@@ -132,6 +140,7 @@ data:extend(
 },
 --
 --COPPER ORE
+--Transferred
 --Chalcocite Washing
 {
 	type = "recipe",
@@ -172,6 +181,7 @@ data:extend(
 },
 --
 --GARNIERITE
+--Transferred
 --Nickel Oxide
 {
 	type = "recipe",
@@ -212,6 +222,7 @@ data:extend(
 },
 --
 --GRANITIC ORE
+--Transferred
 --Cassiterite Washing
 {
 	type = "recipe",
@@ -231,6 +242,7 @@ data:extend(
 	results = {{"cassiterite", 10}, {"sand", 2}, {type = "fluid", name = "gray-water", amount = 50}},
 	subgroup = "raw-resource"
 },
+--Transferred
 --Scheelite Flotation
 {
 	type = "recipe",
@@ -284,6 +296,7 @@ data:extend(
 },
 --
 --HEAVY SAND
+--Transferred
 --Chromite Flotation
 {
 	type = "recipe",
@@ -303,6 +316,7 @@ data:extend(
 	results = {{"chromite", 10}, {"sand", 2}, {type = "fluid", name = "waste-water", amount = 50}},
 	subgroup = "raw-resource"
 },
+--Transferred
 --Rutile Flotation
 {
 	type = "recipe",
@@ -322,6 +336,7 @@ data:extend(
 	results = {{"rutile", 10}, {"sand", 2}, {type = "fluid", name = "waste-water", amount = 50}},
 	subgroup = "raw-resource"
 },
+--Transferred
 --Zirconia Flotation
 {
 	type = "recipe",
@@ -343,6 +358,7 @@ data:extend(
 },
 --
 --IRON ORE
+--Transferred
 --Hematite Washing
 {
 	type = "recipe",
@@ -362,6 +378,7 @@ data:extend(
 	results = {{"hematite", 10}, {"gravel", 2}, {type = "fluid", name = "gray-water", amount = 5}},
 	subgroup = "raw-resource"
 },
+--Transferred
 --Vanadium Magnetite (Magnetic Separation)
 {
 	type = "recipe",
@@ -433,6 +450,7 @@ data:extend(
 	ingredients = {{"stone", 2}, {"coal", 2}},
 	result = "saltpeter"
 },
+--Transferred
 --Improved Saltpeter
 {
 	type = "recipe",
@@ -452,6 +470,7 @@ data:extend(
 	results = {{"saltpeter", 5}, {type = "fluid", name = "gray-water", amount = 50}},
 	subgroup = "raw-resource"
 },
+--Transferred
 --Borax Evaporation
 {
 	type = "recipe",
@@ -465,6 +484,7 @@ data:extend(
 	results = {{"borax", 1}, {type = "fluid", name = "distilled-water", amount = 200}},
 	subgroup = "raw-resource"
 },
+--Transferred
 --Lithium Hydroxide Precipitation
 {
 	type = "recipe",
@@ -497,6 +517,7 @@ data:extend(
 	results = {{"limestone", 1}},
 	subgroup = "raw-resource"
 },
+--Transferred
 --Limestone Washing
 {
 	type = "recipe",
@@ -553,6 +574,7 @@ data:extend(
 },
 --
 --SULFIDIC ORE
+--Transferred
 --Chalcopyrite Washing
 {
 	type = "recipe",
@@ -572,6 +594,7 @@ data:extend(
 	results = {{"chalcopyrite", 10}, {"gravel", 2}, {type = "fluid", name = "gray-water", amount = 50}},
 	subgroup = "raw-resource"
 },
+--Transferred
 --Sphalerite Flotation
 {
 	type = "recipe",
@@ -606,6 +629,7 @@ data:extend(
 },
 --
 --URANIUM ORE (PITCHBLENDE)
+--Transferred
 --Monazite Flotation
 {
 	type = "recipe",

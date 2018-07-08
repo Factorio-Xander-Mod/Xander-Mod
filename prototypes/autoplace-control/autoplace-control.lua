@@ -1,6 +1,8 @@
 --Create autoplace controls for all new XM resources
-for i, name in ipairs(xm_resources) do
-	data:extend({{type = "autoplace-control", name = name, richness = true, order = xm_resource_orders[i], category = "resource"}})
+for i, name in ipairs(xm_all_resources) do
+	if xm_resources_xm_new[i] then
+		data:extend({{type = "autoplace-control", name = name, richness = true, order = i - 1 .. "", category = "resource"}})
+	end
 end
 
 

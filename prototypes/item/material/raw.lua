@@ -2,28 +2,6 @@
 data:extend(
 {
 
---Borax
-{
-	type = "item",
-	name = "borax",
-	icon = "__xander-mod__/graphics/item/material/raw/borax.png",
-	icon_size = 32,
-	flags = {"goes-to-main-inventory"},
-	subgroup = "raw-material",
-	order = "00",
-	stack_size = 200
-},
---Clay
-{
-	type = "item",
-	name = "clay",
-	icon = "__xander-mod__/graphics/item/material/raw/clay.png",
-	icon_size = 32,
-	flags = {"goes-to-main-inventory"},
-	subgroup = "raw-material",
-	order = "01",
-	stack_size = 200
-},
 --Fayalite Slag
 {
 	type = "item",
@@ -44,17 +22,6 @@ data:extend(
 	flags = {"goes-to-main-inventory"},
 	subgroup = "raw-material",
 	order = "07",
-	stack_size = 200
-},
---Limestone
-{
-	type = "item",
-	name = "limestone",
-	icon = "__xander-mod__/graphics/item/material/raw/limestone.png",
-	icon_size = 32,
-	flags = {"goes-to-main-inventory"},
-	subgroup = "raw-material",
-	order = "05",
 	stack_size = 200
 },
 --Magnesite
@@ -82,23 +49,6 @@ data:extend(
 	{
 		result = "gravel",
 		condition_size = 3,
-		condition = {"water-tile"}
-	}
-},
---Sand (Quartz)
-{
-	type = "item",
-	name = "sand",
-	icon = "__xander-mod__/graphics/item/material/raw/sand.png",
-	icon_size = 32,
-	flags = {"goes-to-main-inventory"},
-	subgroup = "raw-material",
-	order = "08",
-	stack_size = 200,
-	place_as_tile = 
-	{
-		result = "sand-1",
-		condition_size = 4,
 		condition = {"water-tile"}
 	}
 },

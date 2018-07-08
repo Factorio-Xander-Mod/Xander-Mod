@@ -1,3 +1,9 @@
+--New XM Recipes
+for i, entry in ipairs(xm_furnace_recipes) do
+	if entry [2] then 
+		data:extend({xm_recipe(entry[1], entry[3], entry[4], entry[5], entry[6], entry[7], entry[8], entry[9], entry[10])})
+	end
+end
 
 --Base Overrides
 
@@ -16,63 +22,3 @@ data.raw.recipe["electric-furnace"].category = "crafting"
 data.raw.recipe["electric-furnace"].energy_required = 10
 data.raw.recipe["electric-furnace"].ingredients = {{"brick-clay-graphite", 40}, {"graphite-block", 10}, {"forging-steel", 10}, {"transformer-1", 2}, 
 	{"control-1", 2}, {"mechanism-1", 10}}
-
-
-data:extend(
-{
-
---Base "stone-furnace" placeholder
---Clay Brick Furnace
-{
-	type = "recipe",
-    name = "furnace-2",
-	category = "crafting",
-	energy_required = 2,
-	ingredients = {{"brick-clay", 10}, {"bronze-plate", 5}},
-	result = "furnace-2"
-},
---Base "steel-furnace" placeholder
---Electric Refining Furnace A (Clay-Graphite)
-{
-	type = "recipe",
-    name = "furnace-4-a",
-	category = "crafting",
-	energy_required = 10,
-	enabled = false,
-	ingredients = {{"brick-clay-graphite", 40}, {"graphite-block", 10}, {"forging-steel", 20}, {"transformer-1", 2}, {"control-1", 2}, {"pump", 2}},
-	result = "furnace-4"
-},
---Electric Refining Furnace B (Chromia-Magnesia Spinel)
-{
-	type = "recipe",
-    name = "furnace-4-b",
-	category = "crafting",
-	energy_required = 10,
-	enabled = false,
-	ingredients = {{"brick-spinel", 40}, {"monel-plate", 20}, {"forging-steel", 10}, {"transformer-2", 1}, {"control-1", 1}, {"pump", 1}},
-	result = "furnace-4"
-},
---Base "electric-furnace" placeholder
---Electric Foundry Forge B
-{
-	type = "recipe",
-    name = "furnace-5-b",
-	category = "crafting",
-	energy_required = 10,
-	enabled = false,
-	ingredients = {{"brick-spinel", 20}, {"monel-plate", 10}, {"forging-steel", 5}, {"transformer-1", 1}, {"control-1", 1}, {"mechanism-1", 5}},
-	result = "electric-furnace"
-},
---Arc Furnace
-{
-	type = "recipe",
-    name = "furnace-6",
-	category = "crafting",
-	energy_required = 20,
-	enabled = false,
-	ingredients = {{"furnace-4", 2}, {"electric-furnace", 2}, {"brick-zirconia", 100}, {"tungsten-block", 50}, {"mechanism-3", 20}, {"forging-alloy", 50}, 
-		{"transformer-3", 20}, {"control-3", 20}},
-	result = "furnace-6"
-}
-
-})

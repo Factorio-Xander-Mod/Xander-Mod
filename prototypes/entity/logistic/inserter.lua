@@ -6,7 +6,7 @@ local xmutil = require("xmutil")
 data.raw.inserter["burner-inserter"].max_health = 50
 data.raw.inserter["burner-inserter"].energy_per_movement = 50000
 data.raw.inserter["burner-inserter"].energy_per_rotation = 50000
-data.raw.inserter["burner-inserter"].energy_source.fuel_category = "crude"
+data.raw.inserter["burner-inserter"].energy_source.fuel_categories = {"crude", "chemical"}
 
 --Base "inserter"
 

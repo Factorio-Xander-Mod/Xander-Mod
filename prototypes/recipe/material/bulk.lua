@@ -1,55 +1,4 @@
-
 --Base Overrides
-
---ALLOY
-
---Base "steel-plate"
-data.raw.recipe["steel-plate"].energy_required = 8
-data.raw.recipe["steel-plate"].normal = 
-{
-	enabled = false,
-	energy_required = 8,
-	ingredients = {{"iron-plate", 4}},
-	result = "steel-plate"
-}
-data.raw.recipe["steel-plate"].expensive = 
-{
-	enabled = false,
-	energy_required = 16,
-	ingredients = {{"iron-plate", 8}},
-	result = "steel-plate"
-}
-
---BUILD
-
---Base "landfill"
-data.raw.recipe["landfill"].category = "sluice"
-data.raw.recipe["landfill"].energy_required = 1
-data.raw.recipe["landfill"].ingredients = {{"stone", 6}, {"modified", 20}, {"sand", 3}, {"clay", 2}}
-data.raw.recipe["landfill"].crafting_machine_tint =
-{
-	primary = {r = 0.000, g = 0.110, b = 0.588},
-	secondary = {r = 0.564, g = 0.795, b = 0.000},
-	tertiary = {r = 0.678, g = 0.565, b = 0.478}
-}
-
---Base "concrete"
-data.raw.recipe["concrete"].category = "sluice"
-data.raw.recipe["concrete"].energy_required = 10
-data.raw.recipe["concrete"].ingredients = {{"modified", 6}, {"sand", 3}, {"cement-powder", 4}, {type = "fluid", name = "water", amount = 20}, {"rod-2", 1}}
-data.raw.recipe["concrete"].crafting_machine_tint =
-{
-	primary = {r = 0.000, g = 0.110, b = 0.588},
-	secondary = {r = 0.564, g = 0.795, b = 0.000},
-	tertiary = {r = 0.678, g = 0.565, b = 0.478}
-}
-
---Base "hazard-concrete"
-data.raw.recipe["hazard-concrete"].energy_required = 0.2
-
---Base "stone-brick"
-data.raw.recipe["stone-brick"].category = "basic-machine"
-data.raw.recipe["stone-brick"].energy_required = 2
 
 --ORGANIC
 
@@ -159,16 +108,6 @@ data:extend(
 	ingredients = {{"lead-ore", 2}, {"coal", 1}},
 	result = "sulfur"
 },
---Crude Bronze Plate
-{
-	type = "recipe",
-    name = "bronze-plate-a",
-	category = "kiln",
-	energy_required = 10,
-	ingredients = {{"copper-plate", 4}, {"tin-plate", 1}},
-	result = "bronze-plate",
-	result_count = 5
-},
 --Phosphor Bronze - Direct Alloy Recipe
 {
 	type = "recipe",
@@ -180,6 +119,7 @@ data:extend(
 	result = "bronze-plate",
 	result_count = 10
 },
+--Transferred
 --Crude Solder Plate
 {
 	type = "recipe",
@@ -202,6 +142,7 @@ data:extend(
 	result = "solder-1-plate",
 	result_count = 5
 },
+--Transferred
 --Silver Solder Alloy Plate
 {
 	type = "recipe",
@@ -277,6 +218,186 @@ data:extend(
 
 --
 --BUILDING MATERIALS
+--Base "stone-brick" placeholder
+--[[
+--Crude Clay Brick
+{
+	type = "recipe",
+    name = "brick-clay-a",
+	category = "kiln",
+	energy_required = 4,
+	ingredients = {{"clay", 1}},
+	result = "brick-clay"
+},
+]]--
+--Transferred
+--Improved Clay Brick
+{
+	type = "recipe",
+    name = "brick-clay-b",
+	category = "forge",
+	energy_required = 20,
+	enabled = false,
+	ingredients = {{"clay", 8}, {"sand", 2}, {"calcium-oxide", 1}},
+	result = "brick-clay",
+	result_count = 10
+},
+--Transferred
+--Basic Clay-Graphite Refractory Brick
+{
+	type = "recipe",
+    name = "brick-clay-graphite-a",
+	category = "smelting",
+	energy_required = 4,
+	enabled = false,
+	ingredients = {{"clay", 1}, {"graphite-powder", 2}},
+	result = "brick-clay-graphite"
+},
+--Transferred
+--Improved Clay-Graphite Refractory Brick
+{
+	type = "recipe",
+    name = "brick-clay-graphite-b",
+	category = "forge",
+	energy_required = 4,
+	enabled = false,
+	ingredients = {{"clay", 1}, {"graphite-powder", 2}, {"sand", 1}},
+	result = "brick-clay-graphite",
+	result_count = 2
+},
+--Transferred
+--Chromia-Magnesia Spinel Brick
+{
+	type = "recipe",
+    name = "brick-spinel",
+	category = "forge",
+	energy_required = 5,
+	enabled = false,
+	ingredients = {{"magnesium-oxide", 1}, {"chromium-oxide", 1}},
+	result = "brick-spinel"
+},
+--Transferred
+--Yttria-Stabilized Zirconia Brick
+{
+	type = "recipe",
+    name = "brick-zirconia",
+	category = "forge",
+	energy_required = 100,
+	enabled = false,
+	ingredients = {{"zirconium-oxide", 10}, {"re-oxide", 1}},
+	result = "brick-zirconia",
+	result_count = 10
+},
+--Transferred
+--Cement with Calcium Oxide
+{
+	type = "recipe",
+    name = "cement-a",
+	category = "refining",
+	energy_required = 20,
+	enabled = false,
+	ingredients = {{"calcium-oxide", 5}, {"sand", 1}, {"bauxite", 1}},
+	result = "cement-powder",
+	result_count = 5
+},
+--Transferred
+--Cement with Slag
+{
+	type = "recipe",
+    name = "cement-b",
+	category = "refining",
+	energy_required = 20,
+	enabled = false,
+	ingredients = {{"calcium-oxide", 2}, {"slag", 1}, {"bauxite", 1}},
+	result = "cement-powder",
+	result_count = 5
+},
+--Base "concrete" placeholder
+--Base "hazard-concrete" placeholder
+--Transferred
+--Reverse Hazard Concrete
+{
+	type = "recipe",
+    name = "reverse-hazard",
+	category = "crafting",
+	energy_required = 0.1,
+	enabled = false,
+	ingredients = {{"hazard-concrete", 1}},
+	result = "concrete"
+},
+--Transferred
+--Fused Basalt A
+{
+	type = "recipe",
+    name = "basalt-a",
+	category = "forge",
+	energy_required = 50,
+	enabled = false,
+	ingredients = {{"sand", 10}, {"aluminum-oxide", 2}, {"magnesium-oxide", 2}, {"calcium-oxide", 2}, {"hematite", 1}, {"rod-3", 2}},
+	result = "fused-basalt",
+	result_count = 10
+},
+--Transferred
+--Fused Basalt B
+{
+	type = "recipe",
+    name = "basalt-b",
+	category = "forge",
+	energy_required = 50,
+	enabled = false,
+	ingredients = {{"sand", 8}, {"aluminum-oxide", 2}, {"magnesium-oxide", 2}, {"slag", 2}, {"hematite", 1}, {"rod-3", 2}},
+	result = "fused-basalt",
+	result_count = 10
+},
+--Transferred
+--Fused Quartz
+{
+	type = "recipe",
+    name = "fused-quartz",
+	category = "forge",
+	energy_required = 5,
+	enabled = false,
+	ingredients = {{"sand", 1}},
+	result = "fused-quartz"
+},
+--Transferred
+--Crude Soda-Lime Glass
+{
+	type = "recipe",
+    name = "glass-a",
+	category = "smelting",
+	energy_required = 40,
+	enabled = false,
+	ingredients = {{"sand", 10}, {"soda", 1}, {"limestone", 1}, {"saltpeter", 1}},
+	result = "glass",
+	result_count = 10
+},
+--Transferred
+--Boroslicate Glass
+{
+	type = "recipe",
+    name = "glass-b",
+	category = "forge",
+	energy_required = 200,
+	enabled = false,
+	ingredients = {{"sand", 20}, {"boron-oxide", 1}, {"calcium-oxide", 2}, {"aluminum-oxide", 1}},
+	result = "glass",
+	result_count = 20
+},
+--base "landfill" placeholder
+--Transferred
+--Landfill with Slag
+{
+	type = "recipe",
+    name = "landfill-b",
+	category = "sluice",
+	energy_required = 1,
+	enabled = false,
+	ingredients = {{"slag", 6}, {"modified", 20}, {"sand", 3}, {"clay", 2}},
+	result = "landfill",
+	crafting_machine_tint = {primary = {r = 0.48, g = 0.34, b = 0.24}, secondary = {r = 0.5, g = 0.5, b = 0.5}, tertiary = {r = 0.75, g = 0.75, b = 0.75}}
+},
+--Transferred
 --Modified-Grade Gravel with Stone
 {
 	type = "recipe",
@@ -294,6 +415,7 @@ data:extend(
 		tertiary = {r = 0.678, g = 0.565, b = 0.478}
 	}
 },
+--Transferred
 --Modified-Grade Gravel with Slag
 {
 	type = "recipe",
@@ -310,171 +432,6 @@ data:extend(
 		secondary = {r = 0.564, g = 0.795, b = 0.000},
 		tertiary = {r = 0.678, g = 0.565, b = 0.478}
 	}
-},
---Landfill with Slag
-{
-	type = "recipe",
-    name = "landfill-b",
-	category = "sluice",
-	energy_required = 1,
-	enabled = false,
-	ingredients = {{"slag", 6}, {"modified", 20}, {"sand", 3}, {"clay", 2}},
-	result = "landfill",
-	crafting_machine_tint =
-	{
-		primary = {r = 0.000, g = 0.110, b = 0.588},
-		secondary = {r = 0.564, g = 0.795, b = 0.000},
-		tertiary = {r = 0.678, g = 0.565, b = 0.478}
-	}
-},
---Cement with Calcium Oxide
-{
-	type = "recipe",
-    name = "cement-a",
-	category = "refining",
-	energy_required = 20,
-	enabled = false,
-	ingredients = {{"calcium-oxide", 5}, {"sand", 1}, {"bauxite", 1}},
-	result = "cement-powder",
-	result_count = 5
-},
---Cement with Slag
-{
-	type = "recipe",
-    name = "cement-b",
-	category = "refining",
-	energy_required = 20,
-	enabled = false,
-	ingredients = {{"calcium-oxide", 2}, {"slag", 1}, {"bauxite", 1}},
-	result = "cement-powder",
-	result_count = 5
-},
---Reverse Hazard Concrete
-{
-	type = "recipe",
-    name = "reverse-hazard",
-	category = "crafting",
-	energy_required = 0.1,
-	enabled = false,
-	ingredients = {{"hazard-concrete", 1}},
-	result = "concrete"
-},
---Base "stone-brick" placeholder
---Crude Clay Brick
-{
-	type = "recipe",
-    name = "brick-clay-a",
-	category = "kiln",
-	energy_required = 4,
-	ingredients = {{"clay", 1}},
-	result = "brick-clay"
-},
---Improved Clay Brick
-{
-	type = "recipe",
-    name = "brick-clay-b",
-	category = "forge",
-	energy_required = 20,
-	enabled = false,
-	ingredients = {{"clay", 8}, {"sand", 2}, {"calcium-oxide", 1}},
-	result = "brick-clay",
-	result_count = 10
-},
---Basic Clay-Graphite Refractory Brick
-{
-	type = "recipe",
-    name = "brick-clay-graphite-a",
-	category = "smelting",
-	energy_required = 4,
-	enabled = false,
-	ingredients = {{"clay", 1}, {"graphite-powder", 2}},
-	result = "brick-clay-graphite"
-},
---Improved Clay-Graphite Refractory Brick
-{
-	type = "recipe",
-    name = "brick-clay-graphite-b",
-	category = "forge",
-	energy_required = 4,
-	enabled = false,
-	ingredients = {{"clay", 1}, {"graphite-powder", 2}, {"sand", 1}},
-	result = "brick-clay-graphite",
-	result_count = 2
-},
---Chromia-Magnesia Spinel Brick
-{
-	type = "recipe",
-    name = "brick-spinel",
-	category = "forge",
-	energy_required = 5,
-	enabled = false,
-	ingredients = {{"magnesium-oxide", 1}, {"chromium-oxide", 1}},
-	result = "brick-spinel"
-},
---Yttria-Stabilized Zirconia Brick
-{
-	type = "recipe",
-    name = "brick-zirconia",
-	category = "forge",
-	energy_required = 100,
-	enabled = false,
-	ingredients = {{"zirconium-oxide", 10}, {"re-oxide", 1}},
-	result = "brick-zirconia",
-	result_count = 10
-},
---Fused Basalt A
-{
-	type = "recipe",
-    name = "basalt-a",
-	category = "forge",
-	energy_required = 50,
-	enabled = false,
-	ingredients = {{"sand", 10}, {"aluminum-oxide", 2}, {"magnesium-oxide", 2}, {"calcium-oxide", 2}, {"hematite", 1}, {"rod-3", 2}},
-	result = "fused-basalt",
-	result_count = 10
-},
---Fused Basalt B
-{
-	type = "recipe",
-    name = "basalt-b",
-	category = "forge",
-	energy_required = 50,
-	enabled = false,
-	ingredients = {{"sand", 8}, {"aluminum-oxide", 2}, {"magnesium-oxide", 2}, {"slag", 2}, {"hematite", 1}, {"rod-3", 2}},
-	result = "fused-basalt",
-	result_count = 10
-},
---Crude Soda-Lime Glass
-{
-	type = "recipe",
-    name = "glass-a",
-	category = "smelting",
-	energy_required = 40,
-	enabled = false,
-	ingredients = {{"sand", 10}, {"soda", 1}, {"limestone", 1}, {"saltpeter", 1}},
-	result = "glass",
-	result_count = 10
-},
---Boroslicate Glass
-{
-	type = "recipe",
-    name = "glass-b",
-	category = "forge",
-	energy_required = 200,
-	enabled = false,
-	ingredients = {{"sand", 20}, {"boron-oxide", 1}, {"calcium-oxide", 2}, {"aluminum-oxide", 1}},
-	result = "glass",
-	result_count = 20
-},
---Fused Quartz
-{
-	type = "recipe",
-    name = "fused-quartz",
-	category = "forge",
-	energy_required = 5,
-	enabled = false,
-	ingredients = {{"sand", 1}},
-	result = "fused-quartz"
 },
 
 --
@@ -1502,6 +1459,7 @@ data:extend(
 
 --
 --NONMETAL EELMENTS
+--Transferred
 --Graphite Block A
 {
 	type = "recipe",
@@ -1512,6 +1470,7 @@ data:extend(
 	ingredients = {{"graphite-powder", 4}},
 	result = "graphite-block"
 },
+--Transferred
 --Graphite Block B
 {
 	type = "recipe",
@@ -1523,6 +1482,7 @@ data:extend(
 	result = "graphite-block",
 	result_count = 12
 },
+--Transferred
 --Grinding Graphite Block to Graphite Powder
 {
 	type = "recipe",
@@ -1610,6 +1570,7 @@ data:extend(
 		tertiary = {r = 0.678, g = 0.565, b = 0.478}
 	}
 },
+--Transferred
 --Improved Coal Coking
 {
 	type = "recipe",
@@ -1636,8 +1597,8 @@ data:extend(
 	results = {{"coke", 6}, {type = "fluid", name = "hydrogen", amount = 60}},
 	subgroup = "nonmetal"
 },
+--Transferred
 --Metallurgical Silicon Powder
-	icon_size = 32,
 {
 	type = "recipe",
     name = "metallurgical-powder",
@@ -1647,6 +1608,7 @@ data:extend(
 	ingredients = {{"metallurgical-plate", 1}},
 	result = "metallurgical-powder"
 },
+--Transferred
 --Activated Carbon Powder
 {
 	type = "recipe",
@@ -1657,9 +1619,9 @@ data:extend(
 	energy_required = 5,
 	enabled = false,
 	ingredients = {{"silicon-carbide", 1}, {type = "fluid", name = "chlorine", amount = 20}},
-	icon_size = 32,
+	--icon_size = 32,
 	results = {{"activated-carbon", 1}, {type = "fluid", name = "silicon-tetrachloride", amount = 10}},
-	icon_size = 32,
+	--icon_size = 32,
 	subgroup = "nonmetal"
 },
 --Ultra-Pure Silicon Powder

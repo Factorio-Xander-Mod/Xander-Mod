@@ -1,4 +1,3 @@
-
 --Base Overrides
 
 --Base "engine"
@@ -70,7 +69,7 @@ data:extend(
 			recipe = "steel-axe"
 		}
 	},
-	prerequisites = {"machine-tool_0", "smelting-graphite"},
+	prerequisites = {"machine-tool_0", "graphite-washing"},
 	unit =
 	{
 		count = 20,
@@ -457,7 +456,7 @@ data:extend(
 			recipe = "science-pack-1"
 		}
 	},
-	prerequisites = {"reactor_0", "smelting-graphite"},
+	prerequisites = {"reactor_0", "graphite-washing"},
 	unit =
 	{
 		count = 10,

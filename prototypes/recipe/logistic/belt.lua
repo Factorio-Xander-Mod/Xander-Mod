@@ -94,7 +94,7 @@ data:extend(
     name = "slow-transport-belt",
 	category = "basic-crafting",
 	energy_required = 1,
-	ingredients = {{"shaft-0", 1}, {"iron-plate", 2}, {"bronze-plate", 2}},
+	ingredients = {{"shaft-0", 2}, {"iron-plate", 3}, {"bronze-plate", 1}},
 	result = "slow-transport-belt",
 	result_count = 4
 },

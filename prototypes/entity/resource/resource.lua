@@ -51,8 +51,10 @@ local function xm_create_new_resource(name, cat, order, rem_start, map_color)
 end
 
 --Add new XM resources
-for i, name in ipairs(xm_resources) do
-	data:extend({xm_create_new_resource(name, xm_resource_categories[i], xm_resource_orders[i], xm_rem_starts[i], xm_map_colors[i])})
+for i, name in ipairs(xm_all_resources) do
+	if xm_resources_xm_new[i] then
+		data:extend({xm_create_new_resource(name, xm_resource_categories[i], i - 1 .. "", xm_rem_starts[i], xm_map_colors[i])})
+	end
 end
 
 

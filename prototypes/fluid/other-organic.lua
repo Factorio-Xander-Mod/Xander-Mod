@@ -3,7 +3,7 @@
 
 --Base "lubricant"
 data.raw.fluid["lubricant"].base_color = {r = 0.1, g = 0.32, b = 0.03}
-data.raw.fluid["lubricant"].subgroup = "fluid-other"
+data.raw.fluid["lubricant"].subgroup = "fluid-other-organic"
 data.raw.fluid["lubricant"].order = "05-10"
 
 
@@ -23,25 +23,8 @@ data:extend(
 	icon_size = 32,
 	pressure_to_speed_ratio = 0.4,
 	flow_to_energy_ratio = 0.59,
-	subgroup = "fluid-other",
+	subgroup = "fluid-other-organic",
 	order = "05-00"--,
-	--auto_barrel = false
-},
---Carbon Tetrafluoride
-{
-	type = "fluid",
-	name = "carbon-tetrafluoride",
-	default_temperature = 25,
-	heat_capacity = "0.1KJ",
-	base_color = {r = 0.55, g = 0.60, b = 0.15},
-	flow_color = {r = 0.66, g = 0.02, b = 0.24},
-	max_temperature = 100,
-	icon = "__xander-mod__/graphics/fluid/other-organic/carbon-tetrafluoride.png",
-	icon_size = 32,
-	pressure_to_speed_ratio = 0.4,
-	flow_to_energy_ratio = 0.59,
-	subgroup = "fluid-other",
-	order = "05-01"--,
 	--auto_barrel = false
 },
 --Chlorobenzene
@@ -57,7 +40,7 @@ data:extend(
 	icon_size = 32,
 	pressure_to_speed_ratio = 0.4,
 	flow_to_energy_ratio = 0.59,
-	subgroup = "fluid-other",
+	subgroup = "fluid-other-organic",
 	order = "05-02"--,
 	--auto_barrel = false
 },
@@ -74,7 +57,7 @@ data:extend(
 	icon_size = 32,
 	pressure_to_speed_ratio = 0.4,
 	flow_to_energy_ratio = 0.59,
-	subgroup = "fluid-other",
+	subgroup = "fluid-other-organic",
 	order = "05-03"--,
 	--auto_barrel = false
 },
@@ -91,7 +74,7 @@ data:extend(
 	icon_size = 32,
 	pressure_to_speed_ratio = 0.4,
 	flow_to_energy_ratio = 0.59,
-	subgroup = "fluid-other",
+	subgroup = "fluid-other-organic",
 	order = "05-04"--,
 	--auto_barrel = false
 },
@@ -108,7 +91,7 @@ data:extend(
 	icon_size = 32,
 	pressure_to_speed_ratio = 0.4,
 	flow_to_energy_ratio = 0.59,
-	subgroup = "fluid-other",
+	subgroup = "fluid-other-organic",
 	order = "05-05"--,
 	--auto_barrel = false
 },
@@ -125,7 +108,7 @@ data:extend(
 	icon_size = 32,
 	pressure_to_speed_ratio = 0.4,
 	flow_to_energy_ratio = 0.59,
-	subgroup = "fluid-other",
+	subgroup = "fluid-other-organic",
 	order = "05-06"--,
 	--auto_barrel = false
 },
@@ -142,7 +125,7 @@ data:extend(
 	icon_size = 32,
 	pressure_to_speed_ratio = 0.4,
 	flow_to_energy_ratio = 0.59,
-	subgroup = "fluid-other",
+	subgroup = "fluid-other-organic",
 	order = "05-07"--,
 	--auto_barrel = false
 },
@@ -159,7 +142,7 @@ data:extend(
 	icon_size = 32,
 	pressure_to_speed_ratio = 0.4,
 	flow_to_energy_ratio = 0.59,
-	subgroup = "fluid-other",
+	subgroup = "fluid-other-organic",
 	order = "05-08"--,
 	--auto_barrel = false
 },
@@ -176,7 +159,7 @@ data:extend(
 	icon_size = 32,
 	pressure_to_speed_ratio = 0.4,
 	flow_to_energy_ratio = 0.59,
-	subgroup = "fluid-other",
+	subgroup = "fluid-other-organic",
 	order = "05-09"--,
 	--auto_barrel = false
 },
@@ -195,7 +178,7 @@ data:extend(
 	icon_size = 32,
 	pressure_to_speed_ratio = 0.4,
 	flow_to_energy_ratio = 0.59,
-	subgroup = "fluid-other",
+	subgroup = "fluid-other-organic",
 	order = "05-11"--,
 	--auto_barrel = false
 },
@@ -212,7 +195,7 @@ data:extend(
 	icon_size = 32,
 	pressure_to_speed_ratio = 0.4,
 	flow_to_energy_ratio = 0.59,
-	subgroup = "fluid-other",
+	subgroup = "fluid-other-organic",
 	order = "05-12"--,
 	--auto_barrel = false
 },
@@ -229,7 +212,7 @@ data:extend(
 	icon_size = 32,
 	pressure_to_speed_ratio = 0.4,
 	flow_to_energy_ratio = 0.59,
-	subgroup = "fluid-other",
+	subgroup = "fluid-other-organic",
 	order = "05-13"--,
 	--auto_barrel = false
 }
