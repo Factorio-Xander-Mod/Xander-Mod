@@ -35,19 +35,19 @@ xmutil.clone("logistic-robot", "logistic-robot",
 		energy_per_tick = "0.02kJ",
 		energy_per_move = "10kJ",
 		idle = {
-			filename = "__xander-mod__/graphics/entity/logistic/logistic-robot-2/2.png",
+			filename = "__xander-mod-graphics-0__/graphics/entity/logistic/logistic-robot-2/2.png",
 			hr_version = xmutil.NIL,
 		},
 		idle_with_cargo = {
-			filename = "__xander-mod__/graphics/entity/logistic/logistic-robot-2/2.png",
+			filename = "__xander-mod-graphics-0__/graphics/entity/logistic/logistic-robot-2/2.png",
 			hr_version = xmutil.NIL,
 		},
 		in_motion = {
-			filename = "__xander-mod__/graphics/entity/logistic/logistic-robot-2/2.png",
+			filename = "__xander-mod-graphics-0__/graphics/entity/logistic/logistic-robot-2/2.png",
 			hr_version = xmutil.NIL,
 		},
 		in_motion_with_cargo = {
-			filename = "__xander-mod__/graphics/entity/logistic/logistic-robot-2/2.png",
+			filename = "__xander-mod-graphics-0__/graphics/entity/logistic/logistic-robot-2/2.png",
 			hr_version = xmutil.NIL,
 		},
 	}
@@ -67,15 +67,15 @@ xmutil.clone("construction-robot", "construction-robot",
 		energy_per_tick = "0.05kJ",
 		energy_per_move = "10kJ",
 		idle = {
-			filename = "__xander-mod__/graphics/entity/logistic/construction-robot-2/2.png",
+			filename = "__xander-mod-graphics-0__/graphics/entity/logistic/construction-robot-2/2.png",
 			hr_version = xmutil.NIL,
 		},
 		in_motion = {
-			filename = "__xander-mod__/graphics/entity/logistic/construction-robot-2/2.png",
+			filename = "__xander-mod-graphics-0__/graphics/entity/logistic/construction-robot-2/2.png",
 			hr_version = xmutil.NIL,
 		},
 		working = {
-			filename = "__xander-mod__/graphics/entity/logistic/construction-robot-2/working.png",
+			filename = "__xander-mod-graphics-0__/graphics/entity/logistic/construction-robot-2/working.png",
 			hr_version = xmutil.NIL,
 		},
 	}
@@ -102,25 +102,25 @@ xmutil.clone("roboport", "roboport",
 	base = {
 		layers = {
 			{
-				filename = "__xander-mod__/graphics/entity/logistic/roboport-2/base.png",
+				filename = "__xander-mod-graphics-0__/graphics/entity/logistic/roboport-2/base.png",
 				hr_version = xmutil.NIL,
 			},
 		},
 	},
 	base_patch = {
-		filename = "__xander-mod__/graphics/entity/logistic/roboport-2/base-patch.png",
+		filename = "__xander-mod-graphics-0__/graphics/entity/logistic/roboport-2/base-patch.png",
 		hr_version = xmutil.NIL,
 	},
 	base_animation = {
-		filename = "__xander-mod__/graphics/entity/logistic/roboport-2/base-animation.png",
+		filename = "__xander-mod-graphics-0__/graphics/entity/logistic/roboport-2/base-animation.png",
 		hr_version = xmutil.NIL,
 	},
 	door_animation_up = {
-		filename = "__xander-mod__/graphics/entity/logistic/roboport-2/door-up.png",
+		filename = "__xander-mod-graphics-0__/graphics/entity/logistic/roboport-2/door-up.png",
 		hr_version = xmutil.NIL,
 	},
 	door_animation_down = {
-		filename = "__xander-mod__/graphics/entity/logistic/roboport-2/door-down.png",
+		filename = "__xander-mod-graphics-0__/graphics/entity/logistic/roboport-2/door-down.png",
 		hr_version = xmutil.NIL,
 	},
 }

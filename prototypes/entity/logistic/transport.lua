@@ -46,11 +46,11 @@ xmutil.clone("cargo-wagon", "cargo-wagon",
 	{
 		{
 			"__base__/graphics/entity/cargo-wagon/(h?r?-?)cargo-wagon-(%d)",
-			"__xander-mod__/graphics/entity/logistic/cargo-wagon-2/%1%2",
+			"__xander-mod-graphics-0__/graphics/entity/logistic/cargo-wagon-2/%1%2",
 		},
 		{
 			"__base__/graphics/entity/cargo-wagon/(h?r?-?)cargo-wagon-door-",
-			"__xander-mod__/graphics/entity/logistic/cargo-wagon-2/%1door-",
+			"__xander-mod-graphics-0__/graphics/entity/logistic/cargo-wagon-2/%1door-",
 		},
 	},
 	{
@@ -71,11 +71,11 @@ xmutil.clone("fluid-wagon", "fluid-wagon",
 	{
 			{
 				"__base__/graphics/entity/fluid-wagon/(h?r?-?)fluid-wagon-(%d)",
-				"__xander-mod__/graphics/entity/logistic/fluid-wagon-2/%1%2",
+				"__xander-mod-graphics-0__/graphics/entity/logistic/fluid-wagon-2/%1%2",
 			},
 			{
 				"__base__/graphics/entity/fluid-wagon/(h?r?-?)fluid-wagon-door-",
-				"__xander-mod__/graphics/entity/logistic/fluid-wagon-2/%1door-",
+				"__xander-mod-graphics-0__/graphics/entity/logistic/fluid-wagon-2/%1door-",
 			},
 	},
 	{

@@ -5,13 +5,13 @@ return
 {
 	straight_vertical_single =
 	{
-		filename = "__xander-mod__/graphics/entity/logistic/pipe/" .. name .. "/straight-vertical-single.png",
+		filename = "__xander-mod-graphics-0__/graphics/entity/logistic/pipe/" .. name .. "/straight-vertical-single.png",
 		priority = "extra-high",
 		width = 80,
 		height = 80,
 		hr_version =
 		{
-			filename = "__xander-mod__/graphics/entity/logistic/pipe/" .. name .. "/hr-straight-vertical-single.png",
+			filename = "__xander-mod-graphics-0__/graphics/entity/logistic/pipe/" .. name .. "/hr-straight-vertical-single.png",
 			priority = "extra-high",
 			width = 160,
 			height = 160,
@@ -20,13 +20,13 @@ return
 	},
 	straight_vertical =
 	{
-		filename = "__xander-mod__/graphics/entity/logistic/pipe/" .. name .. "/straight-vertical.png",
+		filename = "__xander-mod-graphics-0__/graphics/entity/logistic/pipe/" .. name .. "/straight-vertical.png",
 		priority = "extra-high",
 		width = 64,
 		height = 64,
 		hr_version =
 		{
-			filename = "__xander-mod__/graphics/entity/logistic/pipe/" .. name .. "/hr-straight-vertical.png",
+			filename = "__xander-mod-graphics-0__/graphics/entity/logistic/pipe/" .. name .. "/hr-straight-vertical.png",
 			priority = "extra-high",
 			width = 128,
 			height = 128,
@@ -35,13 +35,13 @@ return
 	},
 	straight_vertical_window =
 	{
-		filename = "__xander-mod__/graphics/entity/logistic/pipe/" .. name .. "/straight-vertical-window.png",
+		filename = "__xander-mod-graphics-0__/graphics/entity/logistic/pipe/" .. name .. "/straight-vertical-window.png",
 		priority = "extra-high",
 		width = 64,
 		height = 64,
 		hr_version =
 		{
-			filename = "__xander-mod__/graphics/entity/logistic/pipe/" .. name .. "/hr-straight-vertical-window.png",
+			filename = "__xander-mod-graphics-0__/graphics/entity/logistic/pipe/" .. name .. "/hr-straight-vertical-window.png",
 			priority = "extra-high",
 			width = 128,
 			height = 128,
@@ -50,13 +50,13 @@ return
 	},
 	straight_horizontal_window =
 	{
-		filename = "__xander-mod__/graphics/entity/logistic/pipe/" .. name .. "/straight-horizontal-window.png",
+		filename = "__xander-mod-graphics-0__/graphics/entity/logistic/pipe/" .. name .. "/straight-horizontal-window.png",
 		priority = "extra-high",
 		width = 64,
 		height = 64,
 		hr_version =
 		{
-			filename = "__xander-mod__/graphics/entity/logistic/pipe/" .. name .. "/hr-straight-horizontal-window.png",
+			filename = "__xander-mod-graphics-0__/graphics/entity/logistic/pipe/" .. name .. "/hr-straight-horizontal-window.png",
 			priority = "extra-high",
 			width = 128,
 			height = 128,
@@ -65,13 +65,13 @@ return
 	},
 	straight_horizontal =
 	{
-		filename = "__xander-mod__/graphics/entity/logistic/pipe/" .. name .. "/straight-horizontal.png",
+		filename = "__xander-mod-graphics-0__/graphics/entity/logistic/pipe/" .. name .. "/straight-horizontal.png",
 		priority = "extra-high",
 		width = 64,
 		height = 64,
 		hr_version =
 		{
-			filename = "__xander-mod__/graphics/entity/logistic/pipe/" .. name .. "/hr-straight-horizontal.png",
+			filename = "__xander-mod-graphics-0__/graphics/entity/logistic/pipe/" .. name .. "/hr-straight-horizontal.png",
 			priority = "extra-high",
 			width = 128,
 			height = 128,
@@ -80,13 +80,13 @@ return
 	},
 	corner_up_right =
 	{
-		filename = "__xander-mod__/graphics/entity/logistic/pipe/" .. name .. "/corner-up-right.png",
+		filename = "__xander-mod-graphics-0__/graphics/entity/logistic/pipe/" .. name .. "/corner-up-right.png",
 		priority = "extra-high",
 		width = 64,
 		height = 64,
 		hr_version =
 		{
-			filename = "__xander-mod__/graphics/entity/logistic/pipe/" .. name .. "/hr-corner-up-right.png",
+			filename = "__xander-mod-graphics-0__/graphics/entity/logistic/pipe/" .. name .. "/hr-corner-up-right.png",
 			priority = "extra-high",
 			width = 128,
 			height = 128,
@@ -95,13 +95,13 @@ return
 	},
 	corner_up_left =
 	{
-		filename = "__xander-mod__/graphics/entity/logistic/pipe/" .. name .. "/corner-up-left.png",
+		filename = "__xander-mod-graphics-0__/graphics/entity/logistic/pipe/" .. name .. "/corner-up-left.png",
 		priority = "extra-high",
 		width = 64,
 		height = 64,
 		hr_version =
 		{
-			filename = "__xander-mod__/graphics/entity/logistic/pipe/" .. name .. "/hr-corner-up-left.png",
+			filename = "__xander-mod-graphics-0__/graphics/entity/logistic/pipe/" .. name .. "/hr-corner-up-left.png",
 			priority = "extra-high",
 			width = 128,
 			height = 128,
@@ -110,13 +110,13 @@ return
 	},
 	corner_down_right =
 	{
-		filename = "__xander-mod__/graphics/entity/logistic/pipe/" .. name .. "/corner-down-right.png",
+		filename = "__xander-mod-graphics-0__/graphics/entity/logistic/pipe/" .. name .. "/corner-down-right.png",
 		priority = "extra-high",
 		width = 64,
 		height = 64,
 		hr_version =
 		{
-			filename = "__xander-mod__/graphics/entity/logistic/pipe/" .. name .. "/hr-corner-down-right.png",
+			filename = "__xander-mod-graphics-0__/graphics/entity/logistic/pipe/" .. name .. "/hr-corner-down-right.png",
 			priority = "extra-high",
 			width = 128,
 			height = 128,
@@ -125,13 +125,13 @@ return
 	},
 	corner_down_left =
 	{
-		filename = "__xander-mod__/graphics/entity/logistic/pipe/" .. name .. "/corner-down-left.png",
+		filename = "__xander-mod-graphics-0__/graphics/entity/logistic/pipe/" .. name .. "/corner-down-left.png",
 		priority = "extra-high",
 		width = 64,
 		height = 64,
 		hr_version =
 		{
-			filename = "__xander-mod__/graphics/entity/logistic/pipe/" .. name .. "/hr-corner-down-left.png",
+			filename = "__xander-mod-graphics-0__/graphics/entity/logistic/pipe/" .. name .. "/hr-corner-down-left.png",
 			priority = "extra-high",
 			width = 128,
 			height = 128,
@@ -140,13 +140,13 @@ return
 	},
 	t_up =
 	{
-		filename = "__xander-mod__/graphics/entity/logistic/pipe/" .. name .. "/t-up.png",
+		filename = "__xander-mod-graphics-0__/graphics/entity/logistic/pipe/" .. name .. "/t-up.png",
 		priority = "extra-high",
 		width = 64,
 		height = 64,
 		hr_version =
 		{
-			filename = "__xander-mod__/graphics/entity/logistic/pipe/" .. name .. "/hr-t-up.png",
+			filename = "__xander-mod-graphics-0__/graphics/entity/logistic/pipe/" .. name .. "/hr-t-up.png",
 			priority = "extra-high",
 			width = 128,
 			height = 128,
@@ -155,13 +155,13 @@ return
 	},
 	t_down =
 	{
-		filename = "__xander-mod__/graphics/entity/logistic/pipe/" .. name .. "/t-down.png",
+		filename = "__xander-mod-graphics-0__/graphics/entity/logistic/pipe/" .. name .. "/t-down.png",
 		priority = "extra-high",
 		width = 64,
 		height = 64,
 		hr_version =
 		{
-			filename = "__xander-mod__/graphics/entity/logistic/pipe/" .. name .. "/hr-t-down.png",
+			filename = "__xander-mod-graphics-0__/graphics/entity/logistic/pipe/" .. name .. "/hr-t-down.png",
 			priority = "extra-high",
 			width = 128,
 			height = 128,
@@ -170,13 +170,13 @@ return
 	},
 	t_right =
 	{
-		filename = "__xander-mod__/graphics/entity/logistic/pipe/" .. name .. "/t-right.png",
+		filename = "__xander-mod-graphics-0__/graphics/entity/logistic/pipe/" .. name .. "/t-right.png",
 		priority = "extra-high",
 		width = 64,
 		height = 64,
 		hr_version =
 		{
-			filename = "__xander-mod__/graphics/entity/logistic/pipe/" .. name .. "/hr-t-right.png",
+			filename = "__xander-mod-graphics-0__/graphics/entity/logistic/pipe/" .. name .. "/hr-t-right.png",
 			priority = "extra-high",
 			width = 128,
 			height = 128,
@@ -185,13 +185,13 @@ return
 	},
 	t_left =
 	{
-		filename = "__xander-mod__/graphics/entity/logistic/pipe/" .. name .. "/t-left.png",
+		filename = "__xander-mod-graphics-0__/graphics/entity/logistic/pipe/" .. name .. "/t-left.png",
 		priority = "extra-high",
 		width = 64,
 		height = 64,
 		hr_version =
 		{
-			filename = "__xander-mod__/graphics/entity/logistic/pipe/" .. name .. "/hr-t-left.png",
+			filename = "__xander-mod-graphics-0__/graphics/entity/logistic/pipe/" .. name .. "/hr-t-left.png",
 			priority = "extra-high",
 			width = 128,
 			height = 128,
@@ -200,13 +200,13 @@ return
 	},
 	cross =
 	{
-		filename = "__xander-mod__/graphics/entity/logistic/pipe/" .. name .. "/cross.png",
+		filename = "__xander-mod-graphics-0__/graphics/entity/logistic/pipe/" .. name .. "/cross.png",
 		priority = "extra-high",
 		width = 64,
 		height = 64,
 		hr_version =
 		{
-			filename = "__xander-mod__/graphics/entity/logistic/pipe/" .. name .. "/hr-cross.png",
+			filename = "__xander-mod-graphics-0__/graphics/entity/logistic/pipe/" .. name .. "/hr-cross.png",
 			priority = "extra-high",
 			width = 128,
 			height = 128,
@@ -215,13 +215,13 @@ return
 	},
 	ending_up =
 	{
-		filename = "__xander-mod__/graphics/entity/logistic/pipe/" .. name .. "/ending-up.png",
+		filename = "__xander-mod-graphics-0__/graphics/entity/logistic/pipe/" .. name .. "/ending-up.png",
 		priority = "extra-high",
 		width = 64,
 		height = 64,
 		hr_version =
 		{
-			filename = "__xander-mod__/graphics/entity/logistic/pipe/" .. name .. "/hr-ending-up.png",
+			filename = "__xander-mod-graphics-0__/graphics/entity/logistic/pipe/" .. name .. "/hr-ending-up.png",
 			priority = "extra-high",
 			width = 128,
 			height = 128,
@@ -230,13 +230,13 @@ return
 	},
 	ending_down =
 	{
-		filename = "__xander-mod__/graphics/entity/logistic/pipe/" .. name .. "/ending-down.png",
+		filename = "__xander-mod-graphics-0__/graphics/entity/logistic/pipe/" .. name .. "/ending-down.png",
 		priority = "extra-high",
 		width = 64,
 		height = 64,
 		hr_version =
 		{
-			filename = "__xander-mod__/graphics/entity/logistic/pipe/" .. name .. "/hr-ending-down.png",
+			filename = "__xander-mod-graphics-0__/graphics/entity/logistic/pipe/" .. name .. "/hr-ending-down.png",
 			priority = "extra-high",
 			width = 128,
 			height = 128,
@@ -245,13 +245,13 @@ return
 	},
 	ending_right =
 	{
-		filename = "__xander-mod__/graphics/entity/logistic/pipe/" .. name .. "/ending-right.png",
+		filename = "__xander-mod-graphics-0__/graphics/entity/logistic/pipe/" .. name .. "/ending-right.png",
 		priority = "extra-high",
 		width = 64,
 		height = 64,
 		hr_version =
 		{
-			filename = "__xander-mod__/graphics/entity/logistic/pipe/" .. name .. "/hr-ending-right.png",
+			filename = "__xander-mod-graphics-0__/graphics/entity/logistic/pipe/" .. name .. "/hr-ending-right.png",
 			priority = "extra-high",
 			width = 128,
 			height = 128,
@@ -260,13 +260,13 @@ return
 	},
 	ending_left =
 	{
-		filename = "__xander-mod__/graphics/entity/logistic/pipe/" .. name .. "/ending-left.png",
+		filename = "__xander-mod-graphics-0__/graphics/entity/logistic/pipe/" .. name .. "/ending-left.png",
 		priority = "extra-high",
 		width = 64,
 		height = 64,
 		hr_version =
 		{
-			filename = "__xander-mod__/graphics/entity/logistic/pipe/" .. name .. "/hr-ending-left.png",
+			filename = "__xander-mod-graphics-0__/graphics/entity/logistic/pipe/" .. name .. "/hr-ending-left.png",
 			priority = "extra-high",
 			width = 128,
 			height = 128,
@@ -275,13 +275,13 @@ return
 	},
 	horizontal_window_background =
 	{
-		filename = "__xander-mod__/graphics/entity/logistic/pipe/" .. name .. "/horizontal-window-background.png",
+		filename = "__xander-mod-graphics-0__/graphics/entity/logistic/pipe/" .. name .. "/horizontal-window-background.png",
 		priority = "extra-high",
 		width = 64,
 		height = 64,
 		hr_version =
 		{
-			filename = "__xander-mod__/graphics/entity/logistic/pipe/" .. name .. "/hr-horizontal-window-background.png",
+			filename = "__xander-mod-graphics-0__/graphics/entity/logistic/pipe/" .. name .. "/hr-horizontal-window-background.png",
 			priority = "extra-high",
 			width = 128,
 			height = 128,
@@ -290,13 +290,13 @@ return
 	},
 	vertical_window_background =
 	{
-		filename = "__xander-mod__/graphics/entity/logistic/pipe/" .. name .. "/vertical-window-background.png",
+		filename = "__xander-mod-graphics-0__/graphics/entity/logistic/pipe/" .. name .. "/vertical-window-background.png",
 		priority = "extra-high",
 		width = 64,
 		height = 64,
 		hr_version =
 		{
-			filename = "__xander-mod__/graphics/entity/logistic/pipe/" .. name .. "/hr-vertical-window-background.png",
+			filename = "__xander-mod-graphics-0__/graphics/entity/logistic/pipe/" .. name .. "/hr-vertical-window-background.png",
 			priority = "extra-high",
 			width = 128,
 			height = 128,
@@ -368,13 +368,13 @@ local function xm_pipe_to_ground_pictures(material)
 	ret = {}
 	for _, dir in ipairs{"up", "down", "left", "right"} do
 		ret[dir] = {
-			filename = "__xander-mod__/graphics/entity/logistic/pipe-to-ground/"..material.."/pipe-to-ground-"..dir..".png",
+			filename = "__xander-mod-graphics-0__/graphics/entity/logistic/pipe-to-ground/"..material.."/pipe-to-ground-"..dir..".png",
 			priority = "high",
 			width = 64,
 			height = 64,
 			hr_version =
 			{
-				filename = "__xander-mod__/graphics/entity/logistic/pipe-to-ground/"..material.."/hr-pipe-to-ground-"..dir..".png",
+				filename = "__xander-mod-graphics-0__/graphics/entity/logistic/pipe-to-ground/"..material.."/hr-pipe-to-ground-"..dir..".png",
 				priority = "extra-high",
 				width = 128,
 				height = 128,
@@ -485,7 +485,7 @@ xmutil.clone("storage-tank", "storage-tank",
 			picture = {
 				sheets = {
 					{
-						filename = "__xander-mod__/graphics/entity/logistic/storage-tank-2/2.png",
+						filename = "__xander-mod-graphics-0__/graphics/entity/logistic/storage-tank-2/2.png",
 						width = 140,
 						height = 115,
 						shift = {0.6875, 0.109375},
@@ -511,20 +511,20 @@ xmutil.clone("pump", "pump",
 		pumping_speed = 500,
 		animations = {
 			north = {
-				filename = "__xander-mod__/graphics/entity/logistic/pump-2/north.png",
-				hr_version = { filename = "__xander-mod__/graphics/entity/logistic/pump-2/hr-north.png" },
+				filename = "__xander-mod-graphics-0__/graphics/entity/logistic/pump-2/north.png",
+				hr_version = { filename = "__xander-mod-graphics-0__/graphics/entity/logistic/pump-2/hr-north.png" },
 			},
 			east = {
-				filename = "__xander-mod__/graphics/entity/logistic/pump-2/east.png",
-				hr_version = { filename = "__xander-mod__/graphics/entity/logistic/pump-2/hr-east.png" },
+				filename = "__xander-mod-graphics-0__/graphics/entity/logistic/pump-2/east.png",
+				hr_version = { filename = "__xander-mod-graphics-0__/graphics/entity/logistic/pump-2/hr-east.png" },
 			},
 			south = {
-				filename = "__xander-mod__/graphics/entity/logistic/pump-2/south.png",
-				hr_version = { filename = "__xander-mod__/graphics/entity/logistic/pump-2/hr-south.png" },
+				filename = "__xander-mod-graphics-0__/graphics/entity/logistic/pump-2/south.png",
+				hr_version = { filename = "__xander-mod-graphics-0__/graphics/entity/logistic/pump-2/hr-south.png" },
 			},
 			west = {
-				filename = "__xander-mod__/graphics/entity/logistic/pump-2/west.png",
-				hr_version = { filename = "__xander-mod__/graphics/entity/logistic/pump-2/hr-west.png" },
+				filename = "__xander-mod-graphics-0__/graphics/entity/logistic/pump-2/west.png",
+				hr_version = { filename = "__xander-mod-graphics-0__/graphics/entity/logistic/pump-2/hr-west.png" },
 			},
 		}
 	}
@@ -543,20 +543,20 @@ xmutil.clone("pump", "pump",
 		pumping_speed = 500,
 		animations = {
 			north = {
-				filename = "__xander-mod__/graphics/entity/logistic/pump-3/north.png",
-				hr_version = { filename = "__xander-mod__/graphics/entity/logistic/pump-3/hr-north.png" },
+				filename = "__xander-mod-graphics-0__/graphics/entity/logistic/pump-3/north.png",
+				hr_version = { filename = "__xander-mod-graphics-0__/graphics/entity/logistic/pump-3/hr-north.png" },
 			},
 			east = {
-				filename = "__xander-mod__/graphics/entity/logistic/pump-3/east.png",
-				hr_version = { filename = "__xander-mod__/graphics/entity/logistic/pump-3/hr-east.png" },
+				filename = "__xander-mod-graphics-0__/graphics/entity/logistic/pump-3/east.png",
+				hr_version = { filename = "__xander-mod-graphics-0__/graphics/entity/logistic/pump-3/hr-east.png" },
 			},
 			south = {
-				filename = "__xander-mod__/graphics/entity/logistic/pump-3/south.png",
-				hr_version = { filename = "__xander-mod__/graphics/entity/logistic/pump-3/hr-south.png" },
+				filename = "__xander-mod-graphics-0__/graphics/entity/logistic/pump-3/south.png",
+				hr_version = { filename = "__xander-mod-graphics-0__/graphics/entity/logistic/pump-3/hr-south.png" },
 			},
 			west = {
-				filename = "__xander-mod__/graphics/entity/logistic/pump-3/west.png",
-				hr_version = { filename = "__xander-mod__/graphics/entity/logistic/pump-3/hr-west.png" },
+				filename = "__xander-mod-graphics-0__/graphics/entity/logistic/pump-3/west.png",
+				hr_version = { filename = "__xander-mod-graphics-0__/graphics/entity/logistic/pump-3/hr-west.png" },
 			},
 		}
 	}

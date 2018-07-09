@@ -28,7 +28,7 @@ xmutil.clone("electric-pole", "medium-electric-pole",
 		max_health = 200,
 		maximum_wire_distance = 15,
 		supply_area_distance = 6.5,
-		pictures = { filename = "__xander-mod__/graphics/entity/logistic/pylon/medium-2.png" },
+		pictures = { filename = "__xander-mod-graphics-0__/graphics/entity/logistic/pylon/medium-2.png" },
 	}
 ),
 --Base "big-electric-pole" placeholder
@@ -43,7 +43,7 @@ xmutil.clone("electric-pole", "big-electric-pole",
 		max_health = 400,
 		maximum_wire_distance = 60,
 		supply_area_distance = 2,
-		pictures = { filename = "__xander-mod__/graphics/entity/logistic/pylon/big-2.png" },
+		pictures = { filename = "__xander-mod-graphics-0__/graphics/entity/logistic/pylon/big-2.png" },
 	}
 ),
 --Base "substation" placeholder
@@ -58,7 +58,7 @@ xmutil.clone("electric-pole", "substation",
 		max_health = 400,
 		maximum_wire_distance = 30,
 		supply_area_distance = 15,
-		pictures = { filename = "__xander-mod__/graphics/entity/logistic/pylon/substation-2.png" },
+		pictures = { filename = "__xander-mod-graphics-0__/graphics/entity/logistic/pylon/substation-2.png" },
 	}
 ),
 

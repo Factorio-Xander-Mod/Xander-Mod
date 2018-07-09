@@ -35,7 +35,7 @@ xmutil.clone("offshore-pump", "offshore-pump",
 	{
 		{
 			"__base__/graphics/entity/offshore-pump/offshore-pump.png",
-			"__xander-mod__/graphics/entity/production/offshore-pump-1/1.png",
+			"__xander-mod-graphics-0__/graphics/entity/production/offshore-pump-1/1.png",
 		},
 	},
 	{
@@ -61,7 +61,7 @@ xmutil.clone("assembling-machine", "assembling-machine-2",
 		animation = {
 			layers = {
 				{
-					filename = "__xander-mod__/graphics/entity/production/logging-camp/logging-camp.png",
+					filename = "__xander-mod-graphics-0__/graphics/entity/production/logging-camp/logging-camp.png",
 					priority = "high",
 					width = 113,
 					height = 91,
@@ -105,11 +105,11 @@ xmutil.clone("mining-drill", "electric-mining-drill",
 	{
 		{
 			"__base__/graphics/entity/electric-mining-drill/(h?r?-?)electric-mining-drill-(.)%.png",
-			"__xander-mod__/graphics/entity/production/mining-drill-3/%1%2.png",
+			"__xander-mod-graphics-0__/graphics/entity/production/mining-drill-3/%1%2.png",
 		},
 		{
 			"__base__/graphics/entity/electric-mining-drill/(h?r?-?)electric-mining-drill-(.)-patch%.png",
-			"__xander-mod__/graphics/entity/production/mining-drill-3/%1%2-patch.png",
+			"__xander-mod-graphics-0__/graphics/entity/production/mining-drill-3/%1%2-patch.png",
 		},
 	},
 	{
@@ -129,11 +129,11 @@ xmutil.clone("mining-drill", "electric-mining-drill",
 	{
 		{
 			"__base__/graphics/entity/electric-mining-drill/(h?r?-?)electric-mining-drill-(.)%.png",
-			"__xander-mod__/graphics/entity/production/mining-drill-4/%1%2.png",
+			"__xander-mod-graphics-0__/graphics/entity/production/mining-drill-4/%1%2.png",
 		},
 		{
 			"__base__/graphics/entity/electric-mining-drill/(h?r?-?)electric-mining-drill-(.)-patch%.png",
-			"__xander-mod__/graphics/entity/production/mining-drill-4/%1%2-patch.png",
+			"__xander-mod-graphics-0__/graphics/entity/production/mining-drill-4/%1%2-patch.png",
 		},
 	},
 	{
@@ -159,11 +159,11 @@ xmutil.clone("mining-drill", "pumpjack",
 		},
 		{
 			"__base__/graphics/entity/pumpjack/pumpjack-base.png",
-			"__xander-mod__/graphics/entity/production/pumpjack-2/base.png",
+			"__xander-mod-graphics-0__/graphics/entity/production/pumpjack-2/base.png",
 		},
 		{
 			"__base__/graphics/entity/electric-mining-drill/hr-electric-mining-drill-",
-			"__xander-mod__/graphics/entity/production/mining-drill-4/hr-",
+			"__xander-mod-graphics-0__/graphics/entity/production/mining-drill-4/hr-",
 		},
 	},
 	{
@@ -179,7 +179,7 @@ xmutil.clone("mining-drill", "pumpjack",
 		base_picture = {
 			sheets = {
 				{
-					filename = "__xander-mod__/graphics/entity/production/pumpjack-2/base.png",
+					filename = "__xander-mod-graphics-0__/graphics/entity/production/pumpjack-2/base.png",
 					hr_version = xmutil.NIL,
 				},
 			},
@@ -193,7 +193,7 @@ xmutil.clone("mining-drill", "pumpjack",
 						height = 110,
 						line_length = 10,
 						shift = util.by_pixel(4, -23),
-						filename = "__xander-mod__/graphics/entity/production/pumpjack-2/animation.png",
+						filename = "__xander-mod-graphics-0__/graphics/entity/production/pumpjack-2/animation.png",
 						frame_count = 40,
 						animation_speed = 1,
 						hr_version = xmutil.NIL,
@@ -208,11 +208,11 @@ xmutil.clone("assembling-machine", "chemical-plant",
 	{
 		{
 			"__base__/graphics/entity/chemical-plant/chemical-plant.png",
-			"__xander-mod__/graphics/entity/production/ore-processor-0/0.png",
+			"__xander-mod-graphics-0__/graphics/entity/production/ore-processor-0/0.png",
 		},
 		{
 			"__base__/graphics/entity/chemical-plant/hr-chemical-plant.png",
-			"__xander-mod__/graphics/entity/production/ore-processor-0/hr-0.png",
+			"__xander-mod-graphics-0__/graphics/entity/production/ore-processor-0/hr-0.png",
 		},
 	},
 	{
@@ -250,11 +250,11 @@ xmutil.clone("assembling-machine", "chemical-plant",
 	{
 		{
 			"__base__/graphics/entity/chemical-plant/chemical-plant.png",
-			"__xander-mod__/graphics/entity/production/ore-processor-1/1.png",
+			"__xander-mod-graphics-0__/graphics/entity/production/ore-processor-1/1.png",
 		},
 		{
 			"__base__/graphics/entity/chemical-plant/hr-chemical-plant.png",
-			"__xander-mod__/graphics/entity/production/ore-processor-1/hr-1.png",
+			"__xander-mod-graphics-0__/graphics/entity/production/ore-processor-1/hr-1.png",
 		},
 	},
 	{
@@ -275,19 +275,19 @@ xmutil.clone("assembling-machine", "oil-refinery",
 	{
 		{
 			"__base__/graphics/entity/oil-refinery/oil-refinery.png",
-			"__xander-mod__/graphics/entity/production/ore-processor-2/2.png",
+			"__xander-mod-graphics-0__/graphics/entity/production/ore-processor-2/2.png",
 		},
 		{
 			"__base__/graphics/entity/oil-refinery/hr-oil-refinery.png",
-			"__xander-mod__/graphics/entity/production/ore-processor-2/hr-2.png",
+			"__xander-mod-graphics-0__/graphics/entity/production/ore-processor-2/hr-2.png",
 		},
 		{
 			"__base__/graphics/entity/oil-refinery/oil-refinery-fire.png",
-			"__xander-mod__/graphics/entity/production/ore-processor-2/dust.png",
+			"__xander-mod-graphics-0__/graphics/entity/production/ore-processor-2/dust.png",
 		},
 		{
 			"__base__/graphics/entity/oil-refinery/hr-oil-refinery-fire.png",
-			"__xander-mod__/graphics/entity/production/ore-processor-2/hr-dust.png",
+			"__xander-mod-graphics-0__/graphics/entity/production/ore-processor-2/hr-dust.png",
 		},
 	},
 	{

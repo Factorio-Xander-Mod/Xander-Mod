@@ -303,7 +303,7 @@ xmutil.clone("assembling-machine", "assembling-machine-3",
 	light = {intensity = 0.75, size = 8, color = {r = 1.0, g = 1.0, b = 1.0}},
 	on_animation =
 	{
-		filename = "__xander-mod__/graphics/entity/production/lab-1/1.png",
+		filename = "__xander-mod-graphics-0__/graphics/entity/production/lab-1/1.png",
 		width = 113,
 		height = 91,
 		frame_count = 33,
@@ -313,7 +313,7 @@ xmutil.clone("assembling-machine", "assembling-machine-3",
 	},
 	off_animation =
 	{
-		filename = "__xander-mod__/graphics/entity/production/lab-1/1.png",
+		filename = "__xander-mod-graphics-0__/graphics/entity/production/lab-1/1.png",
 		width = 113,
 		height = 91,
 		frame_count = 1,
