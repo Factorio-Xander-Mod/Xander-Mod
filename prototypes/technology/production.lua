@@ -20,7 +20,7 @@ data.raw.technology["advanced-material-processing-2"].order = "07-10"
 --Base "automation"
 data.raw.technology["automation"].icon = "__xander-mod__/graphics/technology/production/automation-1.png"
 data.raw.technology["automation"].icon_size = 128
-data.raw.technology["automation"].effects = {{type = "unlock-recipe", recipe = "assembling-machine-1"}}
+table.remove(data.raw["technology"]["automation"].effects, 2)
 data.raw.technology["automation"].prerequisites = {"automation_0", "machines_1", "inserter-a", "electronics"}
 data.raw.technology["automation"].unit.count = 40
 data.raw.technology["automation"].order = "07-22"
