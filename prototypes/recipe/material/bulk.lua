@@ -105,7 +105,7 @@ data:extend(
 	category = "smelting",
 	energy_required = 4,
 	enabled = false,
-	ingredients = {{"lead-ore", 2}, {"coal", 1}},
+	ingredients = {{"massive-sulfide", 2}, {"coal", 1}},
 	result = "sulfur"
 },
 --Phosphor Bronze - Direct Alloy Recipe
@@ -296,7 +296,7 @@ data:extend(
 	category = "refining",
 	energy_required = 20,
 	enabled = false,
-	ingredients = {{"calcium-oxide", 5}, {"sand", 1}, {"bauxite", 1}},
+	ingredients = {{"calcium-oxide", 5}, {"sand", 1}, {"laterite", 1}},
 	result = "cement-powder",
 	result_count = 5
 },
@@ -308,7 +308,7 @@ data:extend(
 	category = "refining",
 	energy_required = 20,
 	enabled = false,
-	ingredients = {{"calcium-oxide", 2}, {"slag", 1}, {"bauxite", 1}},
+	ingredients = {{"calcium-oxide", 2}, {"slag", 1}, {"laterite", 1}},
 	result = "cement-powder",
 	result_count = 5
 },
@@ -994,7 +994,7 @@ data:extend(
 	category = "basic-chemistry",
 	energy_required = 10,
 	enabled = false,
-	ingredients = {{"raw-wood", 4}, {type = "fluid", name = "water", amount = 20}, {"granitic-ore", 1}, {"iron-ore", 1}},
+	ingredients = {{"raw-wood", 4}, {type = "fluid", name = "water", amount = 20}, {"skarn", 1}, {"iron-ore", 1}},
 	results = {{type = "fluid", name = "formic-acid", amount = 20}},
 	subgroup = "carbohydrate",
 	crafting_machine_tint =

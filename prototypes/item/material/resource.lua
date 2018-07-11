@@ -45,6 +45,7 @@ data:extend(
 {
 
 --Apatite
+-- jodokus31: Can be removed?
 {
 	type = "item",
 	name = "apatite",
@@ -56,6 +57,7 @@ data:extend(
 	stack_size = 200
 },
 --Bauxite
+-- jodokus31: Can be removed?
 {
 	type = "item",
 	name = "bauxite",
@@ -67,6 +69,7 @@ data:extend(
 	stack_size = 200
 },
 --Garnierite
+-- jodokus31: Can be removed?
 {
 	type = "item",
 	name = "garnierite",
@@ -78,6 +81,7 @@ data:extend(
 	stack_size = 200
 },
 --Granitic Ore
+-- jodokus31: Can be removed?
 {
 	type = "item",
 	name = "granitic-ore",
@@ -89,6 +93,7 @@ data:extend(
 	stack_size = 200
 },
 --Lead ore
+-- jodokus31: Can be removed?
 {
 	type = "item",
 	name = "lead-ore",
@@ -122,6 +127,7 @@ data:extend(
 	stack_size = 200
 },
 --Sulfidic ore
+-- jodokus31: Can be removed?
 {
 	type = "item",
 	name = "sulfidic-ore",
