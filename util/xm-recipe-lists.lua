@@ -116,7 +116,7 @@ local xm_build_recipes_tints = {nil, nil, nil, nil, nil, nil, nil, nil, nil, {pr
 local xm_build_recipes_times = {2, 4, 20, 4, 4, 5, 100, 20, 20, 10, 0.1, 0.1, 50, 50, 5, 40, 200, 1, 1, 4, 4}
 local xm_build_recipes_enableds = {true, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false}
 local xm_build_recipes_ingredients = {{{"stone", 2}}, {{"clay", 1}}, {{"clay", 8}, {"sand", 2}, {"calcium-oxide", 1}}, {{"clay", 1}, {"graphite-powder", 2}}, {{"clay", 1}, {"graphite-powder", 2}, {"sand", 1}}, 
-	{{"magnesium-oxide", 1}, {"chromium-oxide", 1}}, {{"zirconium-oxide", 10}, {"re-oxide", 1}}, {{"calcium-oxide", 5}, {"sand", 1}, {"laterite", 1}}, {{"calcium-oxide", 2}, {"slag", 1}, {"laterite", 1}}, 
+	{{"magnesium-oxide", 1}, {"chromium-oxide", 1}}, {{"zirconium-oxide", 10}, {"re-oxide", 1}}, {{"calcium-oxide", 5}, {"sand", 1}, {"milled-bauxite", 1}}, {{"calcium-oxide", 2}, {"slag", 1}, {"milled-bauxite", 1}}, 
 	{{"modified", 6}, {"sand", 3}, {"cement-powder", 4}, {type = "fluid", name = "water", amount = 20}, {"rod-2", 1}}, {{"concrete", 10}}, {{"hazard-concrete", 10}}, 
 	{{"sand", 10}, {"aluminum-oxide", 2}, {"magnesium-oxide", 2}, {"calcium-oxide", 2}, {"hematite", 1}, {"rod-3", 2}}, {{"sand", 8}, {"aluminum-oxide", 2}, {"magnesium-oxide", 2}, {"slag", 2}, {"hematite", 1}, {"rod-3", 2}}, 
 	{{"sand", 1}}, {{"sand", 10}, {"soda", 1}, {"limestone", 1}, {"saltpeter", 1}}, {{"sand", 20}, {"boron-oxide", 1}, {"calcium-oxide", 2}, {"aluminum-oxide", 1}}, {{"stone", 6}, {"modified", 20}, {"sand", 3}, {"clay", 2}}, 
