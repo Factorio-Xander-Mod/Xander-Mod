@@ -41,7 +41,7 @@ data:extend(
 	energy_required = 40,
 	enabled = false,
 	ingredients = {{"phosphorite", 10}, {type = "fluid", name = "water", amount = 50}, {"surfactant", 1}},
-	results = {{"phosphate-rock", 10}, {"gravel", 2}, {type = "fluid", name = "waste-water", amount = 50}},
+	results = {{"hydroxylapatite", 10}, {"gravel", 2}, {type = "fluid", name = "waste-water", amount = 50}},
 	subgroup = "raw-resource"
 },
 --
@@ -333,7 +333,7 @@ data:extend(
 	energy_required = 40,
 	enabled = false,
 	ingredients = {{"sand", 10}, {type = "fluid", name = "water", amount = 50}, {"surfactant", 1}},
-	results = {{"rutile", 10}, {"sand", 2}, {type = "fluid", name = "waste-water", amount = 50}},
+	results = {{"ilmenite", 10}, {"sand", 2}, {type = "fluid", name = "waste-water", amount = 50}},
 	subgroup = "raw-resource"
 },
 --Transferred
@@ -353,7 +353,7 @@ data:extend(
 	energy_required = 40,
 	enabled = false,
 	ingredients = {{"sand", 10}, {type = "fluid", name = "water", amount = 50}, {"surfactant", 1}},
-	results = {{"zirconia", 2}, {"sand", 2}, {type = "fluid", name = "waste-water", amount = 50}},
+	results = {{"zircon", 2}, {"sand", 2}, {type = "fluid", name = "waste-water", amount = 50}},
 	subgroup = "raw-resource"
 },
 --
@@ -395,7 +395,7 @@ data:extend(
 	energy_required = 20,
 	enabled = false,
 	ingredients = {{"iron-ore", 10}},
-	results = {{"vanadium-magnetite", 10}, {"gravel", 2}},
+	results = {{"magnetite", 10}, {"gravel", 2}},
 	subgroup = "raw-resource"
 },
 --

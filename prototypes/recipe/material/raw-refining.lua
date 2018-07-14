@@ -70,7 +70,7 @@ data:extend(
 	},
 	energy_required = 4,
 	enabled = false,
-	ingredients = {{"phosphate-rock", 1}, {type = "fluid", name = "sulfuric-acid", amount = 30}},
+	ingredients = {{"hydroxylapatite", 1}, {type = "fluid", name = "sulfuric-acid", amount = 30}},
 	results = {{type = "fluid", name = "phosphoric-acid", amount = 20}, {"calcium-sulfate", 3}},
 	subgroup = "raw-material"
 },
@@ -84,7 +84,7 @@ data:extend(
 	category = "refining",
 	energy_required = 20,
 	enabled = false,
-	ingredients = {{"phosphate-rock", 2}, {"sand", 6}, {"coke", 5}},
+	ingredients = {{"hydroxylapatite", 2}, {"sand", 6}, {"coke", 5}},
 	results = {{"phosphorus", 4}, {"slag", 6}, {type = "fluid", name = "flue-gas", amount = 50}},
 	subgroup = "raw-material"
 },
@@ -461,7 +461,7 @@ data:extend(
 	category = "refining",
 	energy_required = 5,
 	enabled = false,
-	ingredients = {{"rutile", 1}, {"coke", 1}, {type = "fluid", name = "chlorine", amount = 20}},
+	ingredients = {{"ilmenite", 1}, {"coke", 1}, {type = "fluid", name = "chlorine", amount = 20}},
 	results = {{type = "fluid", name = "titanium-tetrachloride", amount = 10}}, --{type = "fluid", name = "flue-gas", amount = 10}},
 	subgroup = "raw-material"
 },
@@ -514,7 +514,7 @@ data:extend(
 	category = "refining",
 	energy_required = 5,
 	enabled = false,
-	ingredients = {{"zirconia", 1}, {"coke", 1}, {type = "fluid", name = "chlorine", amount = 20}},
+	ingredients = {{"zircon", 1}, {"coke", 1}, {type = "fluid", name = "chlorine", amount = 20}},
 	results = {{"zirconium-tetrachloride", 1}, {type = "fluid", name = "flue-gas", amount = 10}},
 	subgroup = "raw-material"
 },
@@ -593,7 +593,7 @@ data:extend(
 	category = "refining",
 	energy_required = 40,
 	enabled = false,
-	ingredients = {{"vanadium-magnetite", 10}, {"soda", 2}, {"calcium-oxide", 2}},
+	ingredients = {{"magnetite", 10}, {"soda", 2}, {"calcium-oxide", 2}},
 	results = {{"vanadium-slag", 4}, {type = "fluid", name = "flue-gas", amount = 20}},
 	subgroup = "raw-material"
 },
@@ -619,7 +619,7 @@ data:extend(
 	category = "refining",
 	energy_required = 200,
 	enabled = false,
-	ingredients = {{"vanadium-magnetite", 10}, {"soda", 1}, {"calcium-oxide", 1}},
+	ingredients = {{"magnetite", 10}, {"soda", 1}, {"calcium-oxide", 1}},
 	results = {{"raw-iron", 20}, {"vanadium-slag", 4}, {type = "fluid", name = "flue-gas", amount = 150}},
 	subgroup = "raw-material"
 },
