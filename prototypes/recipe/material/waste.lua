@@ -127,7 +127,7 @@ data:extend(
 	},
 	energy_required = 40,
 	enabled = false,
-	ingredients = {{type = "fluid", name = "waste-water", amount = 200}, {"soda", 1}},
+	ingredients = {{type = "fluid", name = "waste-water", amount = 200}, {"sodium-carbonate", 1}},
 	results = {{type = "fluid", name = "water", amount = 200}, {"sludge", 4}},
 	subgroup = "waste"
 },
@@ -146,7 +146,7 @@ data:extend(
 	},
 	energy_required = 40,
 	enabled = false,
-	ingredients = {{type = "fluid", name = "waste-slurry", amount = 200}, {"soda", 2}, {"magnesium-chloride", 1}},
+	ingredients = {{type = "fluid", name = "waste-slurry", amount = 200}, {"sodium-carbonate", 2}, {"magnesium-chloride", 1}},
 	results = {{type = "fluid", name = "water", amount = 200}, {"sludge", 10}},
 	subgroup = "waste"
 },
@@ -436,8 +436,8 @@ data:extend(
 	},
 	energy_required = 1,
 	enabled = false,
-	ingredients = {{"salt", 2}, {type = "fluid", name = "water", amount = 10}},
-	result = "salt"
+	ingredients = {{"sodium-chloride", 2}, {type = "fluid", name = "water", amount = 10}},
+	result = "sodium-chloride"
 }
 
 })

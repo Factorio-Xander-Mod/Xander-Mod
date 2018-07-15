@@ -151,7 +151,7 @@ data:extend(
 	category = "crafting",
 	energy_required = 1,
 	enabled = false,
-	ingredients = {{"tungsten-block", 1}, {"glass", 4}, {"brass-plate", 2}, {"forging-iron", 2}, {"electronic-circuit", 1}},
+	ingredients = {{"tungsten-block", 1}, {"glass", 4}, {"brass-billet", 2}, {"forging-iron", 2}, {"electronic-circuit", 1}},
 	result = "small-lamp"
 }
 

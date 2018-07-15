@@ -22,13 +22,13 @@ data.raw.recipe["advanced-oil-processing"].results = {{type = "fluid", name = "h
 
 --Base "uranium-processing"
 data.raw.recipe["uranium-processing"].energy_required = 100
-data.raw.recipe["uranium-processing"].ingredients = {{"natural-uf6", 1}}
-data.raw.recipe["uranium-processing"].results = {{name = "fuel-uf6", probability = 0.07, amount = 1}, {name = "238-uf6", probability = 0.93, amount = 1}}
+data.raw.recipe["uranium-processing"].ingredients = {{"uranium-natural-hexafluoride", 1}}
+data.raw.recipe["uranium-processing"].results = {{name = "uranium-fuel-hexafluoride", probability = 0.07, amount = 1}, {name = "uranium-238-hexafluoride", probability = 0.93, amount = 1}}
 
 --Base "kovarex-enrichment-process"
 data.raw.recipe["kovarex-enrichment-process"].energy_required = 200
-data.raw.recipe["kovarex-enrichment-process"].ingredients = {{"weapons-uf6", 10}, {"238-uf6", 40}}
-data.raw.recipe["kovarex-enrichment-process"].results = {{name = "fuel-uf6", amount = 51}, {name = "238-uf6", amount = 20}}
+data.raw.recipe["kovarex-enrichment-process"].ingredients = {{"uranium-weapons-hexafluoride", 10}, {"uranium-238-hexafluoride", 40}}
+data.raw.recipe["kovarex-enrichment-process"].results = {{name = "uranium-fuel-hexafluoride", amount = 51}, {name = "uranium-238-hexafluoride", amount = 20}}
 
 
 data:extend(
@@ -128,7 +128,7 @@ data:extend(
 	energy_required = 100,
 	enabled = false,
 	ingredients = {{"sand", 20}, {"graphite-block", 1}, {"coke", 16}},
-	results = {{"metallurgical-plate", 20}, {type = "fluid", name = "flue-gas", amount = 200}},
+	results = {{"silicon-ingot", 20}, {type = "fluid", name = "flue-gas", amount = 200}},
 	subgroup = "raw-material"
 },
 --Acheson Process Silicon Carbide
@@ -154,7 +154,7 @@ data:extend(
 	energy_required = 200,
 	enabled = false,
 	ingredients = {{"silicon-carbide", 20}, {"graphite-block", 1}},
-	results = {{"graphite-powder", 24}, {"metallurgical-plate", 20}},
+	results = {{"graphite-powder", 24}, {"silicon-ingot", 20}},
 	subgroup = "raw-material"
 },
 --
@@ -192,7 +192,7 @@ data:extend(
 	category = "basic-refining",
 	energy_required = 32,
 	enabled = false,
-	ingredients = {{"copper-ore", 4}, {"soda", 1}},
+	ingredients = {{"copper-ore", 4}, {"sodium-carbonate", 1}},
 	result = "copper-plate",
 	result_count = 8
 },
@@ -218,7 +218,7 @@ data:extend(
 	category = "refining",
 	energy_required = 100,
 	enabled = false,
-	ingredients = {{"cuprous-oxide", 10}, {"coke", 5}, {"soda", 2}},
+	ingredients = {{"cuprous-oxide", 10}, {"coke", 5}, {"sodium-carbonate", 2}},
 	results = {{"copper-plate", 20}, {"slag", 2}, {type = "fluid", name = "flue-gas", amount = 50}},
 	subgroup = "raw-material"
 },
@@ -341,7 +341,7 @@ data:extend(
 	category = "refining",
 	energy_required = 100,
 	enabled = false,
-	ingredients = {{"cassiterite", 10}, {"coke", 10}, {"soda", 1}},
+	ingredients = {{"cassiterite", 10}, {"coke", 10}, {"sodium-carbonate", 1}},
 	results = {{"tin-plate", 10}, {"slag", 1}, {type = "fluid", name = "flue-gas", amount = 100}},
 	subgroup = "raw-material"
 },
@@ -394,7 +394,7 @@ data:extend(
 	enabled = false,
 	ingredients = {{"scheelite", 1}, {"sodium-hydroxide", 2}, {type = "fluid", name = "hydrogen-chloride", amount = 20}, 
 		{type = "fluid", name = "sulfuric-acid", amount = 10}},
-	results = {{"tungsten-oxide", 1}, {"calcium-sulfate", 1}, {"salt", 2}, {type = "fluid", name = "waste-slurry", amount = 10}},
+	results = {{"tungsten-oxide", 1}, {"calcium-sulfate", 1}, {"sodium-chloride", 2}, {type = "fluid", name = "waste-slurry", amount = 10}},
 	subgroup = "raw-material"
 },
 --Cassiterite Slagging with Gold
@@ -406,7 +406,7 @@ data:extend(
 	category = "refining",
 	energy_required = 200,
 	enabled = false,
-	ingredients = {{"skarn", 20}, {"soda", 1}, {"borax", 1}},
+	ingredients = {{"skarn", 20}, {"sodium-carbonate", 1}, {"borax", 1}},
 	results = {{"cassiterite", 20}, {"gold-sponge", 2}, {"slag", 1}},
 	subgroup = "raw-material"
 },
@@ -421,7 +421,7 @@ data:extend(
 	category = "refining",
 	energy_required = 80,
 	enabled = false,
-	ingredients = {{"chromite", 4}, {"soda", 8}, {type = "fluid", name = "oxygen", amount = 70}},
+	ingredients = {{"chromite", 4}, {"sodium-carbonate", 8}, {type = "fluid", name = "oxygen", amount = 70}},
 	results = {{"sodium-chromate", 8}, {"hematite", 2}, {type = "fluid", name = "flue-gas", amount = 80}},
 	subgroup = "raw-material"
 },
@@ -435,7 +435,7 @@ data:extend(
 	energy_required = 10,
 	enabled = false,
 	ingredients = {{"sodium-chromate", 2}, {type = "fluid", name = "hydrogen-chloride", amount = 40}, {"coke", 3}},
-	results = {{"chromium-oxide", 1}, {"salt", 4}, {type = "fluid", name = "carbon-monoxide", amount = 30}},
+	results = {{"chromium-oxide", 1}, {"sodium-chloride", 4}, {type = "fluid", name = "carbon-monoxide", amount = 30}},
 	subgroup = "raw-material"
 },
 --Transferred
@@ -593,7 +593,7 @@ data:extend(
 	category = "refining",
 	energy_required = 40,
 	enabled = false,
-	ingredients = {{"magnetite", 10}, {"soda", 2}, {"calcium-oxide", 2}},
+	ingredients = {{"magnetite", 10}, {"sodium-carbonate", 2}, {"calcium-oxide", 2}},
 	results = {{"vanadium-slag", 4}, {type = "fluid", name = "flue-gas", amount = 20}},
 	subgroup = "raw-material"
 },
@@ -606,7 +606,7 @@ data:extend(
 	category = "refining",
 	energy_required = 40,
 	enabled = false,
-	ingredients = {{type = "fluid", name = "crude-oil", amount = 50}, {"soda", 2}, {"calcium-oxide", 2}, {type = "fluid", name = "oxygen", amount = 300}},
+	ingredients = {{type = "fluid", name = "crude-oil", amount = 50}, {"sodium-carbonate", 2}, {"calcium-oxide", 2}, {type = "fluid", name = "oxygen", amount = 300}},
 	results = {{"vanadium-slag", 2}, {type = "fluid", name = "flue-gas", amount = 300}},
 	subgroup = "raw-material"
 },
@@ -619,7 +619,7 @@ data:extend(
 	category = "refining",
 	energy_required = 200,
 	enabled = false,
-	ingredients = {{"magnetite", 10}, {"soda", 1}, {"calcium-oxide", 1}},
+	ingredients = {{"magnetite", 10}, {"sodium-carbonate", 1}, {"calcium-oxide", 1}},
 	results = {{"raw-iron", 20}, {"vanadium-slag", 4}, {type = "fluid", name = "flue-gas", amount = 150}},
 	subgroup = "raw-material"
 },
@@ -705,7 +705,7 @@ data:extend(
 	category = "refining",
 	energy_required = 50,
 	enabled = false,
-	ingredients = {{"lead-oxide", 10}, {"coke", 5}, {"soda", 1}},
+	ingredients = {{"lead-oxide", 10}, {"coke", 5}, {"sodium-carbonate", 1}},
 	results = {{"lead-plate", 10}, {"slag", 1}, {type = "fluid", name = "flue-gas", amount = 50}},
 	subgroup = "raw-material"
 },
@@ -760,7 +760,7 @@ data:extend(
 	energy_required = 40,
 	enabled = false,
 	ingredients = {{"borax", 1}, {type = "fluid", name = "hydrogen-chloride", amount = 20}, {type = "fluid", name = "water", amount = 50}},
-	results = {{"boron-oxide", 10}, {"salt", 1}, {type = "fluid", name = "gray-water", amount = 50}},
+	results = {{"boron-oxide", 10}, {"sodium-chloride", 1}, {type = "fluid", name = "gray-water", amount = 50}},
 	subgroup = "raw-material"
 },
 --
@@ -951,7 +951,7 @@ data:extend(
 	energy_required = 10,
 	enabled = false,
 	ingredients = {{"uranyl-nitrate", 1}, {type = "fluid", name = "hydrogen-fluoride", amount = 60}},
-	results = {{"natural-uf6", 1}, {type = "fluid", name = "nitrogen-dioxide", amount = 10}, {type = "fluid", name = "waste-water", amount = 50}},
+	results = {{"uranium-natural-hexafluoride", 1}, {type = "fluid", name = "nitrogen-dioxide", amount = 10}, {type = "fluid", name = "waste-water", amount = 50}},
 	subgroup = "raw-material"
 },
 --Base "uranium-processing" placeholder
@@ -964,8 +964,8 @@ data:extend(
 	category = "centrifuging",
 	energy_required = 500,
 	enabled = false,
-	ingredients = {{"fuel-uf6", 5}},
-	results = {{"weapons-uf6", 1}, {"238-uf6", 1}},
+	ingredients = {{"uranium-fuel-hexafluoride", 5}},
+	results = {{"uranium-weapons-hexafluoride", 1}, {"uranium-238-hexafluoride", 1}},
 	subgroup = "raw-material"
 },
 --Base kovarex-enrichment-process" placeholder
@@ -978,8 +978,8 @@ data:extend(
 	category = "refining",
 	energy_required = 2,
 	enabled = false,
-	ingredients = {{"fuel-uf6", 1}, {type = "fluid", name = "water", amount = 100}, {type = "fluid", name = "hydrogen", amount = 10}},
-	results = {{"fuel-uo2", 1}, {type = "fluid", name = "hydrogen-fluoride", amount = 40}, {type = "fluid", name = "gray-water", amount = 100}},
+	ingredients = {{"uranium-fuel-hexafluoride", 1}, {type = "fluid", name = "water", amount = 100}, {type = "fluid", name = "hydrogen", amount = 10}},
+	results = {{"uranium-fuel-oxide", 1}, {type = "fluid", name = "hydrogen-fluoride", amount = 40}, {type = "fluid", name = "gray-water", amount = 100}},
 	subgroup = "raw-material"
 },
 --238-Uranium Hexafluoride Hydrolysis
@@ -991,8 +991,8 @@ data:extend(
 	category = "refining",
 	energy_required = 2,
 	enabled = false,
-	ingredients = {{"238-uf6", 1}, {type = "fluid", name = "water", amount = 100}, {type = "fluid", name = "hydrogen", amount = 10}},
-	results = {{"238-uo2", 1}, {type = "fluid", name = "hydrogen-fluoride", amount = 40}, {type = "fluid", name = "gray-water", amount = 100}},
+	ingredients = {{"uranium-238-hexafluoride", 1}, {type = "fluid", name = "water", amount = 100}, {type = "fluid", name = "hydrogen", amount = 10}},
+	results = {{"uranium-238-oxide", 1}, {type = "fluid", name = "hydrogen-fluoride", amount = 40}, {type = "fluid", name = "gray-water", amount = 100}},
 	subgroup = "raw-material"
 },
 --Weapons-Grade Uranium Hexafluoride Hydrolysis
@@ -1004,8 +1004,8 @@ data:extend(
 	category = "refining",
 	energy_required = 5,
 	enabled = false,
-	ingredients = {{"weapons-uf6", 1}, {type = "fluid", name = "water", amount = 100}, {type = "fluid", name = "hydrogen", amount = 10}},
-	results = {{"weapons-uo2", 1}, {type = "fluid", name = "hydrogen-fluoride", amount = 40}, {type = "fluid", name = "gray-water", amount = 100}},
+	ingredients = {{"uranium-weapons-hexafluoride", 1}, {type = "fluid", name = "water", amount = 100}, {type = "fluid", name = "hydrogen", amount = 10}},
+	results = {{"uranium-weapons-oxide", 1}, {type = "fluid", name = "hydrogen-fluoride", amount = 40}, {type = "fluid", name = "gray-water", amount = 100}},
 	subgroup = "raw-material"
 },
 --Transferred
@@ -1018,7 +1018,7 @@ data:extend(
 	category = "refining",
 	energy_required = 5,
 	enabled = false,
-	ingredients = {{"238-uo2", 1}, {"magnesium-plate", 2}},
+	ingredients = {{"uranium-238-oxide", 1}, {"magnesium-plate", 2}},
 	results = {{"uranium-238", 1}, {"magnesium-oxide", 2}},
 	subgroup = "raw-material"
 },
@@ -1031,7 +1031,7 @@ data:extend(
 	category = "refining",
 	energy_required = 5,
 	enabled = false,
-	ingredients = {{"weapons-uo2", 1}, {"magnesium-plate", 2}},
+	ingredients = {{"uranium-weapons-oxide", 1}, {"magnesium-plate", 2}},
 	results = {{"uranium-235", 1}, {"magnesium-oxide", 2}},
 	subgroup = "raw-material"
 },
@@ -1111,7 +1111,7 @@ data:extend(
 	energy_required = 2,
 	enabled = false,
 	ingredients = {{"charcoal", 2}},
-	result = "soda"
+	result = "sodium-carbonate"
 }
 
 })

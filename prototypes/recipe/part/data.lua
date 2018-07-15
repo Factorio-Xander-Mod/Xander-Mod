@@ -4,9 +4,9 @@
 --Base "electronic-circuit"
 data.raw.recipe["electronic-circuit"].category = "basic-crafting"
 data.raw.recipe["electronic-circuit"].normal = {energy_required = 2, enabled = false, ingredients = {{"metallized-1", 2}, {"components-1", 2}, 
-	{"bronze-plate", 2}, {"solder-1-plate", 1}}, result = "electronic-circuit", result_count = 2}
+	{"bronze-plate", 2}, {"solder-1-ingot", 1}}, result = "electronic-circuit", result_count = 2}
 data.raw.recipe["electronic-circuit"].expensive = {energy_required = 2, enabled = false, ingredients = {{"metallized-1", 2}, {"components-1", 4}, 
-	{"bronze-plate", 2}, {"solder-1-plate", 2}}, result = "electronic-circuit", result_count = 2}
+	{"bronze-plate", 2}, {"solder-1-ingot", 2}}, result = "electronic-circuit", result_count = 2}
 
 --Base "advanced-circuit"
 data.raw.recipe["advanced-circuit"].normal = {energy_required = 5, enabled = false, ingredients = {{"etched-2", 1}, {"components-2", 1}, {"wire-solder-1", 2}, 
@@ -158,7 +158,7 @@ data:extend(
 	category = "basic-machine",
 	energy_required = 2,
 	enabled = false,
-	ingredients = {{"solder-1-plate", 2}, {"solder-flux", 1}},
+	ingredients = {{"solder-1-ingot", 2}, {"solder-flux", 1}},
 	result = "wire-solder-1",
 	result_count = 8
 },
@@ -169,7 +169,7 @@ data:extend(
 	category = "machine",
 	energy_required = 4,
 	enabled = false,
-	ingredients = {{"solder-2-plate", 2}, {"solder-flux", 1}},
+	ingredients = {{"solder-2-ingot", 2}, {"solder-flux", 1}},
 	result = "wire-solder-2",
 	result_count = 8
 },
@@ -214,7 +214,7 @@ data:extend(
 	category = "machine",
 	energy_required = 4,
 	enabled = false,
-	ingredients = {{"monel-plate", 1}, {"wire-tungsten", 1}, {"wafer-2", 1}, {"plastic-bar", 1}, {"wire-tinned", 2}},
+	ingredients = {{"monel-billet", 1}, {"wire-tungsten", 1}, {"wafer-2", 1}, {"plastic-bar", 1}, {"wire-tinned", 2}},
 	result = "components-2"
 },
 --Digital Electronic Components

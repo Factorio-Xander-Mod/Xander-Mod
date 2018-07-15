@@ -466,7 +466,7 @@ data:extend(
 	},
 	energy_required = 4,
 	enabled = false,
-	ingredients = {{type = "fluid", name = "mineral-water", amount = 100}, {"soda", 1}},
+	ingredients = {{type = "fluid", name = "mineral-water", amount = 100}, {"sodium-carbonate", 1}},
 	results = {{"saltpeter", 5}, {type = "fluid", name = "gray-water", amount = 50}},
 	subgroup = "raw-resource"
 },
@@ -678,7 +678,7 @@ data:extend(
 	energy_required = 4,
 	enabled = false,
 	ingredients = {{type = "fluid", name = "water", amount = 50}},
-	result = "salt"
+	result = "sodium-chloride"
 },
 --Improved Salt Evaporation
 {
@@ -690,7 +690,7 @@ data:extend(
 	energy_required = 2,
 	enabled = false,
 	ingredients = {{type = "fluid", name = "water", amount = 50}},
-	results = {{"salt", 1}, {type = "fluid", name = "distilled-water", amount = 50}},
+	results = {{"sodium-chloride", 1}, {type = "fluid", name = "distilled-water", amount = 50}},
 	subgroup = "raw-resource"
 },
 --Magnesia Precipitation
@@ -709,7 +709,7 @@ data:extend(
 	energy_required = 5,
 	enabled = false,
 	ingredients = {{type = "fluid", name = "water", amount = 100}, {"sodium-hydroxide", 2}},
-	results = {{"magnesium-oxide", 1}, {"salt", 2}, {type = "fluid", name = "gray-water", amount = 20}},
+	results = {{"magnesium-oxide", 1}, {"sodium-chloride", 2}, {type = "fluid", name = "gray-water", amount = 20}},
 	subgroup = "raw-resource"
 },
 --

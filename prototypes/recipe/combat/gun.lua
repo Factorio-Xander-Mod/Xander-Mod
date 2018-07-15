@@ -20,7 +20,7 @@ data.raw.recipe["shotgun"].ingredients = {{"forging-iron", 2}, {"mechanism-1", 2
 --Base "combat-shotgun"
 data.raw.recipe["combat-shotgun"].category = "crafting"
 data.raw.recipe["combat-shotgun"].energy_required = 10
-data.raw.recipe["combat-shotgun"].ingredients = {{"forging-steel", 20}, {"mechanism-2", 2}, {"brass-plate", 10}, {"rubber", 10}}
+data.raw.recipe["combat-shotgun"].ingredients = {{"forging-steel", 20}, {"mechanism-2", 2}, {"brass-billet", 10}, {"rubber", 10}}
 
 --Base "rocket-launcher"
 data.raw.recipe["rocket-launcher"].category = "crafting"
@@ -30,9 +30,9 @@ data.raw.recipe["rocket-launcher"].ingredients = {{"forging-steel", 5}, {"mechan
 --Base "flamethrower"
 data.raw.recipe["flamethrower"].category = "crafting"
 data.raw.recipe["flamethrower"].energy_required = 10
-data.raw.recipe["flamethrower"].ingredients = {{"forging-steel", 5}, {"mechanism-2", 2}, {"brass-plate", 10}}
+data.raw.recipe["flamethrower"].ingredients = {{"forging-steel", 5}, {"mechanism-2", 2}, {"brass-billet", 10}}
 
 --Base "land-mine"
 data.raw.recipe["land-mine"].category = "crafting"
 data.raw.recipe["land-mine"].energy_required = 1
-data.raw.recipe["land-mine"].ingredients = {{"steel-plate", 1}, {"explosives", 1}, {"brass-plate", 1}}
+data.raw.recipe["land-mine"].ingredients = {{"steel-plate", 1}, {"explosives", 1}, {"brass-billet", 1}}

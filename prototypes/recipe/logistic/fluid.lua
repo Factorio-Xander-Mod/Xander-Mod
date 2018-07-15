@@ -75,7 +75,7 @@ data:extend(
 	category = "machine",
 	energy_required = 2,
 	enabled = false,
-	ingredients = {{"monel-plate", 1}},
+	ingredients = {{"monel-billet", 1}},
 	result = "pipe-monel"
 },
 --Stainless Steel Pipe

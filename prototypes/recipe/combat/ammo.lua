@@ -125,7 +125,7 @@ data:extend(
 	category = "advanced-machine",
 	energy_required = 10,
 	enabled = false,
-	ingredients = {{"uranium-238", 2}, {"monel-plate", 10}, {"forging-steel", 2}},
+	ingredients = {{"uranium-238", 2}, {"monel-billet", 10}, {"forging-steel", 2}},
 	result = "bullet-3"
 },
 --Bronze Sheel Casing
@@ -145,7 +145,7 @@ data:extend(
 	category = "machine",
 	energy_required = 2,
 	enabled = false,
-	ingredients = {{"brass-plate", 4}},
+	ingredients = {{"brass-billet", 4}},
 	result = "casing-2"
 }
 

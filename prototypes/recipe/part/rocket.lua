@@ -12,7 +12,7 @@ data.raw.recipe["nuclear-fuel-reprocessing"].category = "chemical-plant"
 data.raw.recipe["nuclear-fuel-reprocessing"].energy_required = 20
 data.raw.recipe["nuclear-fuel-reprocessing"].ingredients = {{"used-up-uranium-fuel-cell", 1}, {type = "fluid", name = "nitric-acid", amount = 40}, 
 	{"zinc-plate", 1}}
-data.raw.recipe["nuclear-fuel-reprocessing"].results = {{"238-uo2", 1}, {"zirconium-sponge", 6}, {type = "fluid", name = "waste-water", amount = 40}, 
+data.raw.recipe["nuclear-fuel-reprocessing"].results = {{"uranium-238-oxide", 1}, {"zirconium-sponge", 6}, {type = "fluid", name = "waste-water", amount = 40}, 
 	{"silver-sponge", 1}}
 
 --Base "rocket-fuel"
@@ -57,7 +57,7 @@ data:extend(
 	category = "advanced-machine",
 	energy_required = 5,
 	enabled = false,
-	ingredients = {{"fuel-uo2", 2}},
+	ingredients = {{"uranium-fuel-oxide", 2}},
 	result = "fuel-pellet"
 },
 --Base "uranium-fuel-cell" placeholder

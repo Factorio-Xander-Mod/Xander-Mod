@@ -16,22 +16,22 @@ data.raw.recipe["red-wire"].result_count = 1
 --Base "arithmetic-combinator"
 data.raw.recipe["arithmetic-combinator"].category = "crafting"
 data.raw.recipe["arithmetic-combinator"].energy_required = 1
-data.raw.recipe["arithmetic-combinator"].ingredients = {{"forging-steel", 1}, {"cable-insulated", 5}, {"control-2", 1}, {"brass-plate", 2}}
+data.raw.recipe["arithmetic-combinator"].ingredients = {{"forging-steel", 1}, {"cable-insulated", 5}, {"control-2", 1}, {"brass-billet", 2}}
 
 --Base "decider-combinator"
 data.raw.recipe["decider-combinator"].category = "crafting"
 data.raw.recipe["decider-combinator"].energy_required = 1
-data.raw.recipe["decider-combinator"].ingredients = {{"forging-steel", 1}, {"cable-insulated", 5}, {"control-2", 1}, {"brass-plate", 2}}
+data.raw.recipe["decider-combinator"].ingredients = {{"forging-steel", 1}, {"cable-insulated", 5}, {"control-2", 1}, {"brass-billet", 2}}
 
 --Base "constant-combinator"
 data.raw.recipe["constant-combinator"].category = "crafting"
 data.raw.recipe["constant-combinator"].energy_required = 1
-data.raw.recipe["constant-combinator"].ingredients = {{"forging-steel", 1}, {"cable-insulated", 2}, {"control-1", 1}, {"brass-plate", 2}}
+data.raw.recipe["constant-combinator"].ingredients = {{"forging-steel", 1}, {"cable-insulated", 2}, {"control-1", 1}, {"brass-billet", 2}}
 
 --Base "power-switch"
 data.raw.recipe["power-switch"].category = "crafting"
 data.raw.recipe["power-switch"].energy_required = 1
-data.raw.recipe["power-switch"].ingredients = {{"forging-steel", 1}, {"cable-insulated", 5}, {"electronic-circuit", 2}, {"brass-plate", 4}}
+data.raw.recipe["power-switch"].ingredients = {{"forging-steel", 1}, {"cable-insulated", 5}, {"electronic-circuit", 2}, {"brass-billet", 4}}
 
 --Base "programmable-speaker"
 data.raw.recipe["programmable-speaker"].category = "crafting"

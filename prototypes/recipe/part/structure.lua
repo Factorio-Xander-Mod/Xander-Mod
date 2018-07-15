@@ -34,7 +34,7 @@ data:extend(
 	category = "forge",
 	energy_required = 64,
 	enabled = false,
-	ingredients = {{"raw-iron", 16}, {"graphite-block", 1}, {"calcium-oxide", 2}, {"metallurgical-plate", 2}},
+	ingredients = {{"raw-iron", 16}, {"graphite-block", 1}, {"calcium-oxide", 2}, {"silicon-ingot", 2}},
 	results = {{"forging-iron", 4}, {"slag", 2}},
 	subgroup = "structure"
 },
@@ -225,7 +225,7 @@ data:extend(
 	category = "forge",
 	energy_required = 2,
 	enabled = false,
-	ingredients = {{"brass-plate", 2}},
+	ingredients = {{"brass-billet", 2}},
 	result = "blank-2"
 },
 --Steel Blank A

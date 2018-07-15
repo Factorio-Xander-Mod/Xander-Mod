@@ -16,7 +16,7 @@ data.raw.recipe["speed-module"].ingredients = {{"forging-aluminum", 1}, {"contro
 --Base "speed-module-2"
 data.raw.recipe["speed-module-2"].category = "crafting-with-fluid"
 data.raw.recipe["speed-module-2"].energy_required = 20
-data.raw.recipe["speed-module-2"].ingredients = {{"speed-module", 4},  {"control-2", 2}, {"mechanism-2", 2}, {"brass-plate", 10}, {"motor-2", 2},
+data.raw.recipe["speed-module-2"].ingredients = {{"speed-module", 4},  {"control-2", 2}, {"mechanism-2", 2}, {"brass-billet", 10}, {"motor-2", 2},
 	{type = "fluid", name = "lubricant", amount = 20}}
 
 --Base "speed-module-3"

@@ -10,7 +10,7 @@ data.raw.recipe["light-armor"].ingredients = {{"iron-plate", 50}}
 --Base "heavy-armor"
 data.raw.recipe["heavy-armor"].category = "crafting"
 data.raw.recipe["heavy-armor"].energy_required = 4
-data.raw.recipe["heavy-armor"].ingredients = {{"forging-steel", 50}, {"brass-plate", 100}, {"rubber", 50}}
+data.raw.recipe["heavy-armor"].ingredients = {{"forging-steel", 50}, {"brass-billet", 100}, {"rubber", 50}}
 
 --Base "modular-armor"
 data.raw.recipe["modular-armor"].category = "crafting"

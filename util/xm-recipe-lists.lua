@@ -30,7 +30,7 @@ local xm_concentrate_recipes_categories = {"sluice", "sluice", "sluice", "refini
 local xm_concentrate_recipes_times = {20, 40, 4, 40, 10, 20, 20, 20, 20, 1, 20, 20, 40, 40, 20, 40, 40, 40, 40, 20, 40, 40, 20}
 local xm_concentrate_recipes_enableds = {false, false, false, false, false, false, false, false, false, true, false, false, false, false, false, false, false, false, false, false, false, false, false}
 local xm_concentrate_recipes_ingredients = {{{"milled-copper-ore", 10}, {type = "fluid", name = "water", amount = 50}}, {{"milled-copper-ore", 10}, {type = "fluid", name = "water", amount = 50}}, 
-	{{"evaporites", 10}, {type = "fluid", name = "water", amount = 50}, {"soda", 1}}, {{"evaporites", 20}, {type = "fluid", name = "water", amount = 50}}, 
+	{{"evaporites", 10}, {type = "fluid", name = "water", amount = 50}, {"sodium-carbonate", 1}}, {{"evaporites", 20}, {type = "fluid", name = "water", amount = 50}}, 
 	{{"evaporites", 10}, {type = "fluid", name = "water", amount = 100}, {"calcium-oxide", 1}}, {{"milled-igneous-sulfide", 10}, {type = "fluid", name = "water", amount = 50}}, 
 	{{"milled-nickeliferous-laterite", 10}, {type = "fluid", name = "water", amount = 50}}, {{"milled-iron-ore", 10}, {type = "fluid", name = "water", amount = 50}}, 
 	{{"milled-iron-ore", 10}, {type = "fluid", name = "water", amount = 50}}, {{"laterite", 2}}, {{"milled-bauxite", 10}, {type = "fluid", name = "water", amount = 50}}, {{"milled-magnetic", 10}}, 
@@ -92,7 +92,7 @@ local xm_ingot_recipes_ingredients = {{{"aluminum-oxide", 40}, {"graphite-block"
 {{"massive-sulfide", 2}}, {{"magnesium-chloride", 40}, {"graphite-block", 1}}, {{"igneous-sulfide", 2}, {"limestone", 1}}, {{"platinum-sponge", 20}, {"borax", 1}, {"calcium-oxide", 1}}, 
 {{"re-oxide", 1}, {"magnesium-ingot", 2}}, {{"silver-sponge", 10}, {type = "fluid", name = "nitric-acid", amount = 10}, {type = "fluid", name = "water", amount = 20}}, {{"tin-ingot", 3}, {"lead-ingot", 2}}, 
 {{"tin-ingot", 7}, {"copper-plate", 2}, {"silver-ingot", 1}}, {{"quartz-sand", 20}, {"graphite-block", 1}, {"coke", 16}}, {{"skarn", 2}}, {{"titanium-sponge", 20}, {"graphite-block", 1}}, {{"tungsten-powder", 1}}, 
-{{"238-uo2", 1}, {"magnesium-ingot", 2}}, {{"vanadium-oxide", 1}, {"magnesium-ingot", 5}}, {{"zinc-oxide", 10}, {type = "fluid", name = "sulfuric-acid", amount = 10}, {type = "fluid", name = "water", amount = 20}}}
+{{"uranium-238-oxide", 1}, {"magnesium-ingot", 2}}, {{"vanadium-oxide", 1}, {"magnesium-ingot", 5}}, {{"zinc-oxide", 10}, {type = "fluid", name = "sulfuric-acid", amount = 10}, {type = "fluid", name = "water", amount = 20}}}
 local xm_ingot_recipes_results = {{{"aluminum-ingot", 80}, {type = "fluid", name = "flue-gas", amount = 600}}, {{"chromium-ingot", 2}, {"magnesium-oxide", 3}}, 
 {{"cobalt-ingot", 10}, {type = "fluid", name = "waste-water", amount = 50}}, {{"gold-ingot", 10}, {"slag", 1}}, {{"lead-ingot", 1}}, {{"magnesium-ingot", 40}, {type = "fluid", name = "chlorine", amount = 400}}, 
 {{"nickel-ingot", 1}}, {{"platinum-ingot", 20}, {"slag", 2}}, {{"re-ingot", 1}, {"magnesium-oxide", 2}}, {{"silver-ingot", 10}, {"sludge", 1}, {type = "fluid", name = "gray-water", amount = 20}}, {{"solder-1-ingot", 5}}, 
@@ -119,7 +119,7 @@ local xm_build_recipes_ingredients = {{{"stone", 2}}, {{"clay", 1}}, {{"clay", 8
 	{{"magnesium-oxide", 1}, {"chromium-oxide", 1}}, {{"zirconium-oxide", 10}, {"re-oxide", 1}}, {{"calcium-oxide", 5}, {"sand", 1}, {"milled-bauxite", 1}}, {{"calcium-oxide", 2}, {"slag", 1}, {"milled-bauxite", 1}}, 
 	{{"modified", 6}, {"sand", 3}, {"cement-powder", 4}, {type = "fluid", name = "water", amount = 20}, {"rod-2", 1}}, {{"concrete", 10}}, {{"hazard-concrete", 10}}, 
 	{{"sand", 10}, {"aluminum-oxide", 2}, {"magnesium-oxide", 2}, {"calcium-oxide", 2}, {"hematite", 1}, {"rod-3", 2}}, {{"sand", 8}, {"aluminum-oxide", 2}, {"magnesium-oxide", 2}, {"slag", 2}, {"hematite", 1}, {"rod-3", 2}}, 
-	{{"sand", 1}}, {{"sand", 10}, {"soda", 1}, {"limestone", 1}, {"saltpeter", 1}}, {{"sand", 20}, {"boron-oxide", 1}, {"calcium-oxide", 2}, {"aluminum-oxide", 1}}, {{"stone", 6}, {"modified", 20}, {"sand", 3}, {"clay", 2}}, 
+	{{"sand", 1}}, {{"sand", 10}, {"sodium-carbonate", 1}, {"limestone", 1}, {"saltpeter", 1}}, {{"sand", 20}, {"boron-oxide", 1}, {"calcium-oxide", 2}, {"aluminum-oxide", 1}}, {{"stone", 6}, {"modified", 20}, {"sand", 3}, {"clay", 2}}, 
 	{{"slag", 6}, {"modified", 20}, {"sand", 3}, {"clay", 2}}, {{"stone", 1}, {"gravel", 1}}, {{"slag", 1}, {"gravel", 1}}}
 local xm_build_recipes_results = {{{"stone-brick", 1}}, {{"brick-clay", 1}}, {{"brick-clay", 10}}, {{"brick-clay-graphite", 1}}, {{"brick-clay-graphite", 2}}, {{"brick-spinel", 1}}, {{"brick-zirconia", 10}}, 
 	{{"cement-powder", 5}}, {{"cement-powder", 5}}, {{"concrete", 10}}, {{"hazard-concrete", 10}}, {{"concrete", 10}}, {{"fused-basalt", 10}}, {{"fused-basalt", 10}}, {{"fused-quartz", 1}}, {{"glass", 10}}, {{"glass", 20}}, 
@@ -166,7 +166,7 @@ xm_assembly_recipes_ingredients = {{{"mechanism-0", 1}, {"pipe-copper", 2}, {"fo
 	{{"battery-3", 1}, {"control-3", 1}, {"forging-titanium", 2}, {"motor-3", 2}, {"fiber-carbon", 1}, {type = "fluid", name = "uncured-epoxy", amount = 10}}, {{"steel-plate", 4}, {"stone-brick", 10}, {"wood", 4}}, 
 	{{"forging-steel", 1}, {"silicon-carbide", 4}, {type = "fluid", name = "uncured-resol", amount = 20}}, 
 	{{"forging-steel", 1}, {"silicon-carbide", 4}, {type = "fluid", name = "uncured-epoxy", amount = 10}, {"fiber-carbon", 1}}, {{"forging-alloy", 1}, {"tungsten-cermet", 4}, {"aluminum-oxide", 2}, {"glass", 2}}, 
-	{{"forging-alloy", 2}, {"nitride-block", 4}, {"boule-diamond", 2}, {"brass-plate", 2}}, {{"electronic-circuit", 4}, {"wire-copper", 8}, {"wire-tinned", 2}}, 
+	{{"forging-alloy", 2}, {"nitride-block", 4}, {"boule-diamond", 2}, {"brass-billet", 2}}, {{"electronic-circuit", 4}, {"wire-copper", 8}, {"wire-tinned", 2}}, 
 	{{"advanced-circuit", 4}, {"electronic-circuit", 4}, {"wire-tinned", 8}, {"rubber", 4}, {"cable-insulated", 4}}, 
 	{{"processing-unit", 4}, {"advanced-circuit", 4}, {"wire-tinned", 16}, {"wire-gold", 8}, {"plastic-bar", 4}, {"cable-insulated", 2}}, 
 	{{"crystal-ruby", 1}, {"crystal-quartz", 5}, {"small-lamp", 2}, {"control-2", 2}, {"forging-stainless", 2}, {"aluminum-plate", 5}}, 
@@ -206,9 +206,9 @@ local xm_furnace_recipes_times = {1, 2, 5, 10, 10, 10, 10, 20}
 local xm_furnace_recipes_enableds = {true, true, false, false, false, false, false, false}
 local xm_furnace_recipes_ingredients = {{{"stone-brick", 5}}, {{"brick-clay", 10}, {"bronze-plate", 5}}, {{"brick-clay-graphite", 20}, {"forging-iron", 5}, {"pipe-steel", 5}, {"mechanism-1", 2}}, 
 {{"brick-clay-graphite", 40}, {"graphite-block", 10}, {"forging-steel", 20}, {"transformer-1", 2}, {"control-1", 2}, {"pump", 2}}, 
-{{"brick-spinel", 40}, {"monel-plate", 20}, {"forging-steel", 10}, {"transformer-2", 1}, {"control-1", 1}, {"pump", 1}}, 
+{{"brick-spinel", 40}, {"monel-billet", 20}, {"forging-steel", 10}, {"transformer-2", 1}, {"control-1", 1}, {"pump", 1}}, 
 {{"brick-clay-graphite", 40}, {"graphite-block", 10}, {"forging-steel", 10}, {"transformer-1", 2}, {"control-1", 2}, {"mechanism-1", 10}}, 
-{{"brick-spinel", 20}, {"monel-plate", 10}, {"forging-steel", 5}, {"transformer-1", 1}, {"control-1", 1}, {"mechanism-1", 5}}, 
+{{"brick-spinel", 20}, {"monel-billet", 10}, {"forging-steel", 5}, {"transformer-1", 1}, {"control-1", 1}, {"mechanism-1", 5}}, 
 {{"furnace-4", 2}, {"electric-furnace", 2}, {"brick-zirconia", 100}, {"tungsten-block", 50}, {"mechanism-3", 20}, {"forging-alloy", 50},   {"transformer-3", 20}, {"control-3", 20}}}
 local xm_furnace_recipes_results = {{{"stone-furnace", 1}}, {{"furnace-2", 1}}, {{"steel-furnace", 1}}, {{"furnace-4", 1}}, {{"furnace-4", 1}}, {{"electric-furnace", 1}}, {{"electric-furnace", 1}}, {{"furnace-6", 1}}}
 --Load all of the single-parameter lists into one big list of recipes, where each entry has the parameters for one complete recipe

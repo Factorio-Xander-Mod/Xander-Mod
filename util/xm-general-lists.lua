@@ -22,7 +22,7 @@ xm_groups = {"environment", "enemies", "material", "fluids", "intermediate-produ
 	--Name (added by XM): environment (false), enemies (false), material (true), fluids (false), intermediate-products (false), logistic (false), production (false), combat (false), signals (false), other (false)
 --Establish lists of item subgroups for XM to modify
 xm_material_subgroups = {{"terrain", false}, {"raw-resource", false}, {"milled-resource", true}, {"concentrate", true}, {"raw-material", false}, {"oxide", true}, {"sponge", true}, {"plate", true}, {"ingot", true}, 
-	{"metal", true}, {"alloy", true}, {"nonmetal", true}, {"compound", true}, {"organic", true}, {"carbohydrate", true}, {"other-organic", true}, {"raw", true}, {"salt", true}, {"build", true}, {"fluid-recipes", false}, 
+	{"metal", true}, {"billet", true}, {"nonmetal", true}, {"compound", true}, {"organic", true}, {"carbohydrate", true}, {"other-organic", true}, {"raw", true}, {"salt", true}, {"build", true}, {"fluid-recipes", false}, 
 	{"waste", true}}
 xm_fluids_subgroups = {{"fluid-element", true}, {"fluid-hydrogenated", true}, {"fluid-oxide", true}, {"fluid-halogenated", true}, {"fluid", false}, {"fluid-hydrocarbon", true}, {"fluid-other-organic", true}}
 xm_intermediate_products_subgroups = {{"structure", true}, {"mechanical", true}, {"electric-1", true}, {"electric-2", true}, {"electric-3", true}, {"data", true}, {"board", true}, {"optic", true}, {"assembly", true}, 

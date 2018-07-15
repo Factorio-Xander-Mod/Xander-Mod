@@ -12,7 +12,7 @@ data.raw.recipe["transport-belt"].result_count = 1
 --Base "fast-transport-belt"
 data.raw.recipe["fast-transport-belt"].category = "crafting"
 data.raw.recipe["fast-transport-belt"].energy_required = 2
-data.raw.recipe["fast-transport-belt"].ingredients = {{"transport-belt", 1}, {"shaft-1", 2}, {"brass-plate", 4}, {"forging-steel", 1}}
+data.raw.recipe["fast-transport-belt"].ingredients = {{"transport-belt", 1}, {"shaft-1", 2}, {"brass-billet", 4}, {"forging-steel", 1}}
 
 --Base "express-transport-belt"
 data.raw.recipe["express-transport-belt"].normal =
@@ -41,7 +41,7 @@ data.raw.recipe["underground-belt"].ingredients = {{"transport-belt", 6}, {"bric
 --Base "fast-underground-belt"
 data.raw.recipe["fast-underground-belt"].category = "crafting"
 data.raw.recipe["fast-underground-belt"].energy_required = 2
-data.raw.recipe["fast-underground-belt"].ingredients = {{"underground-belt", 2}, {"fast-transport-belt", 8}, {"concrete", 16}, {"brass-plate", 6}}
+data.raw.recipe["fast-underground-belt"].ingredients = {{"underground-belt", 2}, {"fast-transport-belt", 8}, {"concrete", 16}, {"brass-billet", 6}}
 
 --Base "express-underground-belt"
 data.raw.recipe["express-underground-belt"].category = "crafting"
@@ -58,7 +58,7 @@ data.raw.recipe["splitter"].ingredients = {{"transport-belt", 4}, {"mechanism-1"
 --Base "fast-splitter"
 data.raw.recipe["fast-splitter"].category = "crafting"
 data.raw.recipe["fast-splitter"].energy_required = 2
-data.raw.recipe["fast-splitter"].ingredients = {{"splitter", 1}, {"fast-transport-belt", 4}, {"brass-plate", 4}, {"electronic-circuit", 2}}
+data.raw.recipe["fast-splitter"].ingredients = {{"splitter", 1}, {"fast-transport-belt", 4}, {"brass-billet", 4}, {"electronic-circuit", 2}}
 
 --Base "express-splitter"
 data.raw.recipe["express-splitter"].category = "crafting"
@@ -75,7 +75,7 @@ data.raw.recipe["loader"].ingredients = {{"transport-belt", 10}, {"electric-engi
 --Base "fast-loader"
 data.raw.recipe["fast-loader"].category = "crafting"
 data.raw.recipe["fast-loader"].energy_required = 10
-data.raw.recipe["fast-loader"].ingredients = {{"loader", 1}, {"fast-transport-belt", 10}, {"electric-engine-unit", 1}, {"mechanism-1", 2}, {"brass-plate", 8}, 
+data.raw.recipe["fast-loader"].ingredients = {{"loader", 1}, {"fast-transport-belt", 10}, {"electric-engine-unit", 1}, {"mechanism-1", 2}, {"brass-billet", 8}, 
 	{"control-1", 2}}
 
 --Base "express-loader"
