@@ -466,7 +466,7 @@ data:extend(
 	},
 	energy_required = 4,
 	enabled = false,
-	ingredients = {{type = "fluid", name = "mineral-water", amount = 100}, {"sodium-carbonate", 1}},
+	ingredients = {{"evaporites", 10}, {"sodium-carbonate", 1}},
 	results = {{"saltpeter", 5}, {type = "fluid", name = "gray-water", amount = 50}},
 	subgroup = "raw-resource"
 },
@@ -480,7 +480,7 @@ data:extend(
 	category = "refining",
 	energy_required = 40,
 	enabled = false,
-	ingredients = {{type = "fluid", name = "mineral-water", amount = 200}},
+	ingredients = {{"evaporites", 20}},
 	results = {{"borax", 1}, {type = "fluid", name = "distilled-water", amount = 200}},
 	subgroup = "raw-resource"
 },

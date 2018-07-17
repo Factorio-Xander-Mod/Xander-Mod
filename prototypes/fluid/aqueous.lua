@@ -33,22 +33,6 @@ data:extend(
 	subgroup = "fluid",
 	order = "00-02"
 },
---Mineral Water
-{
-	type = "fluid",
-	name = "mineral-water",
-	default_temperature = 25,
-	heat_capacity = "0.1KJ",
-	base_color = {r = 0, g = 0.6, b = 0.35},
-	flow_color = {r = 0.7, g = 0.7, b = 0.7},
-	max_temperature = 100,
-	icon = "__xander-mod__/graphics/fluid/aqueous/mineral-water.png",
-	icon_size = 32,
-	pressure_to_speed_ratio = 0.4,
-	flow_to_energy_ratio = 0.59,
-	subgroup = "fluid",
-	order = "00-03"
-},
 --Base "sulfuric-acid" placeholder
 	--order = "00-04"
 --Nitric Acid
