@@ -1389,10 +1389,6 @@ data:extend(
 		{
 			type = "unlock-recipe",
 			recipe = "recycle-burner-inserter"
-		},
-		{
-			type = "unlock-recipe",
-			recipe = "recycle-inserter-chemical-burner"
 		}
 	},
 	prerequisites = {"advanced-material-processing"},

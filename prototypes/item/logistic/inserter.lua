@@ -22,18 +22,6 @@ data:extend(
 
 --Base "burner-inserter" placeholder
 	--order = "00"
---Chemical-Fuel Burner Inserter
-{
-	type = "item",
-	name = "inserter-chemical-burner",
-	icon = "__xander-mod__/graphics/item/logistic/inserter/inserter-chemical-burner.png",
-	icon_size = 32,
-	flags = {"goes-to-quickbar"},
-	subgroup = "inserter",
-	order = "00",
-	place_result = "inserter-chemical-burner",
-	stack_size = 50
-},
 --Slow Electric Inserter
 {
 	type = "item",

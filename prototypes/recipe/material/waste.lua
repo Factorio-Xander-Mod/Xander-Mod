@@ -56,19 +56,6 @@ data:extend(
 	results = {{"iron-plate", 12}},
 	subgroup = "raw-material"
 },
---Chemical Burner Inserter
-{
-	type = "recipe",
-	name = "recycle-inserter-chemical-burner",
-	icon = "__xander-mod__/graphics/recipe/waste/recycle-inserter-chemical-burner.png",
-	icon_size = 32,
-	category = "smelting",
-	energy_required = 24,
-	enabled = false,
-	ingredients = {{"inserter-chemical-burner", 2}, {"limestone", 3}},
-	results = {{"iron-plate", 12}},
-	subgroup = "raw-material"
-},
 
 --
 --WASTE SUBSTANCE TREATMENT

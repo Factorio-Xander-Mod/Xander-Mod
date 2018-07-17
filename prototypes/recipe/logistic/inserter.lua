@@ -42,16 +42,6 @@ data.raw.recipe["stack-filter-inserter"].ingredients = {{"stack-inserter", 1}, {
 data:extend(
 {
 
---Chemical-Fuel Burner Inserter
-{
-	type = "recipe",
-    name = "inserter-chemical-burner",
-	category = "basic-crafting",
-	energy_required = 1,
-	ingredients = {{"iron-plate", 4}, {"forging-iron", 1}, {"blank-1", 2}},
-	result = "inserter-chemical-burner",
-	result_count = 2
-},
 --Slow Electric Inserter (Iron-Based)
 {
 	type = "recipe",
