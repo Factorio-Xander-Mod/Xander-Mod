@@ -162,7 +162,7 @@ xm_assembly_recipes_ingredients = {{{"mechanism-0", 1}, {"pipe-copper", 2}, {"fo
 	{{"forging-iron", 1}, {"shaft-1", 2}, {"iron-gear-wheel", 1}, {"gear-3", 1}}, {{"forging-aluminum", 1}, {"shaft-2", 2}, {"gear-2", 2}, {"gear-3", 2}, {type = "fluid", name = "lubricant", amount = 10}}, 
 	{{"forging-titanium", 1}, {"shaft-3", 2}, {"gear-4", 4}, {"plastic-bar", 2}, {type = "fluid", name = "lubricant", amount = 10}}, {{"piston-cylinder", 1}, {"mechanism-1", 1}, {"rubber", 2}}, 
 	{{"forging-steel", 1}, {"forging-iron", 1}, {"steel-plate", 2}, {"bearing-1", 4}}, {{"forging-alloy", 1}, {"steel-plate", 1}, {"silicon-carbide", 1}, {"bearing-2", 2}}, 
-	{{"battery-2", 1}, {"control-2", 1}, {"forging-aluminum", 1}, {"motor-3", 1}}, 
+	{{"battery-2", 1}, {"control-2", 1}, {"forging-aluminum", 1}, {"motor-2", 1}}, 
 	{{"battery-3", 1}, {"control-3", 1}, {"forging-titanium", 2}, {"motor-3", 2}, {"fiber-carbon", 1}, {type = "fluid", name = "uncured-epoxy", amount = 10}}, {{"steel-plate", 4}, {"stone-brick", 10}, {"wood", 4}}, 
 	{{"forging-steel", 1}, {"silicon-carbide", 4}, {type = "fluid", name = "uncured-resol", amount = 20}}, 
 	{{"forging-steel", 1}, {"silicon-carbide", 4}, {type = "fluid", name = "uncured-epoxy", amount = 10}, {"fiber-carbon", 1}}, {{"forging-alloy", 1}, {"tungsten-cermet", 4}, {"aluminum-oxide", 2}, {"glass", 2}}, 
