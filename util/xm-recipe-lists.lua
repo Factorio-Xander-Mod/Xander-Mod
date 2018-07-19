@@ -204,7 +204,7 @@ local xm_furnace_recipes_names = {"stone-furnace", "furnace-2", "steel-furnace",
 local xm_furnace_recipes_news = {false, true, false, true, true, false, true, true}
 local xm_furnace_recipes_times = {1, 2, 5, 10, 10, 10, 10, 20}
 local xm_furnace_recipes_enableds = {true, true, false, false, false, false, false, false}
-local xm_furnace_recipes_ingredients = {{{"stone-brick", 5}}, {{"brick-clay", 10}, {"bronze-plate", 5}}, {{"brick-clay-graphite", 20}, {"forging-iron", 5}, {"pipe-steel", 5}, {"mechanism-1", 2}}, 
+local xm_furnace_recipes_ingredients = {{{"stone-brick", 5}}, {{"brick-clay", 5}, {"bronze-plate", 4}}, {{"brick-clay-graphite", 20}, {"forging-iron", 5}, {"pipe-steel", 5}, {"mechanism-1", 2}}, 
 {{"brick-clay-graphite", 40}, {"graphite-block", 10}, {"forging-steel", 20}, {"transformer-1", 2}, {"control-1", 2}, {"pump", 2}}, 
 {{"brick-spinel", 40}, {"monel-billet", 20}, {"forging-steel", 10}, {"transformer-2", 1}, {"control-1", 1}, {"pump", 1}}, 
 {{"brick-clay-graphite", 40}, {"graphite-block", 10}, {"forging-steel", 10}, {"transformer-1", 2}, {"control-1", 2}, {"mechanism-1", 10}}, 
