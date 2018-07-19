@@ -129,7 +129,7 @@ data:extend(
 	category = "forge",
 	energy_required = 16,
 	enabled = false,
-	ingredients = {{"titanium-plate", 8}, {"aluminum-plate", 1}, {"vanadium-plate", 1}, {"tin-plate", 1}},
+	ingredients = {{"titanium-plate", 8}, {"aluminum-plate", 1}, {"vanadium-plate", 1}, {"tin-ingot", 1}},
 	result = "forging-titanium",
 	result_count = 2
 },

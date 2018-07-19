@@ -1,4 +1,3 @@
-
 --Base Overrides
 
 --Base "boiler"
@@ -32,7 +31,7 @@ data.raw.recipe["heat-pipe"].ingredients = {{"forging-stainless", 10}, {"silver-
 --Base "nuclear-reactor"
 data.raw.recipe["nuclear-reactor"].category = "crafting"
 data.raw.recipe["nuclear-reactor"].energy_required = 20
-data.raw.recipe["nuclear-reactor"].ingredients = {{"concrete", 2000}, {"lead-plate", 1000}, {"forging-alloy", 500}, {"control-2", 200}, 
+data.raw.recipe["nuclear-reactor"].ingredients = {{"concrete", 2000}, {"lead-ingot", 1000}, {"forging-alloy", 500}, {"control-2", 200}, 
 	{"heat-pipe", 20}, {"forging-zirconium", 200}, {"mechanism-2", 100}}
 
 --Base "solar-panel"

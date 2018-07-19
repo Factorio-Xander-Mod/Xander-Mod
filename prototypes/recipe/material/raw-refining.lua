@@ -342,7 +342,7 @@ data:extend(
 	energy_required = 100,
 	enabled = false,
 	ingredients = {{"cassiterite", 10}, {"coke", 10}, {"sodium-carbonate", 1}},
-	results = {{"tin-plate", 10}, {"slag", 1}, {type = "fluid", name = "flue-gas", amount = 100}},
+	results = {{"tin-ingot", 10}, {"slag", 1}, {type = "fluid", name = "flue-gas", amount = 100}},
 	subgroup = "raw-material"
 },
 --Tungsten Reduction
@@ -706,7 +706,7 @@ data:extend(
 	energy_required = 50,
 	enabled = false,
 	ingredients = {{"lead-oxide", 10}, {"coke", 5}, {"sodium-carbonate", 1}},
-	results = {{"lead-plate", 10}, {"slag", 1}, {type = "fluid", name = "flue-gas", amount = 50}},
+	results = {{"lead-ingot", 10}, {"slag", 1}, {type = "fluid", name = "flue-gas", amount = 50}},
 	subgroup = "raw-material"
 },
 --Parkes Process Lead-Silver Extraction
@@ -719,7 +719,7 @@ data:extend(
 	energy_required = 100,
 	enabled = false,
 	ingredients = {{"lead-oxide", 10}, {"coke", 5}, {"calcium-oxide", 1}, {"zinc-plate", 1}},
-	results = {{"lead-plate", 10}, {"slag", 1}, {type = "fluid", name = "flue-gas", amount = 50}, {"silver-sponge", 2}},
+	results = {{"lead-ingot", 10}, {"slag", 1}, {type = "fluid", name = "flue-gas", amount = 50}, {"silver-sponge", 2}},
 	subgroup = "raw-material"
 },
 --Transferred

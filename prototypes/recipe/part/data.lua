@@ -1,4 +1,3 @@
-
 --Base Overrides
 
 --Base "electronic-circuit"
@@ -125,7 +124,7 @@ data:extend(
 	category = "basic-machine",
 	energy_required = 2,
 	enabled = false,
-	ingredients = {{"copper-cable", 2}, {"tin-plate", 1}},
+	ingredients = {{"copper-cable", 2}, {"tin-ingot", 1}},
 	result = "wire-tinned",
 	result_count = 8
 },

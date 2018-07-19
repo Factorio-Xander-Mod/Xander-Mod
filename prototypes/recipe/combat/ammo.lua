@@ -1,4 +1,3 @@
-
 --Base Overrides
 
 --Base "firearm-magazine"
@@ -105,7 +104,7 @@ data:extend(
 	category = "smelting",
 	energy_required = 2,
 	enabled = false,
-	ingredients = {{"lead-plate", 2}},
+	ingredients = {{"lead-ingot", 2}},
 	result = "bullet-1"
 },
 --Piercing Bullets
@@ -115,7 +114,7 @@ data:extend(
 	category = "forge",
 	energy_required = 5,
 	enabled = false,
-	ingredients = {{"lead-plate", 8}, {"copper-plate", 4}, {"forging-steel", 1}},
+	ingredients = {{"lead-ingot", 8}, {"copper-plate", 4}, {"forging-steel", 1}},
 	result = "bullet-2"
 },
 --Uranium Bullets

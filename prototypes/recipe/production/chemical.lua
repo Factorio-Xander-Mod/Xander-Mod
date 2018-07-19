@@ -1,10 +1,9 @@
-
 --Base Overrides
 
 --Base "chemical-plant"
 data.raw.recipe["chemical-plant"].category = "basic-crafting"
 data.raw.recipe["chemical-plant"].energy_required = 5
-data.raw.recipe["chemical-plant"].ingredients = {{"boiler", 1}, {"lead-plate", 10}, {"glass", 10}, {"mechanism-0", 4}, {"pipe-copper", 20}}
+data.raw.recipe["chemical-plant"].ingredients = {{"boiler", 1}, {"lead-ingot", 10}, {"glass", 10}, {"mechanism-0", 4}, {"pipe-copper", 20}}
 
 --Base "centrifuge"
 data.raw.recipe["centrifuge"].category = "crafting"

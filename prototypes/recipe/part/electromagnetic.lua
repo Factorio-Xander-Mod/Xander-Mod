@@ -1,4 +1,3 @@
-
 --Base Overrides
 
 --Base "copper-cable"
@@ -12,9 +11,9 @@ data.raw.recipe["electric-engine-unit"].energy_required = 4
 data.raw.recipe["electric-engine-unit"].ingredients = {{"iron-plate", 6}, {"shaft-0", 1}, {"coil-1", 2}, {"graphite-block", 1}}
 
 --Base "battery"
-data.raw.recipe["battery"].normal = {energy_required = 2, enabled = false, ingredients = {{"plastic-bar", 2}, {"lead-plate", 2}, 
+data.raw.recipe["battery"].normal = {energy_required = 2, enabled = false, ingredients = {{"plastic-bar", 2}, {"lead-ingot", 2}, 
 	{type = "fluid", name = "sulfuric-acid", amount = 10}}, result = "battery"}
-data.raw.recipe["battery"].expensive = {energy_required = 2, enabled = false, ingredients = {{"plastic-bar", 4}, {"lead-plate", 4}, 
+data.raw.recipe["battery"].expensive = {energy_required = 2, enabled = false, ingredients = {{"plastic-bar", 4}, {"lead-ingot", 4}, 
 	{type = "fluid", name = "sulfuric-acid", amount = 20}}, result = "battery"}
 
 
@@ -32,7 +31,7 @@ data:extend(
 	category = "basic-machine",
 	energy_required = 4,
 	enabled = false,
-	ingredients = {{"copper-plate", 4}, {"tin-plate", 2}},
+	ingredients = {{"copper-plate", 4}, {"tin-ingot", 2}},
 	result = "sheet-tinned",
 	result_count = 8
 },
