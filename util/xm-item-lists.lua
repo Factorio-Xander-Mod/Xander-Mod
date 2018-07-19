@@ -31,7 +31,7 @@ xm_plate_items = {{"copper-plate", false}, {"bronze-plate", true}, {"iron-plate"
 --Ingot: bulk metal (or metalloid - anything that can be cast into blocks or chunks) of distinct compositions.  Can be elements, alloys, etc., in single units.  Meant for making billets or stock shapes, not parts directly
 xm_ingot_items = {}
 xm_ingot_items_names = {"aluminum-ingot", "chromium-ingot", "cobalt-ingot", "gold-ingot", "lead-ingot", "magnesium-ingot", "nickel-ingot", "platinum-ingot", "re-ingot", "silver-ingot", "solder-1-ingot", "solder-2-ingot", 
-	"silicon-ingot", "tin-ingot", "titanium-ingot", "tungsten-ingot", "uranium-238-ingot", "vanadium-ingot", "zinc-ingot"}
+	"silicon-ingot", "tin-ingot", "titanium-ingot", "tungsten-ingot", "uranium-238-ingot", "uranium-weapons-ingot", "vanadium-ingot", "zinc-ingot"}
 for i, name in ipairs(xm_ingot_items_names) do table.insert(xm_ingot_items, {name, true, false}) end
 --Billet: large sizes metal in useful compositions. Can represent many stock forms: large chunks, long rods, hex bar, tubing, beams, etc.  Meant for making parts.
 xm_billet_items = {}
