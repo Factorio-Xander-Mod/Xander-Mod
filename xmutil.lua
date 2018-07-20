@@ -6,14 +6,14 @@ function M.assembler_pipes(graphics_source)
 	return {
 		north =
 		{
-			filename = "__xander-mod__/graphics/entity/production/" .. graphics_source .. "/pipe-N.png",
+			filename = "__xander-mod-graphics-0__/graphics/entity/production/" .. graphics_source .. "/pipe-N.png",
 			priority = "extra-high",
 			width = 35,
 			height = 18,
 			shift = util.by_pixel(2.5, 14),
 			hr_version =
 			{
-				filename = "__xander-mod__/graphics/entity/production/" .. graphics_source .. "/hr-pipe-N.png",
+				filename = "__xander-mod-graphics-0__/graphics/entity/production/" .. graphics_source .. "/hr-pipe-N.png",
 				priority = "extra-high",
 				width = 71,
 				height = 38,
@@ -23,14 +23,14 @@ function M.assembler_pipes(graphics_source)
 		},
 		east =
 		{
-			filename = "__xander-mod__/graphics/entity/production/" .. graphics_source .. "/pipe-E.png",
+			filename = "__xander-mod-graphics-0__/graphics/entity/production/" .. graphics_source .. "/pipe-E.png",
 			priority = "extra-high",
 			width = 20,
 			height = 38,
 			shift = util.by_pixel(-25, 1),
 			hr_version =
 			{
-				filename = "__xander-mod__/graphics/entity/production/" .. graphics_source .. "/hr-pipe-E.png",
+				filename = "__xander-mod-graphics-0__/graphics/entity/production/" .. graphics_source .. "/hr-pipe-E.png",
 				priority = "extra-high",
 				width = 42,
 				height = 76,
@@ -40,14 +40,14 @@ function M.assembler_pipes(graphics_source)
 		},
 		south =
 		{
-			filename = "__xander-mod__/graphics/entity/production/" .. graphics_source .. "/pipe-S.png",
+			filename = "__xander-mod-graphics-0__/graphics/entity/production/" .. graphics_source .. "/pipe-S.png",
 			priority = "extra-high",
 			width = 44,
 			height = 31,
 			shift = util.by_pixel(0, -31.5),
 			hr_version =
 			{
-				filename = "__xander-mod__/graphics/entity/production/" .. graphics_source .. "/hr-pipe-S.png",
+				filename = "__xander-mod-graphics-0__/graphics/entity/production/" .. graphics_source .. "/hr-pipe-S.png",
 				priority = "extra-high",
 				width = 88,
 				height = 61,
@@ -57,14 +57,14 @@ function M.assembler_pipes(graphics_source)
 		},
 		west =
 		{
-			filename = "__xander-mod__/graphics/entity/production/" .. graphics_source .. "/pipe-W.png",
+			filename = "__xander-mod-graphics-0__/graphics/entity/production/" .. graphics_source .. "/pipe-W.png",
 			priority = "extra-high",
 			width = 19,
 			height = 37,
 			shift = util.by_pixel(25.5, 1.5),
 			hr_version =
 			{
-				filename = "__xander-mod__/graphics/entity/production/" .. graphics_source .. "/hr-pipe-W.png",
+				filename = "__xander-mod-graphics-0__/graphics/entity/production/" .. graphics_source .. "/hr-pipe-W.png",
 				priority = "extra-high",
 				width = 39,
 				height = 73,
