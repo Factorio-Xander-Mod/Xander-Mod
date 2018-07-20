@@ -10,8 +10,8 @@ local gravel_transitions =
   water_transition_template
   (
       water_tile_type_names,
-      "__xander-mod__/graphics/tile/gravel/gravel.png",
-      "__xander-mod__/graphics/tile/gravel/hr-gravel.png",
+      "__xander-mod-graphics-1__/graphics/tile/gravel/gravel.png",
+      "__xander-mod-graphics-1__/graphics/tile/gravel/hr-gravel.png",
       {
         o_transition_tall = false,
         u_transition_count = 2,
@@ -28,8 +28,8 @@ local gravel_transitions_between_transitions =
   water_transition_template
   (
       water_tile_type_names,
-      "__xander-mod__/graphics/tile/gravel/gravel-transition.png",
-      "__xander-mod__/graphics/tile/gravel/hr-gravel-transition.png",
+      "__xander-mod-graphics-1__/graphics/tile/gravel/gravel-transition.png",
+      "__xander-mod-graphics-1__/graphics/tile/gravel/hr-gravel-transition.png",
       {
         o_transition_tall = false,
         inner_corner_count = 3,
@@ -46,8 +46,8 @@ local brick_transitions =
   water_transition_template
   (
       water_tile_type_names,
-      "__xander-mod__/graphics/tile/brick/brick.png",
-      "__xander-mod__/graphics/tile/brick/hr-brick.png",
+      "__xander-mod-graphics-1__/graphics/tile/brick/brick.png",
+      "__xander-mod-graphics-1__/graphics/tile/brick/hr-brick.png",
       {
         o_transition_tall = false,
         u_transition_count = 4,
@@ -64,8 +64,8 @@ local brick_transitions_between_transitions =
   water_transition_template
   (
       water_tile_type_names,
-      "__xander-mod__/graphics/tile/brick/brick-transitions.png",
-      "__xander-mod__/graphics/tile/brick/hr-brick-transitions.png",
+      "__xander-mod-graphics-1__/graphics/tile/brick/brick-transitions.png",
+      "__xander-mod-graphics-1__/graphics/tile/brick/hr-brick-transitions.png",
       {
         inner_corner_tall = true,
         inner_corner_count = 3,
@@ -82,8 +82,8 @@ local basalt_transitions =
   water_transition_template
   (
       water_tile_type_names,
-      "__xander-mod__/graphics/tile/basalt/basalt.png",
-      "__xander-mod__/graphics/tile/basalt/hr-basalt.png",
+      "__xander-mod-graphics-1__/graphics/tile/basalt/basalt.png",
+      "__xander-mod-graphics-1__/graphics/tile/basalt/hr-basalt.png",
       {
         o_transition_tall = false,
         u_transition_count = 4,
@@ -100,8 +100,8 @@ local basalt_transitions_between_transitions =
   water_transition_template
   (
       water_tile_type_names,
-      "__xander-mod__/graphics/tile/basalt/basalt-transitions.png",
-      "__xander-mod__/graphics/tile/basalt/hr-basalt-transitions.png",
+      "__xander-mod-graphics-1__/graphics/tile/basalt/basalt-transitions.png",
+      "__xander-mod-graphics-1__/graphics/tile/basalt/hr-basalt-transitions.png",
       {
         inner_corner_tall = true,
         inner_corner_count = 3,
@@ -118,8 +118,8 @@ local quartz_transitions =
   water_transition_template
   (
       water_tile_type_names,
-      "__xander-mod__/graphics/tile/quartz/quartz.png",
-      "__xander-mod__/graphics/tile/quartz/hr-quartz.png",
+      "__xander-mod-graphics-1__/graphics/tile/quartz/quartz.png",
+      "__xander-mod-graphics-1__/graphics/tile/quartz/hr-quartz.png",
       {
         o_transition_tall = false,
         u_transition_count = 4,
@@ -136,8 +136,8 @@ local quartz_transitions_between_transitions =
   water_transition_template
   (
       water_tile_type_names,
-      "__xander-mod__/graphics/tile/quartz/quartz-transitions.png",
-      "__xander-mod__/graphics/tile/quartz/hr-quartz-transitions.png",
+      "__xander-mod-graphics-1__/graphics/tile/quartz/quartz-transitions.png",
+      "__xander-mod-graphics-1__/graphics/tile/quartz/hr-quartz-transitions.png",
       {
         inner_corner_tall = true,
         inner_corner_count = 3,
@@ -154,8 +154,8 @@ local steel_transitions =
   water_transition_template
   (
       water_tile_type_names,
-      "__xander-mod__/graphics/tile/steel/steel.png",
-      "__xander-mod__/graphics/tile/steel/hr-steel.png",
+      "__xander-mod-graphics-1__/graphics/tile/steel/steel.png",
+      "__xander-mod-graphics-1__/graphics/tile/steel/hr-steel.png",
       {
         o_transition_tall = false,
         u_transition_count = 4,
@@ -172,8 +172,8 @@ local steel_transitions_between_transitions =
   water_transition_template
   (
       water_tile_type_names,
-      "__xander-mod__/graphics/tile/steel/steel-transitions.png",
-      "__xander-mod__/graphics/tile/steel/hr-steel-transitions.png",
+      "__xander-mod-graphics-1__/graphics/tile/steel/steel-transitions.png",
+      "__xander-mod-graphics-1__/graphics/tile/steel/hr-steel-transitions.png",
       {
         inner_corner_tall = true,
         inner_corner_count = 3,
@@ -193,11 +193,11 @@ xmutil.clone("tile", "dirt-6",
 	{
 		{
 			"__base__/graphics/terrain/dirt-6.png",
-			"__xander-mod__/graphics/tile/gravel/gravel-1.png"
+			"__xander-mod-graphics-1__/graphics/tile/gravel/gravel-1.png"
 		},
 		{
 			"__base__/graphics/terrain/hr-dirt-6.png",
-			"__xander-mod__/graphics/tile/gravel/hr-gravel-1.png"
+			"__xander-mod-graphics-1__/graphics/tile/gravel/hr-gravel-1.png"
 		}
 	},
 	{
@@ -236,67 +236,67 @@ xmutil.clone("tile", "stone-path",
 	{
 		{
 			"__base__/graphics/terrain/stone-path/stone-path-1.png",
-			"__xander-mod__/graphics/tile/brick/brick-1.png"
+			"__xander-mod-graphics-1__/graphics/tile/brick/brick-1.png"
 		},
 		{
 			"__base__/graphics/terrain/stone-path/hr-stone-path-1.png",
-			"__xander-mod__/graphics/tile/brick/hr-brick-1.png"
+			"__xander-mod-graphics-1__/graphics/tile/brick/hr-brick-1.png"
 		},
 		{
 			"__base__/graphics/terrain/stone-path/stone-path-2.png",
-			"__xander-mod__/graphics/tile/brick/brick-2.png"
+			"__xander-mod-graphics-1__/graphics/tile/brick/brick-2.png"
 		},
 		{
 			"__base__/graphics/terrain/stone-path/hr-stone-path-2.png",
-			"__xander-mod__/graphics/tile/brick/hr-brick-2.png"
+			"__xander-mod-graphics-1__/graphics/tile/brick/hr-brick-2.png"
 		},
 		{
 			"__base__/graphics/terrain/stone-path/stone-path-4.png",
-			"__xander-mod__/graphics/tile/brick/brick-4.png"
+			"__xander-mod-graphics-1__/graphics/tile/brick/brick-4.png"
 		},
 		{
 			"__base__/graphics/terrain/stone-path/hr-stone-path-4.png",
-			"__xander-mod__/graphics/tile/brick/hr-brick-4.png"
+			"__xander-mod-graphics-1__/graphics/tile/brick/hr-brick-4.png"
 		},
 		{
 			"__base__/graphics/terrain/stone-path/stone-path-inner-corner.png",
-			"__xander-mod__/graphics/tile/brick/brick-inner-corner.png"
+			"__xander-mod-graphics-1__/graphics/tile/brick/brick-inner-corner.png"
 		},
 		{
 			"__base__/graphics/terrain/stone-path/hr-stone-path-inner-corner.png",
-			"__xander-mod__/graphics/tile/brick/hr-brick-inner-corner.png"
+			"__xander-mod-graphics-1__/graphics/tile/brick/hr-brick-inner-corner.png"
 		},
 		{
 			"__base__/graphics/terrain/stone-path/stone-path-outer-corner.png",
-			"__xander-mod__/graphics/tile/brick/brick-outer-corner.png"
+			"__xander-mod-graphics-1__/graphics/tile/brick/brick-outer-corner.png"
 		},
 		{
 			"__base__/graphics/terrain/stone-path/hr-stone-path-outer-corner.png",
-			"__xander-mod__/graphics/tile/brick/hr-brick-outer-corner.png"
+			"__xander-mod-graphics-1__/graphics/tile/brick/hr-brick-outer-corner.png"
 		},
 		{
 			"__base__/graphics/terrain/stone-path/stone-path-side.png",
-			"__xander-mod__/graphics/tile/brick/brick-side.png"
+			"__xander-mod-graphics-1__/graphics/tile/brick/brick-side.png"
 		},
 		{
 			"__base__/graphics/terrain/stone-path/hr-stone-path-side.png",
-			"__xander-mod__/graphics/tile/brick/hr-brick-side.png"
+			"__xander-mod-graphics-1__/graphics/tile/brick/hr-brick-side.png"
 		},
 		{
 			"__base__/graphics/terrain/stone-path/stone-path-u.png",
-			"__xander-mod__/graphics/tile/brick/brick-u.png"
+			"__xander-mod-graphics-1__/graphics/tile/brick/brick-u.png"
 		},
 		{
 			"__base__/graphics/terrain/stone-path/hr-stone-path-u.png",
-			"__xander-mod__/graphics/tile/brick/hr-brick-u.png"
+			"__xander-mod-graphics-1__/graphics/tile/brick/hr-brick-u.png"
 		},
 		{
 			"__base__/graphics/terrain/stone-path/stone-path-o.png",
-			"__xander-mod__/graphics/tile/brick/brick-o.png"
+			"__xander-mod-graphics-1__/graphics/tile/brick/brick-o.png"
 		},
 		{
 			"__base__/graphics/terrain/stone-path/hr-stone-path-o.png",
-			"__xander-mod__/graphics/tile/brick/hr-brick-o.png"
+			"__xander-mod-graphics-1__/graphics/tile/brick/hr-brick-o.png"
 		}
 	},
 	{
@@ -313,51 +313,51 @@ xmutil.clone("tile", "concrete",
 	{
 		{
 			"__base__/graphics/terrain/concrete/concrete.png",
-			"__xander-mod__/graphics/tile/basalt/basalt-1.png"
+			"__xander-mod-graphics-1__/graphics/tile/basalt/basalt-1.png"
 		},
 		{
 			"__base__/graphics/terrain/concrete/hr-concrete.png",
-			"__xander-mod__/graphics/tile/basalt/hr-basalt-1.png"
+			"__xander-mod-graphics-1__/graphics/tile/basalt/hr-basalt-1.png"
 		},
 		{
 			"__base__/graphics/terrain/concrete/concrete-inner-corner.png",
-			"__xander-mod__/graphics/tile/basalt/basalt-inner-corner.png"
+			"__xander-mod-graphics-1__/graphics/tile/basalt/basalt-inner-corner.png"
 		},
 		{
 			"__base__/graphics/terrain/concrete/hr-concrete-inner-corner.png",
-			"__xander-mod__/graphics/tile/basalt/hr-basalt-inner-corner.png"
+			"__xander-mod-graphics-1__/graphics/tile/basalt/hr-basalt-inner-corner.png"
 		},
 		{
 			"__base__/graphics/terrain/concrete/concrete-outer-corner.png",
-			"__xander-mod__/graphics/tile/basalt/basalt-outer-corner.png"
+			"__xander-mod-graphics-1__/graphics/tile/basalt/basalt-outer-corner.png"
 		},
 		{
 			"__base__/graphics/terrain/concrete/hr-concrete-outer-corner.png",
-			"__xander-mod__/graphics/tile/basalt/hr-basalt-outer-corner.png"
+			"__xander-mod-graphics-1__/graphics/tile/basalt/hr-basalt-outer-corner.png"
 		},
 		{
 			"__base__/graphics/terrain/concrete/concrete-side.png",
-			"__xander-mod__/graphics/tile/basalt/basalt-side.png"
+			"__xander-mod-graphics-1__/graphics/tile/basalt/basalt-side.png"
 		},
 		{
 			"__base__/graphics/terrain/concrete/hr-concrete-side.png",
-			"__xander-mod__/graphics/tile/basalt/hr-basalt-side.png"
+			"__xander-mod-graphics-1__/graphics/tile/basalt/hr-basalt-side.png"
 		},
 		{
 			"__base__/graphics/terrain/concrete/concrete-u.png",
-			"__xander-mod__/graphics/tile/basalt/basalt-u.png"
+			"__xander-mod-graphics-1__/graphics/tile/basalt/basalt-u.png"
 		},
 		{
 			"__base__/graphics/terrain/concrete/hr-concrete-u.png",
-			"__xander-mod__/graphics/tile/basalt/hr-basalt-u.png"
+			"__xander-mod-graphics-1__/graphics/tile/basalt/hr-basalt-u.png"
 		},
 		{
 			"__base__/graphics/terrain/concrete/concrete-o.png",
-			"__xander-mod__/graphics/tile/basalt/basalt-o.png"
+			"__xander-mod-graphics-1__/graphics/tile/basalt/basalt-o.png"
 		},
 		{
 			"__base__/graphics/terrain/concrete/hr-concrete-o.png",
-			"__xander-mod__/graphics/tile/basalt/hr-basalt-o.png"
+			"__xander-mod-graphics-1__/graphics/tile/basalt/hr-basalt-o.png"
 		}
 	},
 	{
@@ -387,18 +387,18 @@ xmutil.clone("tile", "concrete",
 		main =
 		{
 			{
-				picture = "__xander-mod__/graphics/tile/basalt/1.png",
+				picture = "__xander-mod-graphics-1__/graphics/tile/basalt/1.png",
 				count = 1,
 				size = 1
 			},
 			{
-				picture = "__xander-mod__/graphics/tile/basalt/2.png",
+				picture = "__xander-mod-graphics-1__/graphics/tile/basalt/2.png",
 				count = 1,
 				size = 2,
 				probability = 0.39,
 			},
 			{
-				picture = "__xander-mod__/graphics/tile/basalt/4.png",
+				picture = "__xander-mod-graphics-1__/graphics/tile/basalt/4.png",
 				count = 1,
 				size = 4,
 				probability = 1,
@@ -406,27 +406,27 @@ xmutil.clone("tile", "concrete",
 		},
 		inner_corner =
 		{
-			picture = "__xander-mod__/graphics/tile/basalt/inner-corner.png",
+			picture = "__xander-mod-graphics-1__/graphics/tile/basalt/inner-corner.png",
 			count = 1
 		},
 		outer_corner =
 		{
-			picture = "__xander-mod__/graphics/tile/basalt/outer-corner.png",
+			picture = "__xander-mod-graphics-1__/graphics/tile/basalt/outer-corner.png",
 			count = 1
 		},
 		side =
 		{
-			picture = "__xander-mod__/graphics/tile/basalt/side.png",
+			picture = "__xander-mod-graphics-1__/graphics/tile/basalt/side.png",
 			count = 1
 		},
 		u_transition =
 		{
-			picture = "__xander-mod__/graphics/tile/basalt/u.png",
+			picture = "__xander-mod-graphics-1__/graphics/tile/basalt/u.png",
 			count = 1
 		},
 		o_transition =
 		{
-			picture = "__xander-mod__/graphics/tile/basalt/o.png",
+			picture = "__xander-mod-graphics-1__/graphics/tile/basalt/o.png",
 			count = 1
 		}
 	},
@@ -459,51 +459,51 @@ xmutil.clone("tile", "concrete",
 	{
 		{
 			"__base__/graphics/terrain/concrete/concrete.png",
-			"__xander-mod__/graphics/tile/quartz/quartz-1.png"
+			"__xander-mod-graphics-1__/graphics/tile/quartz/quartz-1.png"
 		},
 		{
 			"__base__/graphics/terrain/concrete/hr-concrete.png",
-			"__xander-mod__/graphics/tile/quartz/hr-quartz-1.png"
+			"__xander-mod-graphics-1__/graphics/tile/quartz/hr-quartz-1.png"
 		},
 		{
 			"__base__/graphics/terrain/concrete/concrete-inner-corner.png",
-			"__xander-mod__/graphics/tile/quartz/quartz-inner-corner.png"
+			"__xander-mod-graphics-1__/graphics/tile/quartz/quartz-inner-corner.png"
 		},
 		{
 			"__base__/graphics/terrain/concrete/hr-concrete-inner-corner.png",
-			"__xander-mod__/graphics/tile/quartz/hr-quartz-inner-corner.png"
+			"__xander-mod-graphics-1__/graphics/tile/quartz/hr-quartz-inner-corner.png"
 		},
 		{
 			"__base__/graphics/terrain/concrete/concrete-outer-corner.png",
-			"__xander-mod__/graphics/tile/quartz/quartz-outer-corner.png"
+			"__xander-mod-graphics-1__/graphics/tile/quartz/quartz-outer-corner.png"
 		},
 		{
 			"__base__/graphics/terrain/concrete/hr-concrete-outer-corner.png",
-			"__xander-mod__/graphics/tile/quartz/hr-quartz-outer-corner.png"
+			"__xander-mod-graphics-1__/graphics/tile/quartz/hr-quartz-outer-corner.png"
 		},
 		{
 			"__base__/graphics/terrain/concrete/concrete-side.png",
-			"__xander-mod__/graphics/tile/quartz/quartz-side.png"
+			"__xander-mod-graphics-1__/graphics/tile/quartz/quartz-side.png"
 		},
 		{
 			"__base__/graphics/terrain/concrete/hr-concrete-side.png",
-			"__xander-mod__/graphics/tile/quartz/hr-quartz-side.png"
+			"__xander-mod-graphics-1__/graphics/tile/quartz/hr-quartz-side.png"
 		},
 		{
 			"__base__/graphics/terrain/concrete/concrete-u.png",
-			"__xander-mod__/graphics/tile/quartz/quartz-u.png"
+			"__xander-mod-graphics-1__/graphics/tile/quartz/quartz-u.png"
 		},
 		{
 			"__base__/graphics/terrain/concrete/hr-concrete-u.png",
-			"__xander-mod__/graphics/tile/quartz/hr-quartz-u.png"
+			"__xander-mod-graphics-1__/graphics/tile/quartz/hr-quartz-u.png"
 		},
 		{
 			"__base__/graphics/terrain/concrete/concrete-o.png",
-			"__xander-mod__/graphics/tile/quartz/quartz-o.png"
+			"__xander-mod-graphics-1__/graphics/tile/quartz/quartz-o.png"
 		},
 		{
 			"__base__/graphics/terrain/concrete/hr-concrete-o.png",
-			"__xander-mod__/graphics/tile/quartz/hr-quartz-o.png"
+			"__xander-mod-graphics-1__/graphics/tile/quartz/hr-quartz-o.png"
 		}
 	},
 	{
@@ -522,51 +522,51 @@ xmutil.clone("tile", "concrete",
 	{
 		{
 			"__base__/graphics/terrain/concrete/concrete.png",
-			"__xander-mod__/graphics/tile/steel/steel-1.png"
+			"__xander-mod-graphics-1__/graphics/tile/steel/steel-1.png"
 		},
 		{
 			"__base__/graphics/terrain/concrete/hr-concrete.png",
-			"__xander-mod__/graphics/tile/steel/hr-steel-1.png"
+			"__xander-mod-graphics-1__/graphics/tile/steel/hr-steel-1.png"
 		},
 		{
 			"__base__/graphics/terrain/concrete/concrete-inner-corner.png",
-			"__xander-mod__/graphics/tile/steel/steel-inner-corner.png"
+			"__xander-mod-graphics-1__/graphics/tile/steel/steel-inner-corner.png"
 		},
 		{
 			"__base__/graphics/terrain/concrete/hr-concrete-inner-corner.png",
-			"__xander-mod__/graphics/tile/steel/hr-steel-inner-corner.png"
+			"__xander-mod-graphics-1__/graphics/tile/steel/hr-steel-inner-corner.png"
 		},
 		{
 			"__base__/graphics/terrain/concrete/concrete-outer-corner.png",
-			"__xander-mod__/graphics/tile/steel/steel-outer-corner.png"
+			"__xander-mod-graphics-1__/graphics/tile/steel/steel-outer-corner.png"
 		},
 		{
 			"__base__/graphics/terrain/concrete/hr-concrete-outer-corner.png",
-			"__xander-mod__/graphics/tile/steel/hr-steel-outer-corner.png"
+			"__xander-mod-graphics-1__/graphics/tile/steel/hr-steel-outer-corner.png"
 		},
 		{
 			"__base__/graphics/terrain/concrete/concrete-side.png",
-			"__xander-mod__/graphics/tile/steel/steel-side.png"
+			"__xander-mod-graphics-1__/graphics/tile/steel/steel-side.png"
 		},
 		{
 			"__base__/graphics/terrain/concrete/hr-concrete-side.png",
-			"__xander-mod__/graphics/tile/steel/hr-steel-side.png"
+			"__xander-mod-graphics-1__/graphics/tile/steel/hr-steel-side.png"
 		},
 		{
 			"__base__/graphics/terrain/concrete/concrete-u.png",
-			"__xander-mod__/graphics/tile/steel/steel-u.png"
+			"__xander-mod-graphics-1__/graphics/tile/steel/steel-u.png"
 		},
 		{
 			"__base__/graphics/terrain/concrete/hr-concrete-u.png",
-			"__xander-mod__/graphics/tile/steel/hr-steel-u.png"
+			"__xander-mod-graphics-1__/graphics/tile/steel/hr-steel-u.png"
 		},
 		{
 			"__base__/graphics/terrain/concrete/concrete-o.png",
-			"__xander-mod__/graphics/tile/steel/steel-o.png"
+			"__xander-mod-graphics-1__/graphics/tile/steel/steel-o.png"
 		},
 		{
 			"__base__/graphics/terrain/concrete/hr-concrete-o.png",
-			"__xander-mod__/graphics/tile/steel/hr-steel-o.png"
+			"__xander-mod-graphics-1__/graphics/tile/steel/hr-steel-o.png"
 		}
 	},
 	{

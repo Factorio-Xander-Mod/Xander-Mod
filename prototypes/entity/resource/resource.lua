@@ -43,8 +43,8 @@ local function xm_create_new_resource(name, cat, order, rem_start, map_color)
 	--Set the stage counts
 	if cat ~= "advanced-fluid" then out.stage_counts = {10000, 5000, 2000, 1000, 500, 200, 50, 10} end
 	--Set the stage sheets
-	out.stages.sheet.filename = "__xander-mod__/graphics/entity/resource/" .. name .. ".png"
-	if cat ~= "advanced-fluid" then out.stages.sheet.hr_version.filename = "__xander-mod__/graphics/entity/resource/" .. name .. "-hr.png" end
+	out.stages.sheet.filename = "__xander-mod-graphics-1__/graphics/entity/resource/" .. name .. ".png"
+	if cat ~= "advanced-fluid" then out.stages.sheet.hr_version.filename = "__xander-mod-graphics-1__/graphics/entity/resource/" .. name .. "-hr.png" end
 	--Set the map color
 	out.map_color = map_color
 	return out
@@ -73,8 +73,8 @@ data.raw.resource["copper-ore"].icon = "__xander-mod__/graphics/item/material/ra
 data.raw.resource["copper-ore"].order = "01"
 data.raw.resource["copper-ore"].minable.hardness = 0.5
 data.raw.resource["copper-ore"].stage_counts = {10000, 5000, 2000, 1000, 500, 200, 100, 10}
-data.raw.resource["copper-ore"].stages.sheet.filename = "__xander-mod__/graphics/entity/resource/copper-ore.png"
-data.raw.resource["copper-ore"].stages.sheet.hr_version.filename = "__xander-mod__/graphics/entity/resource/copper-ore-hr.png"
+data.raw.resource["copper-ore"].stages.sheet.filename = "__xander-mod-graphics-1__/graphics/entity/resource/copper-ore.png"
+data.raw.resource["copper-ore"].stages.sheet.hr_version.filename = "__xander-mod-graphics-1__/graphics/entity/resource/copper-ore-hr.png"
 data.raw.resource["copper-ore"].map_color = {r = 0.35, g = 0.48, b = 0.54}
 
 --Base "crude-oil"
@@ -86,16 +86,16 @@ data.raw.resource["iron-ore"].category = "basic-solid"
 data.raw.resource["iron-ore"].order = "05"
 data.raw.resource["iron-ore"].minable.hardness = 0.5
 data.raw.resource["iron-ore"].stage_counts = {10000, 5000, 2000, 1000, 500, 200, 100, 10}
-data.raw.resource["iron-ore"].stages.sheet.filename = "__xander-mod__/graphics/entity/resource/iron-ore.png"
-data.raw.resource["iron-ore"].stages.sheet.hr_version.filename = "__xander-mod__/graphics/entity/resource/iron-ore-hr.png"
+data.raw.resource["iron-ore"].stages.sheet.filename = "__xander-mod-graphics-1__/graphics/entity/resource/iron-ore.png"
+data.raw.resource["iron-ore"].stages.sheet.hr_version.filename = "__xander-mod-graphics-1__/graphics/entity/resource/iron-ore-hr.png"
 data.raw.resource["iron-ore"].map_color = {r = 0.52, g = 0.24, b = 0.2}
 
 --Base "stone"
 data.raw.resource["stone"].order = "13"
 data.raw.resource["stone"].minable.hardness = 0.5
 data.raw.resource["stone"].stage_counts = {10000, 5000, 2000, 1000, 500, 200, 100, 10}
-data.raw.resource["stone"].stages.sheet.filename = "__xander-mod__/graphics/entity/resource/stone.png"
-data.raw.resource["stone"].stages.sheet.hr_version.filename = "__xander-mod__/graphics/entity/resource/stone-hr.png"
+data.raw.resource["stone"].stages.sheet.filename = "__xander-mod-graphics-1__/graphics/entity/resource/stone.png"
+data.raw.resource["stone"].stages.sheet.hr_version.filename = "__xander-mod-graphics-1__/graphics/entity/resource/stone-hr.png"
 
 --Base "uranium-ore"
 data.raw.resource["uranium-ore"].category = "tough-solid"
