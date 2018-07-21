@@ -47,7 +47,7 @@ data.raw.recipe["accumulator"].ingredients = {{"battery-1", 1}, {"forging-steel"
 --Base "small-lamp"
 data.raw.recipe["small-lamp"].category = "crafting"
 data.raw.recipe["small-lamp"].energy_required = 1
-data.raw.recipe["small-lamp"].ingredients = {{"graphite-block", 2}, {"glass", 8}, {"mechanism-1", 1}, {"transformer-1", 1}, {"electronic-circuit", 1}}
+data.raw.recipe["small-lamp"].ingredients = {{"graphite-block", 2}, {"glass", 8}, {"transformer-1", 1}, {"electronic-circuit", 1}}
 data.raw.recipe["small-lamp"].result_count = 4
 
 
