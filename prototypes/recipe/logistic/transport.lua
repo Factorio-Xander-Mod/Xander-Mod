@@ -31,7 +31,7 @@ data.raw.recipe["cargo-wagon"].ingredients = {{"forging-steel", 10}, {"mechanism
 --Base "fluid-wagon"
 data.raw.recipe["fluid-wagon"].category = "crafting"
 data.raw.recipe["fluid-wagon"].energy_required = 5
-data.raw.recipe["fluid-wagon"].ingredients = {{"forging-steel", 10}, {"storage-tank", 3}, {"pipe", 10}, {"wheel-1", 8}}
+data.raw.recipe["fluid-wagon"].ingredients = {{"forging-steel", 10}, {"storage-tank", 1}, {"pipe", 10}, {"wheel-1", 8}}
 
 --Base "locomotive"
 data.raw.recipe["locomotive"].category = "crafting"
@@ -70,7 +70,7 @@ data:extend(
 	category = "crafting",
 	energy_required = 10,
 	enabled = false,
-	ingredients = {{"forging-stainless", 10}, {"storage-tank-2", 3}, {"pipe-stainless", 10}, {"wheel-2", 8}},
+	ingredients = {{"forging-stainless", 10}, {"storage-tank-2", 1}, {"pipe-stainless", 10}, {"wheel-2", 8}},
 	result = "fluid-wagon-2"
 },
 --Diesel-Electric Locomotive
