@@ -17,12 +17,11 @@ data.raw.recipe["steam-engine"].normal = {energy_required = 2, enabled = false, 
 data.raw.recipe["steam-engine"].expensive = {energy_required = 2, enabled = false, ingredients = {{"mechanical-steam-engine", 6}, {"forging-iron", 5}, 
 	{"electric-engine-unit", 4}}, result = "steam-engine"}
 
---Base "steam-turbine"
+--Base "steam-turbine" (medium-temperature)
 data.raw.recipe["steam-turbine"].category = "crafting"
 data.raw.recipe["steam-turbine"].energy_required = 10
-data.raw.recipe["steam-turbine"].ingredients = {{"forging-superalloy", 10}, {"forging-alloy", 20}, {"mechanism-2", 10}, {"mechanism-3", 5}, 
-	{"control-3", 2}, {"motor-3", 4}, {"pipe-superalloy", 20}, {"fused-basalt", 50}}
-
+data.raw.recipe["steam-turbine"].ingredients = {{"forging-alloy", 10}, {"forging-iron", 20}, {"mechanism-2", 10}, {"control-2", 2}, {"motor-2", 4}, {"pipe-stainless", 20}
+}
 --Base "heat-pipe"
 data.raw.recipe["heat-pipe"].category = "crafting"
 data.raw.recipe["heat-pipe"].energy_required = 1
@@ -91,8 +90,17 @@ data:extend(
 	category = "crafting",
 	energy_required = 10,
 	enabled = false,
-	ingredients = {{"forging-alloy", 10}, {"forging-iron", 20}, {"mechanism-2", 10}, {"control-2", 2}, {"motor-2", 4}, {"pipe-stainless", 20}},
-	result = "steam-turbine-2"
+	ingredients = {
+		{"forging-superalloy", 10},
+		{"forging-alloy", 20},
+		{"mechanism-2", 10},
+		{"mechanism-3", 5},
+		{"control-3", 2},
+		{"motor-3", 4},
+		{"pipe-superalloy", 20},
+		{"fused-basalt", 50},
+	},
+	result = "steam-turbine-2",
 },
 --
 --HEAT PIPE, NUCLEAR
