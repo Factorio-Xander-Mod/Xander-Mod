@@ -68,6 +68,7 @@ xmutil.clone("inserter", "fast-inserter",
 		energy_source = { drain = "1kW" },
 		extension_speed = 0.07,
 		rotation_speed = 0.0457,
+    insert_position = {0, 2.2},
 	}
 ),
 --Base "filter-inserter" placeholder
