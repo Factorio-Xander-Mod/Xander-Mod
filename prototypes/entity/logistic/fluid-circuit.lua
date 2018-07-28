@@ -1,6 +1,6 @@
 local xmutil = require("xmutil")
 
-function xm_pipe_pictures(name)
+local function xm_pipe_pictures(name)
 return
 {
 	straight_vertical_single =
@@ -365,7 +365,7 @@ return
 end
 
 local function xm_pipe_to_ground_pictures(material)
-	ret = {}
+	local ret = {}
 	for _, dir in ipairs{"up", "down", "left", "right"} do
 		ret[dir] = {
 			filename = "__xander-mod-graphics-0__/graphics/entity/logistic/pipe-to-ground/"..material.."/pipe-to-ground-"..dir..".png",
@@ -481,6 +481,9 @@ xmutil.clone("storage-tank", "storage-tank",
 		icon = "__xander-mod__/graphics/item/logistic/plumbing/storage-tank-2.png",
 		minable = {mining_time = 1.5, result = "storage-tank-2"},
 		max_health = 1000,
+		fluid_box = {
+			base_area = 500,
+		},
 		pictures = {
 			picture = {
 				sheets = {
