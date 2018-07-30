@@ -9,14 +9,18 @@ function xm_technology(name_arg, recipe_unlocks, special_effects, prerequisites_
 	--Create a list to store the effects of researching the current technology
 	local effects_build_list = {}
 	--Populate all recipe unlocks for the current technology, into the effects list
-	for i, name in ipairs(recipe_unlocks) do
-		table.insert(effects_build_list, {type = "unlock-recipe", recipe = name})
+	if recipe_unlocks then
+		for i, name in ipairs(recipe_unlocks) do
+			table.insert(effects_build_list, {type = "unlock-recipe", recipe = name})
+		end
 	end
-	--Populate all the special effects (things other than recipe unlocks) for the current technology, into the list of effects
-	--Unfinished, because I don't know what the needs of this section are yet
-	--for i, entry in ipairs(special_effects) do
-	--	table.insert(effects_build_list, {type = entry[1], recipe = name})
-	--end
+	--Populate all the special effects (those other than recipe unlocks) for the current technology, into the list of effects
+	--Unfinished, because I haven't explored what the needs of this section are yet
+	if special_effects then
+		for i, entry in ipairs(special_effects) do
+			--table.insert(effects_build_list, {type = X, <parameter_Y> = Z})
+		end
+	end
 	out.effects = effects_build_list
 	--Set the prerequisites
 	out.prerequisites = prerequisites_arg

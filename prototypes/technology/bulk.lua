@@ -30,6 +30,73 @@ data.raw.technology["sulfur-processing"].unit.count = 200
 data.raw.technology["sulfur-processing"].order = "02-33"
 
 
+--Move in from "part"
+data:extend(
+{
+--Carbon Fiber
+{
+	type = "technology",
+	name = "fiber-carbon",
+	icon = "__xander-mod__/graphics/technology/part/fiber-carbon.png",
+	icon_size = 128,
+	effects =
+	{
+		{
+			type = "unlock-recipe",
+			recipe = "fiber-carbon"
+		}
+	},
+	prerequisites = {"plastics", "advanced-material-processing-2", "carbon-processing"},
+	unit =
+	{
+		count = 400,
+		ingredients =
+		{
+			{"science-pack-1", 1},
+			{"science-pack-2", 1},
+			{"science-pack-3", 1},
+			{"production-science-pack", 1},
+			{"high-tech-science-pack", 1}
+		},
+		time = 45
+	},
+	order = "04-04"
+},
+--Tungsten Carbide Cermet with Cobalt
+{
+	type = "technology",
+	name = "tungsten-cermet",
+	icon = "__xander-mod__/graphics/technology/part/tungsten-cermet.png",
+	icon_size = 128,
+	effects =
+	{
+		{
+			type = "unlock-recipe",
+			recipe = "tungsten-carbide"
+		},
+		{
+			type = "unlock-recipe",
+			recipe = "tungsten-cermet"
+		}
+	},
+	prerequisites = {"tungsten-refining", "acheson-process", "cobalt-refining"},
+	unit =
+	{
+		count = 400,
+		ingredients =
+		{
+			{"science-pack-1", 1},
+			{"science-pack-2", 1},
+			{"science-pack-3", 1}
+		},
+		time = 45
+	},
+	order = "04-05"
+}
+
+})
+
+--Main bulk material techs
 data:extend(
 {
 

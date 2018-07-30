@@ -108,6 +108,10 @@ require("prototypes.recipe.part.science")
 --Technologies
 require("prototypes.technology.data")
 require("prototypes.technology.part")
+require("prototypes.technology.part.mechanical")
+require("prototypes.technology.part.electromagnetic")
+require("prototypes.technology.part.data")
+require("prototypes.technology.part.rocket")
 
 
 --==========  Production  ==========
