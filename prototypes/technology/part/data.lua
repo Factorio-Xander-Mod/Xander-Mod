@@ -1,8 +1,32 @@
 --New XM Technologies
 --Group 5, subgroup 6
-for i, entry in ipairs(xm_data_technologies) do
-	if entry [2] then 
-		data:extend({xm_technology(entry[1], entry[3], entry[4], entry[5], entry[6], entry[7], entry[8], 5, 6, i)})
+-- for i, entry in ipairs(xm_data_technologies) do
+-- 	if entry [2] then 
+-- 		data:extend({xm_technology(entry[1], entry[3], entry[4], entry[5], entry[6], entry[7], entry[8], 5, 6, i)})
+-- 	end
+-- end
+
+local index = 1
+for i, entry in ipairs(xm_technology_parts) do
+	if entry.subgroup == "data" then
+		if entry.xm then
+			local prototype = xm_technology(
+				entry.name, 
+				entry.recipes, 
+				entry.specials, 
+				entry.prerequisites, 
+				entry.count, 
+				entry.ingredients, 
+				entry.time, 
+				5, 
+				6, 
+				index)
+
+			data:extend({ prototype })
+			logtools.log(1, "add prototype: ", prototype)
+		end
+
+		index = index + 1
 	end
 end
 

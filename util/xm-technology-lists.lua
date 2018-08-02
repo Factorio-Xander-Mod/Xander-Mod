@@ -20,6 +20,16 @@ for i, name in ipairs(xm_<subgroup>_technologies_names) do
 end
 ]]--
 
+require("csvtools")
+require("logtools")
+local technology_parts_raw = require("technology-parts-csv")
+
+local technology_parts_lines = csvtools.read_lines(technology_parts_raw)
+
+xm_technology_parts = csvtools.read_data_from_csv_lines(technology_parts_lines)
+
+logtools.log(2, xm_technology_parts)
+
 
 --MATERIALS
 --==========
