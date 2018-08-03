@@ -47,6 +47,7 @@ data.raw["assembling-machine"]["assembling-machine-1"].animation = xmutil.merge{
 data.raw["assembling-machine"]["assembling-machine-1"].energy_source.emissions = 0.01
 data.raw["assembling-machine"]["assembling-machine-1"].energy_usage = "50kW"
 data.raw["assembling-machine"]["assembling-machine-1"].ingredient_count = 4
+data.raw["assembling-machine"]["assembling-machine-1"].crafting_categories = {"basic-crafting", "crafting", "crafting-with-fluid"}
 data.raw["assembling-machine"]["assembling-machine-1"].fluid_boxes = xmutil.assembler_fluid_boxes("assembling-machine-1")
 
 --Base "assembling-machine-2"

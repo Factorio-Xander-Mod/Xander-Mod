@@ -4,12 +4,15 @@ local xmutil = require("xmutil")
 
 --Base "stone-furnace"
 data.raw.furnace["stone-furnace"].flags = {"player-creation"}
+data.raw.furnace["stone-furnace"].crafting_categories = {"empty"}
 
 --Base "steel-furnace"
 data.raw.furnace["steel-furnace"].flags = {"player-creation"}
+data.raw.furnace["steel-furnace"].crafting_categories = {"empty"}
 
 --Base "electric-furnace"
 data.raw.furnace["electric-furnace"].flags = {"player-creation"}
+data.raw.furnace["electric-furnace"].crafting_categories = {"empty"}
 
 
 data:extend(
