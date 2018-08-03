@@ -14,8 +14,7 @@ data:extend(
 	name = "temp-logging"
 },
 
---Useless category, to occupy the base "electric-furnace" so it doesn't show up under the "made in" list of any recipes.
---Because the base "electric-furnace" is disabled in XM in favor of the Foundry-Forge
+--Used for the superceded base furnaces so they don't show up under the "made in" list of any recipes.
 {
 	type = "recipe-category",
 	name = "empty"
