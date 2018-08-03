@@ -36,6 +36,7 @@ data:extend(
 	enabled = false,
 	ingredients = {{"raw-iron", 16}, {"graphite-block", 1}, {"calcium-oxide", 2}, {"silicon-ingot", 2}},
 	results = {{"forging-iron", 4}, {"slag", 2}},
+	main_product = "forging-iron",
 	subgroup = "structure"
 },
 --Crude Steel Forging (A)

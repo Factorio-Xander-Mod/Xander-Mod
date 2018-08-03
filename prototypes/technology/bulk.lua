@@ -110,11 +110,15 @@ data:extend(
 	{
 		{
 			type = "unlock-recipe",
-			recipe = "forging-iron-b"
+			recipe = "forging-iron-c"
 		},
 		{
 			type = "unlock-recipe",
 			recipe = "blank-1-b"
+		},
+		{
+			type = "unlock-recipe",
+			recipe = "iron-plate-c"
 		}
 	},
 	prerequisites = {"iron-refining", "carbon-processing", "acheson-process"},
