@@ -192,7 +192,7 @@ data:extend(
 	category = "machine",
 	energy_required = 2,
 	enabled = false,
-	ingredients = {{"rod-2", 1}, {"gear-2", 1}, {"wire-copper", 8}, {"graphite-powder", 2}},
+	ingredients = {{"rod-2", 1}, {"gear-3", 1}, {"wire-copper", 8}, {"graphite-powder", 2}},
 	result = "components-1",
 	result_count = 2
 },
