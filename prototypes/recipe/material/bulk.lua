@@ -72,6 +72,17 @@ data.raw.recipe["sulfuric-acid"].results = {{type = "fluid", name = "sulfuric-ac
 
 data:extend(
 {
+	--XM Iron Plate from Forging
+	{
+		type = "recipe",
+		name = "iron-plate-c",
+		category = "machine",
+		energy_required = 4,
+		enabled = false,
+		ingredients = {{"forging-iron", 1}},
+		result = "iron-plate",
+		result_count = 4
+	},
 
 --
 --ALLOY PLATES
