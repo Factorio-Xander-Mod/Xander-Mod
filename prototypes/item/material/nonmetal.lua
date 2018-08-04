@@ -18,8 +18,8 @@ data.raw.item["activated-carbon"].fuel_category = "chemical"
 
 
 --Base Overrides
-
---Sulfur
-data.raw.item["sulfur"].subgroup = "nonmetal"
-data.raw.item["sulfur"].order = "9"
-data.raw.item["sulfur"].stack_size = 200
+for i, entry in ipairs(xm_nonmetal_items) do
+	if not entry[2] then
+		xm_modify_base_item(entry[1], 3, 12, i - 1)
+	end
+end

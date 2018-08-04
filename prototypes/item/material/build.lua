@@ -26,22 +26,14 @@ data.raw.item["fused-quartz"].place_as_tile =
 	condition = {"water-tile"}
 }
 
+
 --Base Overrides
+for i, entry in ipairs(xm_build_items) do
+	if not entry[2] then
+		xm_modify_base_item(entry[1], 3, 19, i - 1)
+	end
+end
 
 --Landfill
 data.raw.item["landfill"].icon = "__xander-mod__/graphics/item/material/build/landfill.png"
-data.raw.item["landfill"].order = "00"
-data.raw.item["landfill"].stack_size = 200
 data.raw.item["landfill"].place_as_tile = {result = "gravel", condition_size = 1, condition = {"ground-tile"}}
-
---Stone Brick
-data.raw.item["stone-brick"].order = "01"
-data.raw.item["stone-brick"].stack_size = 200
-
---Concrete
-data.raw.item["concrete"].order = "05"
-data.raw.item["concrete"].stack_size = 200
-
---Hazard Concrete
-data.raw.item["hazard-concrete"].order = "06"
-data.raw.item["hazard-concrete"].stack_size = 200
