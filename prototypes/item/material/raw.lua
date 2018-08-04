@@ -24,17 +24,6 @@ data:extend(
 	order = "07",
 	stack_size = 200
 },
---Magnesite
-{
-	type = "item",
-	name = "magnesite",
-	icon = "__xander-mod__/graphics/item/material/raw/magnesite.png",
-	icon_size = 32,
-	flags = {"goes-to-main-inventory"},
-	subgroup = "raw-material",
-	order = "06",
-	stack_size = 200
-},
 --Modified Gravel
 {
 	type = "item",

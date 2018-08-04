@@ -537,25 +537,6 @@ data:extend(
 	results = {{"limestone", 20}, {"gravel", 2}, {type = "fluid", name = "gray-water", amount = 50}},
 	subgroup = "raw-resource"
 },
---Magnesite Washing
-{
-	type = "recipe",
-    name = "magnesite-washing",
-	icon = "__xander-mod__/graphics/recipe/raw/magnesite-washing.png",
-	icon_size = 32,
-	category = "sluice",
-	crafting_machine_tint =
-	{
-		primary = {r = 0.000, g = 0.110, b = 0.588},
-		secondary = {r = 0.564, g = 0.795, b = 0.000},
-		tertiary = {r = 0.678, g = 0.565, b = 0.478}
-	},
-	energy_required = 20,
-	enabled = false,
-	ingredients = {{"stone", 10}, {type = "fluid", name = "water", amount = 50}},
-	results = {{"magnesite", 10}, {"gravel", 2}, {type = "fluid", name = "gray-water", amount = 50}},
-	subgroup = "raw-resource"
-},
 --Gravel Crushing
 {
 	type = "recipe",

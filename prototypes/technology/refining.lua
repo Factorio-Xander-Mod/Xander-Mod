@@ -1170,14 +1170,6 @@ data:extend(
 	{
 		{
 			type = "unlock-recipe",
-			recipe = "magnesite-washing"
-		},
-		{
-			type = "unlock-recipe",
-			recipe = "magnesite-calcining"
-		},
-		{
-			type = "unlock-recipe",
 			recipe = "magnesia-dissolution"
 		}
 	},

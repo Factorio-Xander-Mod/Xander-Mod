@@ -1497,10 +1497,6 @@ data:extend(
 		},
 		{
 			type = "unlock-recipe",
-			recipe = "magnesite-burial"
-		},
-		{
-			type = "unlock-recipe",
 			recipe = "limestone-burial"
 		},
 		{

@@ -808,19 +808,6 @@ data:extend(
 	results = {{"calcium-oxide", 1}, {type = "fluid", name = "flue-gas", amount = 10}},
 	subgroup = "raw-material"
 },
---Magnesite Calcining
-{
-	type = "recipe",
-    name = "magnesite-calcining",
-	icon = "__xander-mod__/graphics/recipe/refining/magnesite-calcining.png",
-	icon_size = 32,
-	category = "refining",
-	energy_required = 5,
-	enabled = false,
-	ingredients = {{"magnesite", 1}},
-	results = {{"magnesium-oxide", 1}, {type = "fluid", name = "flue-gas", amount = 10}},
-	subgroup = "raw-material"
-},
 --Magnesia Dissolution
 {
 	type = "recipe",

@@ -264,22 +264,6 @@ data:extend(
 	ingredients = {{"sulfur", 1}, {"gravel", 2}},
 	result = "gravel"
 },
---Magnesite Burial
-{
-	type = "recipe",
-    name = "magnesite-burial",
-	category = "sluice",
-	crafting_machine_tint =
-	{
-		primary = {r = 0.000, g = 0.110, b = 0.588},
-		secondary = {r = 0.564, g = 0.795, b = 0.000},
-		tertiary = {r = 0.678, g = 0.565, b = 0.478}
-	},
-	energy_required = 1,
-	enabled = false,
-	ingredients = {{"magnesite", 2}},
-	result = "magnesite"
-},
 --Limestone Burial
 {
 	type = "recipe",
