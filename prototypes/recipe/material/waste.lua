@@ -181,233 +181,57 @@ data:extend(
 	results = {{"limestone", 10}, {"sand", 10}, {"inert-waste", 20}, {type = "fluid", name = "gray-water", amount = 200}},
 	subgroup = "waste"
 },
---
---BURIAL
---Sludge Burial with Gravel
-{
-	type = "recipe",
-    name = "sludge-burial-a",
-	category = "sluice",
-	crafting_machine_tint =
-	{
-		primary = {r = 0.000, g = 0.110, b = 0.588},
-		secondary = {r = 0.564, g = 0.795, b = 0.000},
-		tertiary = {r = 0.678, g = 0.565, b = 0.478}
-	},
-	energy_required = 1,
-	enabled = false,
-	ingredients = {{"sludge", 1}, {"gravel", 2}},
-	result = "gravel"
-},
---Sludge Burial with Sand
-{
-	type = "recipe",
-    name = "sludge-burial-b",
-	category = "sluice",
-	crafting_machine_tint =
-	{
-		primary = {r = 0.000, g = 0.110, b = 0.588},
-		secondary = {r = 0.564, g = 0.795, b = 0.000},
-		tertiary = {r = 0.678, g = 0.565, b = 0.478}
-	},
-	energy_required = 1,
-	enabled = false,
-	ingredients = {{"sludge", 1}, {"sand", 2}},
-	result = "sand"
-},
---Inert Waste Burial
-{
-	type = "recipe",
-    name = "inert-waste-burial",
-	category = "sluice",
-	crafting_machine_tint =
-	{
-		primary = {r = 0.000, g = 0.110, b = 0.588},
-		secondary = {r = 0.564, g = 0.795, b = 0.000},
-		tertiary = {r = 0.678, g = 0.565, b = 0.478}
-	},
-	energy_required = 1,
-	enabled = false,
-	ingredients = {{"inert-waste", 2}},
-	result = "inert-waste"
-},
---Calcium Sulfate Burial with Stone
-{
-	type = "recipe",
-    name = "calcium-sulfate-burial",
-	category = "sluice",
-	crafting_machine_tint =
-	{
-		primary = {r = 0.000, g = 0.110, b = 0.588},
-		secondary = {r = 0.564, g = 0.795, b = 0.000},
-		tertiary = {r = 0.678, g = 0.565, b = 0.478}
-	},
-	energy_required = 1,
-	enabled = false,
-	ingredients = {{"calcium-sulfate", 1}, {"stone", 2}},
-	result = "stone"
-},
---Sulfur Burial with Gravel
-{
-	type = "recipe",
-    name = "sulfur-burial",
-	category = "sluice",
-	crafting_machine_tint =
-	{
-		primary = {r = 0.000, g = 0.110, b = 0.588},
-		secondary = {r = 0.564, g = 0.795, b = 0.000},
-		tertiary = {r = 0.678, g = 0.565, b = 0.478}
-	},
-	energy_required = 1,
-	enabled = false,
-	ingredients = {{"sulfur", 1}, {"gravel", 2}},
-	result = "gravel"
-},
---Limestone Burial
-{
-	type = "recipe",
-    name = "limestone-burial",
-	category = "sluice",
-	crafting_machine_tint =
-	{
-		primary = {r = 0.000, g = 0.110, b = 0.588},
-		secondary = {r = 0.564, g = 0.795, b = 0.000},
-		tertiary = {r = 0.678, g = 0.565, b = 0.478}
-	},
-	energy_required = 1,
-	enabled = false,
-	ingredients = {{"limestone", 2}},
-	result = "limestone"
-},
---Coke Burial
-{
-	type = "recipe",
-    name = "coke-burial",
-	category = "sluice",
-	crafting_machine_tint =
-	{
-		primary = {r = 0.000, g = 0.110, b = 0.588},
-		secondary = {r = 0.564, g = 0.795, b = 0.000},
-		tertiary = {r = 0.678, g = 0.565, b = 0.478}
-	},
-	energy_required = 1,
-	enabled = false,
-	ingredients = {{"coke", 2}},
-	result = "coke"
-},
---Gravel Burial
-{
-	type = "recipe",
-    name = "gravel-burial",
-	category = "sluice",
-	crafting_machine_tint =
-	{
-		primary = {r = 0.000, g = 0.110, b = 0.588},
-		secondary = {r = 0.564, g = 0.795, b = 0.000},
-		tertiary = {r = 0.678, g = 0.565, b = 0.478}
-	},
-	energy_required = 1,
-	enabled = false,
-	ingredients = {{"gravel", 2}},
-	result = "gravel"
-},
---Slag Burial
-{
-	type = "recipe",
-    name = "slag-burial",
-	category = "sluice",
-	crafting_machine_tint =
-	{
-		primary = {r = 0.000, g = 0.110, b = 0.588},
-		secondary = {r = 0.564, g = 0.795, b = 0.000},
-		tertiary = {r = 0.678, g = 0.565, b = 0.478}
-	},
-	energy_required = 1,
-	enabled = false,
-	ingredients = {{"slag", 2}},
-	result = "slag"
-},
---
---VENTING
---Nitrogen Venting
-{
-	type = "recipe",
-    name = "nitrogen-venting",
-	category = "sluice",
-	crafting_machine_tint =
-	{
-		primary = {r = 0.000, g = 0.110, b = 0.588},
-		secondary = {r = 0.564, g = 0.795, b = 0.000},
-		tertiary = {r = 0.678, g = 0.565, b = 0.478}
-	},
-	energy_required = 1,
-	enabled = false,
-	ingredients = {{type = "fluid", name = "nitrogen", amount = 10}, {"gravel", 1}},
-	result = "gravel"
-},
---Oxygen Venting
-{
-	type = "recipe",
-    name = "oxygen-venting",
-	category = "sluice",
-	crafting_machine_tint =
-	{
-		primary = {r = 0.000, g = 0.110, b = 0.588},
-		secondary = {r = 0.564, g = 0.795, b = 0.000},
-		tertiary = {r = 0.678, g = 0.565, b = 0.478}
-	},
-	energy_required = 1,
-	enabled = false,
-	ingredients = {{type = "fluid", name = "oxygen", amount = 10}, {"gravel", 1}},
-	result = "gravel"
-},
---Carbon Dioxide Venting
-{
-	type = "recipe",
-    name = "co2-venting",
-	category = "sluice",
-	crafting_machine_tint =
-	{
-		primary = {r = 0.000, g = 0.110, b = 0.588},
-		secondary = {r = 0.564, g = 0.795, b = 0.000},
-		tertiary = {r = 0.678, g = 0.565, b = 0.478}
-	},
-	energy_required = 1,
-	enabled = false,
-	ingredients = {{type = "fluid", name = "carbon-dioxide", amount = 10}, {"gravel", 1}},
-	result = "gravel"
-},
---Water Venting
-{
-	type = "recipe",
-    name = "water-venting",
-	category = "sluice",
-	crafting_machine_tint =
-	{
-		primary = {r = 0.000, g = 0.110, b = 0.588},
-		secondary = {r = 0.564, g = 0.795, b = 0.000},
-		tertiary = {r = 0.678, g = 0.565, b = 0.478}
-	},
-	energy_required = 1,
-	enabled = false,
-	ingredients = {{type = "fluid", name = "water", amount = 10}, {"gravel", 1}},
-	result = "gravel"
-},
---Salt Water Venting
-{
-	type = "recipe",
-    name = "salt-water-venting",
-	category = "sluice",
-	crafting_machine_tint =
-	{
-		primary = {r = 0.000, g = 0.110, b = 0.588},
-		secondary = {r = 0.564, g = 0.795, b = 0.000},
-		tertiary = {r = 0.678, g = 0.565, b = 0.478}
-	},
-	energy_required = 1,
-	enabled = false,
-	ingredients = {{"sodium-chloride", 2}, {type = "fluid", name = "water", amount = 10}},
-	result = "sodium-chloride"
+})
+
+
+local void_recipes = {
+	--BURIAL
+	-- [1] = name               [2] = ingredients
+	{ "sludge-burial-a",        {{"sludge",          1}, {"gravel", 1}} },
+	{ "sludge-burial-b",        {{"sludge",          1}, {"sand",   1}} },
+	{ "inert-waste-burial",     {{"inert-waste",     1}               } },
+	{ "calcium-sulfate-burial", {{"calcium-sulfate", 1}, {"stone",  1}} },
+	{ "sulfur-burial",          {{"sulfur",          1}, {"gravel", 1}} },
+	{ "limestone-burial",       {{"limestone",       1}               } },
+	{ "coke-burial",            {{"coke",            1}               } },
+	{ "gravel-burial",          {{"gravel",          1}               } },
+	{ "slag-burial",            {{"slag",            1}               } },
+	--
+	--VENTING
+	{ "nitrogen-venting",       {                        {type = "fluid", name = "nitrogen",       amount = 10}} },
+	{ "oxygen-venting",         {                        {type = "fluid", name = "oxygen",         amount = 10}} },
+	{ "co2-venting",            {                        {type = "fluid", name = "carbon-dioxide", amount = 10}} },
+	{ "water-venting",          {                        {type = "fluid", name = "water",          amount = 10}} },
+	{ "salt-water-venting",     {{"sodium-chloride", 1}, {type = "fluid", name = "water",          amount = 10}} },
 }
 
-})
+for _, r in ipairs(void_recipes) do
+	local name = r[1]
+	local ingredients = r[2]
+	-- determines the icon used for the recipe
+	local void_result = {
+		type = ingredients[1].type or "item",
+		name = ingredients[1].name or ingredients[1][1],
+		amount_min = 0,
+		amount_max = 0,
+		probability = 0,
+	}
+	data:extend{
+		{
+			type = "recipe",
+			name = name,
+			localised_name = {"recipe-name."..name},
+			category = "sluice",
+			crafting_machine_tint = {
+				primary =   {r = 0.000, g = 0.110, b = 0.588},
+				secondary = {r = 0.564, g = 0.795, b = 0.000},
+				tertiary =  {r = 0.678, g = 0.565, b = 0.478},
+			},
+			energy_required = 1,
+			enabled = false,
+			ingredients = ingredients,
+			results = {void_result},
+			show_amount_in_title = false,
+		}
+	}
+end
