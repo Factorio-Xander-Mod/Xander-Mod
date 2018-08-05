@@ -69,7 +69,7 @@ true,
 false, 
 true, 
 }
-local xm_mechanical_technologies_recipes = {{"bearing-1", "gear-3", "rod-2", "shaft-1", "mechanism-1", "wheel-1", "steel-axe"}, 
+local xm_mechanical_technologies_recipes = {{"bearing-1", "gear-3", "rod-2", "shaft-1", "mechanism-1", "wheel-1", "steel-chest"}, 
 {"bearing-2", "gear-4", "rod-3", "shaft-2", "mechanism-2", "wheel-2"}, 
 {"bearing-3", "rod-4", "shaft-3", "mechanism-3"}, 
 {"tooling-1-b"}, 
