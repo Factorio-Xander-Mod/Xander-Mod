@@ -1,28 +1,26 @@
 --Generate item parameters
 function xm_item(name_arg, flags_arg, group_no, subgroup_no, item_no, place_as_entity)
-	--Look up the subgroup from table
-	local subgroup = xm_all_subgroups[group_no][subgroup_no][1]
 	--Create a list for output item parameters, started with the type and name
 	local out = {type = "item", name = name_arg}
-	out.subgroup = subgroup
-	--Construct the file path for the icon
-	local icon = "__xander-mod__/graphics/item/" .. xm_groups[group_no] .. "/" .. subgroup .. "/" .. name_arg .. ".png"
-	out.icon = icon
+	--Set the subgroup
+	out.subgroup = xm_all_subgroups[group_no][subgroup_no][1]
+	--Construct and set the file path for the icon
+	out.icon = "__xander-mod__/graphics/item/" .. xm_groups[group_no] .. "/" .. xm_all_subgroups[group_no][subgroup_no][1] .. "/" .. name_arg .. ".png"
 	out.icon_size = 32
 	--Default flag is "goes-to-main-inventory", detect if special other flags given as input and use that list instead
-	local flags = {"goes-to-main-inventory"}
 	if flags_arg then
-		flags = flags_arg
+		out.flags = flags_arg
+	else
+		out.flags = {"goes-to-main-inventory"}
 	end
-	out.flags = flags
-	--Add the appropriate zeros to the group_no, subgroup_no, and item_no strings
+	--Set the order string, adding the appropriate zeroes to the group_no, subgroup_no, and item_no
 	local order_group_no = group_no
 	local order_subgroup_no = subgroup_no
 	local order_item_no = item_no
 	if group_no < 10 then order_group_no = "0" .. group_no end
 	if subgroup_no < 10 then order_subgroup_no = "0" .. subgroup_no end
 	if item_no < 10 then order_item_no = "0" .. item_no end
-	out.order = order_group_no .. "_" .. order_subgroup_no .. "_" .. order_item_no
+	out.order = order_group_no .. "-" .. order_subgroup_no .. "-" .. order_item_no
 	--Check for whether the item should place an entity, and if so, have the item place the entity with its same name
 	if place_as_entity then out.place_result = name_arg end
 	--Determine the stack size based on the group that the item is in
@@ -50,11 +48,8 @@ function xm_item(name_arg, flags_arg, group_no, subgroup_no, item_no, place_as_e
 end
 
 function xm_special_item(name_arg, flags_arg, group_no, subgroup_no, item_no, place_as_entity, specials)
-	--Look up the subgroup from table
-	local subgroup = xm_all_subgroups[group_no][subgroup_no][1]
 	--Create a list for output item parameters, started with the type and name
 	local out = xm_item(name_arg, flags_arg, group_no, subgroup_no, item_no, place_as_entity)
-	out.subgroup = subgroup
 	--Determine what type the thing actually is and add the parameters needed for each specific type
 	local typ = "item"
 	if string.find(name_arg, "axe") then --special contains: {damage_amount, durability, speed}
