@@ -1,18 +1,3 @@
---Base Overrides
-
---Base "uranium-238" -> XM U-238 Metal Plate
-data.raw.item["uranium-238"].icon = "__xander-mod__/graphics/item/material/metal/uranium-238.png"
-data.raw.item["uranium-238"].subgroup = "metal"
-data.raw.item["uranium-238"].order = "15"
-data.raw.item["uranium-238"].stack_size = 200
-
---Base "uranium-235" -> XM Weapons-Grade Uranium Metal Plate
-data.raw.item["uranium-235"].icon = "__xander-mod__/graphics/item/material/metal/uranium-weapons.png"
-data.raw.item["uranium-235"].subgroup = "metal"
-data.raw.item["uranium-235"].order = "16"
-data.raw.item["uranium-235"].stack_size = 200
-
-
 data:extend(
 {
 
@@ -23,7 +8,7 @@ data:extend(
 	icon = "__xander-mod__/graphics/item/material/metal/aluminum.png",
 	icon_size = 32,
 	flags = {"goes-to-main-inventory"},
-	subgroup = "metal",
+	subgroup = "raw-material",
 	order = "00",
 	stack_size = 200
 },
@@ -34,7 +19,7 @@ data:extend(
 	icon = "__xander-mod__/graphics/item/material/metal/chromium.png",
 	icon_size = 32,
 	flags = {"goes-to-main-inventory"},
-	subgroup = "metal",
+	subgroup = "raw-material",
 	order = "01",
 	stack_size = 200
 },
@@ -45,7 +30,7 @@ data:extend(
 	icon = "__xander-mod__/graphics/item/material/metal/cobalt.png",
 	icon_size = 32,
 	flags = {"goes-to-main-inventory"},
-	subgroup = "metal",
+	subgroup = "raw-material",
 	order = "02",
 	stack_size = 200
 },
@@ -56,7 +41,7 @@ data:extend(
 	icon = "__xander-mod__/graphics/item/material/metal/gold.png",
 	icon_size = 32,
 	flags = {"goes-to-main-inventory"},
-	subgroup = "metal",
+	subgroup = "raw-material",
 	order = "04",
 	stack_size = 200
 },
@@ -67,7 +52,7 @@ data:extend(
 	icon = "__xander-mod__/graphics/item/material/metal/lead.png",
 	icon_size = 32,
 	flags = {"goes-to-main-inventory"},
-	subgroup = "metal",
+	subgroup = "raw-material",
 	order = "06",
 	stack_size = 200
 },
@@ -78,7 +63,7 @@ data:extend(
 	icon = "__xander-mod__/graphics/item/material/metal/magnesium.png",
 	icon_size = 32,
 	flags = {"goes-to-main-inventory"},
-	subgroup = "metal",
+	subgroup = "raw-material",
 	order = "07",
 	stack_size = 200
 },
@@ -89,7 +74,7 @@ data:extend(
 	icon = "__xander-mod__/graphics/item/material/metal/nickel.png",
 	icon_size = 32,
 	flags = {"goes-to-main-inventory"},
-	subgroup = "metal",
+	subgroup = "raw-material",
 	order = "08",
 	stack_size = 200
 },
@@ -100,7 +85,7 @@ data:extend(
 	icon = "__xander-mod__/graphics/item/material/metal/platinum.png",
 	icon_size = 32,
 	flags = {"goes-to-main-inventory"},
-	subgroup = "metal",
+	subgroup = "raw-material",
 	order = "09",
 	stack_size = 200
 },
@@ -111,7 +96,7 @@ data:extend(
 	icon = "__xander-mod__/graphics/item/material/metal/re.png",
 	icon_size = 32,
 	flags = {"goes-to-main-inventory"},
-	subgroup = "metal",
+	subgroup = "raw-material",
 	order = "10",
 	stack_size = 200
 },
@@ -122,7 +107,7 @@ data:extend(
 	icon = "__xander-mod__/graphics/item/material/metal/silver.png",
 	icon_size = 32,
 	flags = {"goes-to-main-inventory"},
-	subgroup = "metal",
+	subgroup = "raw-material",
 	order = "11",
 	stack_size = 200
 },
@@ -133,7 +118,7 @@ data:extend(
 	icon = "__xander-mod__/graphics/item/material/metal/tin.png",
 	icon_size = 32,
 	flags = {"goes-to-main-inventory"},
-	subgroup = "metal",
+	subgroup = "raw-material",
 	order = "12",
 	stack_size = 200
 },
@@ -144,7 +129,7 @@ data:extend(
 	icon = "__xander-mod__/graphics/item/material/metal/titanium.png",
 	icon_size = 32,
 	flags = {"goes-to-main-inventory"},
-	subgroup = "metal",
+	subgroup = "raw-material",
 	order = "13",
 	stack_size = 200
 },
@@ -155,7 +140,7 @@ data:extend(
 	icon = "__xander-mod__/graphics/item/material/metal/tungsten.png",
 	icon_size = 32,
 	flags = {"goes-to-main-inventory"},
-	subgroup = "metal",
+	subgroup = "raw-material",
 	order = "14",
 	stack_size = 200
 },
@@ -166,7 +151,7 @@ data:extend(
 	icon = "__xander-mod__/graphics/item/material/metal/vanadium.png",
 	icon_size = 32,
 	flags = {"goes-to-main-inventory"},
-	subgroup = "metal",
+	subgroup = "raw-material",
 	order = "17",
 	stack_size = 200
 },
@@ -177,7 +162,7 @@ data:extend(
 	icon = "__xander-mod__/graphics/item/material/metal/zinc.png",
 	icon_size = 32,
 	flags = {"goes-to-main-inventory"},
-	subgroup = "metal",
+	subgroup = "raw-material",
 	order = "18",
 	stack_size = 200
 }

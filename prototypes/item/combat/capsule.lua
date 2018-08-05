@@ -1,6 +1,9 @@
 
 --Base Overrides
 
+--Base "cliff-explosives"
+data.raw.capsule["cliff-explosives"].subgroup = "capsule"
+data.raw.capsule["cliff-explosives"].order = "00"
 --Base "grenade"
 data.raw.capsule["grenade"].order = "00"
 --Base "cluster-grenade"

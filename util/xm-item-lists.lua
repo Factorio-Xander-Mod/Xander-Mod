@@ -5,22 +5,24 @@
 
 --MATERIALS
 --==========
+--Terrain: rocks and sediments that compose the landscape; and large-scale building materials used to modify terrain
+xm_terrain_items = {}
+xm_terrain_items_names = {"quartzite", "dolerite", "limestone", "modified", "gravel", "quartz-sand", "clay", "landfill", "stone-brick", "cement-powder", "concrete", "hazard-concrete", "refined-concrete", "refined-hazard-concrete"}
+xm_terrain_items_news = {true, true, true, true, true, true, true, false, false, true, false, false, false, false}
+for i, name in ipairs(xm_terrain_items_names) do table.insert(xm_terrain_items, {name, xm_terrain_items_news[i], false}) end
 --raw-resource: Can you just dig it up out of the ground?  This should be everything that: can be freely selected (1:1 ratio, no limits), directly from mining result items.
 	--*Defined based on the same resource data lists used to make the resource entities
 --Milled resources: rocks dug up from the ground and crushed, ready for selecting or concentrating (or other stuff as it may come along)
 xm_milled_resource_items = {}
-xm_milled_resource_items_names = {"milled-copper-ore", "milled-igneous-sulfide", "milled-iron-ore", "milled-bauxite", "milled-nickeliferous-laterite", "milled-magnetic", "milled-massive-sulfide", "milled-phosphorite", 
-	"quartz-sand", "milled-skarn", "limestone", "quartzite", "dolerite", "milled-uranium-ore", "oceanic-salt"}
+xm_milled_resource_items_names = {"milled-copper-ore", "milled-igneous-sulfide", "milled-iron-ore", "milled-bauxite", "milled-nickeliferous-laterite", "milled-magnetic", "milled-massive-sulfide", "milled-phosphorite", "milled-skarn", "milled-uranium-ore"}
 for i, name in ipairs(xm_milled_resource_items_names) do table.insert(xm_milled_resource_items, {name, true, false}) end
 --Concentrate: concentrates; materials derived from resource items, that are enriched in one component that you want
 xm_concentrate_items = {}
-xm_concentrate_items_names = {"chalcocite", "molybdenite", "saltpeter", "borax", "lithium-concentrate", "chalcopyrite", "pentlandite", "hematite", "pyrolusite", "clay", "magnetite", "chromite", "sphalerite", "galena", 
-	"hydroxylapatite", "fluorite", "heavy-sand", "ilmenite", "zircon", "cassiterite", "scheelite", "monazite", "pitchblende"}
+xm_concentrate_items_names = {"chalcocite", "molybdenite", "lithium-concentrate", "borax", "chalcopyrite", "pentlandite", "hematite", "pyrolusite", "magnetite", "chromite", "sphalerite", "galena", "hydroxylapatite", "fluorite", "heavy-sand", "ilmenite", "zircon", "cassiterite", "scheelite", "monazite", "pitchblende", "oceanic-salt"}
 for i, name in ipairs(xm_concentrate_items_names) do table.insert(xm_concentrate_items, {name, true, false}) end
 --Oxide: refined oxides, mostly of metals for reduction, but also of some other elements
 xm_oxide_items = {}
-xm_oxide_items_names = {"aluminum-hydroxide", "aluminum-oxide", "boron-oxide", "calcium-oxide", "chromium-oxide", "cobalt-oxide", "cuprous-oxide", "lead-oxide", "lithium-hydroxide", "magnesium-oxide", "nickel-oxide", 
-	"re-oxide", "sodium-hydroxide", "titanium-oxide", "tungsten-oxide", "uranium-238-oxide", "uranium-fuel-oxide", "uranium-weapons-oxide", "vanadium-oxide", "zinc-oxide", "zirconium-oxide"}
+xm_oxide_items_names = {"aluminum-hydroxide", "aluminum-oxide", "boron-oxide", "calcium-oxide", "chromium-oxide", "cobalt-oxide", "cuprous-oxide", "lead-oxide", "lithium-hydroxide", "magnesium-oxide", "nickel-oxide", "re-oxide", "sodium-hydroxide", "titanium-oxide", "tungsten-oxide", "uranium-238-oxide", "uranium-fuel-oxide", "uranium-weapons-oxide", "vanadium-oxide", "zinc-oxide", "zirconium-oxide"}
 for i, name in ipairs(xm_oxide_items_names) do table.insert(xm_oxide_items, {name, true, false}) end
 --Sponge: metal sponges, powders of metals with some (but not much) impurity phases
 xm_sponge_items = {}
@@ -31,43 +33,45 @@ xm_plate_items = {{"copper-plate", false}, {"bronze-plate", true}, {"iron-plate"
 --Ingot: bulk metal (or metalloid - anything that can be cast into blocks or chunks) of distinct compositions.  Can be elements, alloys, etc., in single units.  Meant for making billets or stock shapes, not parts directly
 xm_ingot_items = {}
 xm_ingot_items_names = {"aluminum-ingot", "chromium-ingot", "cobalt-ingot", "gold-ingot", "lead-ingot", "magnesium-ingot", "nickel-ingot", "platinum-ingot", "re-ingot", "silver-ingot", "solder-1-ingot", "solder-2-ingot", 
-	"silicon-ingot", "tin-ingot", "titanium-ingot", "tungsten-ingot", "uranium-238-ingot", "uranium-weapons-ingot", "vanadium-ingot", "zinc-ingot"}
-for i, name in ipairs(xm_ingot_items_names) do table.insert(xm_ingot_items, {name, true, false}) end
+	"silicon-ingot", "tin-ingot", "titanium-ingot", "tungsten-ingot", "uranium-238", "uranium-235", "vanadium-ingot", "zinc-ingot", "uranium-238-ingot", "uranium-weapons-ingot"}
+xm_ingot_items_news = {true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, false, false, true, true, true, true}
+	for i, name in ipairs(xm_ingot_items_names) do table.insert(xm_ingot_items, {name, xm_ingot_items_news[i], false}) end
 --Billet: large sizes metal in useful compositions. Can represent many stock forms: large chunks, long rods, hex bar, tubing, beams, etc.  Meant for making parts.
 xm_billet_items = {}
-xm_billet_items_names = {"alloy-billet", "brass-billet", "bronze-billet", "cast-iron-billet", "copper-billet", "duralumin-billet", "monel-billet", "silicon-boule", "stainless-billet", "steel-billet", "superalloy-billet", 
-	"titanium-billet", "zirconium-billet"}
+xm_billet_items_names = {"alloy-billet", "brass-billet", "bronze-billet", "cast-iron-billet", "copper-billet", "duralumin-billet", "monel-billet", "silicon-boule", "stainless-billet", "steel-billet", "superalloy-billet", "titanium-billet", "zirconium-billet", "graphite-block"}
 for i, name in ipairs(xm_billet_items_names) do table.insert(xm_billet_items, {name, true, false}) end
 --Nonmetal: elements of not metallic character.  Varying purity grades.
 xm_nonmetal_items = {}
-xm_nonmetal_items_names = {"charcoal", "coke", "graphite-powder", "graphite-block", "activated-carbon", "silicon-powder", "semiconductor-silicon-powder", "phosphorus", "sulfur"}
-xm_nonmetal_items_news = {true, true, true, true, true, true, true, true, false}
+xm_nonmetal_items_names = {"charcoal", "coke", "graphite-powder", "activated-carbon", "silicon-powder", "semiconductor-silicon-powder", "phosphorus", "sulfur"}
+xm_nonmetal_items_news = {true, true, true, true, true, true, true, false}
 for i, name in ipairs(xm_nonmetal_items_names) do table.insert(xm_nonmetal_items, {name, xm_nonmetal_items_news[i], false}) end
+--Ceramic: bulk ceramic materials and simple shapes
+xm_ceramic_items = {}
+xm_ceramic_items_names = {"brick-clay", "brick-clay-graphite", "brick-spinel", "brick-zirconia", "glass", "fused-quartz", "fused-basalt", "silicon-carbide", "silicon-nitride", "tungsten-carbide"}
+for i, name in ipairs(xm_ceramic_items_names) do table.insert(xm_ceramic_items, {name, true, false}) end
 --Salt: salts
 xm_salt_items = {}
-xm_salt_items_names = {"calcium-chloride", "calcium-sulfate", "cryolite-mixture", "lithium-perchlorate", "lithium-tetrafluoroborate", "lithium-titanate", "magnesium-chloride", "sodium-chloride", "sodium-sulfate", "silicon-carbide", "silicon-nitride", "sodium-carbonate", "sodium-chromate", "ammonium-vanadate", "tungsten-carbide", "uranyl-nitrate", "uranium-natural-hexafluoride", "uranium-238-hexafluoride", "uranium-fuel-hexafluoride", "uranium-weapons-hexafluoride", "zirconium-tetrachloride"}
+xm_salt_items_names = {"ammonium-vanadate", "lithium-perchlorate", "lithium-tetrafluoroborate", "lithium-titanate", "sodium-chloride", "sodium-sulfate", "sodium-carbonate", "sodium-chromate", "saltpeter", "magnesium-chloride", "calcium-chloride", "calcium-sulfate", "cryolite-mixture", "zirconium-tetrachloride", "uranyl-nitrate", "uranium-natural-hexafluoride", "uranium-238-hexafluoride", "uranium-fuel-hexafluoride", "uranium-weapons-hexafluoride"}
 for i, name in ipairs(xm_salt_items_names) do table.insert(xm_salt_items, {name, true, false}) end
---Compound: solid, inorganic compounds, excluding salts
-xm_compound_items = {}
---Organic: solid organic compounds
+--Organic: solid organic compounds, usually chemical intermediates
 xm_organic_items = {}
---Carbohydrate: solid organic compounds, specifically containing only C, H, and O
-xm_carbohydrate_items = {}
---Raw: unrefined synthetic products, like slags and metal sponge
-xm_raw_items = {}
---Build: refractory, construction, and land materials
-xm_build_items = {}
-xm_build_items_names = {"brick-clay", "brick-clay-graphite", "brick-spinel", "stone-brick", "brick-zirconia", "cement-powder", "concrete", "hazard-concrete", "fused-basalt", "fused-quartz", "glass", "modified", "landfill"}
-xm_build_items_news = {true, true, true, false, true, true, false, false, true, true, true, true, false}
-for i, name in ipairs(xm_build_items_names) do table.insert(xm_build_items, {name, xm_build_items_news[i], false}) end
---Fluid Recipes: not for items, but rather the icons and places of some recipes that involve fluids
---Waste: waste materials
+xm_organic_items_names = {"wood-resin", "phenol", "solder-flux", "surfactant", "synthetic-drugs"}
+for i, name in ipairs(xm_organic_items_names) do table.insert(xm_organic_items, {name, true, false}) end
+--Polymer: organic polymers, usually for mechanical structure, but some for chemical reactivity & structure too
+xm_polymer_items = {}
+xm_polymer_items_names = {"raw-wood", "wood", "cotton", "latex", "sbr", "rubber", "plastic-pellets", "plastic-bar"}
+xm_polymer_items_news = {false, false, true, true, true, true, true, false}
+for i, name in ipairs(xm_polymer_items_names) do table.insert(xm_polymer_items, {name, xm_polymer_items_news[i], false}) end
+--Energetic: fuels, explosives, and the like
+xm_energetic_items = {}
+xm_energetic_items_names = {"solid-fuel", "optimal-fuel", "nitrocellulose", "unstable-explosives", "explosives"}
+xm_energetic_items_news = {false, true, true, true, false}
+for i, name in ipairs(xm_energetic_items_names) do table.insert(xm_energetic_items, {name, xm_energetic_items_news[i], false}) end
+--Waste: various waste materials, with various destinies
 xm_waste_items = {}
+xm_waste_items_names = {"fayalite-slag", "slag", "sludge", "inert-waste", "vanadium-slag"}
+for i, name in ipairs(xm_waste_items_names) do table.insert(xm_waste_items, {name, true, false}) end
 
---List of legacy alloy items from XM 1, created (and still leftover) from an original test of the function to automatically generate item prototypes
-xm_alloy_items = {}
-xm_alloy_items_names = {"brass-plate", "monel-plate", "silicon-boule", "solder-1-plate", "solder-2-plate"}
-for i, name in ipairs(xm_alloy_items_names) do table.insert(xm_alloy_items, {name, true, false}) end
 
 
 --PARTS
@@ -83,6 +87,7 @@ local xm_assembly_items_names = {"mechanical-steam-engine", "piston-cylinder", "
 	"tooling-1", "tooling-2", "tooling-3", "control-1", "control-2", "control-3", "lasing-1", "lasing-2", "lasing-3"}
 local xm_assembly_items_news = {true, true, true, true, true, true, false, true, true, false, true, true, true, true, true, true, true, true, true, true}
 for i, name in ipairs(xm_assembly_items_names) do table.insert(xm_assembly_items, {name, xm_assembly_items_news[i], false}) end
+
 
 
 --PRODUCTION
@@ -130,8 +135,12 @@ xm_module_items_names = {"beacon", "speed-module", "speed-module-2", "speed-modu
 	"productivity-module-3"}
 for i, name in ipairs(xm_module_items_names) do table.insert(xm_module_items, {name, false, false}) end
 
+
+
 --LOGISTICS
 --==========
+
+
 
 --COMBAT
 --==========
