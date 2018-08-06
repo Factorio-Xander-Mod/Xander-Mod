@@ -1,4 +1,3 @@
-
 --Base Overrides
 
 --Base "grenade"
@@ -9,7 +8,7 @@ data.raw.recipe["grenade"].ingredients = {{"forging-iron", 1}, {"powder-1", 10}}
 --Base "cluster-grenade"
 data.raw.recipe["cluster-grenade"].category = "advanced-crafting"
 data.raw.recipe["cluster-grenade"].energy_required = 10
-data.raw.recipe["cluster-grenade"].ingredients = {{"grenade", 7}, {"explosives", 15}, {"tungsten-block", 5}}
+data.raw.recipe["cluster-grenade"].ingredients = {{"grenade", 7}, {"explosives", 15}, {"tungsten-ingot", 5}}
 
 --Base "poison-capsule"
 data.raw.recipe["poison-capsule"].category = "crafting"

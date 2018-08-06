@@ -1,4 +1,3 @@
-
 --Base Overrides
 
 --Base "small-electric-pole"

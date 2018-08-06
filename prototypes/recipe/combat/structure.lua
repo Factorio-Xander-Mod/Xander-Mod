@@ -1,4 +1,3 @@
-
 --Base Overrides
 
 --Base "stone-wall"
@@ -43,7 +42,7 @@ data.raw.recipe["car"].ingredients = {{"engine-unit", 8}, {"wheel-1", 4}, {"forg
 data.raw.recipe["tank"].category = "crafting"
 data.raw.recipe["tank"].energy_required = 10
 data.raw.recipe["tank"].ingredients = {{"engine-unit", 32}, {"wheel-1", 16}, {"forging-alloy", 100}, {"mechanism-2", 20}, {"motor-2", 10}, 
-	{"crystal-corundum", 5}, {"control-2", 5}, {"tungsten-block", 200}}
+	{"crystal-corundum", 5}, {"control-2", 5}, {"tungsten-ingot", 200}}
 
 
 data:extend(
@@ -86,7 +85,7 @@ data:extend(
 	category = "crafting",
 	energy_required = 10,
 	enabled = false,
-	ingredients = {{"nitride-block", 20}, {"tungsten-block", 10}},
+	ingredients = {{"nitride-block", 20}, {"tungsten-ingot", 10}},
 	result = "wall-5"
 },
 --Armored Basalt Gate
@@ -168,7 +167,7 @@ data:extend(
 	energy_required = 50,
 	enabled = false,
 	ingredients = {{"steam-turbine", 1}, {"wheel-2", 32}, {"forging-titanium", 200}, {"mechanism-3", 20}, {"motor-3", 10}, {"laser-turret-3", 5}, 
-		{"nitride-block", 200}, {"tungsten-block", 500}},
+		{"nitride-block", 200}, {"tungsten-ingot", 500}},
 	result = "tank-2"
 }
 

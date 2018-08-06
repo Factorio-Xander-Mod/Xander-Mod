@@ -150,7 +150,7 @@ data:extend(
 	category = "forge",
 	energy_required = 10,
 	enabled = false,
-	ingredients = {{"tin-ingot", 7}, {"copper-plate", 2}, {"silver-plate", 1}},
+	ingredients = {{"tin-ingot", 7}, {"copper-plate", 2}, {"silver-ingot", 1}},
 	result = "solder-2-ingot",
 	result_count = 10
 },
@@ -161,7 +161,7 @@ data:extend(
 	category = "smelting",
 	energy_required = 20,
 	enabled = false,
-	ingredients = {{"nickel-plate", 3}, {"copper-plate", 2}},
+	ingredients = {{"nickel-ingot", 3}, {"copper-plate", 2}},
 	result = "monel-billet",
 	result_count = 5
 },
@@ -172,7 +172,7 @@ data:extend(
 	category = "forge",
 	energy_required = 10,
 	enabled = false,
-	ingredients = {{"nickel-plate", 3}, {"copper-plate", 2}},
+	ingredients = {{"nickel-ingot", 3}, {"copper-plate", 2}},
 	result = "monel-billet",
 	result_count = 5
 },
@@ -183,7 +183,7 @@ data:extend(
 	category = "forge",
 	energy_required = 10,
 	enabled = false,
-	ingredients = {{"copper-plate", 6}, {"zinc-plate", 4}, {"lead-ingot", 1}},
+	ingredients = {{"copper-plate", 6}, {"zinc-ingot", 4}, {"lead-ingot", 1}},
 	result = "brass-billet",
 	result_count = 10
 },

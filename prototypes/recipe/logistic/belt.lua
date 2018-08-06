@@ -1,6 +1,4 @@
-
 --Base Overrides
-
 
 --Base "transport-belt"
 data.raw.recipe["transport-belt"].category = "crafting"

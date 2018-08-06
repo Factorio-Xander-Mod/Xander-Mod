@@ -1,4 +1,3 @@
-
 --Base Overrides
 
 --Base "beacon"
@@ -22,7 +21,7 @@ data.raw.recipe["speed-module-2"].ingredients = {{"speed-module", 4},  {"control
 --Base "speed-module-3"
 data.raw.recipe["speed-module-3"].category = "crafting-with-fluid"
 data.raw.recipe["speed-module-3"].energy_required = 40
-data.raw.recipe["speed-module-3"].ingredients = {{"speed-module-2", 5}, {"control-3", 4}, {"mechanism-3", 4}, {"chromium-plate", 20}, {"motor-3", 4}, 
+data.raw.recipe["speed-module-3"].ingredients = {{"speed-module-2", 5}, {"control-3", 4}, {"mechanism-3", 4}, {"chromium-ingot", 20}, {"motor-3", 4}, 
 	{type = "fluid", name = "lubricant", amount = 40}, {"plastic-bar", 4}}
 
 --Base "productivity-module"
@@ -53,38 +52,16 @@ data.raw.recipe["effectivity-module"].ingredients = {{"forging-aluminum", 1}, {"
 data.raw.recipe["effectivity-module-2"].category = "crafting-with-fluid"
 data.raw.recipe["effectivity-module-2"].energy_required = 20
 data.raw.recipe["effectivity-module-2"].ingredients = {{"effectivity-module", 4}, {"control-2", 2}, {"battery-2", 2}, {"fiber-glass", 8}, 
-	{"plastic-bar", 8}, {"gold-plate", 8}, {type = "fluid", name = "lubricant", amount = 20}}
+	{"plastic-bar", 8}, {"gold-ingot", 8}, {type = "fluid", name = "lubricant", amount = 20}}
 
 --Base "effectivity-module-3"
 data.raw.recipe["effectivity-module-3"].category = "crafting-with-fluid"
 data.raw.recipe["effectivity-module-3"].energy_required = 40
 data.raw.recipe["effectivity-module-3"].ingredients = {{"effectivity-module-2", 5}, {"control-3", 1}, {"battery-3", 4}, {"fused-quartz", 16}, 	
-	{"fiber-plastic", 16}, {"silver-plate", 16}, {type = "fluid", name = "lubricant", amount = 40}}
+	{"fiber-plastic", 16}, {"silver-ingot", 16}, {type = "fluid", name = "lubricant", amount = 40}}
 
 --Base "rocket-silo"
 data.raw.recipe["rocket-silo"].category = "crafting"
 data.raw.recipe["rocket-silo"].energy_required = 100
 data.raw.recipe["rocket-silo"].ingredients = {{"concrete", 4000}, {"forging-stainless", 2000}, {"forging-alloy", 1000}, {"assembling-machine-4", 100}, 
 	{"radar-2", 50}, {"pipe-superalloy", 400}, {"pump-3", 50}, {"storage-tank-2", 50}}
-
-
---[[
-data:extend(
-{
-
---Base "beacon" placeholder
---
---MODULES
---Base "speed-module" placeholder
---Base "speed-module-2" placeholder
---Base "speed-module-3" placeholder
---Base "efficiency-module-1" placeholder
---Base "efficiency-module-2" placeholder
---Base "efficiency-module-3" placeholder
---Base "productivity-module" placeholder
---Base "productivity-module-2" placeholder
---Base "productivity-module-3" placeholder
-
-})
-
-]]--

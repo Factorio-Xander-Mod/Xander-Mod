@@ -30,7 +30,7 @@ data:extend(
 	category = "crafting",
 	energy_required = 5,
 	enabled = false,
-	ingredients = {{"nickel-plate", 20}, {"glass", 20}, {"control-1", 2}, {"pump", 2}},
+	ingredients = {{"nickel-ingot", 20}, {"glass", 20}, {"control-1", 2}, {"pump", 2}},
 	result = "reactor-1"
 },
 --Catalytic Chemical Reactor
@@ -40,7 +40,7 @@ data:extend(
 	category = "crafting",
 	energy_required = 10,
 	enabled = false,
-	ingredients = {{"reactor-1", 1}, {"boiler-2", 1}, {"control-2", 2}, {"platinum-plate", 5}, {"pipe-plastic", 20}, {"pump-2", 2}},
+	ingredients = {{"reactor-1", 1}, {"boiler-2", 1}, {"control-2", 2}, {"platinum-ingot", 5}, {"pipe-plastic", 20}, {"pump-2", 2}},
 	result = "reactor-2"
 },
 --Standard Electrolyzer
@@ -60,7 +60,7 @@ data:extend(
 	category = "crafting",
 	energy_required = 10,
 	enabled = false,
-	ingredients = {{"electrolyzer-1", 1}, {"platinum-plate", 10}, {"transformer-2", 2}, {"control-2", 2}, {"fused-quartz", 20}, {"forging-titanium", 10}},
+	ingredients = {{"electrolyzer-1", 1}, {"platinum-ingot", 10}, {"transformer-2", 2}, {"control-2", 2}, {"fused-quartz", 20}, {"forging-titanium", 10}},
 	result = "electrolyzer-2"
 },
 --Base "centrifuge" placeholder

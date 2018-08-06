@@ -1,4 +1,3 @@
-
 --Base Overrides
 
 --Base "light-armor"
@@ -27,7 +26,7 @@ data.raw.recipe["power-armor"].ingredients = {{"forging-aluminum", 100}, {"forgi
 --Base "power-armor-mk2"
 data.raw.recipe["power-armor-mk2"].category = "crafting"
 data.raw.recipe["power-armor-mk2"].energy_required = 20
-data.raw.recipe["power-armor-mk2"].ingredients = {{"forging-alloy", 100}, {"tungsten-block", 100}, {"mechanism-3", 10}, {"motor-3", 20}, {"control-3", 20}, 
+data.raw.recipe["power-armor-mk2"].ingredients = {{"forging-alloy", 100}, {"tungsten-ingot", 100}, {"mechanism-3", 10}, {"motor-3", 20}, {"control-3", 20}, 
 	{"plastic-bar", 100}, {"effectivity-module-3", 10}, {"crystal-corundum", 20}}
 
 

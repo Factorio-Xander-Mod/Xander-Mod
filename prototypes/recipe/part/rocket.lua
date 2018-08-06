@@ -1,9 +1,8 @@
-
 --Base Overrides
 
 --Base "uranium-fuel-cell"
 data.raw.recipe["uranium-fuel-cell"].category = "advanced-crafting"
-data.raw.recipe["uranium-fuel-cell"].ingredients = {{"fuel-pellet", 2}, {"forging-zirconium", 4}, {"boron-oxide", 2}, {"silver-plate", 4}, 
+data.raw.recipe["uranium-fuel-cell"].ingredients = {{"fuel-pellet", 2}, {"forging-zirconium", 4}, {"boron-oxide", 2}, {"silver-ingot", 4}, 
 	{"graphite-block", 1}}
 data.raw.recipe["uranium-fuel-cell"].result_count = 2
 
@@ -11,7 +10,7 @@ data.raw.recipe["uranium-fuel-cell"].result_count = 2
 data.raw.recipe["nuclear-fuel-reprocessing"].category = "chemical-plant"
 data.raw.recipe["nuclear-fuel-reprocessing"].energy_required = 20
 data.raw.recipe["nuclear-fuel-reprocessing"].ingredients = {{"used-up-uranium-fuel-cell", 1}, {type = "fluid", name = "nitric-acid", amount = 40}, 
-	{"zinc-plate", 1}}
+	{"zinc-ingot", 1}}
 data.raw.recipe["nuclear-fuel-reprocessing"].results = {{"uranium-238-oxide", 1}, {"zirconium-sponge", 6}, {type = "fluid", name = "waste-water", amount = 40}, 
 	{"silver-sponge", 1}}
 
@@ -19,7 +18,7 @@ data.raw.recipe["nuclear-fuel-reprocessing"].results = {{"uranium-238-oxide", 1}
 data.raw.recipe["rocket-fuel"].energy_required = 50
 data.raw.recipe["rocket-fuel"].category = "chemical-plant"
 data.raw.recipe["rocket-fuel"].ingredients = {{"solid-fuel", 20}, {type = "fluid", name = "hydrogen", amount = 100}, 
-	{type = "fluid", name = "oxygen", amount = 500}, {type = "fluid", name = "ammonia", amount = 50}, {"aluminum-plate", 8}, {"lithium-perchlorate", 3}}
+	{type = "fluid", name = "oxygen", amount = 500}, {type = "fluid", name = "ammonia", amount = 50}, {"aluminum-ingot", 8}, {"lithium-perchlorate", 3}}
 
 --Base "low-density-structure"
 data.raw.recipe["low-density-structure"].energy_required = 50
@@ -74,7 +73,7 @@ data:extend(
 	category = "forge",
 	energy_required = 50,
 	enabled = false,
-	ingredients = {{"forging-superalloy", 5}, {"brick-zirconia", 10}, {"nitride-block", 5}, {"tungsten-block", 10}, {"forging-zirconium", 5}, 
+	ingredients = {{"forging-superalloy", 5}, {"brick-zirconia", 10}, {"nitride-block", 5}, {"tungsten-ingot", 10}, {"forging-zirconium", 5}, 
 		{"graphite-block", 5}, {"fiber-glass", 20}},
 	result = "rocket-thermal"
 },

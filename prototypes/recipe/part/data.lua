@@ -16,9 +16,9 @@ data.raw.recipe["advanced-circuit"].expensive = {energy_required = 5, enabled = 
 --Base "processing-unit"
 data.raw.recipe["processing-unit"].category = "advanced-crafting"
 data.raw.recipe["processing-unit"].normal = {energy_required = 10, enabled = false, ingredients = {{"etched-3", 1}, {"wire-solder-2", 2}, 
-	{"components-3", 1}, {"aluminum-plate", 2}, {"plastic-bar", 2}}, result = "processing-unit"}
+	{"components-3", 1}, {"aluminum-ingot", 2}, {"plastic-bar", 2}}, result = "processing-unit"}
 data.raw.recipe["processing-unit"].expensive = {energy_required = 10, enabled = false, ingredients = {{"etched-3", 1}, {"wire-solder-2", 4}, 
-	{"components-3", 4}, {"aluminum-plate", 4}, {"plastic-bar", 4}}, result = "processing-unit"}
+	{"components-3", 4}, {"aluminum-ingot", 4}, {"plastic-bar", 4}}, result = "processing-unit"}
 
 
 data:extend(
@@ -135,7 +135,7 @@ data:extend(
 	category = "machine",
 	energy_required = 4,
 	enabled = false,
-	ingredients = {{"tungsten-block", 1}},
+	ingredients = {{"tungsten-ingot", 1}},
 	result = "wire-tungsten",
 	result_count = 4
 },
@@ -146,7 +146,7 @@ data:extend(
 	category = "machine",
 	energy_required = 2,
 	enabled = false,
-	ingredients = {{"gold-plate", 1}},
+	ingredients = {{"gold-ingot", 1}},
 	result = "wire-gold",
 	result_count = 4
 },
@@ -203,7 +203,7 @@ data:extend(
 	category = "machine",
 	energy_required = 4,
 	enabled = false,
-	ingredients = {{"nickel-plate", 2}, {"tungsten-block", 1}, {"glass", 1}, {"wire-copper", 4}},
+	ingredients = {{"nickel-ingot", 2}, {"tungsten-ingot", 1}, {"glass", 1}, {"wire-copper", 4}},
 	result = "components-2"
 },
 --Electron Valve Components B
@@ -273,44 +273,6 @@ data:extend(
 	ingredients = {{"wafer-2", 2}, {"wire-tinned", 2}},
 	result = "wafer-solar"
 },
---[[
---
---PRIMARY DATA PARTS
---Solenoid Relay
-{
-	type = "recipe",
-    name = "data-1",
-	category = "crafting",
-	energy_required = 5,
-	enabled = false,
-	ingredients = {{"wire-tinned", 2}, {"wire-copper", 8}, {"rod-2", 1}, {"bronze-plate", 1}},
-	result = "data-1",
-	result_count = 2
-},
---Integrated Transistor Package
-{
-	type = "recipe",
-    name = "data-2",
-	category = "crafting-with-fluid",
-	energy_required = 10,
-	enabled = false,
-	ingredients = {{"wire-tinned", 2}, {"wafer-2", 2}, {type = "fluid", name = "uncured-resol", amount = 10}, {"chromium-plate", 1}, 
-		{"silver-plate", 1}},
-	result = "data-2",
-	result_count = 2
-},
---Central Processing Unit
-{
-	type = "recipe",
-    name = "data-3",
-	category = "crafting-with-fluid",
-	energy_required = 20,
-	enabled = false,
-	ingredients = {{"wire-gold", 4}, {"wafer-3", 2}, {type = "fluid", name = "uncured-epoxy", amount = 10}, {"tungsten-block", 1}, {"platinum-plate", 1}},
-	result = "data-3",
-	result_count = 2
-},
-]]--
 
 
 --

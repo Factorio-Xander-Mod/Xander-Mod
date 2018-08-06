@@ -1,4 +1,3 @@
-
 --Base Overrides
 
 --Base "solar-panel-equipment"
@@ -27,13 +26,13 @@ data.raw.recipe["battery-mk2-equipment"].ingredients = {{"battery-equipment", 5}
 --Base "energy-shield-equipment"
 data.raw.recipe["energy-shield-equipment"].category = "crafting"
 data.raw.recipe["energy-shield-equipment"].energy_required = 10
-data.raw.recipe["energy-shield-equipment"].ingredients = {{"control-2", 2}, {"forging-steel", 10}, {"coil-1", 20}, {"aluminum-plate", 10}}
+data.raw.recipe["energy-shield-equipment"].ingredients = {{"control-2", 2}, {"forging-steel", 10}, {"coil-1", 20}, {"aluminum-ingot", 10}}
 
 --Base "energy-shield-mk2-equipment"
 data.raw.recipe["energy-shield-mk2-equipment"].category = "crafting"
 data.raw.recipe["energy-shield-mk2-equipment"].energy_required = 20
 data.raw.recipe["energy-shield-mk2-equipment"].ingredients = {{"energy-shield-equipment", 10}, {"control-2", 5}, {"forging-stainless", 20}, {"coil-2", 20}, 
-	{"cobalt-plate", 20}, {"battery-1", 2}}
+	{"cobalt-ingot", 20}, {"battery-1", 2}}
 
 --Base "personal-laser-defense-equipment"
 data.raw.recipe["personal-laser-defense-equipment"].category = "crafting"
@@ -93,7 +92,7 @@ data:extend(
 	category = "crafting",
 	energy_required = 20,
 	enabled = false,
-	ingredients = {{"uranium-fuel-cell", 20}, {"tungsten-block", 100}, {"uranium-238", 100}, {"forging-alloy", 50}, {"control-3", 20}, {"heat-pipe", 10}, 
+	ingredients = {{"uranium-fuel-cell", 20}, {"tungsten-ingot", 100}, {"uranium-238", 100}, {"forging-alloy", 50}, {"control-3", 20}, {"heat-pipe", 10}, 
 		{"forging-zirconium", 20}, {"mechanism-3", 10}},
 	result = "fission-reactor-equipment"
 },
@@ -117,7 +116,7 @@ data:extend(
 	category = "crafting",
 	energy_required = 50,
 	enabled = false,
-	ingredients = {{"energy-shield-mk2-equipment", 10}, {"control-3", 10}, {"forging-alloy", 40}, {"coil-3", 40}, {"platinum-plate", 40}, {"battery-2", 5}},
+	ingredients = {{"energy-shield-mk2-equipment", 10}, {"control-3", 10}, {"forging-alloy", 40}, {"coil-3", 40}, {"platinum-ingot", 40}, {"battery-2", 5}},
 	result = "energy-shield-mk3-equipment"
 },
 --Energy Shield Equipment Mark 4
@@ -127,7 +126,7 @@ data:extend(
 	category = "crafting",
 	energy_required = 100,
 	enabled = false,
-	ingredients = {{"energy-shield-mk3-equipment", 5}, {"control-3", 20}, {"forging-titanium", 80}, {"coil-3", 80}, {"re-plate", 80}, {"battery-3", 10}},
+	ingredients = {{"energy-shield-mk3-equipment", 5}, {"control-3", 20}, {"forging-titanium", 80}, {"coil-3", 80}, {"re-ingot", 80}, {"battery-3", 10}},
 	result = "energy-shield-mk4-equipment"
 },
 --Personal Laser Defense Equipment Mark 2

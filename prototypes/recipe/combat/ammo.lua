@@ -62,7 +62,7 @@ data.raw.recipe["explosive-rocket"].ingredients = {{"rocket", 1}, {"explosives",
 --Base "atomic-bomb"
 data.raw.recipe["atomic-bomb"].category = "advanced-crafting"
 data.raw.recipe["atomic-bomb"].energy_required = 50
-data.raw.recipe["atomic-bomb"].ingredients = {{"uranium-235", 30}, {"explosives", 50}, {"forging-alloy", 20}, {"tungsten-block", 5}, {"mechanism-3", 5}, 
+data.raw.recipe["atomic-bomb"].ingredients = {{"uranium-235", 30}, {"explosives", 50}, {"forging-alloy", 20}, {"tungsten-ingot", 5}, {"mechanism-3", 5}, 
 	{"control-3", 5}, {"battery-3", 5}, {"rocket", 10}}
 
 --Base "flamethrower-ammo"

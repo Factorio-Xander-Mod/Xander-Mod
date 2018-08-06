@@ -53,7 +53,7 @@ data:extend(
 	category = "machine",
 	energy_required = 1,
 	enabled = false,
-	ingredients = {{"copper-plate", 4}, {"gold-plate", 2}},
+	ingredients = {{"copper-plate", 4}, {"gold-ingot", 2}},
 	result = "sheet-gilded",
 	result_count = 8
 },
@@ -64,7 +64,7 @@ data:extend(
 	category = "forge",
 	energy_required = 4,
 	enabled = false,
-	ingredients = {{"steel-plate", 1}, {"cobalt-plate", 1}, {"nickel-plate", 1}, {"aluminum-plate", 1}, {"re-plate", 1}},
+	ingredients = {{"steel-plate", 1}, {"cobalt-ingot", 1}, {"nickel-ingot", 1}, {"aluminum-ingot", 1}, {"re-ingot", 1}},
 	result = "sheet-mu",
 	result_count = 4
 },
@@ -207,7 +207,7 @@ data:extend(
 	category = "chemistry",
 	energy_required = 5,
 	enabled = false,
-	ingredients = {{"plastic-bar", 2}, {"silver-plate", 2}, {type = "fluid", name = "water", amount = 10}, {"sodium-hydroxide", 2}, {"zinc-oxide", 2}},
+	ingredients = {{"plastic-bar", 2}, {"silver-ingot", 2}, {type = "fluid", name = "water", amount = 10}, {"sodium-hydroxide", 2}, {"zinc-oxide", 2}},
 	result = "cell-2"
 },
 --Lithium-Ion Supercapacitor Cell

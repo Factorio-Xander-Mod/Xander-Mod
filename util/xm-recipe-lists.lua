@@ -79,31 +79,23 @@ end
 --Ingots
 xm_ingot_recipes = {}
 do
-	local names = {"aluminum-ingot", "chromium-ingot", "cobalt-ingot", "gold-ingot", "lead-ingot", "magnesium-ingot", "nickel-ingot", "platinum-ingot", "re-ingot", "silver-ingot", "solder-1-ingot",
-		"solder-2-ingot", "silicon-ingot", "tin-ingot", "titanium-ingot", "tungsten-ingot", "u-238-ingot", "vanadium-ingot", "zinc-ingot"}
-	local icons = {"__xander-mod__/graphics/recipe/refining/hall-heroult.png", "__xander-mod__/graphics/recipe/refining/chromium-reduction.png", "__xander-mod__/graphics/recipe/refining/cobalt-electrowinning.png",
-		"__xander-mod__/graphics/recipe/refining/miller-process.png", nil, "__xander-mod__/graphics/recipe/refining/magnesium-electrolysis.png", nil, "__xander-mod__/graphics/recipe/refining/platinum-smelting.png",
-		"__xander-mod__/graphics/recipe/refining/re-reduction.png", "__xander-mod__/graphics/recipe/refining/silver-electrowinning.png", nil, nil, "__xander-mod__/graphics/recipe/refining/acheson-silicon.png", nil,
-		"__xander-mod__/graphics/recipe/refining/titanium-remelting.png", nil, "__xander-mod__/graphics/recipe/refining/238-reduction.png", "__xander-mod__/graphics/recipe/refining/vanadium-reduction.png",
-		"__xander-mod__/graphics/recipe/refining/zinc-electrowinning.png"}
-	local categories = {"refining", "refining", "electrolysis", "forge", "kiln", "refining", "basic-refining", "forge", "refining", "electrolysis", "smelting", "forge", "refining", "kiln", "forge", "forge",
-		"refining", "refining", "electrolysis"}
-	local tints = {nil, nil, {primary = {r = 0.000, g = 0.110, b = 0.588}, secondary = {r = 0.564, g = 0.795, b = 0.000}, tertiary = {r = 0.678, g = 0.565, b = 0.478}}, nil, nil, nil, nil, nil, nil,
-		{primary = {r = 0.000, g = 0.110, b = 0.588}, secondary = {r = 0.564, g = 0.795, b = 0.000}, tertiary = {r = 0.678, g = 0.565, b = 0.478}}, nil, nil, nil, nil, nil, nil, nil, nil,
-		{primary = {r = 0.000, g = 0.110, b = 0.588}, secondary = {r = 0.564, g = 0.795, b = 0.000}, tertiary = {r = 0.678, g = 0.565, b = 0.478}}}
-	local times = {800, 10, 100, 50, 4, 800, 8, 100, 5, 100, 5, 10, 100, 4, 200, 10, 5, 10, 100}
-	local enableds = {false, false, false, false, true, false, false, false, false, false, false, false, false, true, false, false, false, false, false}
+	local names = {"aluminum-ingot", "chromium-ingot", "cobalt-ingot", "gold-ingot", "lead-ingot", "magnesium-ingot", "nickel-ingot", "platinum-ingot", "re-ingot", "silver-ingot", "solder-1-ingot","solder-2-ingot", "silicon-ingot", "tin-ingot", "titanium-ingot", "tungsten-ingot", "uranium-238-ingot", "uranium-235-ingot", "vanadium-ingot", "zinc-ingot"}
+	local icons = {"__xander-mod__/graphics/recipe/refining/hall-heroult.png", "__xander-mod__/graphics/recipe/refining/chromium-reduction.png", "__xander-mod__/graphics/recipe/refining/cobalt-electrowinning.png", "__xander-mod__/graphics/recipe/refining/miller-process.png", nil, "__xander-mod__/graphics/recipe/refining/magnesium-electrolysis.png", nil, "__xander-mod__/graphics/recipe/refining/platinum-smelting.png", "__xander-mod__/graphics/recipe/refining/re-reduction.png", "__xander-mod__/graphics/recipe/refining/silver-electrowinning.png", nil, nil, "__xander-mod__/graphics/recipe/refining/acheson-silicon.png", nil, "__xander-mod__/graphics/recipe/refining/titanium-remelting.png", nil, "__xander-mod__/graphics/recipe/refining/238-reduction.png", "__xander-mod__/graphics/recipe/refining/weapons-reduction.png", "__xander-mod__/graphics/recipe/refining/vanadium-reduction.png", "__xander-mod__/graphics/recipe/refining/zinc-electrowinning.png"}
+	local categories = {"refining", "refining", "electrolysis", "forge", "kiln", "refining", "basic-refining", "forge", "refining", "electrolysis", "smelting", "forge", "refining", "kiln", "forge", "forge", "refining", "refining", "refining", "electrolysis"}
+	local tints = {nil, nil, {primary = {r = 0.000, g = 0.110, b = 0.588}, secondary = {r = 0.564, g = 0.795, b = 0.000}, tertiary = {r = 0.678, g = 0.565, b = 0.478}}, nil, nil, nil, nil, nil, nil, {primary = {r = 0.000, g = 0.110, b = 0.588}, secondary = {r = 0.564, g = 0.795, b = 0.000}, tertiary = {r = 0.678, g = 0.565, b = 0.478}}, nil, nil, nil, nil, nil, nil, nil, nil, nil, {primary = {r = 0.000, g = 0.110, b = 0.588}, secondary = {r = 0.564, g = 0.795, b = 0.000}, tertiary = {r = 0.678, g = 0.565, b = 0.478}}}
+	local times = {800, 10, 100, 50, 4, 800, 8, 100, 5, 100, 5, 10, 100, 4, 200, 10, 5, 5, 10, 100}
+	local enableds = {false, false, false, false, true, false, false, false, false, false, false, false, false, true, false, false, false, false, false, false}
 	local ingredients = {{{"aluminum-oxide", 40}, {"graphite-block", 15}, {"cryolite-mixture", 4}}, {{"chromium-oxide", 1}, {"magnesium-ingot", 3}},
 		{{"cobalt-oxide", 10}, {type = "fluid", name = "sulfuric-acid", amount = 10}, {type = "fluid", name = "water", amount = 50}}, {{"gold-sponge", 10}, {type = "fluid", name = "chlorine", amount = 20}, {"calcium-oxide", 1}},
 		{{"massive-sulfide", 2}}, {{"magnesium-chloride", 40}, {"graphite-block", 1}}, {{"igneous-sulfide", 2}, {"limestone", 1}}, {{"platinum-sponge", 20}, {"borax", 1}, {"calcium-oxide", 1}},
 		{{"re-oxide", 1}, {"magnesium-ingot", 2}}, {{"silver-sponge", 10}, {type = "fluid", name = "nitric-acid", amount = 10}, {type = "fluid", name = "water", amount = 20}}, {{"tin-ingot", 3}, {"lead-ingot", 2}},
 		{{"tin-ingot", 7}, {"copper-plate", 2}, {"silver-ingot", 1}}, {{"quartz-sand", 20}, {"graphite-block", 1}, {"coke", 16}}, {{"skarn", 2}}, {{"titanium-sponge", 20}, {"graphite-block", 1}}, {{"tungsten-powder", 1}},
-		{{"uranium-238-oxide", 1}, {"magnesium-ingot", 2}}, {{"vanadium-oxide", 1}, {"magnesium-ingot", 5}}, {{"zinc-oxide", 10}, {type = "fluid", name = "sulfuric-acid", amount = 10}, {type = "fluid", name = "water", amount = 20}}}
+		{{"uranium-238-oxide", 1}, {"magnesium-ingot", 2}}, {{"uranium-weapons-oxide", 1}, {"magnesium-ingot", 2}}, {{"vanadium-oxide", 1}, {"magnesium-ingot", 5}}, {{"zinc-oxide", 10}, {type = "fluid", name = "sulfuric-acid", amount = 10}, {type = "fluid", name = "water", amount = 20}}}
 	local results = {{{"aluminum-ingot", 80}, {type = "fluid", name = "flue-gas", amount = 600}}, {{"chromium-ingot", 2}, {"magnesium-oxide", 3}},
 		{{"cobalt-ingot", 10}, {type = "fluid", name = "waste-water", amount = 50}}, {{"gold-ingot", 10}, {"slag", 1}}, {{"lead-ingot", 1}}, {{"magnesium-ingot", 40}, {type = "fluid", name = "chlorine", amount = 400}},
 		{{"nickel-ingot", 1}}, {{"platinum-ingot", 20}, {"slag", 2}}, {{"re-ingot", 1}, {"magnesium-oxide", 2}}, {{"silver-ingot", 10}, {"sludge", 1}, {type = "fluid", name = "gray-water", amount = 20}}, {{"solder-1-ingot", 5}},
 		{{"solder-2-ingot", 10}}, {{"silicon-ingot", 20}, {type = "fluid", name = "flue-gas", amount = 200}}, {{"tin-ingot", 1}}, {{"titanium-ingot", 20}, {"slag", 2}}, {{"tungsten-ingot", 1}},
-		{{"uranium-238-ingot", 1}, {"magnesium-oxide", 2}}, {{"vanadium-ingot", 2}, {"magnesium-oxide", 5}}, {{"zinc-ingot", 10}, {type = "fluid", name = "gray-water", amount = 20}}}
+		{{"uranium-238", 1}, {"magnesium-oxide", 2}}, {{"uranium-235", 1}, {"magnesium-oxide", 2}}, {{"vanadium-ingot", 2}, {"magnesium-oxide", 5}}, {{"zinc-ingot", 10}, {type = "fluid", name = "gray-water", amount = 20}}}
 	--Load all of the single-parameter lists into one big list of recipes, where each entry has the parameters for one complete recipe
 	for i, name in ipairs(names) do
 		table.insert(xm_ingot_recipes, {name, icons[i], categories[i], tints[i], times[i], enableds[i], ingredients[i], results[i], "ingot"})
@@ -178,9 +170,9 @@ do
 		{{"forging-alloy", 2}, {"nitride-block", 4}, {"boule-diamond", 2}, {"brass-billet", 2}}, {{"electronic-circuit", 4}, {"wire-copper", 8}, {"wire-tinned", 2}},
 		{{"advanced-circuit", 4}, {"electronic-circuit", 4}, {"wire-tinned", 8}, {"rubber", 4}, {"cable-insulated", 4}},
 		{{"processing-unit", 4}, {"advanced-circuit", 4}, {"wire-tinned", 16}, {"wire-gold", 8}, {"plastic-bar", 4}, {"cable-insulated", 2}},
-		{{"crystal-ruby", 1}, {"crystal-quartz", 5}, {"small-lamp", 2}, {"control-2", 2}, {"forging-stainless", 2}, {"aluminum-plate", 5}},
+		{{"crystal-ruby", 1}, {"crystal-quartz", 5}, {"small-lamp", 2}, {"control-2", 2}, {"forging-stainless", 2}, {"aluminum-ingot", 5}},
 		{{type = "fluid", name = "carbon-dioxide", amount = 50}, {"crystal-corundum", 5}, {"lamp-2", 2}, {"control-3", 2}, {"forging-alloy", 2}, {"copper-plate", 5}},
-		{{"crystal-yag", 1}, {"crystal-diamond", 5}, {"lamp-2", 4}, {"control-3", 4}, {"forging-titanium", 4}, {"silver-plate", 10}}}
+		{{"crystal-yag", 1}, {"crystal-diamond", 5}, {"lamp-2", 4}, {"control-3", 4}, {"forging-titanium", 4}, {"silver-ingot", 10}}}
 	local results = {{{"mechanical-steam-engine", 1}}, {{"piston-cylinder", 1}}, {{"mechanism-0", 1}}, {{"mechanism-1", 1}}, {{"mechanism-2", 1}}, {{"mechanism-3", 1}}, {{"engine-unit", 1}}, {{"wheel-1", 2}},
 		{{"wheel-2", 1}}, {{"flying-robot-frame", 1}}, {{"flying-robot-frame-2", 1}}, {{"tooling-1", 1}}, {{"tooling-1", 1}}, {{"tooling-1", 1}}, {{"tooling-2", 1}}, {{"tooling-3", 1}}, {{"control-1", 1}}, {{"control-2", 1}},
 		{{"control-3", 1}}, {{"lasing-1", 1}}, {{"lasing-2", 1}}, {{"lasing-3", 1}}}
@@ -221,7 +213,7 @@ do
 	{{"brick-spinel", 40}, {"monel-billet", 20}, {"forging-steel", 10}, {"transformer-2", 1}, {"control-1", 1}, {"pump", 1}},
 	{{"brick-clay-graphite", 40}, {"graphite-block", 10}, {"forging-steel", 10}, {"transformer-1", 2}, {"control-1", 2}, {"mechanism-1", 10}},
 	{{"brick-spinel", 20}, {"monel-billet", 10}, {"forging-steel", 5}, {"transformer-1", 1}, {"control-1", 1}, {"mechanism-1", 5}},
-	{{"furnace-4", 2}, {"electric-furnace", 2}, {"brick-zirconia", 100}, {"tungsten-block", 50}, {"mechanism-3", 20}, {"forging-alloy", 50},   {"transformer-3", 20}, {"control-3", 20}}}
+	{{"furnace-4", 2}, {"electric-furnace", 2}, {"brick-zirconia", 100}, {"tungsten-ingot", 50}, {"mechanism-3", 20}, {"forging-alloy", 50},   {"transformer-3", 20}, {"control-3", 20}}}
 	local results = {{{"stone-furnace", 1}}, {{"furnace-2", 1}}, {{"steel-furnace", 1}}, {{"furnace-4", 1}}, {{"furnace-4", 1}}, {{"electric-furnace", 1}}, {{"electric-furnace", 1}}, {{"furnace-6", 1}}}
 	--Load all of the single-parameter lists into one big list of recipes, where each entry has the parameters for one complete recipe
 	for i, name in ipairs(names) do

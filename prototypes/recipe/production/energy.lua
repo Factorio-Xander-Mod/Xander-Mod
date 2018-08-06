@@ -25,7 +25,7 @@ data.raw.recipe["steam-turbine"].ingredients = {{"forging-alloy", 10}, {"forging
 --Base "heat-pipe"
 data.raw.recipe["heat-pipe"].category = "crafting"
 data.raw.recipe["heat-pipe"].energy_required = 1
-data.raw.recipe["heat-pipe"].ingredients = {{"forging-stainless", 10}, {"silver-plate", 20}, {"fiber-glass", 20}}
+data.raw.recipe["heat-pipe"].ingredients = {{"forging-stainless", 10}, {"silver-ingot", 20}, {"fiber-glass", 20}}
 
 --Base "nuclear-reactor"
 data.raw.recipe["nuclear-reactor"].category = "crafting"
@@ -126,7 +126,7 @@ data:extend(
 	category = "crafting",
 	energy_required = 20,
 	enabled = false,
-	ingredients = {{"solar-panel-2", 1}, {"wafer-solar", 32}, {"forging-stainless", 8}, {"silver-plate", 16}, {"fused-quartz", 8}, {"processing-unit", 4}},
+	ingredients = {{"solar-panel-2", 1}, {"wafer-solar", 32}, {"forging-stainless", 8}, {"silver-ingot", 16}, {"fused-quartz", 8}, {"processing-unit", 4}},
 	result = "solar-panel-3"
 },
 --Base "accumulator" placeholder
@@ -148,7 +148,7 @@ data:extend(
 	category = "crafting",
 	energy_required = 2,
 	enabled = false,
-	ingredients = {{"tungsten-block", 2}, {"fused-quartz", 4}, {"electronic-circuit", 2}, {"transformer-2", 1}, {"advanced-circuit", 1}},
+	ingredients = {{"tungsten-ingot", 2}, {"fused-quartz", 4}, {"electronic-circuit", 2}, {"transformer-2", 1}, {"advanced-circuit", 1}},
 	result = "lamp-2"
 },
 --Filament-Based Small Lamp
@@ -158,7 +158,7 @@ data:extend(
 	category = "crafting",
 	energy_required = 1,
 	enabled = false,
-	ingredients = {{"tungsten-block", 1}, {"glass", 4}, {"brass-billet", 2}, {"forging-iron", 2}, {"electronic-circuit", 1}},
+	ingredients = {{"tungsten-ingot", 1}, {"glass", 4}, {"brass-billet", 2}, {"forging-iron", 2}, {"electronic-circuit", 1}},
 	result = "small-lamp"
 }
 

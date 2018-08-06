@@ -57,7 +57,7 @@ data:extend(
 	category = "forge",
 	energy_required = 64,
 	enabled = false,
-	ingredients = {{"raw-iron", 16}, {"graphite-block", 1}, {"calcium-oxide", 2}, {"zinc-plate", 2}, {type = "fluid", name = "oxygen", amount = 40}},
+	ingredients = {{"raw-iron", 16}, {"graphite-block", 1}, {"calcium-oxide", 2}, {"zinc-ingot", 2}, {type = "fluid", name = "oxygen", amount = 40}},
 	results = {{"forging-steel", 4}, {type = "fluid", name = "flue-gas", amount = 40}, {"slag", 2}},
 	subgroup = "structure"
 },
@@ -70,7 +70,7 @@ data:extend(
 	category = "forge",
 	energy_required = 32,
 	enabled = false,
-	ingredients = {{"forging-steel", 4}, {"nickel-plate", 4}, {"tungsten-powder", 8}, {"graphite-powder", 2}},
+	ingredients = {{"forging-steel", 4}, {"nickel-ingot", 4}, {"tungsten-powder", 8}, {"graphite-powder", 2}},
 	results = {{"forging-alloy", 4}, {"zinc-oxide", 1}},
 	subgroup = "structure"
 },
@@ -83,7 +83,7 @@ data:extend(
 	category = "forge",
 	energy_required = 64,
 	enabled = false,
-	ingredients = {{"forging-steel", 4}, {"chromium-plate", 2}, {"vanadium-plate", 2}, {"cobalt-plate", 2}, {"graphite-powder", 2}},
+	ingredients = {{"forging-steel", 4}, {"chromium-ingot", 2}, {"vanadium-ingot", 2}, {"cobalt-ingot", 2}, {"graphite-powder", 2}},
 	results = {{"forging-alloy", 4}, {"zinc-oxide", 1}},
 	subgroup = "structure"
 },
@@ -96,7 +96,7 @@ data:extend(
 	category = "forge",
 	energy_required = 32,
 	enabled = false,
-	ingredients = {{"forging-steel", 4}, {"chromium-plate", 4}, {"nickel-plate", 2}},
+	ingredients = {{"forging-steel", 4}, {"chromium-ingot", 4}, {"nickel-ingot", 2}},
 	results = {{"forging-stainless", 4}, {"zinc-oxide", 1}},
 	subgroup = "structure"
 },				
@@ -107,7 +107,7 @@ data:extend(
 	category = "forge",
 	energy_required = 8,
 	enabled = false,
-	ingredients = {{"aluminum-plate", 8}, {"copper-plate", 1}, {"magnesium-plate", 1}, {"zinc-plate", 1}},
+	ingredients = {{"aluminum-ingot", 8}, {"copper-plate", 1}, {"magnesium-ingot", 1}, {"zinc-ingot", 1}},
 	result = "forging-aluminum",
 	result_count = 2
 },	
@@ -118,7 +118,7 @@ data:extend(
 	category = "forge",
 	energy_required = 16,
 	enabled = false,
-	ingredients = {{"nickel-plate", 8}, {"titanium-plate", 1}, {"aluminum-plate", 1}, {"cobalt-plate", 1}, {"chromium-plate", 1}},
+	ingredients = {{"nickel-ingot", 8}, {"titanium-ingot", 1}, {"aluminum-ingot", 1}, {"cobalt-ingot", 1}, {"chromium-ingot", 1}},
 	result = "forging-superalloy",
 	result_count = 2
 },
@@ -129,7 +129,7 @@ data:extend(
 	category = "forge",
 	energy_required = 16,
 	enabled = false,
-	ingredients = {{"titanium-plate", 8}, {"aluminum-plate", 1}, {"vanadium-plate", 1}, {"tin-ingot", 1}},
+	ingredients = {{"titanium-ingot", 8}, {"aluminum-ingot", 1}, {"vanadium-ingot", 1}, {"tin-ingot", 1}},
 	result = "forging-titanium",
 	result_count = 2
 },
@@ -182,7 +182,7 @@ data:extend(
 	category = "forge",
 	energy_required = 5,
 	enabled = false,
-	ingredients = {{"tungsten-carbide", 2}, {"cobalt-plate", 1}},
+	ingredients = {{"tungsten-carbide", 2}, {"cobalt-ingot", 1}},
 	result = "tungsten-cermet"
 },
 --Silicon Nitride Block

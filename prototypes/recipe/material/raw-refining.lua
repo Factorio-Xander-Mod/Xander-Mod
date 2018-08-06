@@ -114,7 +114,7 @@ data:extend(
 	energy_required = 800,
 	enabled = false,
 	ingredients = {{"aluminum-oxide", 40}, {"graphite-block", 15}, {"cryolite-mixture", 4}},
-	results = {{"aluminum-plate", 80}, {type = "fluid", name = "flue-gas", amount = 600}},
+	results = {{"aluminum-ingot", 80}, {type = "fluid", name = "flue-gas", amount = 600}},
 	subgroup = "raw-material"
 },
 --Transferred
@@ -253,7 +253,7 @@ data:extend(
 	energy_required = 100,
 	enabled = false,
 	ingredients = {{"cobalt-oxide", 10}, {type = "fluid", name = "sulfuric-acid", amount = 10}, {type = "fluid", name = "water", amount = 50}},
-	results = {{"cobalt-plate", 10}, {type = "fluid", name = "waste-water", amount = 50}},
+	results = {{"cobalt-ingot", 10}, {type = "fluid", name = "waste-water", amount = 50}},
 	subgroup = "raw-material"
 },
 --
@@ -270,7 +270,7 @@ data:extend(
 	category = "basic-refining",
 	energy_required = 8,
 	ingredients = {{"magnetic", 2}, {"limestone", 1}},
-	result = "nickel-plate"
+	result = "nickel-ingot"
 },
 --Proper Nickel Smelting
 {
@@ -282,7 +282,7 @@ data:extend(
 	energy_required = 50,
 	enabled = false,
 	ingredients = {{"nickel-oxide", 10}, {"coke", 5}, {"calcium-oxide", 2}},
-	results = {{"nickel-plate", 10}, {"slag", 2}, {type = "fluid", name = "flue-gas", amount = 50}},
+	results = {{"nickel-ingot", 10}, {"slag", 2}, {type = "fluid", name = "flue-gas", amount = 50}},
 	subgroup = "raw-material"
 },
 --Nickel Electrowinning with Platinum Sponge
@@ -301,7 +301,7 @@ data:extend(
 	energy_required = 400,
 	enabled = false,
 	ingredients = {{"magnetic", 20}, {type = "fluid", name = "sulfuric-acid", amount = 40}, {type = "fluid", name = "water", amount = 100}},
-	results = {{"nickel-plate", 20}, {"platinum-sponge", 1}, {type = "fluid", name = "waste-water", amount = 100}},
+	results = {{"nickel-ingot", 20}, {"platinum-sponge", 1}, {type = "fluid", name = "waste-water", amount = 100}},
 	subgroup = "raw-material"
 },
 --Transferred
@@ -315,23 +315,11 @@ data:extend(
 	energy_required = 100,
 	enabled = false,
 	ingredients = {{"platinum-sponge", 20}, {"borax", 1}, {"calcium-oxide", 1}},
-	results = {{"platinum-plate", 20}, {"slag", 2}},
+	results = {{"platinum-ingot", 20}, {"slag", 2}},
 	subgroup = "raw-material"
 },
 --
 --SKARN
---Transferred
---[[
---Crude Tin Plate
-{
-	type = "recipe",
-    name = "kiln-tin",
-	category = "kiln",
-	energy_required = 4,
-	ingredients = {{"skarn", 2}},
-	result = "tin-plate"
-},
-]]--
 --Proper Tin Smelting
 {
 	type = "recipe",
@@ -367,7 +355,7 @@ data:extend(
 	energy_required = 10,
 	enabled = false,
 	ingredients = {{"tungsten-powder", 1}},
-	result = "tungsten-block"
+	result = "tungsten-ingot"
 },
 --Transferred
 --Miller Process Gold Smelting
@@ -380,7 +368,7 @@ data:extend(
 	energy_required = 50,
 	enabled = false,
 	ingredients = {{"gold-sponge", 10}, {type = "fluid", name = "chlorine", amount = 20}, {"calcium-oxide", 1}},
-	results = {{"gold-plate", 10}, {"slag", 1}},
+	results = {{"gold-ingot", 10}, {"slag", 1}},
 	subgroup = "raw-material"
 },
 --Scheelite Dissolution
@@ -448,8 +436,8 @@ data:extend(
 	category = "refining",
 	energy_required = 10,
 	enabled = false,
-	ingredients = {{"chromium-oxide", 1}, {"magnesium-plate", 3}},
-	results = {{"chromium-plate", 2}, {"magnesium-oxide", 3}},
+	ingredients = {{"chromium-oxide", 1}, {"magnesium-ingot", 3}},
+	results = {{"chromium-ingot", 2}, {"magnesium-oxide", 3}},
 	subgroup = "raw-material"
 },
 --Rutile Chlorination
@@ -487,7 +475,7 @@ data:extend(
 	category = "refining",
 	energy_required = 5,
 	enabled = false,
-	ingredients = {{type = "fluid", name = "titanium-tetrachloride", amount = 10}, {"magnesium-plate", 2}},
+	ingredients = {{type = "fluid", name = "titanium-tetrachloride", amount = 10}, {"magnesium-ingot", 2}},
 	results = {{"titanium-sponge", 1}, {"magnesium-chloride", 2}},
 	subgroup = "raw-material"
 },
@@ -502,7 +490,7 @@ data:extend(
 	energy_required = 200,
 	enabled = false,
 	ingredients = {{"titanium-sponge", 20}, {"graphite-block", 1}},
-	results = {{"titanium-plate", 20}, {"slag", 2}},
+	results = {{"titanium-ingot", 20}, {"slag", 2}},
 	subgroup = "raw-material"
 },
 --Zirconia Sand Chlorination
@@ -540,7 +528,7 @@ data:extend(
 	category = "refining",
 	energy_required = 5,
 	enabled = false,
-	ingredients = {{"zirconium-tetrachloride", 1}, {"magnesium-plate", 2}},
+	ingredients = {{"zirconium-tetrachloride", 1}, {"magnesium-ingot", 2}},
 	results = {{"zirconium-sponge", 1}, {"magnesium-chloride", 2}},
 	subgroup = "raw-material"
 },
@@ -665,24 +653,12 @@ data:extend(
 	category = "refining",
 	energy_required = 10,
 	enabled = false,
-	ingredients = {{"vanadium-oxide", 1}, {"magnesium-plate", 5}},
-	results = {{"vanadium-plate", 2}, {"magnesium-oxide", 5}},
+	ingredients = {{"vanadium-oxide", 1}, {"magnesium-ingot", 5}},
+	results = {{"vanadium-ingot", 2}, {"magnesium-oxide", 5}},
 	subgroup = "raw-material"
 },
 --
 --MASSIVE SULFIDE
---Transferred
---[[
---Crude Lead Plate
-{
-	type = "recipe",
-    name = "smelting-lead",
-	category = "smelting",
-	energy_required = 4,
-	ingredients = {{"massive-sulfide", 2}},
-	result = "lead-plate"
-},
-]]--
 --Galena Roasting
 {
 	type = "recipe",
@@ -718,7 +694,7 @@ data:extend(
 	category = "refining",
 	energy_required = 100,
 	enabled = false,
-	ingredients = {{"lead-oxide", 10}, {"coke", 5}, {"calcium-oxide", 1}, {"zinc-plate", 1}},
+	ingredients = {{"lead-oxide", 10}, {"coke", 5}, {"calcium-oxide", 1}, {"zinc-ingot", 1}},
 	results = {{"lead-ingot", 10}, {"slag", 1}, {type = "fluid", name = "flue-gas", amount = 50}, {"silver-sponge", 2}},
 	subgroup = "raw-material"
 },
@@ -739,7 +715,7 @@ data:extend(
 	energy_required = 100,
 	enabled = false,
 	ingredients = {{"silver-sponge", 10}, {type = "fluid", name = "nitric-acid", amount = 10}, {type = "fluid", name = "water", amount = 20}},
-	results = {{"silver-plate", 10}, {"sludge", 1}, {type = "fluid", name = "gray-water", amount = 20}},
+	results = {{"silver-ingot", 10}, {"sludge", 1}, {type = "fluid", name = "gray-water", amount = 20}},
 	subgroup = "raw-material"
 },
 --
@@ -858,7 +834,7 @@ data:extend(
 	energy_required = 100,
 	enabled = false,
 	ingredients = {{"zinc-oxide", 10}, {type = "fluid", name = "sulfuric-acid", amount = 10}, {type = "fluid", name = "water", amount = 20}},
-	results = {{"zinc-plate", 10}, {type = "fluid", name = "gray-water", amount = 20}},
+	results = {{"zinc-ingot", 10}, {type = "fluid", name = "gray-water", amount = 20}},
 	subgroup = "raw-material"
 },
 --Chalcopyrite Roasting
@@ -918,8 +894,8 @@ data:extend(
 	category = "refining",
 	energy_required = 5,
 	enabled = false,
-	ingredients = {{"re-oxide", 1}, {"magnesium-plate", 2}},
-	results = {{"re-plate", 1}, {"magnesium-oxide", 2}},
+	ingredients = {{"re-oxide", 1}, {"magnesium-ingot", 2}},
+	results = {{"re-ingot", 1}, {"magnesium-oxide", 2}},
 	subgroup = "raw-material"
 },
 --Uranyl Nitrate Decomposition and Fluorination
@@ -1005,7 +981,7 @@ data:extend(
 	category = "refining",
 	energy_required = 5,
 	enabled = false,
-	ingredients = {{"uranium-238-oxide", 1}, {"magnesium-plate", 2}},
+	ingredients = {{"uranium-238-oxide", 1}, {"magnesium-ingot", 2}},
 	results = {{"uranium-238", 1}, {"magnesium-oxide", 2}},
 	subgroup = "raw-material"
 },
@@ -1018,7 +994,7 @@ data:extend(
 	category = "refining",
 	energy_required = 5,
 	enabled = false,
-	ingredients = {{"uranium-weapons-oxide", 1}, {"magnesium-plate", 2}},
+	ingredients = {{"uranium-weapons-oxide", 1}, {"magnesium-ingot", 2}},
 	results = {{"uranium-235", 1}, {"magnesium-oxide", 2}},
 	subgroup = "raw-material"
 },
@@ -1035,7 +1011,7 @@ data:extend(
 	energy_required = 800,
 	enabled = false,
 	ingredients = {{"magnesium-chloride", 40}, {"graphite-block", 1}},
-	results = {{"magnesium-plate", 40}, {type = "fluid", name = "chlorine", amount = 400}},
+	results = {{"magnesium-ingot", 40}, {type = "fluid", name = "chlorine", amount = 400}},
 	subgroup = "raw-material"
 },
 --
