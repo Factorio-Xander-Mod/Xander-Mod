@@ -191,7 +191,7 @@ do
 	local names = {"titanium-axe", "axe-1", "iron-axe", "steel-axe", "axe-4", "axe-5", "axe-6", "repair-pack", "repair-pack-2", "repair-pack-3"}
 	local times = {1, 1, 1, 2, 4, 5, 5, 2, 2, 4}
 	local enableds = {true, true, true, false, false, false, false, false, false, false}
-	local ingredients = {{{"raw-wood", 4}, {"forging-titanium", 5}}, {{"wood", 4}, {"bronze-plate", 4}}, {{"wood", 4}, {"iron-plate", 4}}, {{"rod-2", 1}, {"forging-steel", 5}, {"wood", 4}},
+	local ingredients = {{{"raw-wood", 4}, {"forging-titanium", 5}}, {{"wood", 4}, {"bronze-plate", 4}}, {{"wood", 4}, {"iron-plate", 4}}, {{"forging-steel", 5}, {"wood", 4}},
 		{{"rod-2", 1}, {"forging-alloy", 5}, {"rubber", 4}}, {{"rod-4", 1}, {"forging-alloy", 5}, {"rubber", 4}, {"tungsten-cermet", 5}}, {{"rod-4", 1}, {"forging-alloy", 5}, {"rubber", 4}, {"nitride-block", 5}},
 		{{"tooling-1", 1}, {"iron-gear-wheel", 1}, {"bronze-plate", 2}, {"electronic-circuit", 2}}, {{"tooling-2", 1}, {"gear-3", 1}, {"forging-steel", 1}, {"advanced-circuit", 2}, {"rubber", 4}, {"concrete", 4}},
 		{{"tooling-3", 1}, {"gear-4", 2}, {"forging-titanium", 1}, {"processing-unit", 2}, {"plastic-bar", 4}, {"fused-basalt", 4}}}

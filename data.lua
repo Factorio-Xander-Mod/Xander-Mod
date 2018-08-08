@@ -36,7 +36,6 @@ require("prototypes.entity.resource.resource")
 
 --Items
 require("prototypes.item.material.material")
-require("prototypes.item.material.metal")
 
 --Fluids
 require("prototypes.fluid.element")
