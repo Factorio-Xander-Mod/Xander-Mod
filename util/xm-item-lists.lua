@@ -47,7 +47,7 @@ xm_nonmetal_items_news = {true, true, true, true, true, true, true, false}
 for i, name in ipairs(xm_nonmetal_items_names) do table.insert(xm_nonmetal_items, {name, xm_nonmetal_items_news[i], false}) end
 --Ceramic: bulk ceramic materials and simple shapes
 xm_ceramic_items = {}
-xm_ceramic_items_names = {"brick-clay", "brick-clay-graphite", "brick-spinel", "brick-zirconia", "glass", "fused-quartz", "fused-basalt", "silicon-carbide", "silicon-nitride", "tungsten-carbide"}
+xm_ceramic_items_names = {"brick-clay", "brick-clay-graphite", "brick-spinel", "brick-zirconia", "glass", "glass-fiber", "fused-quartz", "fused-basalt", "silicon-carbide", "silicon-nitride", "tungsten-carbide"}
 for i, name in ipairs(xm_ceramic_items_names) do table.insert(xm_ceramic_items, {name, true, false}) end
 --Salt: salts
 xm_salt_items = {}
@@ -59,8 +59,8 @@ xm_organic_items_names = {"wood-resin", "phenol", "solder-flux", "surfactant", "
 for i, name in ipairs(xm_organic_items_names) do table.insert(xm_organic_items, {name, true, false}) end
 --Polymer: organic polymers, usually for mechanical structure, but some for chemical reactivity & structure too
 xm_polymer_items = {}
-xm_polymer_items_names = {"raw-wood", "wood", "cotton", "latex", "sbr", "rubber", "plastic-pellets", "plastic-bar"}
-xm_polymer_items_news = {false, false, true, true, true, true, true, false}
+xm_polymer_items_names = {"raw-wood", "wood", "cotton", "latex", "sbr", "rubber", "plastic-pellets", "plastic-bar", "plastic-fiber", "carbon-fiber"}
+xm_polymer_items_news = {false, false, true, true, true, true, true, false, true, true}
 for i, name in ipairs(xm_polymer_items_names) do table.insert(xm_polymer_items, {name, xm_polymer_items_news[i], false}) end
 --Energetic: fuels, explosives, and the like
 xm_energetic_items = {}

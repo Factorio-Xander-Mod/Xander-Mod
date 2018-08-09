@@ -97,7 +97,7 @@ data:extend(
 	subgroup = "structure",
 	order = "07",
 	stack_size = 100
-},
+},--[[
 --Glass Fiber
 {
 	type = "item",
@@ -130,7 +130,7 @@ data:extend(
 	subgroup = "structure",
 	order = "10",
 	stack_size = 200
-},
+},]]--
 --Base "plastic-bar" plceholder
 	--order = "11"
 --Tungsten Carbide Cermet (Cutting Bit Insert)

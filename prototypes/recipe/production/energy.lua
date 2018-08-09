@@ -25,7 +25,7 @@ data.raw.recipe["steam-turbine"].ingredients = {{"forging-alloy", 10}, {"forging
 --Base "heat-pipe"
 data.raw.recipe["heat-pipe"].category = "crafting"
 data.raw.recipe["heat-pipe"].energy_required = 1
-data.raw.recipe["heat-pipe"].ingredients = {{"forging-stainless", 10}, {"silver-ingot", 20}, {"fiber-glass", 20}}
+data.raw.recipe["heat-pipe"].ingredients = {{"forging-stainless", 10}, {"silver-ingot", 20}, {"glass-fiber", 20}}
 
 --Base "nuclear-reactor"
 data.raw.recipe["nuclear-reactor"].category = "crafting"

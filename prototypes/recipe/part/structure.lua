@@ -143,7 +143,7 @@ data:extend(
 	energy_required = 2,
 	enabled = false,
 	ingredients = {{"glass", 1}},
-	result = "fiber-glass"
+	result = "glass-fiber"
 },
 --Plastic Fiber
 {
@@ -153,7 +153,7 @@ data:extend(
 	energy_required = 2,
 	enabled = false,
 	ingredients = {{"plastic-pellets", 1}},
-	result = "fiber-plastic"
+	result = "plastic-fiber"
 },
 --Carbon Fiber
 {
@@ -162,8 +162,8 @@ data:extend(
 	category = "forge",
 	energy_required = 2,
 	enabled = false,
-	ingredients = {{"fiber-plastic", 1}},
-	result = "fiber-carbon"
+	ingredients = {{"plastic-fiber", 1}},
+	result = "carbon-fiber"
 },
 --XM Plastic Bar from Plastic Pellets
 {

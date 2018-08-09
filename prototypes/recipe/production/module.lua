@@ -51,14 +51,14 @@ data.raw.recipe["effectivity-module"].ingredients = {{"forging-aluminum", 1}, {"
 --Base "effectivity-module-2"
 data.raw.recipe["effectivity-module-2"].category = "crafting-with-fluid"
 data.raw.recipe["effectivity-module-2"].energy_required = 20
-data.raw.recipe["effectivity-module-2"].ingredients = {{"effectivity-module", 4}, {"control-2", 2}, {"battery-2", 2}, {"fiber-glass", 8}, 
+data.raw.recipe["effectivity-module-2"].ingredients = {{"effectivity-module", 4}, {"control-2", 2}, {"battery-2", 2}, {"glass-fiber", 8}, 
 	{"plastic-bar", 8}, {"gold-ingot", 8}, {type = "fluid", name = "lubricant", amount = 20}}
 
 --Base "effectivity-module-3"
 data.raw.recipe["effectivity-module-3"].category = "crafting-with-fluid"
 data.raw.recipe["effectivity-module-3"].energy_required = 40
 data.raw.recipe["effectivity-module-3"].ingredients = {{"effectivity-module-2", 5}, {"control-3", 1}, {"battery-3", 4}, {"fused-quartz", 16}, 	
-	{"fiber-plastic", 16}, {"silver-ingot", 16}, {type = "fluid", name = "lubricant", amount = 40}}
+	{"plastic-fiber", 16}, {"silver-ingot", 16}, {type = "fluid", name = "lubricant", amount = 40}}
 
 --Base "rocket-silo"
 data.raw.recipe["rocket-silo"].category = "crafting"

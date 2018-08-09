@@ -18,7 +18,7 @@ data.raw.recipe["express-transport-belt"].normal =
 	enabled = false,
 	category = "crafting",
 	energy_required = 5,
-	ingredients = {{"expedited-transport-belt", 1}, {"shaft-3", 1}, {"fiber-plastic", 4}, {"forging-titanium", 2}},
+	ingredients = {{"expedited-transport-belt", 1}, {"shaft-3", 1}, {"plastic-fiber", 4}, {"forging-titanium", 2}},
 	result = "express-transport-belt"
 }
 data.raw.recipe["express-transport-belt"].expensive =
@@ -26,7 +26,7 @@ data.raw.recipe["express-transport-belt"].expensive =
 	enabled = false,
 	category = "crafting",
 	energy_required = 5,
-	ingredients = {{"expedited-transport-belt", 1}, {"shaft-3", 2}, {"fiber-plastic", 8}, {"forging-titanium", 4}},
+	ingredients = {{"expedited-transport-belt", 1}, {"shaft-3", 2}, {"plastic-fiber", 8}, {"forging-titanium", 4}},
 	result = "express-transport-belt"
 }
 

@@ -46,7 +46,7 @@ data:extend(
 	category = "crafting-with-fluid",
 	energy_required = 2,
 	enabled = false,
-	ingredients = {{"fiber-glass", 1}, {"sheet-tinned", 2}, {type = "fluid", name = "uncured-resol", amount = 10}},
+	ingredients = {{"glass-fiber", 1}, {"sheet-tinned", 2}, {type = "fluid", name = "uncured-resol", amount = 10}},
 	result = "metallized-2"
 },
 --Metallized Board 3
@@ -56,7 +56,7 @@ data:extend(
 	category = "crafting-with-fluid",
 	energy_required = 5,
 	enabled = false,
-	ingredients = {{"fiber-glass", 1}, {"sheet-gilded", 1}, {type = "fluid", name = "uncured-epoxy", amount = 10}},
+	ingredients = {{"glass-fiber", 1}, {"sheet-gilded", 1}, {type = "fluid", name = "uncured-epoxy", amount = 10}},
 	result = "metallized-3"
 },
 --

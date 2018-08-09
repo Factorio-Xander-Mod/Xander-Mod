@@ -45,69 +45,6 @@ data:extend(
 },
 --
 --LATERITE
---Transferred
---[[
---Crude Clay Finding (sorting through dirt by hand)
-{
-	type = "recipe",
-    name = "hand-clay",
-	category = "basic-sluice",
-	energy_required = 1,
-	ingredients = {{"laterite", 2}},
-	result = "clay"
-},
-]]--
---Transferred
---Bauxite Clay
-{
-	type = "recipe",
-    name = "bauxite-clay",
-	icon = "__xander-mod__/graphics/recipe/raw/bauxite-clay.png",
-	icon_size = 32,
-	category = "sluice",
-	crafting_machine_tint =
-	{
-		primary = {r = 0.000, g = 0.110, b = 0.588},
-		secondary = {r = 0.564, g = 0.795, b = 0.000},
-		tertiary = {r = 0.678, g = 0.565, b = 0.478}
-	},
-	energy_required = 20,
-	enabled = false,
-	ingredients = {{"laterite", 10}, {type = "fluid", name = "water", amount = 50}},
-	results = {{"clay", 10}, {type = "fluid", name = "gray-water", amount = 50}},
-	subgroup = "raw-resource"
-},
---To be removed
---Hand Sand Sorting
-{
-	type = "recipe",
-    name = "hand-sand",
-	category = "basic-sluice",
-	energy_required = 1,
-	enabled = false,
-	ingredients = {{"laterite", 2}},
-	result = "sand"
-},
---Transferred (to quartz-sand, in milled-resources)
---Bauxite Sand
-{
-	type = "recipe",
-    name = "bauxite-sand",
-	icon = "__xander-mod__/graphics/recipe/raw/bauxite-sand.png",
-	icon_size = 32,
-	category = "sluice",
-	crafting_machine_tint =
-	{
-		primary = {r = 0.000, g = 0.110, b = 0.588},
-		secondary = {r = 0.564, g = 0.795, b = 0.000},
-		tertiary = {r = 0.678, g = 0.565, b = 0.478}
-	},
-	energy_required = 20,
-	enabled = false,
-	ingredients = {{"laterite", 10}, {type = "fluid", name = "water", amount = 50}},
-	results = {{"sand", 10}, {"gravel", 1}, {type = "fluid", name = "gray-water", amount = 50}},
-	subgroup = "raw-resource"
-},
 --Hand Garnierite Sorting
 {
 	type = "recipe",
@@ -446,7 +383,7 @@ data:extend(
 	category = "basic-sluice",
 	energy_required = 2,
 	enabled = false,
-	ingredients = {{"stone", 2}, {"coal", 2}},
+	ingredients = {{"evaporites", 2}},
 	result = "saltpeter"
 },
 --Transferred
@@ -536,6 +473,7 @@ data:extend(
 	results = {{"limestone", 20}, {"gravel", 2}, {type = "fluid", name = "gray-water", amount = 50}},
 	subgroup = "raw-resource"
 },
+--Transferred
 --Gravel Crushing
 {
 	type = "recipe",

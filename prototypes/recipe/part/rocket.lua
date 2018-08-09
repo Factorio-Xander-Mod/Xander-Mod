@@ -23,7 +23,7 @@ data.raw.recipe["rocket-fuel"].ingredients = {{"solid-fuel", 20}, {type = "fluid
 --Base "low-density-structure"
 data.raw.recipe["low-density-structure"].energy_required = 50
 data.raw.recipe["low-density-structure"].category = "advanced-machine"
-data.raw.recipe["low-density-structure"].ingredients = {{"forging-stainless", 5}, {"forging-alloy", 5}, {"forging-titanium", 5}, {"fiber-carbon", 20}, 
+data.raw.recipe["low-density-structure"].ingredients = {{"forging-stainless", 5}, {"forging-alloy", 5}, {"forging-titanium", 5}, {"carbon-fiber", 20}, 
 	{type = "fluid", name = "uncured-epoxy", amount = 100}, {"forging-aluminum", 10}, {"pipe-superalloy", 10}}
 
 --Base "rocket-control-unit"
@@ -74,7 +74,7 @@ data:extend(
 	energy_required = 50,
 	enabled = false,
 	ingredients = {{"forging-superalloy", 5}, {"brick-zirconia", 10}, {"nitride-block", 5}, {"tungsten-ingot", 10}, {"forging-zirconium", 5}, 
-		{"graphite-block", 5}, {"fiber-glass", 20}},
+		{"graphite-block", 5}, {"glass-fiber", 20}},
 	result = "rocket-thermal"
 },
 --Rocket Mechanism
