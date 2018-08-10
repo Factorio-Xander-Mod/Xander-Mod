@@ -219,7 +219,7 @@ data:extend(
 --
 --BUILDING MATERIALS
 --Base "stone-brick" placeholder
---[[
+--Transferred
 --Crude Clay Brick
 {
 	type = "recipe",
@@ -229,7 +229,6 @@ data:extend(
 	ingredients = {{"clay", 1}},
 	result = "brick-clay"
 },
-]]--
 --Transferred
 --Improved Clay Brick
 {
