@@ -1,0 +1,18 @@
+---------------------------------------------------------------------------------------------------
+Version: 2.1.2
+Date: x. x. 2018
+  Bugfixes:
+    - Bugfix 1
+  Changes:
+    - Change 1
+  Features:
+    - Feature 1
+---------------------------------------------------------------------------------------------------
+Version: 2.1.1
+Date: 20. 7. 2018
+  Changes:
+    - Improvements to content structure (lists and organization of items and recipes, mainly in bulk materials)
+    - Some assorted fixes and smoothing early gameplay
+    - New locale structure and content in progress
+    - Offloaded the majority of large-file-size graphics to separate XM graphics pack mods, reducing the primary mod file size to 7 MB from 146
+    - This change requires the addition of the XM graphics pack mods, which now number two (indices 0 and 1). They are listed as dependencies of the main mod to hopefully avoid problems.
