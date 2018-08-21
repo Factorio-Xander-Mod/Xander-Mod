@@ -311,7 +311,7 @@ data:extend(
 	energy_required = 20,
 	enabled = false,
 	ingredients = {{"iron-ore", 10}, {type = "fluid", name = "water", amount = 50}},
-	results = {{"hematite", 10}, {"gravel", 2}, {type = "fluid", name = "gray-water", amount = 5}},
+	results = {{"hematite", 10}, {"gravel", 2}, {type = "fluid", name = "gray-water", amount = 50}},
 	subgroup = "raw-resource"
 },
 --Transferred
