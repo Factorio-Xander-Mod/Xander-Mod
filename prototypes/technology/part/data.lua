@@ -26,7 +26,7 @@ data.raw.technology["advanced-electronics"].order = "05-06"
 
 --Base "advanced-electronics-2"
 data.raw.technology["advanced-electronics-2"].effects = {{type = "unlock-recipe", recipe = "components-3"}, 
-	{type = "unlock-recipe", recipe = "components-2-b"}, {type = "unlock-recipe", recipe = "processing-unit"}, 
+	{type = "unlock-recipe", recipe = "processing-unit"}, 
 	{type = "unlock-recipe", recipe = "control-3"}, {type = "unlock-recipe", recipe = "high-tech-science-pack"}}
 data.raw.technology["advanced-electronics-2"].prerequisites = {"advanced-electronics", "substrate_3", "semiconductors_2", "soldering_2"}
 data.raw.technology["advanced-electronics-2"].unit = {count = 400, ingredients = {{"science-pack-1", 1}, {"science-pack-2", 1}, {"science-pack-3", 1}}, 

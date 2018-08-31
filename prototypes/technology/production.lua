@@ -58,7 +58,7 @@ data.raw.technology["nuclear-power"].order = "07-32"
 data.raw.technology["solar-energy"].icon = "__xander-mod__/graphics/technology/production/solar-energy_1.png"
 data.raw.technology["solar-energy"].icon_size = 128
 data.raw.technology["solar-energy"].effects = {{type = "unlock-recipe", recipe = "wafer-solar"}, {type = "unlock-recipe", recipe = "solar-panel"}}
-data.raw.technology["solar-energy"].prerequisites = {"advanced-electronics", "forging-steel", "glass-a", "rubber-a"}
+data.raw.technology["solar-energy"].prerequisites = {"advanced-electronics", "semiconductors_1"}
 data.raw.technology["solar-energy"].order = "07-33"
 
 --Base "electric-energy-accumulators-1"
