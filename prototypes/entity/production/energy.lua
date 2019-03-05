@@ -32,7 +32,7 @@ data.raw.accumulator["accumulator"].energy_source =
 {
 	type = "electric",
 	buffer_capacity = "5MJ",
-	usage_priority = "terciary",
+	usage_priority = "tertiary",
 	input_flow_limit = "200kW",
 	output_flow_limit = "200kW"
 }
@@ -266,7 +266,7 @@ xmutil.clone("accumulator", "accumulator",
 		{
 			type = "electric",
 			buffer_capacity = "20MJ",
-			usage_priority = "terciary",
+			usage_priority = "tertiary",
 			input_flow_limit = "500kW",
 			output_flow_limit = "500kW"
 		},

@@ -11,7 +11,7 @@ function xm_item(name_arg, flags_arg, group_no, subgroup_no, item_no, place_as_e
 	if flags_arg then
 		out.flags = flags_arg
 	else
-		out.flags = {"goes-to-main-inventory"}
+		out.flags = {--[[ "goes-to-main-inventory" ]]}
 	end
 	--Set the order string, adding the appropriate zeroes to the group_no, subgroup_no, and item_no
 	local order_group_no = group_no
@@ -52,18 +52,18 @@ function xm_special_item(name_arg, flags_arg, group_no, subgroup_no, item_no, pl
 	local out = xm_item(name_arg, flags_arg, group_no, subgroup_no, item_no, place_as_entity)
 	--Determine what type the thing actually is and add the parameters needed for each specific type
 	local typ = "item"
-	if string.find(name_arg, "axe") then --special contains: {damage_amount, durability, speed}
-		out.type = "mining-tool"
-		out.action = {
-			type = "direct",
-			action_delivery = {type = "instant",
-				target_effects = {type = "damage", damage = {amount = specials[1], type = "physical"}}
-			}
-		}
-		out.durability = specials[2]
-		out.speed = specials[3]
-		out.stack_size = 20
-	elseif string.find(name_arg, "repair") then --special contains: {nil, durability, speed}
+	-- if string.find(name_arg, "axe") then --special contains: {damage_amount, durability, speed}
+	-- 	out.type = "mining-tool"
+	-- 	out.action = {
+	-- 		type = "direct",
+	-- 		action_delivery = {type = "instant",
+	-- 			target_effects = {type = "damage", damage = {amount = specials[1], type = "physical"}}
+	-- 		}
+	-- 	}
+	-- 	out.durability = specials[2]
+	-- 	out.speed = specials[3]
+	-- 	out.stack_size = 20
+	if string.find(name_arg, "repair") then --special contains: {nil, durability, speed}
 		out.type = "repair-tool"
 		out.durability = specials[2]
 		out.speed = specials[3]

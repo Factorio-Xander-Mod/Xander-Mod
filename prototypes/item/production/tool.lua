@@ -10,11 +10,11 @@ end
 --Base Overrides
 
 --Base "iron-axe"
-data.raw["mining-tool"]["iron-axe"].order = "06-01-02"
+--data.raw["mining-tool"]["iron-axe"].order = "06-01-02"
 
 --Base "steel-axe"
-data.raw["mining-tool"]["steel-axe"].icon = "__xander-mod__/graphics/item/production/tool/axe-3.png"
-data.raw["mining-tool"]["steel-axe"].order = "06-01-03"
+--data.raw["mining-tool"]["steel-axe"].icon = "__xander-mod__/graphics/item/production/tool/axe-3.png"
+--data.raw["mining-tool"]["steel-axe"].order = "06-01-03"
 
 --Base "repair-pack"
 data.raw["repair-tool"]["repair-pack"].icon = "__xander-mod__/graphics/item/production/tool/repair-pack-1.png"

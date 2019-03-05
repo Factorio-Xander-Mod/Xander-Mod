@@ -44,7 +44,7 @@ data.raw.recipe["lubricant"].ingredients = {{type = "fluid", name = "heavy-oil",
 data.raw.recipe["lubricant"].results = {{type = "fluid", name = "lubricant", amount = 100}}
 
 --Base "wood"
-data.raw.recipe["wood"].energy_required = 1
+-- data.raw.recipe["wood"].energy_required = 1
 
 --Base "heavy-oil-cracking"
 data.raw.recipe["heavy-oil-cracking"].energy_required = 4

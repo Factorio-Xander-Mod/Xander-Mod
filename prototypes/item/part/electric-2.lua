@@ -15,7 +15,7 @@ data:extend(
 	name = "coil-1",
 	icon = "__xander-mod__/graphics/item/part/electric-2/coil-1.png",
 	icon_size = 32,
-	flags = {"goes-to-main-inventory"},
+	-- flags = {"goes-to-main-inventory"},
 	subgroup = "electric-2",
 	order = "00",
 	stack_size = 100
@@ -26,7 +26,7 @@ data:extend(
 	name = "coil-2",
 	icon = "__xander-mod__/graphics/item/part/electric-2/coil-2.png",
 	icon_size = 32,
-	flags = {"goes-to-main-inventory"},
+	-- flags = {"goes-to-main-inventory"},
 	subgroup = "electric-2",
 	order = "01",
 	stack_size = 100
@@ -37,7 +37,7 @@ data:extend(
 	name = "coil-3",
 	icon = "__xander-mod__/graphics/item/part/electric-2/coil-3.png",
 	icon_size = 32,
-	flags = {"goes-to-main-inventory"},
+	-- flags = {"goes-to-main-inventory"},
 	subgroup = "electric-2",
 	order = "02",
 	stack_size = 100
@@ -50,7 +50,7 @@ data:extend(
 	name = "motor-2",
 	icon = "__xander-mod__/graphics/item/part/electric-2/motor-2.png",
 	icon_size = 32,
-	flags = {"goes-to-main-inventory"},
+	-- flags = {"goes-to-main-inventory"},
 	subgroup = "electric-2",
 	order = "04",
 	stack_size = 100
@@ -61,7 +61,7 @@ data:extend(
 	name = "motor-3",
 	icon = "__xander-mod__/graphics/item/part/electric-2/motor-3.png",
 	icon_size = 32,
-	flags = {"goes-to-main-inventory"},
+	-- flags = {"goes-to-main-inventory"},
 	subgroup = "electric-2",
 	order = "05",
 	stack_size = 100
@@ -72,7 +72,7 @@ data:extend(
 	name = "transformer-1",
 	icon = "__xander-mod__/graphics/item/part/electric-2/transformer-1.png",
 	icon_size = 32,
-	flags = {"goes-to-main-inventory"},
+	-- flags = {"goes-to-main-inventory"},
 	subgroup = "electric-2",
 	order = "06",
 	stack_size = 100
@@ -83,7 +83,7 @@ data:extend(
 	name = "transformer-2",
 	icon = "__xander-mod__/graphics/item/part/electric-2/transformer-2.png",
 	icon_size = 32,
-	flags = {"goes-to-main-inventory"},
+	-- flags = {"goes-to-main-inventory"},
 	subgroup = "electric-2",
 	order = "07",
 	stack_size = 100
@@ -94,7 +94,7 @@ data:extend(
 	name = "transformer-3",
 	icon = "__xander-mod__/graphics/item/part/electric-2/transformer-3.png",
 	icon_size = 32,
-	flags = {"goes-to-main-inventory"},
+	-- flags = {"goes-to-main-inventory"},
 	subgroup = "electric-2",
 	order = "08",
 	stack_size = 100

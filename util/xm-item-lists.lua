@@ -60,7 +60,7 @@ for i, name in ipairs(xm_organic_items_names) do table.insert(xm_organic_items, 
 --Polymer: organic polymers, usually for mechanical structure, but some for chemical reactivity & structure too
 xm_polymer_items = {}
 xm_polymer_items_names = {"raw-wood", "wood", "cotton", "latex", "sbr", "rubber", "plastic-pellets", "plastic-bar", "plastic-fiber", "carbon-fiber"}
-xm_polymer_items_news = {false, false, true, true, true, true, true, false, true, true}
+xm_polymer_items_news = {true, false, true, true, true, true, true, false, true, true}
 for i, name in ipairs(xm_polymer_items_names) do table.insert(xm_polymer_items, {name, xm_polymer_items_news[i], false}) end
 --Energetic: fuels, explosives, and the like
 xm_energetic_items = {}
@@ -95,11 +95,11 @@ for i, name in ipairs(xm_assembly_items_names) do table.insert(xm_assembly_items
 --Most items are legacy from XM 1
 --Tools
 xm_tool_items = {}
-xm_tool_items_names = {"titanium-axe", "axe-1", "iron-axe", "steel-axe", "axe-4", "axe-5", "axe-6", "repair-pack", "repair-pack-2", "repair-pack-3"}
-xm_tool_items_news = {true, true, false, false, true, true, true, false, true, true}
-local xm_tool_items_damages = {2, 2, 5, 8, 5, 6, 7, nil, nil, nil}
-local xm_tool_items_durabilities = {15000, 5000, 6000, 8000, 12000, 15000, 20000, 300, 200, 500}
-local xm_tool_items_speeds = {2, 2.5, 2.5, 4, 8, 10, 12, 0.5, 1, 2}
+xm_tool_items_names = {"repair-pack", "repair-pack-2", "repair-pack-3"}
+xm_tool_items_news = {false, true, true}
+local xm_tool_items_damages = {nil, nil, nil}
+local xm_tool_items_durabilities = {300, 200, 500}
+local xm_tool_items_speeds = {0.5, 1, 2}
 for i, name in ipairs(xm_tool_items_names) do table.insert(xm_tool_items, {name, xm_tool_items_news[i], false, xm_tool_items_damages[i], xm_tool_items_durabilities[i], xm_tool_items_speeds[i]}) end
 --Energy machines
 xm_energy_items = {}

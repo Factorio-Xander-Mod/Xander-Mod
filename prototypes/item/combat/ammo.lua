@@ -68,7 +68,7 @@ data:extend(
 	name = "railgun-shell",
 	icon = "__xander-mod__/graphics/item/combat/ammo/railgun-shell.png",
 	icon_size = 32,
-	flags = {"goes-to-main-inventory"},
+	-- flags = {"goes-to-main-inventory"},
 	ammo_type =
 	{
 		category = "railgun-shell",
@@ -102,7 +102,7 @@ data:extend(
 	name = "explosive-railgun-shell",
 	icon = "__xander-mod__/graphics/item/combat/ammo/explosive-railgun-shell.png",
 	icon_size = 32,
-	flags = {"goes-to-main-inventory"},
+	-- flags = {"goes-to-main-inventory"},
 	ammo_type =
 	{
 		category = "railgun-shell",

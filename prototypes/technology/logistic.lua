@@ -13,7 +13,7 @@ data.raw.technology["electric-energy-distribution-2"].order = "06-01"
 
 --Base "logistics"
 data.raw.technology["logistics"].effects = {{type = "unlock-recipe", recipe = "transport-belt"}, 
-	{type = "unlock-recipe", recipe = "underground-belt"}, {type = "unlock-recipe", recipe = "splitter"}, {type = "unlock-recipe", recipe = "science-pack-2"}}
+	{type = "unlock-recipe", recipe = "underground-belt"}, {type = "unlock-recipe", recipe = "splitter"}, {type = "unlock-recipe", recipe = "logistic-science-pack"}}
 data.raw.technology["logistics"].prerequisites = {"parts_1", "logistics_0", "inserter-a"}
 data.raw.technology["logistics"].order = "06-04"
 
@@ -25,19 +25,19 @@ data.raw.technology["logistics-2"].order = "06-05"
 data.raw.technology["logistics-3"].effects = {{type = "unlock-recipe", recipe = "expedited-transport-belt"}, 
 	{type = "unlock-recipe", recipe = "expedited-underground-belt"}, {type = "unlock-recipe", recipe = "expedited-splitter"}}
 data.raw.technology["logistics-3"].prerequisites = {"logistics-2", "parts_2", "forging-aluminum", "advanced-electronics"}
-data.raw.technology["logistics-3"].unit = {count = 350, ingredients = {{"science-pack-1", 1}, {"science-pack-2", 1}, {"science-pack-3", 1}, 
+data.raw.technology["logistics-3"].unit = {count = 350, ingredients = {{"automation-science-pack", 1}, {"logistic-science-pack", 1}, {"chemical-science-pack", 1}, 
 	{"production-science-pack", 1}}, time = 30}
 data.raw.technology["logistics-3"].order = "06-06"
 
 --Base "stack-inserter"
 data.raw.technology["stack-inserter"].effects = {{type = "unlock-recipe", recipe = "stack-inserter"}, {type = "stack-inserter-capacity-bonus", modifier = 1}}
 data.raw.technology["stack-inserter"].prerequisites = {"logistics-2", "inserter-long-fast", "advanced-electronics"}
-data.raw.technology["stack-inserter"].unit = {count = 150, ingredients = {{"science-pack-1", 1}, {"science-pack-2", 1}, {"science-pack-3", 1}}, time = 30}
+data.raw.technology["stack-inserter"].unit = {count = 150, ingredients = {{"automation-science-pack", 1}, {"logistic-science-pack", 1}, {"chemical-science-pack", 1}}, time = 30}
 data.raw.technology["stack-inserter"].order = "06-17"
 
 --Base "railway"
 data.raw.technology["railway"].prerequisites = {"logistics", "plumbing-steel", "ore-processor_1"}
-data.raw.technology["railway"].unit = {count = 100, ingredients = {{"science-pack-1", 1}, {"science-pack-2", 1}}, time = 30}
+data.raw.technology["railway"].unit = {count = 100, ingredients = {{"automation-science-pack", 1}, {"logistic-science-pack", 1}}, time = 30}
 data.raw.technology["railway"].order = "06-20"
 
 --Base "fluid-wagon"
@@ -46,7 +46,7 @@ data.raw.technology["fluid-wagon"].order = "06-22"
 
 --Base "automated-rail-transportation"
 data.raw.technology["automated-rail-transportation"].prerequisites = {"railway", "machines_1", "lamp_1"}
-data.raw.technology["automated-rail-transportation"].unit = {count = 100, ingredients = {{"science-pack-1", 1}, {"science-pack-2", 1}}, time = 30}
+data.raw.technology["automated-rail-transportation"].unit = {count = 100, ingredients = {{"automation-science-pack", 1}, {"logistic-science-pack", 1}}, time = 30}
 data.raw.technology["automated-rail-transportation"].order = "06-23"
 
 --Base "rail-signals"
@@ -56,21 +56,21 @@ data.raw.technology["rail-signals"].order = "06-24"
 --Base "robotics"
 data.raw.technology["robotics"].effects = {{type = "unlock-recipe", recipe = "flying-robot-frame"}, {type = "unlock-recipe", recipe = "roboport"}, 
 	{type = "unlock-recipe", recipe = "logistic-chest-passive-provider"}, {type = "unlock-recipe", recipe = "logistic-chest-storage"}}
-data.raw.technology["robotics"].prerequisites = {"flying", "radar_1"}
+data.raw.technology["robotics"].prerequisites = {--[[ "flying",  ]]"radar_1"}
 data.raw.technology["robotics"].order = "06-29"
 
 --Base "construction-robotics"
 data.raw.technology["construction-robotics"].effects = {{type = "unlock-recipe", recipe = "construction-robot"}, 
 	{type = "ghost-time-to-live", modifier = 60 * 60 * 60}}
 data.raw.technology["construction-robotics"].prerequisites = {"robotics", "tooling_2"}
-data.raw.technology["construction-robotics"].unit = {count = 150, ingredients = {{"science-pack-1", 1}, {"science-pack-2", 1}, {"science-pack-3", 1}}, 
+data.raw.technology["construction-robotics"].unit = {count = 150, ingredients = {{"automation-science-pack", 1}, {"logistic-science-pack", 1}, {"chemical-science-pack", 1}}, 
 	time = 30}
 data.raw.technology["construction-robotics"].order = "06-31"
 
 --Base "logistic-robotics"
 data.raw.technology["logistic-robotics"].effects = {{type = "unlock-recipe", recipe = "logistic-robot"}}
 data.raw.technology["logistic-robotics"].prerequisites = {"robotics", "rubber-b"}
-data.raw.technology["logistic-robotics"].unit = {count = 150, ingredients = {{"science-pack-1", 1}, {"science-pack-2", 1}, {"science-pack-3", 1}}, 
+data.raw.technology["logistic-robotics"].unit = {count = 150, ingredients = {{"automation-science-pack", 1}, {"logistic-science-pack", 1}, {"chemical-science-pack", 1}}, 
 	time = 30}
 data.raw.technology["logistic-robotics"].order = "06-33"
 
@@ -79,14 +79,14 @@ data.raw.technology["logistic-system"].order = "06-35"
 
 --Base "fluid-handling"
 data.raw.technology["fluid-handling"].prerequisites = {"machines_1", "pump_1"}
-data.raw.technology["fluid-handling"].unit = {count = 100, ingredients = {{"science-pack-1", 1}, {"science-pack-2", 1}}, time = 30}
+data.raw.technology["fluid-handling"].unit = {count = 100, ingredients = {{"automation-science-pack", 1}, {"logistic-science-pack", 1}}, time = 30}
 data.raw.technology["fluid-handling"].order = "06-45"
 
 --Base "circuit-network"
 data.raw.technology["circuit-network"].effects = {{type = "unlock-recipe", recipe = "red-wire"}, {type = "unlock-recipe", recipe = "green-wire"}, 
 	{type = "unlock-recipe", recipe = "power-switch"}, {type = "unlock-recipe", recipe = "programmable-speaker"}}
 data.raw.technology["circuit-network"].prerequisites = {"electronics", "rubber-a"}
-data.raw.technology["circuit-network"].unit = {count = 150, ingredients = {{"science-pack-1", 1}, {"science-pack-2", 1}}, time = 30}
+data.raw.technology["circuit-network"].unit = {count = 150, ingredients = {{"automation-science-pack", 1}, {"logistic-science-pack", 1}}, time = 30}
 data.raw.technology["circuit-network"].order = "06-47"
 
 
@@ -116,9 +116,9 @@ data:extend(
 		count = 200,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1}
 		},
 		time = 45
 	},
@@ -143,9 +143,9 @@ data:extend(
 		count = 300,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1},
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1},
 			{"production-science-pack", 1}
 		},
 		time = 60
@@ -213,9 +213,9 @@ data:extend(
 		count = 500,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1},
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1},
 			{"production-science-pack", 1}
 		},
 		time = 60
@@ -243,8 +243,8 @@ data:extend(
 		count = 100,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1}
 		},
 		time = 30
 	},
@@ -269,9 +269,9 @@ data:extend(
 		count = 300,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1}
 		},
 		time = 45
 	},
@@ -296,9 +296,9 @@ data:extend(
 		count = 600,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1},
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1},
 			{"production-science-pack", 1}
 		},
 		time = 60
@@ -324,9 +324,9 @@ data:extend(
 		count = 1200,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1},
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1},
 			{"production-science-pack", 1}
 		},
 		time = 60
@@ -378,7 +378,7 @@ data:extend(
 		count = 30,
 		ingredients =
 		{
-			{"science-pack-1", 1}
+			{"automation-science-pack", 1}
 		},
 		time = 10
 	},
@@ -403,7 +403,7 @@ data:extend(
 		count = 30,
 		ingredients =
 		{
-			{"science-pack-1", 1}
+			{"automation-science-pack", 1}
 		},
 		time = 10
 	},
@@ -428,8 +428,8 @@ data:extend(
 		count = 75,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1}
 		},
 		time = 20
 	},
@@ -454,8 +454,8 @@ data:extend(
 		count = 100,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1}
 		},
 		time = 20
 	},
@@ -480,8 +480,8 @@ data:extend(
 		count = 200,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1}
 		},
 		time = 30
 	},
@@ -508,9 +508,9 @@ data:extend(
 		count = 300,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1},
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1},
 			{"production-science-pack", 1}
 		},
 		time = 45
@@ -536,9 +536,9 @@ data:extend(
 		count = 300,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1},
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1},
 			{"production-science-pack", 1}
 		},
 		time = 60
@@ -566,9 +566,9 @@ data:extend(
 		count = 150,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1}
 		},
 		time = 30
 	},
@@ -599,9 +599,9 @@ data:extend(
 		count = 200,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1},
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1},
 			{"production-science-pack", 1}
 		},
 		time = 30
@@ -627,9 +627,9 @@ data:extend(
 		count = 300,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1},
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1},
 			{"production-science-pack", 1}
 		},
 		time = 30
@@ -655,9 +655,9 @@ data:extend(
 		count = 400,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1}
 		},
 		time = 30
 	},
@@ -682,9 +682,9 @@ data:extend(
 		count = 1000,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1},
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1},
 			{"production-science-pack", 1}
 		},
 		time = 45
@@ -716,10 +716,10 @@ data:extend(
 		count = 400,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1},
-			{"high-tech-science-pack", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1},
+			{"utility-science-pack", 1}
 		},
 		time = 45
 	},
@@ -746,11 +746,11 @@ data:extend(
 		count = 500,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1},
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1},
 			{"production-science-pack", 1},
-			{"high-tech-science-pack", 1}
+			{"utility-science-pack", 1}
 		},
 		time = 30
 	},
@@ -777,11 +777,11 @@ data:extend(
 		count = 500,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1},
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1},
 			{"production-science-pack", 1},
-			{"high-tech-science-pack", 1}
+			{"utility-science-pack", 1}
 		},
 		time = 45
 	},
@@ -816,7 +816,7 @@ data:extend(
 		count = 60,
 		ingredients =
 		{
-			{"science-pack-1", 1}
+			{"automation-science-pack", 1}
 		},
 		time = 20
 	},
@@ -845,8 +845,8 @@ data:extend(
 		count = 100,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1}
 		},
 		time = 30
 	},
@@ -875,9 +875,9 @@ data:extend(
 		count = 200,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1}
 		},
 		time = 45
 	},
@@ -906,9 +906,9 @@ data:extend(
 		count = 300,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1},
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1},
 			{"production-science-pack", 1}
 		},
 		time = 60
@@ -938,9 +938,9 @@ data:extend(
 		count = 200,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1}
 		},
 		time = 60
 	},
@@ -965,7 +965,7 @@ data:extend(
 		count = 50,
 		ingredients =
 		{
-			{"science-pack-1", 1}
+			{"automation-science-pack", 1}
 		},
 		time = 30
 	},
@@ -990,9 +990,9 @@ data:extend(
 		count = 150,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1}
 		},
 		time = 45
 	},
@@ -1017,9 +1017,9 @@ data:extend(
 		count = 250,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1},
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1},
 			{"production-science-pack", 1}
 		},
 		time = 60
@@ -1047,9 +1047,9 @@ data:extend(
 		count = 250,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1},
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1},
 			{"production-science-pack", 1}
 		},
 		time = 60
@@ -1085,9 +1085,9 @@ data:extend(
 		count = 50,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1}
 		},
 		time = 30
 	},
@@ -1116,10 +1116,10 @@ data:extend(
 		count = 100,
 		ingredients =
 		{
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 1},
-			{"high-tech-science-pack", 1}
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1},
+			{"utility-science-pack", 1}
 		},
 		time = 45
 	},

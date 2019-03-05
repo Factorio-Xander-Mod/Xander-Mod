@@ -12,6 +12,6 @@ data.raw.item["oil-refinery"].order = "5"
 
 for i, entry in ipairs(xm_chemical_items) do
 	if entry[2] then
-		data:extend({xm_item(entry[1], {"goes-to-quickbar"}, 6, 5, i - 1, entry[3])})
+		data:extend({xm_item(entry[1], {--[[ "goes-to-quickbar" ]]}, 6, 5, i - 1, entry[3])})
 	end
 end

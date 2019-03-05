@@ -350,8 +350,8 @@ xmutil.clone("assembling-machine", "assembling-machine-3",
 	inputs =
 	{
 		"science-pack-0",
-		"science-pack-1",
-		"science-pack-2"
+		"automation-science-pack",
+		"logistic-science-pack"
 	}
 }
 --Base "lab" placeholder

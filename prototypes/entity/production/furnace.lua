@@ -5,6 +5,7 @@ local xmutil = require("xmutil")
 --Base "stone-furnace"
 data.raw.furnace["stone-furnace"].flags = {"player-creation"}
 data.raw.furnace["stone-furnace"].crafting_categories = {"empty"}
+data.raw.furnace["stone-furnace"].next_upgrade = nil
 
 --Base "steel-furnace"
 data.raw.furnace["steel-furnace"].flags = {"player-creation"}

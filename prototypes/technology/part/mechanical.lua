@@ -14,5 +14,5 @@ data.raw.technology["engine"].effects = {{type = "unlock-recipe", recipe = "engi
 data.raw.technology["engine"].prerequisites = {"parts_1", "plumbing-steel", "rubber-a"}
 data.raw.technology["engine"].order = "04-03"
 --Base "flying"
-data.raw.technology["flying"].prerequisites = {"parts_2", "battery_2", "forging-aluminum"}
-data.raw.technology["flying"].order = "04-06"
+-- data.raw.technology["flying"].prerequisites = {"parts_2", "battery_2", "forging-aluminum"}
+-- data.raw.technology["flying"].order = "04-06"

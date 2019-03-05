@@ -28,6 +28,7 @@ local function xm_create_new_resource(name, cat, order, rem_start, map_color)
 	cover = 0.002
 	if cat == "advanced-fluid" then cover = 0.001 end
 	out.autoplace.coverage = cover
+	if not out.autoplace.peaks then out.autoplace.peaks = {{},{}} end
 	out.autoplace.peaks[1].noise_layer = name
 	if rem_start then
 		out.autoplace.starting_area_size = nil

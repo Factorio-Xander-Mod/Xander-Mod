@@ -28,7 +28,7 @@ data:extend(
 	name = "metallized-1",
 	icon = "__xander-mod__/graphics/item/part/board/metallized-1.png",
 	icon_size = 32,
-	flags = {"goes-to-main-inventory"},
+	-- flags = {"goes-to-main-inventory"},
 	subgroup = "board",
 	order = "00",
 	stack_size = 100
@@ -39,7 +39,7 @@ data:extend(
 	name = "metallized-2",
 	icon = "__xander-mod__/graphics/item/part/board/metallized-2.png",
 	icon_size = 32,
-	flags = {"goes-to-main-inventory"},
+	-- flags = {"goes-to-main-inventory"},
 	subgroup = "board",
 	order = "01",
 	stack_size = 100
@@ -50,7 +50,7 @@ data:extend(
 	name = "metallized-3",
 	icon = "__xander-mod__/graphics/item/part/board/metallized-3.png",
 	icon_size = 32,
-	flags = {"goes-to-main-inventory"},
+	-- flags = {"goes-to-main-inventory"},
 	subgroup = "board",
 	order = "02",
 	stack_size = 100
@@ -61,7 +61,7 @@ data:extend(
 	name = "etched-2",
 	icon = "__xander-mod__/graphics/item/part/board/etched-2.png",
 	icon_size = 32,
-	flags = {"goes-to-main-inventory"},
+	-- flags = {"goes-to-main-inventory"},
 	subgroup = "board",
 	order = "04",
 	stack_size = 100
@@ -72,7 +72,7 @@ data:extend(
 	name = "etched-3",
 	icon = "__xander-mod__/graphics/item/part/board/etched-3.png",
 	icon_size = 32,
-	flags = {"goes-to-main-inventory"},
+	-- flags = {"goes-to-main-inventory"},
 	subgroup = "board",
 	order = "05",
 	stack_size = 100
