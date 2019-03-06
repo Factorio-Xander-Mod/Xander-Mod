@@ -157,10 +157,10 @@ xmutil.clone("mining-drill", "pumpjack",
 			"__base__/graphics/icon/pumpjack.png",
 			"__xander-mod__/graphics/item/production/extraction-machine/pumpjack-2.png",
 		},
-		{
-			"__base__/graphics/entity/pumpjack/pumpjack-base.png",
-			"__xander-mod-graphics-0__/graphics/entity/production/pumpjack-2/base.png",
-		},
+		-- {
+		-- 	"__base__/graphics/entity/pumpjack/pumpjack-base.png",
+		-- 	"__xander-mod-graphics-0__/graphics/entity/production/pumpjack-2/base.png",
+		-- },
 		{
 			"__base__/graphics/entity/electric-mining-drill/hr-electric-mining-drill-",
 			"__xander-mod-graphics-0__/graphics/entity/production/mining-drill-4/hr-",
@@ -176,31 +176,31 @@ xmutil.clone("mining-drill", "pumpjack",
 		energy_usage = "200kW",
 		mining_power = 2,
 		module_specification = { module_slots = 4 },
-		base_picture = {
-			sheets = {
-				{
-					filename = "__xander-mod-graphics-0__/graphics/entity/production/pumpjack-2/base.png",
-					hr_version = xmutil.NIL,
-				},
-			},
-		},
-		animations = {
-			north = {
-				layers = {
-					{
-						priority = "extra-high",
-						width = 116,
-						height = 110,
-						line_length = 10,
-						shift = util.by_pixel(4, -23),
-						filename = "__xander-mod-graphics-0__/graphics/entity/production/pumpjack-2/animation.png",
-						frame_count = 40,
-						animation_speed = 1,
-						hr_version = xmutil.NIL,
-					},
-				},
-			},
-		},
+		-- base_picture = {
+		-- 	sheets = {
+		-- 		{
+		-- 			filename = "__xander-mod-graphics-0__/graphics/entity/production/pumpjack-2/base.png",
+		-- 			hr_version = xmutil.NIL,
+		-- 		},
+		-- 	},
+		-- },
+		-- animations = {
+		-- 	north = {
+		-- 		layers = {
+		-- 			{
+		-- 				priority = "extra-high",
+		-- 				width = 116,
+		-- 				height = 110,
+		-- 				line_length = 10,
+		-- 				shift = util.by_pixel(4, -23),
+		-- 				filename = "__xander-mod-graphics-0__/graphics/entity/production/pumpjack-2/animation.png",
+		-- 				frame_count = 40,
+		-- 				animation_speed = 1,
+		-- 				hr_version = xmutil.NIL,
+		-- 			},
+		-- 		},
+		-- 	},
+		-- },
 	}
 ),
 --Crude Burner Ore Sluice
