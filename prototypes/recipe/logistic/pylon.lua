@@ -4,7 +4,7 @@
 data.raw.recipe["small-electric-pole"].category = "crafting"
 data.raw.recipe["small-electric-pole"].energy_required = 1
 data.raw.recipe["small-electric-pole"].enabled = false
-data.raw.recipe["small-electric-pole"].ingredients = {{"raw-wood", 4}, {"insulator-1", 1}, {"copper-cable", 4}}
+data.raw.recipe["small-electric-pole"].ingredients = {{"wood", 4}, {"insulator-1", 1}, {"copper-cable", 4}}
 
 --Base "medium-electric-pole"
 data.raw.recipe["medium-electric-pole"].category = "crafting"

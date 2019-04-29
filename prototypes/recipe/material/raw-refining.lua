@@ -1062,7 +1062,7 @@ data:extend(
     name = "charcoal",
 	category = "kiln",
 	energy_required = 4,
-	ingredients = {{"raw-wood", 4}},
+	ingredients = {{"wood", 4}},
 	result = "charcoal",
 	result_count = 4
 },

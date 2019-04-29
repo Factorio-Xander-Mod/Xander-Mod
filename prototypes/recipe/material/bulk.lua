@@ -913,8 +913,8 @@ data:extend(
 	category = "temp-logging",
 	energy_required = 5,
 	enabled = false,
-	ingredients = {{"raw-wood", 10}, {type = "fluid", name = "water", amount = 50}},
-	result = "raw-wood",
+	ingredients = {{"wood", 10}, {type = "fluid", name = "water", amount = 50}},
+	result = "wood",
 	result_count = 12
 },
 --Cotton
@@ -936,7 +936,7 @@ data:extend(
 	category = "basic-chemistry",
 	energy_required = 10,
 	enabled = false,
-	ingredients = {{"raw-wood", 20}, {type = "fluid", name = "steam", amount = 10}},
+	ingredients = {{"wood", 20}, {type = "fluid", name = "steam", amount = 10}},
 	result = "wood-resin",
 	result_count = 10,
 	crafting_machine_tint =
@@ -993,7 +993,7 @@ data:extend(
 	category = "basic-chemistry",
 	energy_required = 10,
 	enabled = false,
-	ingredients = {{"raw-wood", 4}, {type = "fluid", name = "water", amount = 20}, {"skarn", 1}, {"iron-ore", 1}},
+	ingredients = {{"wood", 4}, {type = "fluid", name = "water", amount = 20}, {"skarn", 1}, {"iron-ore", 1}},
 	results = {{type = "fluid", name = "formic-acid", amount = 20}},
 	subgroup = "carbohydrate",
 	crafting_machine_tint =
@@ -1010,7 +1010,7 @@ data:extend(
 	category = "chemistry",
 	energy_required = 10,
 	enabled = false,
-	ingredients = {{"raw-wood", 10}, {type = "fluid", name = "formic-acid", amount = 10}},
+	ingredients = {{"wood", 10}, {type = "fluid", name = "formic-acid", amount = 10}},
 	result = "latex",
 	crafting_machine_tint =
 	{
