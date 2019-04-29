@@ -62,7 +62,7 @@ data.raw.technology["solar-energy"].prerequisites = {"advanced-electronics", "fo
 data.raw.technology["solar-energy"].order = "07-33"
 
 --Base "electric-energy-accumulators-1"
-data.raw.technology["electric-energy-accumulators-1"].order = "07-36"
+data.raw.technology["electric-energy-accumulators"].order = "07-36"
 
 --Base "modules"
 data.raw.technology["modules"].order = "07-43"
@@ -1094,7 +1094,7 @@ data:extend(
 			recipe = "accumulator-2"
 		}
 	},
-	prerequisites = {"electric-energy-accumulators-1", "forging-stainless", "battery_2", "insulator_2"},
+	prerequisites = {"electric-energy-accumulators", "forging-stainless", "battery_2", "insulator_2"},
 	unit =
 	{
 		count = 400,
