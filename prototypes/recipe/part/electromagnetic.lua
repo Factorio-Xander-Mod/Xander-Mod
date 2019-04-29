@@ -370,8 +370,7 @@ data:extend(
 	category = "machine",
 	energy_required = 20,
 	enabled = false,
-	ingredients = {{"boule-diamond", 1}, {type = "fluid", name = "lubricant", amount = 10}, {"silicon-carbide", 2}, {"aluminum-oxide", 1}, 
-		{"boule-diamond", 1}},
+	ingredients = {{"boule-diamond", 1}, {type = "fluid", name = "lubricant", amount = 10}, {"silicon-carbide", 2}, {"aluminum-oxide", 1}},
 	result = "crystal-diamond"
 },
 --Ruby Crystal
