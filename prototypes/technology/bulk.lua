@@ -466,7 +466,7 @@ data:extend(
 			recipe = "silicon-boule-a"
 		}
 	},
-	prerequisites = {"acheson-process", "phosphorus-processing", "boron-processing"},
+	prerequisites = {"acheson-process", "phosphorus-processing"},
 	unit =
 	{
 		count = 500,
